@@ -1,10 +1,14 @@
-# LE1 SDK
+# LE 1/2/3 SDK
 
-A projection of a part of the game's codebase accessible to UnrealScript for **Mass Effect 1 (Legendary Edition)**. Built with an adapted version of UE3 SDK generator by TheFeckless.
+A collection of SDK-like projections of the Legendary Edition's codebase accessible to UnrealScript for **Mass Effect 1, 2 and 3**. Built with a version of UE3 SDK generator by TheFeckless, adapted by me to support 64-bit executables, multiple translation units, and BioWare's in-house SFXName system which replaces/extends the FName system.
 
-Built for game executable ver. `2.0.0.48602` - needs to be rebuilt if the game updates again.
+## Game versions
 
-## Usage
+Executable versions the SDKs were built for - they need to be updated when the next patch drops.
+
+- **LE1** - `2.0.0.48602`
+
+## How to use
 
 - Put the directory somewhere in your code's directory.
 - Include `SdkHeaders.h` in your one and only translation unit.
