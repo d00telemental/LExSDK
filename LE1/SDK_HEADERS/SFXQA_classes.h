@@ -43,45 +43,12 @@
 # ========================================================================================= #
 */
 
-// Class SFXQA.BioSeqAct_IsAutomated
-// 0x0004 (0x00FC - 0x00F8)
-class UBioSeqAct_IsAutomated : public USequenceAction
-{
-public:
-	int                                                bQAAutomation;                                    		// 0x00F8 (0x0004) [0x0000000000004000]              ( CPF_Config )
-
-private:
-	static UClass* pClassPointer;
-
-public:
-	static UClass* StaticClass();
-
-	void Activated ( );
-};
-
 // Class SFXQA.BioSeqAct_IsSplinePilot
 // 0x0004 (0x00FC - 0x00F8)
 class UBioSeqAct_IsSplinePilot : public USequenceAction
 {
 public:
 	int                                                bSplinePilot;                                     		// 0x00F8 (0x0004) [0x0000000000004000]              ( CPF_Config )
-
-private:
-	static UClass* pClassPointer;
-
-public:
-	static UClass* StaticClass();
-
-	void Activated ( );
-};
-
-// Class SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand
-// 0x0020 (0x0118 - 0x00F8)
-class UBioSeqAct_ReadSplinePilotConsoleCommand : public USequenceAction
-{
-public:
-	struct FString                                     sConsoleCommand;                                  		// 0x00F8 (0x0010) [0x0000000000404000]              ( CPF_Config | CPF_NeedCtorLink )
-	struct FString                                     m_sOutputString;                                  		// 0x0108 (0x0010) [0x0000000000400001]              ( CPF_Edit | CPF_NeedCtorLink )
 
 private:
 	static UClass* pClassPointer;

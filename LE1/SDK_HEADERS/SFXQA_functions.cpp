@@ -31,34 +31,6 @@
 
 
 
-class UClass* UBioSeqAct_IsAutomated::pClassPointer = NULL;
-
-class UClass* UBioSeqAct_IsAutomated::StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = UObject::FindClass ( "Class SFXQA.BioSeqAct_IsAutomated" );
-
-		return pClassPointer;
-	};
-
-// Function SFXQA.BioSeqAct_IsAutomated.Activated
-// [0x00020002] 
-// Parameters infos:
-
-void UBioSeqAct_IsAutomated::Activated ( )
-{
-	static UFunction* pFnActivated = NULL;
-
-	if ( ! pFnActivated )
-		pFnActivated = UObject::FindObject< UFunction > ( "Function SFXQA.BioSeqAct_IsAutomated.Activated" );
-
-	UBioSeqAct_IsAutomated_execActivated_Parms Activated_Parms;
-
-	this->ProcessEvent ( pFnActivated, &Activated_Parms, NULL );
-};
-
-
-
 class UClass* UBioSeqAct_IsSplinePilot::pClassPointer = NULL;
 
 class UClass* UBioSeqAct_IsSplinePilot::StaticClass()
@@ -81,34 +53,6 @@ void UBioSeqAct_IsSplinePilot::Activated ( )
 		pFnActivated = UObject::FindObject< UFunction > ( "Function SFXQA.BioSeqAct_IsSplinePilot.Activated" );
 
 	UBioSeqAct_IsSplinePilot_execActivated_Parms Activated_Parms;
-
-	this->ProcessEvent ( pFnActivated, &Activated_Parms, NULL );
-};
-
-
-
-class UClass* UBioSeqAct_ReadSplinePilotConsoleCommand::pClassPointer = NULL;
-
-class UClass* UBioSeqAct_ReadSplinePilotConsoleCommand::StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = UObject::FindClass ( "Class SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand" );
-
-		return pClassPointer;
-	};
-
-// Function SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand.Activated
-// [0x00020002] 
-// Parameters infos:
-
-void UBioSeqAct_ReadSplinePilotConsoleCommand::Activated ( )
-{
-	static UFunction* pFnActivated = NULL;
-
-	if ( ! pFnActivated )
-		pFnActivated = UObject::FindObject< UFunction > ( "Function SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand.Activated" );
-
-	UBioSeqAct_ReadSplinePilotConsoleCommand_execActivated_Parms Activated_Parms;
 
 	this->ProcessEvent ( pFnActivated, &Activated_Parms, NULL );
 };

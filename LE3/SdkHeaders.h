@@ -146,7 +146,7 @@ struct FName
 
 			if (!strcmp(lookup, "None")) 
 			{
-				MessageBoxW(nullptr, L"FName lookup contstructor failed for 'None'!", L"LE2 SDK ERROR", MB_OK | MB_ICONERROR);
+				MessageBoxW(nullptr, L"FName lookup contstructor failed for 'None'!", L"LE3 SDK ERROR", MB_OK | MB_ICONERROR);
 				exit(-1);
 			}
 			else 

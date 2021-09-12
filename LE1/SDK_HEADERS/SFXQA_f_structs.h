@@ -29,21 +29,9 @@
 # ========================================================================================= #
 */
 
-// Function SFXQA.BioSeqAct_IsAutomated.Activated
-// [0x00020002] 
-struct UBioSeqAct_IsAutomated_execActivated_Parms
-{
-};
-
 // Function SFXQA.BioSeqAct_IsSplinePilot.Activated
 // [0x00020002] 
 struct UBioSeqAct_IsSplinePilot_execActivated_Parms
-{
-};
-
-// Function SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand.Activated
-// [0x00020002] 
-struct UBioSeqAct_ReadSplinePilotConsoleCommand_execActivated_Parms
 {
 };
 

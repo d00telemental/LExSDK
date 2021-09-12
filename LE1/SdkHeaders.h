@@ -196,8 +196,6 @@ struct FScriptDelegate
 # ========================================================================================= #
 */
 
-
-#pragma warning( disable : 26495 )
 #include "SDK_HEADERS\Core_structs.h"
 #include "SDK_HEADERS\Core_classes.h"
 #include "SDK_HEADERS\Core_f_structs.h"
@@ -246,10 +244,10 @@ struct FScriptDelegate
 #include "SDK_HEADERS\PlotManager_classes.h"
 #include "SDK_HEADERS\PlotManager_f_structs.h"
 // #include "SDK_HEADERS\PlotManager_functions.cpp"
-	// #include "SDK_HEADERS\PlotManagerDLC_UNC_structs.h"
-	// #include "SDK_HEADERS\PlotManagerDLC_UNC_classes.h"
-	// #include "SDK_HEADERS\PlotManagerDLC_UNC_f_structs.h"
-	// #include "SDK_HEADERS\PlotManagerDLC_UNC_functions.cpp"
+// #include "SDK_HEADERS\PlotManagerDLC_UNC_structs.h"
+// #include "SDK_HEADERS\PlotManagerDLC_UNC_classes.h"
+// #include "SDK_HEADERS\PlotManagerDLC_UNC_f_structs.h"
+// #include "SDK_HEADERS\PlotManagerDLC_UNC_functions.cpp"
 #include "SDK_HEADERS\BIOC_Materials_structs.h"
 #include "SDK_HEADERS\BIOC_Materials_classes.h"
 #include "SDK_HEADERS\BIOC_Materials_f_structs.h"
@@ -266,5 +264,3 @@ struct FScriptDelegate
 #include "SDK_HEADERS\SFXQA_classes.h"
 #include "SDK_HEADERS\SFXQA_f_structs.h"
 // #include "SDK_HEADERS\SFXQA_functions.cpp"
-
-#pragma warning( enable : 26495 )

@@ -9874,18 +9874,6 @@ class UClass* UClass::StaticClass()
 	};
 
 
-
-class UClass* UClassDefault__Class::pClassPointer = NULL;
-
-class UClass* UClassDefault__Class::StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = UObject::FindClass ( "Class Core.Default__Class" );
-
-		return pClassPointer;
-	};
-
-
 #ifdef _MSC_VER
 	#pragma pack ( pop )
 #endif
