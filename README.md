@@ -14,10 +14,12 @@ Executable versions the SDKs were built for - they need to be updated when the n
 
 - Create a buildable SDK library.
   - Create a VS C++ project for the SDK and ensure the following settings:
+    - **Project and Solution platforms must be x64.**
     - General / Configuration Type = **Static Library (.lib)**.
     - General / C++ Language Standard = **ISO C++17 Standard (/std:c++17)**.
     - C/C++ / General / Multi-processor Compilation = **Yes (/MP)**.
     - C/C++ / Language / Conformance mode = **No (/permissive)**.
+    - C/C++ / Precompiled Headers / Precompiled Header = **Not Using Precompiled Headers**.
     - Command Line / Additional Options = **/bigobj**.
   - Add `.cpp` SDK files into Sources so that VS compiles them, and `.h` SDK files into Headers.
     - Don't add any of `PlotManagerDLC_*.*` files, as they duplicate/override existing classes, which is impossible in C++.
