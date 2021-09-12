@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: ISACTAudio_classes.h
 # ========================================================================================= #
@@ -56,17 +56,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2899 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UISACTAudioDevice::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

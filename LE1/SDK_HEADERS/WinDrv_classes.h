@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: WinDrv_classes.h
 # ========================================================================================= #
@@ -58,17 +58,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2903 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWindowsClient::pClassPointer = NULL;
 
 // Class WinDrv.XnaForceFeedbackManager
 // 0x0000 (0x0078 - 0x0078)
@@ -80,17 +72,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2910 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UXnaForceFeedbackManager::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

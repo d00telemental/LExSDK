@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: PlotManagerMap_classes.h
 # ========================================================================================= #
@@ -74,17 +74,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 38088 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPlotEnums::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

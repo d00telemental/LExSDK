@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXGameContent_Powers_classes.h
 # ========================================================================================= #
@@ -95,13 +95,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75503 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool AdjustInventoryResource ( class AActor* oActor, unsigned char eResource, float fAmount );
 	bool EffectCarnageSetup ( class AActor* oCaster, int nNumberOfUses, float fDuration );
@@ -150,8 +144,6 @@ public:
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
 
-UClass* UBioPowerScriptDesign::pClassPointer = NULL;
-
 // Class SFXGameContent_Powers.BioAdrenalineScript
 // 0x0000 (0x0080 - 0x0080)
 class UBioAdrenalineScript : public UBioPowerScriptDesign
@@ -162,19 +154,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioAdrenalineScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioBarrierScript
 // 0x0000 (0x0080 - 0x0080)
@@ -186,18 +170,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75505 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 };
-
-UClass* UBioBarrierScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioCarnageScript
 // 0x001C (0x009C - 0x0080)
@@ -213,20 +189,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75506 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioCarnageScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioCarnageSetupScript
 // 0x0000 (0x0080 - 0x0080)
@@ -238,18 +206,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75507 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 };
-
-UClass* UBioCarnageSetupScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSpawnBeacon
 // 0x0028 (0x00A8 - 0x0080)
@@ -268,21 +228,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75508 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventEndPhase ( unsigned char ePhase, class AActor* oCaster );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSpawnBeacon::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioDampingBeacon
 // 0x0000 (0x00A8 - 0x00A8)
@@ -294,17 +246,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75509 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDampingBeacon::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioDampingScript
 // 0x001C (0x009C - 0x0080)
@@ -325,20 +269,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75510 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioDampingScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioDampingSuicideScript
 // 0x0008 (0x00A4 - 0x009C)
@@ -351,19 +287,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75511 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventEndPhase ( unsigned char ePhase, class AActor* oCaster );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioDampingSuicideScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioEMPBeacon
 // 0x0000 (0x00A8 - 0x00A8)
@@ -375,17 +303,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75512 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEMPBeacon::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioEMPScript
 // 0x002C (0x00AC - 0x0080)
@@ -405,20 +325,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75513 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioEMPScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioEMPSuicideScript
 // 0x0008 (0x00B4 - 0x00AC)
@@ -431,19 +343,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75514 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventEndPhase ( unsigned char ePhase, class AActor* oCaster );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioEMPSuicideScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioFakePowerScript
 // 0x0004 (0x0084 - 0x0080)
@@ -462,19 +366,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75515 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioFakePowerScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioGethCarnageScript
 // 0x001C (0x009C - 0x0080)
@@ -490,20 +386,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75516 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioGethCarnageScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHackingScript
 // 0x000C (0x008C - 0x0080)
@@ -518,19 +406,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75517 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioHackingScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHealScript
 // 0x0018 (0x0098 - 0x0080)
@@ -550,19 +430,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75518 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioHealScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHealSelfScript
 // 0x0000 (0x0098 - 0x0098)
@@ -574,19 +446,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75519 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventCanStartPower ( class AActor* oCaster );
 };
-
-UClass* UBioHealSelfScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHealSquadScript
 // 0x0018 (0x0098 - 0x0080)
@@ -604,13 +468,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75520 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
@@ -620,8 +478,6 @@ public:
 	float GetCooldownMultiForSquad ( class AActor* oCaster );
 	void GetHealAmountForSquad ( class AActor* oCaster, float* fHealAmount, float* fToxicAmount );
 };
-
-UClass* UBioHealSquadScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHexBarrierScript
 // 0x0000 (0x0080 - 0x0080)
@@ -633,18 +489,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75521 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 };
-
-UClass* UBioHexBarrierScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioImmunityScript
 // 0x0000 (0x0080 - 0x0080)
@@ -656,19 +504,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75522 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioImmunityScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioLanceArmScript
 // 0x001C (0x009C - 0x0080)
@@ -684,20 +524,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75523 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioLanceArmScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioLiftScript
 // 0x0010 (0x0090 - 0x0080)
@@ -713,19 +545,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75524 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioLiftScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioLiftPLCScript
 // 0x0004 (0x0094 - 0x0090)
@@ -738,18 +562,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75525 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 };
-
-UClass* UBioLiftPLCScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioMarksmanScript
 // 0x0000 (0x0080 - 0x0080)
@@ -761,19 +577,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75526 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioMarksmanScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioNeuralShockScript
 // 0x0020 (0x00A0 - 0x0080)
@@ -791,20 +599,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75527 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioNeuralShockScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioOverkillScript
 // 0x0000 (0x0080 - 0x0080)
@@ -816,19 +616,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75528 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioOverkillScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioRegenBurstScript
 // 0x0000 (0x0080 - 0x0080)
@@ -840,18 +632,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75529 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 };
-
-UClass* UBioRegenBurstScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioRepairScript
 // 0x000C (0x008C - 0x0080)
@@ -866,21 +650,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75530 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	bool eventCanStartPower ( class AActor* oCaster );
 	int GetSquadElectronicsRank ( class AActor* oCaster );
 };
-
-UClass* UBioRepairScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSabotageBeacon
 // 0x0000 (0x00A8 - 0x00A8)
@@ -892,17 +668,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75531 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSabotageBeacon::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSabotageScript
 // 0x0020 (0x00A0 - 0x0080)
@@ -920,20 +688,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75532 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSabotageScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSabotageSuicideScript
 // 0x0008 (0x00A8 - 0x00A0)
@@ -946,19 +706,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75533 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventEndPhase ( unsigned char ePhase, class AActor* oCaster );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSabotageSuicideScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioShieldBoostScript
 // 0x0008 (0x0088 - 0x0080)
@@ -972,20 +724,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75534 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	bool eventCanStartPower ( class AActor* oCaster );
 };
-
-UClass* UBioShieldBoostScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioShieldEntrenchScript
 // 0x000C (0x008C - 0x0080)
@@ -1000,19 +744,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75535 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioShieldEntrenchScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSiegePulseScript
 // 0x001C (0x009C - 0x0080)
@@ -1028,20 +764,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75536 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSiegePulseScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSingularityScript
 // 0x0020 (0x00A0 - 0x0080)
@@ -1059,21 +787,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75537 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	struct FVector BumpUpFromFloor ( struct FVector vOriginalLocation, float fBumpDistance );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSingularityScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSmashScript
 // 0x001C (0x009C - 0x0080)
@@ -1089,20 +809,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75538 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioSmashScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioSniperCritScript
 // 0x0000 (0x0080 - 0x0080)
@@ -1114,19 +826,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75539 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioSniperCritScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioStasisScript
 // 0x0008 (0x0088 - 0x0080)
@@ -1140,19 +844,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75540 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioStasisScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioTakeDownScript
 // 0x0000 (0x0080 - 0x0080)
@@ -1164,19 +860,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75541 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 };
-
-UClass* UBioTakeDownScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioTeslaBurstScript
 // 0x0018 (0x0098 - 0x0080)
@@ -1192,20 +880,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75542 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioTeslaBurstScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioThrowScript
 // 0x0020 (0x00A0 - 0x0080)
@@ -1222,20 +902,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75543 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioThrowScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioThrowWarpScript
 // 0x0034 (0x00B4 - 0x0080)
@@ -1256,20 +928,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioThrowWarpScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioToxicSpitScript
 // 0x000C (0x008C - 0x0080)
@@ -1283,20 +947,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75545 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioToxicSpitScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioToxicSpitSuicideScript
 // 0x0008 (0x0094 - 0x008C)
@@ -1309,19 +965,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75546 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventEndPhase ( unsigned char ePhase, class AActor* oCaster );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioToxicSpitSuicideScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioUnityScript
 // 0x0000 (0x0080 - 0x0080)
@@ -1333,20 +981,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75547 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventCanStartPower ( class AActor* oCaster );
 	bool DoesSquadHaveDeadMember ( class AActor* oActor );
 };
-
-UClass* UBioUnityScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioWarpScript
 // 0x0014 (0x0094 - 0x0080)
@@ -1362,20 +1002,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75548 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioWarpScript::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioArmorEmitter
 // 0x0028 (0x00A8 - 0x0080)
@@ -1393,20 +1025,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 76018 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventOnImpact ( class AActor* oCaster, float fCasterStability, class AActor* oImpacted, int nPreviouslyImpacted );
 	bool eventStartPhase ( unsigned char ePhase, class AActor* oCaster, float fDuration );
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
-
-UClass* UBioArmorEmitter::pClassPointer = NULL;
 
 // Class SFXGameContent_Powers.BioHealMachineScript
 // 0x0000 (0x0098 - 0x0098)
@@ -1418,17 +1042,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 76331 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioHealMachineScript::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

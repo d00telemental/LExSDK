@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: Engine_classes.h
 # ========================================================================================= #
@@ -3364,17 +3364,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 186 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGlobalObjectContainer::pClassPointer = NULL;
 
 // Class Engine.Engine
 // 0x0876 (0x08DE - 0x0068)
@@ -3637,13 +3629,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 188 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void BioShowDebugMessageBox ( struct FString sMessage );
 	void AddOverlayWrapped ( class UFont* Font, struct FString Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth );
@@ -3669,8 +3655,6 @@ public:
 	void InitializeGamerProfile ( int i_dwDeviceSelectionId );
 	bool IsShip ( );
 };
-
-UClass* UEngine::pClassPointer = NULL;
 
 // Class Engine.GameEngine
 // 0x01A3 (0x0A81 - 0x08DE)
@@ -3706,13 +3690,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 190 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UOnlineSubsystem* GetOnlineSubsystem ( );
 	bool ShouldUseNonLatentOcclusion ( );
@@ -3721,8 +3699,6 @@ public:
 	void DestroyNamedNetDriver ( struct FName NetDriverName );
 	bool CreateNamedNetDriver ( struct FName NetDriverName );
 };
-
-UClass* UGameEngine::pClassPointer = NULL;
 
 // Class Engine.Actor
 // 0x0224 (0x0284 - 0x0060)
@@ -3900,13 +3876,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 192 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USkeletalMeshComponent* GetPrimarySkelMeshComponent ( );
 	bool WillOverlap ( struct FVector PosA, struct FVector VelA, struct FVector PosB, struct FVector VelB, float StepSize, float Radius, float* Time );
@@ -4169,8 +4139,6 @@ public:
 	void ForceUpdateComponents ( unsigned long bCollisionUpdate, unsigned long bTransformOnly );
 };
 
-UClass* AActor::pClassPointer = NULL;
-
 // Class Engine.Brush
 // 0x001D (0x02A1 - 0x0284)
 class ABrush : public AActor
@@ -4189,17 +4157,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 194 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABrush::pClassPointer = NULL;
 
 // Class Engine.BrushShape
 // 0x0003 (0x02A4 - 0x02A1)
@@ -4211,17 +4171,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 196 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABrushShape::pClassPointer = NULL;
 
 // Class Engine.Volume
 // 0x0023 (0x02C4 - 0x02A1)
@@ -4238,13 +4190,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 198 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventProcessActorSetVolume ( class AActor* Other );
 	void eventCollisionChanged ( );
@@ -4256,8 +4202,6 @@ public:
 	bool EncompassesPoint ( struct FVector Loc );
 	bool Encompasses ( class AActor* Other );
 };
-
-UClass* AVolume::pClassPointer = NULL;
 
 // Class Engine.BlockingVolume
 // 0x0014 (0x02D8 - 0x02C4)
@@ -4272,18 +4216,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* ABlockingVolume::pClassPointer = NULL;
 
 // Class Engine.DynamicBlockingVolume
 // 0x0004 (0x02DC - 0x02D8)
@@ -4296,20 +4232,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 202 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct ADynamicBlockingVolume_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct ADynamicBlockingVolume_FCheckpointRecord* Record );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADynamicBlockingVolume::pClassPointer = NULL;
 
 // Class Engine.CullDistanceVolume
 // 0x0014 (0x02D8 - 0x02C4)
@@ -4323,17 +4251,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 204 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ACullDistanceVolume::pClassPointer = NULL;
 
 // Class Engine.LevelStreamingVolume
 // 0x0019 (0x02DD - 0x02C4)
@@ -4351,20 +4271,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 206 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct ALevelStreamingVolume_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct ALevelStreamingVolume_FCheckpointRecord* Record );
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* ALevelStreamingVolume::pClassPointer = NULL;
 
 // Class Engine.LightmassImportanceVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -4376,17 +4288,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 208 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ALightmassImportanceVolume::pClassPointer = NULL;
 
 // Class Engine.PathBlockingVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -4398,17 +4302,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 210 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APathBlockingVolume::pClassPointer = NULL;
 
 // Class Engine.PhysicsVolume
 // 0x0050 (0x0314 - 0x02C4)
@@ -4446,13 +4342,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 212 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct APhysicsVolume_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct APhysicsVolume_FCheckpointRecord* Record );
@@ -4477,8 +4367,6 @@ public:
 	float GetGravityZ ( );
 };
 
-UClass* APhysicsVolume::pClassPointer = NULL;
-
 // Class Engine.DefaultPhysicsVolume
 // 0x0000 (0x0314 - 0x0314)
 class ADefaultPhysicsVolume : public APhysicsVolume
@@ -4489,18 +4377,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 214 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDestroyed ( );
 };
-
-UClass* ADefaultPhysicsVolume::pClassPointer = NULL;
 
 // Class Engine.GravityVolume
 // 0x0008 (0x031C - 0x0314)
@@ -4514,17 +4394,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 216 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AGravityVolume::pClassPointer = NULL;
 
 // Class Engine.LadderVolume
 // 0x0040 (0x0354 - 0x0314)
@@ -4545,13 +4417,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 218 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPhysicsChangedFor ( class AActor* Other );
 	void eventPawnLeavingVolume ( class APawn* P );
@@ -4559,8 +4425,6 @@ public:
 	bool InUse ( class APawn* Ignored );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ALadderVolume::pClassPointer = NULL;
 
 // Class Engine.PortalVolume
 // 0x0010 (0x02D4 - 0x02C4)
@@ -4573,17 +4437,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 220 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APortalVolume::pClassPointer = NULL;
 
 // Class Engine.PostProcessVolume
 // 0x00F0 (0x03B4 - 0x02C4)
@@ -4599,18 +4455,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 222 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* APostProcessVolume::pClassPointer = NULL;
 
 // Class Engine.ReverbVolume
 // 0x0018 (0x02DC - 0x02C4)
@@ -4625,18 +4473,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 224 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 };
-
-UClass* AReverbVolume::pClassPointer = NULL;
 
 // Class Engine.TriggerVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -4648,19 +4488,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 226 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool StopsProjectile ( class AProjectile* P );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ATriggerVolume::pClassPointer = NULL;
 
 // Class Engine.CarriedObject
 // 0x000C (0x0290 - 0x0284)
@@ -4674,18 +4506,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 228 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotReachableBy ( class APawn* P );
 };
-
-UClass* ACarriedObject::pClassPointer = NULL;
 
 // Class Engine.DroppedPickup
 // 0x001C (0x02A0 - 0x0284)
@@ -4701,13 +4525,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 230 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RecheckValidTouch ( );
 	void PickedUpBy ( class APawn* P );
@@ -4723,8 +4541,6 @@ public:
 	void RemoveFromNavigation ( );
 	void AddToNavigation ( );
 };
-
-UClass* ADroppedPickup::pClassPointer = NULL;
 
 // Class Engine.DynamicSMActor
 // 0x0048 (0x02CC - 0x0284)
@@ -4746,13 +4562,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 232 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetLightEnvironmentToNotBeDynamic ( );
 	void eventDetach ( class AActor* Other );
@@ -4764,8 +4574,6 @@ public:
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADynamicSMActor::pClassPointer = NULL;
 
 // Class Engine.InterpActor
 // 0x004C (0x0318 - 0x02CC)
@@ -4795,13 +4603,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 234 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct AInterpActor_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct AInterpActor_FCheckpointRecord* Record );
@@ -4821,8 +4623,6 @@ public:
 	void eventPostBeginPlay ( );
 };
 
-UClass* AInterpActor::pClassPointer = NULL;
-
 // Class Engine.Emitter
 // 0x0014 (0x0298 - 0x0284)
 class AEmitter : public AActor
@@ -4839,13 +4639,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 236 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HideSelf ( );
 	void ApplyCheckpointRecord ( struct AEmitter_FCheckpointRecord* Record );
@@ -4866,8 +4660,6 @@ public:
 	void ResetPSC ( );
 	void eventSetTemplate ( class UParticleSystem* NewTemplate, unsigned long bDestroyOnFinish );
 };
-
-UClass* AEmitter::pClassPointer = NULL;
 
 // Class Engine.EmitterPool
 // 0x0070 (0x02F4 - 0x0284)
@@ -4892,13 +4684,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 238 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UParticleSystemComponent* SpawnEmitterCustomLifetime ( class UParticleSystem* EmitterTemplate );
 	class UParticleSystemComponent* SpawnEmitterMeshAttachment ( class UParticleSystem* EmitterTemplate, class USkeletalMeshComponent* Mesh, struct FName AttachPointName, unsigned long bAttachToSocket, struct FVector RelativeLoc, struct FRotator RelativeRot );
@@ -4912,8 +4698,6 @@ public:
 	void ClearPoolComponents ( );
 	void OnParticleSystemFinished ( class UParticleSystemComponent* PSC );
 };
-
-UClass* AEmitterPool::pClassPointer = NULL;
 
 // Class Engine.HUD
 // 0x0338 (0x05BC - 0x0284)
@@ -4963,13 +4747,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 240 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnLostFocusPause ( unsigned long Enable );
 	void PlayerOwnerDied ( );
@@ -5012,8 +4790,6 @@ public:
 	void Draw3DLine ( struct FVector Start, struct FVector End, struct FColor LineColor );
 };
 
-UClass* AHUD::pClassPointer = NULL;
-
 // Class Engine.Info
 // 0x0000 (0x0284 - 0x0284)
 class AInfo : public AActor
@@ -5024,17 +4800,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 242 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AInfo::pClassPointer = NULL;
 
 // Class Engine.AutoTestManager
 // 0x00C4 (0x0348 - 0x0284)
@@ -5074,13 +4842,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 244 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CheckForSentinelRun ( );
 	void StartMatch ( );
@@ -5106,8 +4868,6 @@ public:
 	void eventPostBeginPlay ( );
 };
 
-UClass* AAutoTestManager::pClassPointer = NULL;
-
 // Class Engine.CoverGroup
 // 0x0018 (0x029C - 0x0284)
 class ACoverGroup : public AInfo
@@ -5121,21 +4881,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 246 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 	void ToggleGroup ( );
 	void DisableGroup ( );
 	void EnableGroup ( );
 };
-
-UClass* ACoverGroup::pClassPointer = NULL;
 
 // Class Engine.FileWriter
 // 0x001D (0x02A1 - 0x0284)
@@ -5152,21 +4904,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 248 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDestroyed ( );
 	void Logf ( struct FString logString );
 	void CloseFile ( );
 	bool OpenFile ( struct FString InFilename, unsigned char InFileType, struct FString InExtension, unsigned long bUnique, unsigned long bIncludeTimeStamp );
 };
-
-UClass* AFileWriter::pClassPointer = NULL;
 
 // Class Engine.FileLog
 // 0x0003 (0x02A4 - 0x02A1)
@@ -5178,19 +4922,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 250 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CloseLog ( );
 	void OpenLog ( struct FString LogFilename, struct FString extension, unsigned long bUnique );
 };
-
-UClass* AFileLog::pClassPointer = NULL;
 
 // Class Engine.GameInfo
 // 0x022C (0x04B0 - 0x0284)
@@ -5298,13 +5034,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 252 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventStandbyCheatDetected ( unsigned char StandbyType );
 	void EnableStandbyCheatDetection ( unsigned long bIsEnabled );
@@ -5465,8 +5195,6 @@ public:
 	bool GetSupportedGameTypes ( unsigned long bCheckExt, struct FString* InFilename, struct FGameTypePrefix* OutGameType );
 };
 
-UClass* AGameInfo::pClassPointer = NULL;
-
 // Class Engine.MCPTools
 // 0x0000 (0x04B0 - 0x04B0)
 class AMCPTools : public AGameInfo
@@ -5477,20 +5205,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoLoggedIn ( );
 	void eventInitGame ( struct FString Options, struct FString* ErrorMessage );
 	void RegisterServer ( );
 };
-
-UClass* AMCPTools::pClassPointer = NULL;
 
 // Class Engine.InternetInfo
 // 0x0000 (0x0284 - 0x0284)
@@ -5502,19 +5222,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 256 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetBeaconText ( int I );
 	struct FString GetBeaconAddress ( int I );
 };
-
-UClass* AInternetInfo::pClassPointer = NULL;
 
 // Class Engine.Mutator
 // 0x001C (0x02A0 - 0x0284)
@@ -5529,13 +5241,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NetDamage ( int OriginalDamage, class APawn* injured, class AController* InstigatedBy, struct FVector HitLocation, class UClass* DamageType, class AActor* DamageCauser, int* Damage, struct FVector* Momentum );
 	void ScoreKill ( class AController* Killer, class AController* Killed );
@@ -5568,8 +5274,6 @@ public:
 	void eventPreBeginPlay ( );
 };
 
-UClass* AMutator::pClassPointer = NULL;
-
 // Class Engine.PotentialClimbWatcher
 // 0x0000 (0x0284 - 0x0284)
 class APotentialClimbWatcher : public AInfo
@@ -5580,18 +5284,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 260 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTick ( float DeltaTime );
 };
-
-UClass* APotentialClimbWatcher::pClassPointer = NULL;
 
 // Class Engine.Route
 // 0x001D (0x02A1 - 0x0284)
@@ -5607,19 +5303,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 262 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int MoveOntoRoutePath ( class APawn* P, unsigned char RouteDirection, float DistFudgeFactor );
 	int ResolveRouteIndex ( int Idx, unsigned char RouteDirection, unsigned char* out_bComplete, unsigned char* out_bReverse );
 };
-
-UClass* ARoute::pClassPointer = NULL;
 
 // Class Engine.WindPointSource
 // 0x0008 (0x028C - 0x0284)
@@ -5632,17 +5320,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 264 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AWindPointSource::pClassPointer = NULL;
 
 // Class Engine.ZoneInfo
 // 0x0014 (0x0298 - 0x0284)
@@ -5658,17 +5338,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 266 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AZoneInfo::pClassPointer = NULL;
 
 // Class Engine.WorldInfo
 // 0x0500 (0x0798 - 0x0298)
@@ -5805,13 +5477,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 268 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class AEnvironmentVolume* FindEnvironmentVolume ( struct FVector TestLocation );
 	bool IsShippingBuild ( );
@@ -5878,8 +5544,6 @@ public:
 	void ReleaseCachedConstraintsAndEvaluators ( );
 };
 
-UClass* AWorldInfo::pClassPointer = NULL;
-
 // Class Engine.Inventory
 // 0x0074 (0x02F8 - 0x0284)
 class AInventory : public AActor
@@ -5907,13 +5571,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 270 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OwnerEvent ( struct FName EventName );
 	struct FString GetLocalString ( int Switch, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01 );
@@ -5931,8 +5589,6 @@ public:
 	void ActiveRenderOverlays ( class AHUD* H );
 	void RenderOverlays ( class AHUD* H );
 };
-
-UClass* AInventory::pClassPointer = NULL;
 
 // Class Engine.Weapon
 // 0x00CD (0x03C5 - 0x02F8)
@@ -5970,13 +5626,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CacheAIController ( );
 	void WeaponIsDown ( );
@@ -6074,8 +5724,6 @@ public:
 	void eventDestroyed ( );
 };
 
-UClass* AWeapon::pClassPointer = NULL;
-
 // Class Engine.InventoryManager
 // 0x002C (0x02B0 - 0x0284)
 class AInventoryManager : public AActor
@@ -6091,13 +5739,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateController ( );
 	void ClientSyncWeapon ( class AWeapon* NewWeapon );
@@ -6138,8 +5780,6 @@ public:
 	void eventPostBeginPlay ( );
 };
 
-UClass* AInventoryManager::pClassPointer = NULL;
-
 // Class Engine.Keypoint
 // 0x0000 (0x0284 - 0x0284)
 class AKeypoint : public AActor
@@ -6150,17 +5790,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 276 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AKeypoint::pClassPointer = NULL;
 
 // Class Engine.ClipMarker
 // 0x0000 (0x0284 - 0x0284)
@@ -6172,17 +5804,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 278 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AClipMarker::pClassPointer = NULL;
 
 // Class Engine.PolyMarker
 // 0x0000 (0x0284 - 0x0284)
@@ -6194,17 +5818,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 280 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APolyMarker::pClassPointer = NULL;
 
 // Class Engine.TargetPoint
 // 0x0000 (0x0284 - 0x0284)
@@ -6216,17 +5832,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 282 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ATargetPoint::pClassPointer = NULL;
 
 // Class Engine.MaterialInstanceActor
 // 0x0008 (0x028C - 0x0284)
@@ -6239,17 +5847,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 284 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AMaterialInstanceActor::pClassPointer = NULL;
 
 // Class Engine.MatineeActor
 // 0x0018 (0x029C - 0x0284)
@@ -6268,19 +5868,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 286 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CheckPriorityRefresh ( );
 	void eventUpdate ( );
 };
-
-UClass* AMatineeActor::pClassPointer = NULL;
 
 // Class Engine.NavigationPoint
 // 0x0100 (0x0384 - 0x0284)
@@ -6352,13 +5944,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 288 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDebugAbbrev ( );
 	void ApplyCheckpointRecord ( struct ANavigationPoint_FCheckpointRecord* Record );
@@ -6380,8 +5966,6 @@ public:
 	class UReachSpec* GetReachSpecTo ( class ANavigationPoint* Nav, class UClass* SpecClass );
 	void GetBoundingCylinder ( float* CollisionRadius, float* CollisionHeight );
 };
-
-UClass* ANavigationPoint::pClassPointer = NULL;
 
 // Class Engine.CoverLink
 // 0x0099 (0x041D - 0x0384)
@@ -6425,13 +6009,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 290 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDebugAbbrev ( );
 	unsigned char GetLocationDescription ( int SlotIdx );
@@ -6487,8 +6065,6 @@ public:
 	struct FCoverSlot eventGetCoverSlot ( int nIdx );
 };
 
-UClass* ACoverLink::pClassPointer = NULL;
-
 // Class Engine.SFXDynamicCoverLink
 // 0x000B (0x0428 - 0x041D)
 class ASFXDynamicCoverLink : public ACoverLink
@@ -6500,17 +6076,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 292 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASFXDynamicCoverLink::pClassPointer = NULL;
 
 // Class Engine.CoverSlotMarker
 // 0x0010 (0x0394 - 0x0384)
@@ -6525,13 +6093,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 294 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDebugString ( );
 	struct FString eventGetDebugAbbrev ( );
@@ -6540,8 +6102,6 @@ public:
 	struct FRotator GetSlotRotation ( );
 	struct FVector GetSlotLocation ( );
 };
-
-UClass* ACoverSlotMarker::pClassPointer = NULL;
 
 // Class Engine.SFXDynamicCoverSlotMarker
 // 0x0000 (0x0394 - 0x0394)
@@ -6553,17 +6113,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 296 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASFXDynamicCoverSlotMarker::pClassPointer = NULL;
 
 // Class Engine.DoorMarker
 // 0x0015 (0x0399 - 0x0384)
@@ -6583,13 +6135,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 298 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventSuggestMovePreparation ( class APawn* Other );
 	bool ProceedWithMove ( class APawn* Other );
@@ -6598,8 +6144,6 @@ public:
 	void MoverOpened ( );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADoorMarker::pClassPointer = NULL;
 
 // Class Engine.DynamicAnchor
 // 0x0008 (0x038C - 0x0384)
@@ -6612,17 +6156,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 300 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADynamicAnchor::pClassPointer = NULL;
 
 // Class Engine.Ladder
 // 0x0010 (0x0394 - 0x0384)
@@ -6636,18 +6172,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 302 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventSuggestMovePreparation ( class APawn* Other );
 };
-
-UClass* ALadder::pClassPointer = NULL;
 
 // Class Engine.AutoLadder
 // 0x0000 (0x0394 - 0x0394)
@@ -6659,17 +6187,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 304 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AAutoLadder::pClassPointer = NULL;
 
 // Class Engine.LiftCenter
 // 0x0028 (0x03AC - 0x0384)
@@ -6687,21 +6207,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 306 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ProceedWithMove ( class APawn* Other );
 	bool eventSuggestMovePreparation ( class APawn* Other );
 	class AActor* eventSpecialHandling ( class APawn* Other );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ALiftCenter::pClassPointer = NULL;
 
 // Class Engine.LiftExit
 // 0x000C (0x0390 - 0x0384)
@@ -6715,20 +6227,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 308 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventSuggestMovePreparation ( class APawn* Other );
 	void WaitForLift ( class APawn* Other );
 	bool CanBeReachedFromLiftBy ( class APawn* Other );
 };
-
-UClass* ALiftExit::pClassPointer = NULL;
 
 // Class Engine.MantleMarker
 // 0x000C (0x0390 - 0x0384)
@@ -6741,17 +6245,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 310 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AMantleMarker::pClassPointer = NULL;
 
 // Class Engine.Objective
 // 0x0000 (0x0384 - 0x0384)
@@ -6763,17 +6259,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 312 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AObjective::pClassPointer = NULL;
 
 // Class Engine.PathNode
 // 0x0000 (0x0384 - 0x0384)
@@ -6785,18 +6273,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDebugAbbrev ( );
 };
-
-UClass* APathNode::pClassPointer = NULL;
 
 // Class Engine.VolumePathNode
 // 0x000C (0x0390 - 0x0384)
@@ -6811,17 +6291,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 316 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AVolumePathNode::pClassPointer = NULL;
 
 // Class Engine.PickupFactory
 // 0x002C (0x03B0 - 0x0384)
@@ -6844,13 +6316,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 318 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool DelayRespawn ( );
 	void eventDestroyed ( );
@@ -6877,8 +6343,6 @@ public:
 	void eventReplicatedEvent ( struct FName VarName );
 };
 
-UClass* APickupFactory::pClassPointer = NULL;
-
 // Class Engine.PlayerStart
 // 0x0008 (0x038C - 0x0384)
 class APlayerStart : public ANavigationPoint
@@ -6892,18 +6356,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 320 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* APlayerStart::pClassPointer = NULL;
 
 // Class Engine.PortalMarker
 // 0x0008 (0x038C - 0x0384)
@@ -6916,18 +6372,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 322 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CanTeleport ( class AActor* A );
 };
-
-UClass* APortalMarker::pClassPointer = NULL;
 
 // Class Engine.Pylon
 // 0x00A0 (0x0424 - 0x0384)
@@ -6968,21 +6416,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 324 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CanReachPylon ( class APylon* DestPylon, class AController* C );
 	void OnToggle ( class USeqAct_Toggle* Action );
 	bool eventIsEnabled ( );
 	void eventSetEnabled ( unsigned long bEnabled );
 };
-
-UClass* APylon::pClassPointer = NULL;
 
 // Class Engine.AISwitchablePylon
 // 0x0004 (0x0428 - 0x0424)
@@ -6995,20 +6435,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 326 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsEnabled ( );
 	void eventSetEnabled ( unsigned long bEnabled );
 	void PostBeginPlay ( );
 };
-
-UClass* AAISwitchablePylon::pClassPointer = NULL;
 
 // Class Engine.DynamicPylon
 // 0x0004 (0x0428 - 0x0424)
@@ -7021,13 +6453,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventStoppedMoving ( );
 	void eventStartedMoving ( );
@@ -7035,8 +6461,6 @@ public:
 	void RebuildDynamicEdges ( );
 	void PostBeginPlay ( );
 };
-
-UClass* ADynamicPylon::pClassPointer = NULL;
 
 // Class Engine.SFXDynamicPathNode
 // 0x0008 (0x038C - 0x0384)
@@ -7049,17 +6473,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 330 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASFXDynamicPathNode::pClassPointer = NULL;
 
 // Class Engine.Teleporter
 // 0x002C (0x03B0 - 0x0384)
@@ -7082,13 +6498,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 332 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class AActor* eventSpecialHandling ( class APawn* Other );
 	void eventPostTouch ( class AActor* Other );
@@ -7097,8 +6507,6 @@ public:
 	void eventPostBeginPlay ( );
 	bool CanTeleport ( class AActor* A );
 };
-
-UClass* ATeleporter::pClassPointer = NULL;
 
 // Class Engine.Note
 // 0x0010 (0x0294 - 0x0284)
@@ -7111,17 +6519,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 334 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANote::pClassPointer = NULL;
 
 // Class Engine.Projectile
 // 0x0064 (0x02E8 - 0x0284)
@@ -7153,13 +6553,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 336 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyFluidSurfaceImpact ( class AFluidSurfaceActor* Fluid, struct FVector HitLocation );
 	float GetRange ( );
@@ -7185,8 +6579,6 @@ public:
 	bool eventEncroachingOn ( class AActor* Other );
 };
 
-UClass* AProjectile::pClassPointer = NULL;
-
 // Class Engine.RigidBodyBase
 // 0x0000 (0x0284 - 0x0284)
 class ARigidBodyBase : public AActor
@@ -7197,17 +6589,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 338 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARigidBodyBase::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureActor
 // 0x0008 (0x028C - 0x0284)
@@ -7220,18 +6604,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* ASceneCaptureActor::pClassPointer = NULL;
 
 // Class Engine.SceneCapture2DActor
 // 0x0008 (0x0294 - 0x028C)
@@ -7244,17 +6620,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASceneCapture2DActor::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureCubeMapActor
 // 0x0010 (0x029C - 0x028C)
@@ -7268,17 +6636,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 344 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASceneCaptureCubeMapActor::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureReflectActor
 // 0x0010 (0x029C - 0x028C)
@@ -7292,17 +6652,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASceneCaptureReflectActor::pClassPointer = NULL;
 
 // Class Engine.SceneCapturePortalActor
 // 0x0000 (0x029C - 0x029C)
@@ -7314,17 +6666,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 348 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASceneCapturePortalActor::pClassPointer = NULL;
 
 // Class Engine.PortalTeleporter
 // 0x001C (0x02B8 - 0x029C)
@@ -7343,13 +6687,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 350 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool StopsProjectile ( class AProjectile* P );
 	class UTextureRenderTarget2D* CreatePortalTexture ( );
@@ -7357,8 +6695,6 @@ public:
 	struct FVector TransformVectorDir ( struct FVector V );
 	bool TransformActor ( class AActor* A );
 };
-
-UClass* APortalTeleporter::pClassPointer = NULL;
 
 // Class Engine.StaticMeshActorBase
 // 0x0000 (0x0284 - 0x0284)
@@ -7370,17 +6706,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 352 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AStaticMeshActorBase::pClassPointer = NULL;
 
 // Class Engine.StaticMeshActor
 // 0x0010 (0x0294 - 0x0284)
@@ -7394,18 +6722,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 354 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPreBeginPlay ( );
 };
-
-UClass* AStaticMeshActor::pClassPointer = NULL;
 
 // Class Engine.StaticMeshCollectionActor
 // 0x0014 (0x0298 - 0x0284)
@@ -7419,17 +6739,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 356 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AStaticMeshCollectionActor::pClassPointer = NULL;
 
 // Class Engine.StaticMeshActorBasedOnExtremeContent
 // 0x0028 (0x02AC - 0x0284)
@@ -7444,19 +6756,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 358 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetMaterialBasedOnExtremeContent ( );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AStaticMeshActorBasedOnExtremeContent::pClassPointer = NULL;
 
 // Class Engine.Trigger
 // 0x0010 (0x0294 - 0x0284)
@@ -7471,13 +6775,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 360 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct ATrigger_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct ATrigger_FCheckpointRecord* Record );
@@ -7487,8 +6785,6 @@ public:
 	void NotifyTriggered ( );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ATrigger::pClassPointer = NULL;
 
 // Class Engine.ActorComponent
 // 0x0016 (0x0086 - 0x0070)
@@ -7508,21 +6804,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 362 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DetachFromAny ( );
 	void ForceUpdate ( unsigned long bTransformOnly );
 	void SetComponentRBFixed ( unsigned long bFixed );
 	void SetTickGroup ( unsigned char NewTickGroup );
 };
-
-UClass* UActorComponent::pClassPointer = NULL;
 
 // Class Engine.AudioComponent
 // 0x0222 (0x02A8 - 0x0086)
@@ -7603,13 +6891,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 364 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnAudioFinished ( class UAudioComponent* AC );
 	bool UnPause ( );
@@ -7626,8 +6908,6 @@ public:
 	void Stop ( );
 	void Play ( );
 };
-
-UClass* UAudioComponent::pClassPointer = NULL;
 
 // Class Engine.HeightFogComponent
 // 0x0022 (0x00A8 - 0x0086)
@@ -7647,18 +6927,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 366 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetEnabled ( unsigned long bSetEnabled );
 };
-
-UClass* UHeightFogComponent::pClassPointer = NULL;
 
 // Class Engine.PrimitiveComponent
 // 0x019A (0x0220 - 0x0086)
@@ -7770,13 +7042,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 368 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char ClosestPointOnComponentToComponent ( class UPrimitiveComponent** OtherComponent, struct FVector* PointOnComponentA, struct FVector* PointOnComponentB );
 	unsigned char ClosestPointOnComponentToPoint ( struct FVector* POI, struct FVector* Extent, struct FVector* OutPointA, struct FVector* OutPointB );
@@ -7824,8 +7090,6 @@ public:
 	void AddImpulse ( struct FVector Impulse, struct FVector Position, struct FName BoneName, unsigned long bVelChange );
 };
 
-UClass* UPrimitiveComponent::pClassPointer = NULL;
-
 // Class Engine.ArrowComponent
 // 0x000C (0x022C - 0x0220)
 class UArrowComponent : public UPrimitiveComponent
@@ -7839,17 +7103,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 370 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UArrowComponent::pClassPointer = NULL;
 
 // Class Engine.BrushComponent
 // 0x0074 (0x0294 - 0x0220)
@@ -7867,17 +7123,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 372 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBrushComponent::pClassPointer = NULL;
 
 // Class Engine.CameraConeComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -7889,17 +7137,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCameraConeComponent::pClassPointer = NULL;
 
 // Class Engine.CylinderComponent
 // 0x0010 (0x0230 - 0x0220)
@@ -7917,18 +7157,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 376 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetCylinderSize ( float NewRadius, float NewHeight );
 };
-
-UClass* UCylinderComponent::pClassPointer = NULL;
 
 // Class Engine.DrawBoxComponent
 // 0x001C (0x023C - 0x0220)
@@ -7945,17 +7177,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawBoxComponent::pClassPointer = NULL;
 
 // Class Engine.DrawCapsuleComponent
 // 0x0018 (0x0238 - 0x0220)
@@ -7973,17 +7197,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 380 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawCapsuleComponent::pClassPointer = NULL;
 
 // Class Engine.DrawConeComponent
 // 0x0010 (0x0230 - 0x0220)
@@ -7999,17 +7215,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 382 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawConeComponent::pClassPointer = NULL;
 
 // Class Engine.DrawCylinderComponent
 // 0x0024 (0x0244 - 0x0220)
@@ -8030,17 +7238,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 384 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawCylinderComponent::pClassPointer = NULL;
 
 // Class Engine.DrawFrustumComponent
 // 0x001C (0x023C - 0x0220)
@@ -8058,17 +7258,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 386 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawFrustumComponent::pClassPointer = NULL;
 
 // Class Engine.DrawQuadComponent
 // 0x0010 (0x0230 - 0x0220)
@@ -8083,17 +7275,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 388 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawQuadComponent::pClassPointer = NULL;
 
 // Class Engine.DrawSphereComponent
 // 0x0018 (0x0238 - 0x0220)
@@ -8111,17 +7295,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 390 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawSphereComponent::pClassPointer = NULL;
 
 // Class Engine.DrawPylonRadiusComponent
 // 0x0000 (0x0238 - 0x0238)
@@ -8133,17 +7309,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 392 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawPylonRadiusComponent::pClassPointer = NULL;
 
 // Class Engine.DrawSoundRadiusComponent
 // 0x0000 (0x0238 - 0x0238)
@@ -8155,17 +7323,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 394 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawSoundRadiusComponent::pClassPointer = NULL;
 
 // Class Engine.LineBatchComponent
 // 0x0034 (0x0254 - 0x0220)
@@ -8182,17 +7342,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 396 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULineBatchComponent::pClassPointer = NULL;
 
 // Class Engine.MeshComponent
 // 0x0034 (0x0254 - 0x0220)
@@ -8208,13 +7360,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 398 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetUnscaledBounds ( struct FBoxSphereBounds* UnscaledBounds );
 	void ClearEffectsMaterial ( );
@@ -8232,8 +7378,6 @@ public:
 	class UMaterialInterface* GetBaseMaterial ( int ElementIndex );
 	class UMaterialInterface* GetMaterial ( int ElementIndex );
 };
-
-UClass* UMeshComponent::pClassPointer = NULL;
 
 // Class Engine.StaticMeshComponent
 // 0x0070 (0x02C4 - 0x0254)
@@ -8267,21 +7411,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 400 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CanBecomeDynamic ( );
 	void SetForceStaticDecals ( unsigned long bInForceStaticDecals );
 	void DisableRBCollisionWithSMC ( class UPrimitiveComponent* OtherSMC, unsigned long bDisabled );
 	bool SetStaticMesh ( class UStaticMesh* NewMesh, unsigned long bForce );
 };
-
-UClass* UStaticMeshComponent::pClassPointer = NULL;
 
 // Class Engine.ModelComponent
 // 0x0040 (0x0260 - 0x0220)
@@ -8299,17 +7435,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 402 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UModelComponent::pClassPointer = NULL;
 
 // Class Engine.SpriteComponent
 // 0x0020 (0x0240 - 0x0220)
@@ -8328,20 +7456,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 404 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetSpriteAndUV ( class UTexture2D* NewSprite, int NewU, int NewUL, int NewV, int NewVL );
 	void SetUV ( int NewU, int NewUL, int NewV, int NewVL );
 	void SetSprite ( class UTexture2D* NewSprite );
 };
-
-UClass* USpriteComponent::pClassPointer = NULL;
 
 // Class Engine.RadialBlurComponent
 // 0x006B (0x00F1 - 0x0086)
@@ -8364,13 +7484,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 406 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUpdatePropertyBlurOpacity ( );
 	void OnUpdatePropertyBlurFalloffExponent ( );
@@ -8381,8 +7495,6 @@ public:
 	void SetBlurScale ( float InBlurScale );
 	void SetMaterial ( class UMaterialInterface* InMaterial );
 };
-
-UClass* URadialBlurComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureComponent
 // 0x004F (0x00D5 - 0x0086)
@@ -8415,20 +7527,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 408 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetEnabled ( unsigned long bEnable );
 	bool NeedsUpdate ( );
 	void SetFrameRate ( float NewFrameRate );
 };
-
-UClass* USceneCaptureComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCapture2DComponent
 // 0x00A3 (0x0178 - 0x00D5)
@@ -8448,19 +7552,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 410 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetView ( struct FVector NewLocation, struct FRotator NewRotation );
 	void SetCaptureParameters ( class UTextureRenderTarget2D* NewTextureTarget, float NewFOV, float NewNearPlane, float NewFarPlane );
 };
-
-UClass* USceneCapture2DComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCapture2DHitMaskComponent
 // 0x002B (0x0100 - 0x00D5)
@@ -8480,19 +7576,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 412 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetCaptureParameters ( struct FVector InMaskPosition, float InMaskRadius, struct FVector InStartupPosition );
 	void SetCaptureTargetTexture ( class UTextureRenderTarget2D* InTextureTarget );
 };
-
-UClass* USceneCapture2DHitMaskComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureCubeMapComponent
 // 0x001F (0x00F4 - 0x00D5)
@@ -8508,17 +7596,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 414 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USceneCaptureCubeMapComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCapturePortalComponent
 // 0x0017 (0x00EC - 0x00D5)
@@ -8533,18 +7613,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 416 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetCaptureParameters ( class UTextureRenderTarget2D* NewTextureTarget, float NewScaleFOV, class AActor* NewViewDest );
 };
-
-UClass* USceneCapturePortalComponent::pClassPointer = NULL;
 
 // Class Engine.SceneCaptureReflectComponent
 // 0x000F (0x00E4 - 0x00D5)
@@ -8558,17 +7630,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 418 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USceneCaptureReflectComponent::pClassPointer = NULL;
 
 // Class Engine.WindDirectionalSourceComponent
 // 0x001A (0x00A0 - 0x0086)
@@ -8585,17 +7649,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 420 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWindDirectionalSourceComponent::pClassPointer = NULL;
 
 // Class Engine.WindPointSourceComponent
 // 0x000C (0x00AC - 0x00A0)
@@ -8609,17 +7665,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 422 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWindPointSourceComponent::pClassPointer = NULL;
 
 // Class Engine.ActorFactory
 // 0x002C (0x008C - 0x0060)
@@ -8638,18 +7686,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 424 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostCreateActor ( class AActor* NewActor );
 };
-
-UClass* UActorFactory::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAI
 // 0x0038 (0x00C4 - 0x008C)
@@ -8667,17 +7707,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 426 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAI::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryActor
 // 0x0008 (0x0094 - 0x008C)
@@ -8690,17 +7722,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 428 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryActor::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAmbientSound
 // 0x0008 (0x0094 - 0x008C)
@@ -8713,17 +7737,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 430 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAmbientSound::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAmbientSoundMovable
 // 0x0000 (0x0094 - 0x0094)
@@ -8735,17 +7751,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAmbientSoundMovable::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAmbientSoundSimple
 // 0x0008 (0x0094 - 0x008C)
@@ -8758,17 +7766,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 434 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAmbientSoundSimple::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAmbientSoundNonLoop
 // 0x0000 (0x0094 - 0x0094)
@@ -8780,17 +7780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAmbientSoundNonLoop::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryAmbientSoundSimpleToggleable
 // 0x0000 (0x0094 - 0x0094)
@@ -8802,17 +7794,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 438 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryAmbientSoundSimpleToggleable::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryApexDestructible
 // 0x0008 (0x0094 - 0x008C)
@@ -8825,17 +7809,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 440 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryApexDestructible::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryArchetype
 // 0x0008 (0x0094 - 0x008C)
@@ -8848,17 +7824,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryArchetype::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryCoverLink
 // 0x0000 (0x008C - 0x008C)
@@ -8870,17 +7838,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 444 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryCoverLink::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryDominantDirectionalLight
 // 0x0000 (0x008C - 0x008C)
@@ -8892,17 +7852,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 446 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryDominantDirectionalLight::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryDynamicSM
 // 0x0019 (0x00A5 - 0x008C)
@@ -8922,17 +7874,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 448 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryDynamicSM::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryMover
 // 0x0003 (0x00A8 - 0x00A5)
@@ -8944,17 +7888,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryMover::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryRigidBody
 // 0x002C (0x00D1 - 0x00A5)
@@ -8976,17 +7912,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 452 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryRigidBody::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryEmitter
 // 0x0008 (0x0094 - 0x008C)
@@ -8999,17 +7927,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 454 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryEmitter::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryLight
 // 0x0000 (0x008C - 0x008C)
@@ -9021,17 +7941,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 456 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryLight::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryPathNode
 // 0x0000 (0x008C - 0x008C)
@@ -9043,17 +7955,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 458 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryPathNode::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryPhysicsAsset
 // 0x002C (0x00B8 - 0x008C)
@@ -9074,17 +7978,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 460 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryPhysicsAsset::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryPlayerStart
 // 0x0000 (0x008C - 0x008C)
@@ -9096,17 +7992,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 462 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryPlayerStart::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryPylon
 // 0x0000 (0x008C - 0x008C)
@@ -9118,17 +8006,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 464 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryPylon::pClassPointer = NULL;
 
 // Class Engine.ActorFactorySkeletalMesh
 // 0x0018 (0x00A4 - 0x008C)
@@ -9143,17 +8023,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 466 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactorySkeletalMesh::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryStaticMesh
 // 0x0014 (0x00A0 - 0x008C)
@@ -9167,17 +8039,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 468 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryStaticMesh::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryTrigger
 // 0x0000 (0x008C - 0x008C)
@@ -9189,17 +8053,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 470 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryTrigger::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryVehicle
 // 0x0008 (0x0094 - 0x008C)
@@ -9212,17 +8068,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 472 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryVehicle::pClassPointer = NULL;
 
 // Class Engine.AudioDevice
 // 0x01E8 (0x0250 - 0x0068)
@@ -9254,17 +8102,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 474 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAudioDevice::pClassPointer = NULL;
 
 // Class Engine.BioActorSaveObject
 // 0x0034 (0x00AC - 0x0078)
@@ -9283,21 +8123,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 476 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool LoadPositionAndOrientation ( class AActor* O );
 	bool SavePositionAndOrientation ( class AActor* O );
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioActorSaveObject::pClassPointer = NULL;
 
 // Class Engine.BioBaseComponent
 // 0x000C (0x006C - 0x0060)
@@ -9313,13 +8145,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 478 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ExitCombatStasis ( );
 	bool EnterCombatStasis ( float fDuration, unsigned long bAllowDamage, int srStasisPowerText );
@@ -9338,8 +8164,6 @@ public:
 	bool CanBeMounted ( class APawn* oMounter );
 };
 
-UClass* UBioBaseComponent::pClassPointer = NULL;
-
 // Class Engine.BioCoverInterface
 // 0x0008 (0x0068 - 0x0060)
 class UBioCoverInterface : public UObject
@@ -9351,13 +8175,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetSlot ( int SlotIdx, struct FCoverSlot* Slot );
 	int DecBlocked ( int SlotIdx );
@@ -9378,8 +8196,6 @@ public:
 	bool IsValid ( );
 };
 
-UClass* UBioCoverInterface::pClassPointer = NULL;
-
 // Class Engine.BioEngineEnums
 // 0x0000 (0x0060 - 0x0060)
 class UBioEngineEnums : public UObject
@@ -9390,17 +8206,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 482 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEngineEnums::pClassPointer = NULL;
 
 // Class Engine.BioMoviePlayerXMV
 // 0x0004 (0x0064 - 0x0060)
@@ -9414,18 +8222,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 484 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Play ( struct FString MovieFile );
 };
-
-UClass* UBioMoviePlayerXMV::pClassPointer = NULL;
 
 // Class Engine.BioParallelAnimUpdater
 // 0x0008 (0x0068 - 0x0060)
@@ -9438,17 +8238,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 486 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParallelAnimUpdater::pClassPointer = NULL;
 
 // Class Engine.BioSWF
 // 0x0030 (0x0090 - 0x0060)
@@ -9463,17 +8255,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 488 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSWF::pClassPointer = NULL;
 
 // Class Engine.BioSoundNodeWaveStreamingData
 // 0x0010 (0x0070 - 0x0060)
@@ -9486,17 +8270,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 490 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNodeWaveStreamingData::pClassPointer = NULL;
 
 // Class Engine.BioTestFramework
 // 0x0008 (0x0068 - 0x0060)
@@ -9509,17 +8285,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 492 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTestFramework::pClassPointer = NULL;
 
 // Class Engine.BioVersionNumber
 // 0x0014 (0x0074 - 0x0060)
@@ -9533,17 +8301,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 494 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVersionNumber::pClassPointer = NULL;
 
 // Class Engine.BookMark
 // 0x0018 (0x0078 - 0x0060)
@@ -9557,17 +8317,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 496 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBookMark::pClassPointer = NULL;
 
 // Class Engine.CameraMode
 // 0x0000 (0x0060 - 0x0060)
@@ -9579,18 +8331,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 498 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessViewRotation ( float DeltaTime, class AActor* ViewTarget, struct FRotator* out_ViewRotation, struct FRotator* out_DeltaRot );
 };
-
-UClass* UCameraMode::pClassPointer = NULL;
 
 // Class Engine.Canvas
 // 0x005C (0x00BC - 0x0060)
@@ -9619,13 +8363,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 500 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DrawDebugGraph ( struct FString Title, float ValueX, float ValueY, float UL_X, float UL_Y, float W, float H, struct FVector2D RangeX, struct FVector2D RangeY );
 	void DrawTextureDoubleLine ( struct FVector StartPoint, struct FVector EndPoint, float Perc, float Spacing, float Width, struct FColor LineColor, struct FColor AltLineColor, class UTexture* Tex, float U, float V, float UL, float VL );
@@ -9664,8 +8402,6 @@ public:
 	void DrawTile ( class UTexture* Tex, float XL, float YL, float U, float V, float UL, float VL );
 };
 
-UClass* UCanvas::pClassPointer = NULL;
-
 // Class Engine.Channel
 // 0x0038 (0x0098 - 0x0060)
 class UChannel : public UObject
@@ -9677,17 +8413,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 502 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UChannel::pClassPointer = NULL;
 
 // Class Engine.ActorChannel
 // 0x007C (0x0114 - 0x0098)
@@ -9700,17 +8428,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorChannel::pClassPointer = NULL;
 
 // Class Engine.ControlChannel
 // 0x0014 (0x00AC - 0x0098)
@@ -9723,17 +8443,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 512 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UControlChannel::pClassPointer = NULL;
 
 // Class Engine.FileChannel
 // 0x0218 (0x02B0 - 0x0098)
@@ -9746,17 +8458,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 514 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFileChannel::pClassPointer = NULL;
 
 // Class Engine.VoiceChannel
 // 0x0010 (0x00A8 - 0x0098)
@@ -9769,17 +8473,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 516 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UVoiceChannel::pClassPointer = NULL;
 
 // Class Engine.Controller
 // 0x0222 (0x04A6 - 0x0284)
@@ -9860,13 +8556,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 518 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInterpolationFinished ( class USeqAct_Interp* InterpAction );
 	void eventInterpolationStarted ( class USeqAct_Interp* InterpAction, class UInterpGroupInst* GroupInst );
@@ -10018,8 +8708,6 @@ public:
 	bool IsLocalPlayerController ( );
 };
 
-UClass* AController::pClassPointer = NULL;
-
 // Class Engine.PlayerController
 // 0x0314 (0x07BA - 0x04A6)
 class APlayerController : public AController
@@ -10142,13 +8830,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 520 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LogOutBugItAIGoToLogFile ( struct FString InScreenShotDesc, struct FString InGoString, struct FString InLocString );
 	void LogOutBugItGoToLogFile ( struct FString InScreenShotDesc, struct FString InGoString, struct FString InLocString );
@@ -10516,8 +9198,6 @@ public:
 	void ClientDrawCoordinateSystem ( struct FVector AxisLoc, struct FRotator AxisRot, float Scale, unsigned long bPersistentLines );
 };
 
-UClass* APlayerController::pClassPointer = NULL;
-
 // Class Engine.CheatManager
 // 0x0010 (0x0070 - 0x0060)
 class UCheatManager : public UObject
@@ -10530,13 +9210,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 522 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NavMeshVerification ( float interval );
 	void VerifyNavMeshObjects ( );
@@ -10594,8 +9268,6 @@ public:
 	void DebugAI ( struct FName Category );
 };
 
-UClass* UCheatManager::pClassPointer = NULL;
-
 // Class Engine.Client
 // 0x0044 (0x00A4 - 0x0060)
 class UClient : public UObject
@@ -10620,17 +9292,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 524 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UClient::pClassPointer = NULL;
 
 // Class Engine.ClipPadEntry
 // 0x0020 (0x0080 - 0x0060)
@@ -10644,17 +9308,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 538 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UClipPadEntry::pClassPointer = NULL;
 
 // Class Engine.CodecMovie
 // 0x0004 (0x0064 - 0x0060)
@@ -10667,17 +9323,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 540 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCodecMovie::pClassPointer = NULL;
 
 // Class Engine.CodecMovieBink
 // 0x0034 (0x0098 - 0x0064)
@@ -10690,17 +9338,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 542 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCodecMovieBink::pClassPointer = NULL;
 
 // Class Engine.CodecMovieFallback
 // 0x0004 (0x0068 - 0x0064)
@@ -10713,17 +9353,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCodecMovieFallback::pClassPointer = NULL;
 
 // Class Engine.CurveEdPresetCurve
 // 0x0020 (0x0080 - 0x0060)
@@ -10737,18 +9369,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 546 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool RetrieveFloatCurvePoints ( int CurveIndex, class UDistributionFloat* Distribution );
 };
-
-UClass* UCurveEdPresetCurve::pClassPointer = NULL;
 
 // Class Engine.CustomPropertyItemHandler
 // 0x0000 (0x0060 - 0x0060)
@@ -10760,17 +9384,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 548 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCustomPropertyItemHandler::pClassPointer = NULL;
 
 // Class Engine.DamageType
 // 0x0060 (0x00C0 - 0x0060)
@@ -10803,20 +9419,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 550 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float VehicleDamageScalingFor ( class AVehicle* V );
 	struct FString SuicideMessage ( class APlayerReplicationInfo* Victim );
 	struct FString DeathMessage ( class APlayerReplicationInfo* Killer, class APlayerReplicationInfo* Victim );
 };
-
-UClass* UDamageType::pClassPointer = NULL;
 
 // Class Engine.KillZDamageType
 // 0x0000 (0x00C0 - 0x00C0)
@@ -10828,17 +9436,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 552 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UKillZDamageType::pClassPointer = NULL;
 
 // Class Engine.DebugManager
 // 0x0004 (0x0064 - 0x0060)
@@ -10851,17 +9451,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 554 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDebugManager::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatConstant
 // 0x0004 (0x0080 - 0x007C)
@@ -10874,17 +9466,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 556 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatConstant::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatParameterBase
 // 0x0019 (0x0099 - 0x0080)
@@ -10902,17 +9486,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 558 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatParameterBase::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatConstantCurve
 // 0x0014 (0x0090 - 0x007C)
@@ -10925,17 +9501,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 560 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatConstantCurve::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatUniform
 // 0x0010 (0x008C - 0x007C)
@@ -10951,17 +9519,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 562 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatUniform::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatUniformCurve
 // 0x0014 (0x0090 - 0x007C)
@@ -10974,17 +9534,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 564 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatUniformCurve::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorConstant
 // 0x0011 (0x008D - 0x007C)
@@ -10999,17 +9551,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 566 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorConstant::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorParameterBase
 // 0x003E (0x00CB - 0x008D)
@@ -11027,17 +9571,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 568 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorParameterBase::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorConstantCurve
 // 0x0019 (0x0095 - 0x007C)
@@ -11052,17 +9588,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 570 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorConstantCurve::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorUniform
 // 0x0020 (0x009C - 0x007C)
@@ -11080,17 +9608,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 572 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorUniform::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorUniformCurve
 // 0x001D (0x0099 - 0x007C)
@@ -11108,17 +9628,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 574 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorUniformCurve::pClassPointer = NULL;
 
 // Class Engine.Download
 // 0x0A44 (0x0AA4 - 0x0060)
@@ -11131,17 +9643,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 576 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDownload::pClassPointer = NULL;
 
 // Class Engine.ChannelDownload
 // 0x0008 (0x0AAC - 0x0AA4)
@@ -11154,17 +9658,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 579 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UChannelDownload::pClassPointer = NULL;
 
 // Class Engine.EdCoordSystem
 // 0x0050 (0x00B0 - 0x0060)
@@ -11178,17 +9674,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 582 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UEdCoordSystem::pClassPointer = NULL;
 
 // Class Engine.EdLayer
 // 0x0020 (0x0080 - 0x0060)
@@ -11206,17 +9694,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 584 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UEdLayer::pClassPointer = NULL;
 
 // Class Engine.EditorLinkSelectionInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -11228,17 +9708,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 586 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UEditorLinkSelectionInterface::pClassPointer = NULL;
 
 // Class Engine.EngineTypes
 // 0x0000 (0x0060 - 0x0060)
@@ -11250,17 +9722,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 588 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UEngineTypes::pClassPointer = NULL;
 
 // Class Engine.FaceFXAnimSet
 // 0x0040 (0x00A0 - 0x0060)
@@ -11278,17 +9742,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 590 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFaceFXAnimSet::pClassPointer = NULL;
 
 // Class Engine.FaceFXAsset
 // 0x005C (0x00BC - 0x0060)
@@ -11307,19 +9763,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 592 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UnmountFaceFXAnimSet ( class UFaceFXAnimSet* AnimSet );
 	void MountFaceFXAnimSet ( class UFaceFXAnimSet* AnimSet );
 };
-
-UClass* UFaceFXAsset::pClassPointer = NULL;
 
 // Class Engine.Font
 // 0x0118 (0x0178 - 0x0060)
@@ -11339,21 +9787,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 594 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetMaxCharHeight ( );
 	float GetAuthoredViewportHeight ( float ViewportHeight );
 	float GetScalingFactor ( float HeightTest );
 	int GetResolutionPageIndex ( float HeightTest );
 };
-
-UClass* UFont::pClassPointer = NULL;
 
 // Class Engine.MultiFont
 // 0x0010 (0x0188 - 0x0178)
@@ -11366,18 +9806,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 596 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetResolutionTestTableIndex ( float HeightTest );
 };
-
-UClass* UMultiFont::pClassPointer = NULL;
 
 // Class Engine.FontImportOptions
 // 0x0094 (0x00F4 - 0x0060)
@@ -11390,17 +9822,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 598 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFontImportOptions::pClassPointer = NULL;
 
 // Class Engine.ForceFeedbackManager
 // 0x0018 (0x0078 - 0x0060)
@@ -11418,20 +9842,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 600 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PauseWaveform ( unsigned long bPause );
 	void StopForceFeedbackWaveform ( class UForceFeedbackWaveform* WaveForm );
 	void PlayForceFeedbackWaveform ( class UForceFeedbackWaveform* WaveForm );
 };
-
-UClass* UForceFeedbackManager::pClassPointer = NULL;
 
 // Class Engine.ForceFeedbackWaveform
 // 0x0014 (0x0074 - 0x0060)
@@ -11445,17 +9861,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 602 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UForceFeedbackWaveform::pClassPointer = NULL;
 
 // Class Engine.GameViewportClient
 // 0x0164 (0x01C4 - 0x0060)
@@ -11508,13 +9916,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 604 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void FilmGrainToggleMode ( unsigned long RandomEnable );
 	void FilmGrainSetScale ( float Scale );
@@ -11577,8 +9979,6 @@ public:
 	bool HandleInputKey ( int ControllerId, struct FName Key, unsigned char EventType, float AmountDepressed, unsigned long bGamepad );
 };
 
-UClass* UGameViewportClient::pClassPointer = NULL;
-
 // Class Engine.GameplayEvents
 // 0x0134 (0x0194 - 0x0060)
 class UGameplayEvents : public UObject
@@ -11602,20 +10002,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 606 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetFilename ( );
 	void CloseStatsFile ( );
 	bool OpenStatsFile ( struct FString Filename );
 };
-
-UClass* UGameplayEvents::pClassPointer = NULL;
 
 // Class Engine.GameplayEventsReader
 // 0x0010 (0x01A4 - 0x0194)
@@ -11628,13 +10020,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 608 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetSessionDuration ( );
 	float GetSessionEnd ( );
@@ -11652,8 +10038,6 @@ public:
 	bool OpenStatsFile ( struct FString Filename );
 };
 
-UClass* UGameplayEventsReader::pClassPointer = NULL;
-
 // Class Engine.GameplayEventsWriter
 // 0x0008 (0x019C - 0x0194)
 class UGameplayEventsWriter : public UGameplayEvents
@@ -11665,13 +10049,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 610 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LogSystemPollEvents ( );
 	void LogProjectileIntEvent ( int EventID, class AController* Player, class UClass* Proj, int Value );
@@ -11698,8 +10076,6 @@ public:
 	void StartLogging ( float HeartbeatDelta );
 };
 
-UClass* UGameplayEventsWriter::pClassPointer = NULL;
-
 // Class Engine.GuidCache
 // 0x0058 (0x00B8 - 0x0060)
 class UGuidCache : public UObject
@@ -11711,17 +10087,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 612 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGuidCache::pClassPointer = NULL;
 
 // Class Engine.IniLocPatcher
 // 0x0030 (0x0090 - 0x0060)
@@ -11737,13 +10105,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 614 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearCachedFiles ( );
 	void ClearReadFileDelegate ( struct FScriptDelegate ReadTitleFileCompleteDelegate );
@@ -11756,8 +10118,6 @@ public:
 	void OnReadTitleFileComplete ( unsigned long bWasSuccessful, struct FString Filename );
 };
 
-UClass* UIniLocPatcher::pClassPointer = NULL;
-
 // Class Engine.Interface_NavigationHandle
 // 0x0000 (0x0060 - 0x0060)
 class UInterface_NavigationHandle : public UInterface
@@ -11768,18 +10128,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 616 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotifyPathChanged ( );
 };
-
-UClass* UInterface_NavigationHandle::pClassPointer = NULL;
 
 // Class Engine.InterpCurveEdSetup
 // 0x0014 (0x0074 - 0x0060)
@@ -11793,17 +10145,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 618 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpCurveEdSetup::pClassPointer = NULL;
 
 // Class Engine.InterpTrack
 // 0x0030 (0x0090 - 0x0060)
@@ -11825,17 +10169,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 620 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrack::pClassPointer = NULL;
 
 // Class Engine.KMeshProps
 // 0x0058 (0x00B8 - 0x0060)
@@ -11849,17 +10185,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 622 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UKMeshProps::pClassPointer = NULL;
 
 // Class Engine.LevelBase
 // 0x0070 (0x00D0 - 0x0060)
@@ -11872,17 +10200,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 624 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelBase::pClassPointer = NULL;
 
 // Class Engine.Level
 // 0x02A4 (0x0374 - 0x00D0)
@@ -11898,17 +10218,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 628 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevel::pClassPointer = NULL;
 
 // Class Engine.PendingLevel
 // 0x0044 (0x0114 - 0x00D0)
@@ -11921,17 +10233,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 645 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPendingLevel::pClassPointer = NULL;
 
 // Class Engine.DemoPlayPendingLevel
 // 0x0000 (0x0114 - 0x0114)
@@ -11943,17 +10247,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 649 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDemoPlayPendingLevel::pClassPointer = NULL;
 
 // Class Engine.NetPendingLevel
 // 0x0000 (0x0114 - 0x0114)
@@ -11965,17 +10261,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 651 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UNetPendingLevel::pClassPointer = NULL;
 
 // Class Engine.LevelStreaming
 // 0x0070 (0x00D0 - 0x0060)
@@ -12015,17 +10303,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 653 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelStreaming::pClassPointer = NULL;
 
 // Class Engine.LevelStreamingAlwaysLoaded
 // 0x0004 (0x00D4 - 0x00D0)
@@ -12038,17 +10318,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 655 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelStreamingAlwaysLoaded::pClassPointer = NULL;
 
 // Class Engine.LevelStreamingDistance
 // 0x0010 (0x00E0 - 0x00D0)
@@ -12062,17 +10334,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 657 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelStreamingDistance::pClassPointer = NULL;
 
 // Class Engine.LevelStreamingKismet
 // 0x0004 (0x00D4 - 0x00D0)
@@ -12085,17 +10349,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 659 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelStreamingKismet::pClassPointer = NULL;
 
 // Class Engine.LevelStreamingPersistent
 // 0x0000 (0x00D0 - 0x00D0)
@@ -12107,17 +10363,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 661 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULevelStreamingPersistent::pClassPointer = NULL;
 
 // Class Engine.LightmappedSurfaceCollection
 // 0x0018 (0x0078 - 0x0060)
@@ -12131,17 +10379,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 663 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULightmappedSurfaceCollection::pClassPointer = NULL;
 
 // Class Engine.LightmassLevelSettings
 // 0x0030 (0x0090 - 0x0060)
@@ -12166,17 +10406,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 665 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULightmassLevelSettings::pClassPointer = NULL;
 
 // Class Engine.LightmassPrimitiveSettingsObject
 // 0x001C (0x007C - 0x0060)
@@ -12189,17 +10421,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 667 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULightmassPrimitiveSettingsObject::pClassPointer = NULL;
 
 // Class Engine.MapInfo
 // 0x0000 (0x0060 - 0x0060)
@@ -12211,17 +10435,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 669 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMapInfo::pClassPointer = NULL;
 
 // Class Engine.Surface
 // 0x0000 (0x0060 - 0x0060)
@@ -12233,19 +10449,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 671 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetSurfaceHeight ( );
 	float GetSurfaceWidth ( );
 };
-
-UClass* USurface::pClassPointer = NULL;
 
 // Class Engine.MaterialInterface
 // 0x0044 (0x00A4 - 0x0060)
@@ -12262,13 +10470,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 673 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetEffectsMaterialFractionValue ( float* Value );
 	bool GetEffectsMaterialNameValue ( struct FName* EffectName );
@@ -12282,8 +10484,6 @@ public:
 	class UPhysicalMaterial* GetPhysicalMaterial ( );
 	class UMaterial* GetMaterial ( );
 };
-
-UClass* UMaterialInterface::pClassPointer = NULL;
 
 // Class Engine.Material
 // 0x0322 (0x03C6 - 0x00A4)
@@ -12370,17 +10570,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 675 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterial::pClassPointer = NULL;
 
 // Class Engine.MaterialExpression
 // 0x0000 (0x0060 - 0x0060)
@@ -12392,17 +10584,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 677 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpression::pClassPointer = NULL;
 
 // Class Engine.Model
 // 0x0EF4 (0x0F54 - 0x0060)
@@ -12415,17 +10599,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 679 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UModel::pClassPointer = NULL;
 
 // Class Engine.MusicTrackDataStructures
 // 0x0000 (0x0060 - 0x0060)
@@ -12437,17 +10613,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 687 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMusicTrackDataStructures::pClassPointer = NULL;
 
 // Class Engine.NavigationMeshBase
 // 0x0300 (0x0360 - 0x0060)
@@ -12460,17 +10628,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 689 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UNavigationMeshBase::pClassPointer = NULL;
 
 // Class Engine.NetDriver
 // 0x0164 (0x01CC - 0x0068)
@@ -12500,17 +10660,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 691 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UNetDriver::pClassPointer = NULL;
 
 // Class Engine.DemoRecDriver
 // 0x00E8 (0x02B4 - 0x01CC)
@@ -12530,17 +10682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 715 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDemoRecDriver::pClassPointer = NULL;
 
 // Class Engine.ObjectReferencer
 // 0x0010 (0x0070 - 0x0060)
@@ -12553,17 +10697,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 721 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UObjectReferencer::pClassPointer = NULL;
 
 // Class Engine.OnlineGameplayEvents
 // 0x0074 (0x00D4 - 0x0060)
@@ -12583,17 +10719,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 723 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UOnlineGameplayEvents::pClassPointer = NULL;
 
 // Class Engine.OnlinePlayerStorage
 // 0x0035 (0x0095 - 0x0060)
@@ -12610,13 +10738,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 725 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetToDefaults ( );
 	void AddSettingFloat ( int SettingId );
@@ -12648,8 +10770,6 @@ public:
 	void NotifySettingValueUpdated ( struct FName SettingName );
 };
 
-UClass* UOnlinePlayerStorage::pClassPointer = NULL;
-
 // Class Engine.OnlineProfileSettings
 // 0x0033 (0x00C8 - 0x0095)
 class UOnlineProfileSettings : public UOnlinePlayerStorage
@@ -12663,13 +10783,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 727 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventModifyAvailableProfileSettings ( );
 	void SetDefaultVersionNumber ( );
@@ -12681,8 +10795,6 @@ public:
 	bool GetProfileSettingDefaultInt ( int ProfileSettingId, int* DefaultInt );
 	bool GetProfileSettingDefaultId ( int ProfileSettingId, int* DefaultId, int* ListIndex );
 };
-
-UClass* UOnlineProfileSettings::pClassPointer = NULL;
 
 // Class Engine.OnlinePlaylistManager
 // 0x004C (0x00AC - 0x0060)
@@ -12701,13 +10813,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 729 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Reset ( );
 	void GetContentIdsFromPlaylist ( int PlaylistId, struct TArray<int>* ContentIds );
@@ -12722,8 +10828,6 @@ public:
 	void OnReadPlaylistComplete ( );
 };
 
-UClass* UOnlinePlaylistManager::pClassPointer = NULL;
-
 // Class Engine.OnlineStats
 // 0x0010 (0x0070 - 0x0060)
 class UOnlineStats : public UObject
@@ -12735,19 +10839,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 731 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName GetViewName ( int ViewId );
 	bool GetViewId ( struct FName ViewName, int* ViewId );
 };
-
-UClass* UOnlineStats::pClassPointer = NULL;
 
 // Class Engine.OnlineStatsRead
 // 0x0050 (0x00C0 - 0x0070)
@@ -12767,13 +10863,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 733 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetRankForPlayer ( struct FUniqueNetId PlayerID );
 	void AddPlayer ( struct FString PlayerName, struct FUniqueNetId PlayerID );
@@ -12783,8 +10873,6 @@ public:
 	bool GetIntStatValueForPlayer ( struct FUniqueNetId PlayerID, int StatColumnNo, int* StatValue );
 	void eventOnReadComplete ( );
 };
-
-UClass* UOnlineStatsRead::pClassPointer = NULL;
 
 // Class Engine.OnlineStatsWrite
 // 0x0054 (0x00C4 - 0x0070)
@@ -12802,13 +10890,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 735 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DecrementIntStat ( int StatId, int DecBy );
 	void DecrementFloatStat ( int StatId, float DecBy );
@@ -12820,8 +10902,6 @@ public:
 	bool GetStatId ( struct FName StatName, int* StatId );
 	void OnStatsWriteComplete ( );
 };
-
-UClass* UOnlineStatsWrite::pClassPointer = NULL;
 
 // Class Engine.OnlineSubsystem
 // 0x00FC (0x015C - 0x0060)
@@ -12864,13 +10944,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 737 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetDebugSpewLevel ( int DebugSpewLevel );
 	void DumpVoiceRegistration ( );
@@ -12899,8 +10973,6 @@ public:
 	bool eventInit ( );
 };
 
-UClass* UOnlineSubsystem::pClassPointer = NULL;
-
 // Class Engine.PackageMapLevel
 // 0x0008 (0x0108 - 0x0100)
 class UPackageMapLevel : public UPackageMap
@@ -12912,17 +10984,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 739 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPackageMapLevel::pClassPointer = NULL;
 
 // Class Engine.PackageMapSeekFree
 // 0x0000 (0x0108 - 0x0108)
@@ -12934,17 +10998,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 742 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPackageMapSeekFree::pClassPointer = NULL;
 
 // Class Engine.Player
 // 0x002C (0x008C - 0x0060)
@@ -12965,18 +11021,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 744 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SwitchController ( class APlayerController* PC );
 };
-
-UClass* UPlayer::pClassPointer = NULL;
 
 // Class Engine.LocalPlayer
 // 0x0558 (0x05E4 - 0x008C)
@@ -13020,13 +11068,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 746 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNickname ( );
 	struct FUniqueNetId eventGetUniqueNetId ( );
@@ -13049,8 +11091,6 @@ public:
 	void BioAddPostProcessEffect ( class UPostProcessEffect* pEffect, class UObject* pOwner, unsigned char nCombineType );
 };
 
-UClass* ULocalPlayer::pClassPointer = NULL;
-
 // Class Engine.NetConnection
 // 0x5FE0 (0x606C - 0x008C)
 class UNetConnection : public UPlayer
@@ -13064,17 +11104,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 748 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UNetConnection::pClassPointer = NULL;
 
 // Class Engine.ChildConnection
 // 0x0008 (0x6074 - 0x606C)
@@ -13087,17 +11119,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 752 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UChildConnection::pClassPointer = NULL;
 
 // Class Engine.DemoRecConnection
 // 0x0000 (0x606C - 0x606C)
@@ -13109,17 +11133,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 763 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDemoRecConnection::pClassPointer = NULL;
 
 // Class Engine.Polys
 // 0x0018 (0x0078 - 0x0060)
@@ -13132,17 +11148,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 765 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPolys::pClassPointer = NULL;
 
 // Class Engine.PostProcessChain
 // 0x0010 (0x0070 - 0x0060)
@@ -13155,18 +11163,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 772 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPostProcessEffect* FindPostProcessEffect ( struct FName EffectName );
 };
-
-UClass* UPostProcessChain::pClassPointer = NULL;
 
 // Class Engine.PostProcessEffect
 // 0x0025 (0x0085 - 0x0060)
@@ -13191,17 +11191,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 774 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPostProcessEffect::pClassPointer = NULL;
 
 // Class Engine.AmbientOcclusionEffect
 // 0x0074 (0x00F9 - 0x0085)
@@ -13240,17 +11232,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 776 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAmbientOcclusionEffect::pClassPointer = NULL;
 
 // Class Engine.BioMaterialInstanceEffect
 // 0x000B (0x0090 - 0x0085)
@@ -13263,17 +11247,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 778 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialInstanceEffect::pClassPointer = NULL;
 
 // Class Engine.BloomEffect
 // 0x0003 (0x0088 - 0x0085)
@@ -13285,17 +11261,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 780 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBloomEffect::pClassPointer = NULL;
 
 // Class Engine.BlurEffect
 // 0x0007 (0x008C - 0x0085)
@@ -13308,17 +11276,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 782 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBlurEffect::pClassPointer = NULL;
 
 // Class Engine.DOFEffect
 // 0x0030 (0x00B5 - 0x0085)
@@ -13340,17 +11300,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 784 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDOFEffect::pClassPointer = NULL;
 
 // Class Engine.DOFAndBloomEffect
 // 0x001F (0x00D4 - 0x00B5)
@@ -13370,17 +11322,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 786 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDOFAndBloomEffect::pClassPointer = NULL;
 
 // Class Engine.DOFBloomMotionBlurEffect
 // 0x0014 (0x00E8 - 0x00D4)
@@ -13397,17 +11341,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 788 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDOFBloomMotionBlurEffect::pClassPointer = NULL;
 
 // Class Engine.UberPostProcessEffect
 // 0x0035 (0x011D - 0x00E8)
@@ -13434,17 +11370,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 790 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUberPostProcessEffect::pClassPointer = NULL;
 
 // Class Engine.MaterialEffect
 // 0x000B (0x0090 - 0x0085)
@@ -13457,17 +11385,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 792 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialEffect::pClassPointer = NULL;
 
 // Class Engine.MotionBlurEffect
 // 0x0017 (0x009C - 0x0085)
@@ -13484,17 +11404,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 794 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMotionBlurEffect::pClassPointer = NULL;
 
 // Class Engine.PrimitiveComponentFactory
 // 0x0004 (0x0064 - 0x0060)
@@ -13514,17 +11426,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 796 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPrimitiveComponentFactory::pClassPointer = NULL;
 
 // Class Engine.MeshComponentFactory
 // 0x0010 (0x0074 - 0x0064)
@@ -13537,17 +11441,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 798 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMeshComponentFactory::pClassPointer = NULL;
 
 // Class Engine.StaticMeshComponentFactory
 // 0x0008 (0x007C - 0x0074)
@@ -13560,17 +11456,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 800 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UStaticMeshComponentFactory::pClassPointer = NULL;
 
 // Class Engine.ReachSpec
 // 0x006A (0x00CA - 0x0060)
@@ -13601,13 +11489,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 802 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsBlocked ( );
 	bool IsBlockedFor ( class APawn* P );
@@ -13615,8 +11497,6 @@ public:
 	class ANavigationPoint* GetEnd ( );
 	int CostFor ( class APawn* P );
 };
-
-UClass* UReachSpec::pClassPointer = NULL;
 
 // Class Engine.AdvancedReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13628,17 +11508,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 804 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAdvancedReachSpec::pClassPointer = NULL;
 
 // Class Engine.CeilingReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13650,17 +11522,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 806 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCeilingReachSpec::pClassPointer = NULL;
 
 // Class Engine.ForcedReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13672,17 +11536,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 808 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UForcedReachSpec::pClassPointer = NULL;
 
 // Class Engine.CoverSlipReachSpec
 // 0x0001 (0x00CD - 0x00CC)
@@ -13695,17 +11551,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 810 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCoverSlipReachSpec::pClassPointer = NULL;
 
 // Class Engine.FloorToCeilingReachSpec
 // 0x0000 (0x00CC - 0x00CC)
@@ -13717,17 +11565,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 812 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFloorToCeilingReachSpec::pClassPointer = NULL;
 
 // Class Engine.MantleReachSpec
 // 0x0004 (0x00D0 - 0x00CC)
@@ -13740,17 +11580,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 814 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMantleReachSpec::pClassPointer = NULL;
 
 // Class Engine.SlotToSlotReachSpec
 // 0x0001 (0x00CD - 0x00CC)
@@ -13763,17 +11595,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 816 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USlotToSlotReachSpec::pClassPointer = NULL;
 
 // Class Engine.SwatTurnReachSpec
 // 0x0001 (0x00CD - 0x00CC)
@@ -13786,17 +11610,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 818 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USwatTurnReachSpec::pClassPointer = NULL;
 
 // Class Engine.WallTransReachSpec
 // 0x0000 (0x00CC - 0x00CC)
@@ -13808,17 +11624,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 820 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWallTransReachSpec::pClassPointer = NULL;
 
 // Class Engine.LadderReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13830,17 +11638,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 822 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULadderReachSpec::pClassPointer = NULL;
 
 // Class Engine.ProscribedReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13852,17 +11652,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 824 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UProscribedReachSpec::pClassPointer = NULL;
 
 // Class Engine.TeleportReachSpec
 // 0x0002 (0x00CC - 0x00CA)
@@ -13874,17 +11666,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 826 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTeleportReachSpec::pClassPointer = NULL;
 
 // Class Engine.RvrEffectsMaterialGroup
 // 0x0020 (0x0080 - 0x0060)
@@ -13898,17 +11682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 828 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URvrEffectsMaterialGroup::pClassPointer = NULL;
 
 // Class Engine.SFXModule
 // 0x000C (0x006C - 0x0060)
@@ -13922,19 +11698,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 830 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostBeginPlay ( );
 	void eventTick ( float DeltaTime );
 };
-
-UClass* USFXModule::pClassPointer = NULL;
 
 // Class Engine.SaveGameSummary
 // 0x0018 (0x0078 - 0x0060)
@@ -13948,17 +11716,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 832 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USaveGameSummary::pClassPointer = NULL;
 
 // Class Engine.SavedMove
 // 0x00B7 (0x0117 - 0x0060)
@@ -14000,13 +11760,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 834 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetDebugString ( );
 	unsigned char SetFlags ( unsigned char Flags, class APlayerController* PC );
@@ -14022,8 +11776,6 @@ public:
 	void Clear ( );
 };
 
-UClass* USavedMove::pClassPointer = NULL;
-
 // Class Engine.Selection
 // 0x002C (0x008C - 0x0060)
 class USelection : public UObject
@@ -14035,17 +11787,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 836 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USelection::pClassPointer = NULL;
 
 // Class Engine.ServerCommandlet
 // 0x0000 (0x00B4 - 0x00B4)
@@ -14057,17 +11801,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 838 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UServerCommandlet::pClassPointer = NULL;
 
 // Class Engine.Settings
 // 0x0060 (0x00C0 - 0x0060)
@@ -14085,13 +11821,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 840 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateFromURL ( class AGameInfo* Game, struct FString* URL );
 	void BuildURL ( struct FString* URL );
@@ -14152,8 +11882,6 @@ public:
 	void NotifySettingValueUpdated ( struct FName SettingName );
 };
 
-UClass* USettings::pClassPointer = NULL;
-
 // Class Engine.OnlineGameSearch
 // 0x00A4 (0x0164 - 0x00C0)
 class UOnlineGameSearch : public USettings
@@ -14176,19 +11904,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 842 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSortSearchResults ( );
 	void SetSkillOverride ( int LeaderboardId, struct TArray<struct FUniqueNetId>* Players );
 };
-
-UClass* UOnlineGameSearch::pClassPointer = NULL;
 
 // Class Engine.OnlineGameSettings
 // 0x0041 (0x0101 - 0x00C0)
@@ -14224,17 +11944,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 844 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UOnlineGameSettings::pClassPointer = NULL;
 
 // Class Engine.ShaderCache
 // 0x00E8 (0x0148 - 0x0060)
@@ -14247,17 +11959,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 846 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UShaderCache::pClassPointer = NULL;
 
 // Class Engine.ShadowMap1D
 // 0x005C (0x00BC - 0x0060)
@@ -14270,17 +11974,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 848 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UShadowMap1D::pClassPointer = NULL;
 
 // Class Engine.ShadowMap2D
 // 0x0038 (0x0098 - 0x0060)
@@ -14299,17 +11995,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 850 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UShadowMap2D::pClassPointer = NULL;
 
 // Class Engine.SmokeTestCommandlet
 // 0x0000 (0x00B4 - 0x00B4)
@@ -14321,17 +12009,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 852 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USmokeTestCommandlet::pClassPointer = NULL;
 
 // Class Engine.SoundCue
 // 0x009C (0x00FC - 0x0060)
@@ -14355,18 +12035,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 854 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetCueDuration ( );
 };
-
-UClass* USoundCue::pClassPointer = NULL;
 
 // Class Engine.SoundNode
 // 0x0034 (0x0094 - 0x0060)
@@ -14382,17 +12054,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 856 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNode::pClassPointer = NULL;
 
 // Class Engine.SoundNodeWave
 // 0x0168 (0x01FC - 0x0094)
@@ -14425,17 +12089,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 858 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeWave::pClassPointer = NULL;
 
 // Class Engine.SoundNodeWaveParam
 // 0x0008 (0x009C - 0x0094)
@@ -14448,17 +12104,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 860 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeWaveParam::pClassPointer = NULL;
 
 // Class Engine.SpeechRecognition
 // 0x00B0 (0x0110 - 0x0060)
@@ -14480,17 +12128,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 862 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USpeechRecognition::pClassPointer = NULL;
 
 // Class Engine.StaticMesh
 // 0x0130 (0x0190 - 0x0060)
@@ -14522,17 +12162,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 864 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UStaticMesh::pClassPointer = NULL;
 
 // Class Engine.RB_BodySetup
 // 0x0072 (0x012A - 0x00B8)
@@ -14567,17 +12199,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 889 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_BodySetup::pClassPointer = NULL;
 
 // Class Engine.RvrEffectsMaterialUser
 // 0x003C (0x00E0 - 0x00A4)
@@ -14597,17 +12221,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 892 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URvrEffectsMaterialUser::pClassPointer = NULL;
 
 // Class Engine.RvrMaterialMultiplexor
 // 0x0034 (0x00D8 - 0x00A4)
@@ -14624,17 +12240,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 894 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URvrMaterialMultiplexor::pClassPointer = NULL;
 
 // Class Engine.Texture
 // 0x0098 (0x00F8 - 0x0060)
@@ -14681,17 +12289,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 896 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTexture::pClassPointer = NULL;
 
 // Class Engine.Texture2D
 // 0x00BB (0x01B3 - 0x00F8)
@@ -14736,19 +12336,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 898 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UTexture2D* Create ( int InSizeX, int InSizeY, unsigned char InFormat );
 	void SetForceMipLevelsToBeResident ( float Seconds, int CinematicTextureGroups );
 };
-
-UClass* UTexture2D::pClassPointer = NULL;
 
 // Class Engine.LightMapTexture2D
 // 0x0005 (0x01B8 - 0x01B3)
@@ -14761,17 +12353,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 900 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULightMapTexture2D::pClassPointer = NULL;
 
 // Class Engine.ShadowMapTexture2D
 // 0x0005 (0x01B8 - 0x01B3)
@@ -14784,17 +12368,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 902 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UShadowMapTexture2D::pClassPointer = NULL;
 
 // Class Engine.WaveFormBase
 // 0x0008 (0x0068 - 0x0060)
@@ -14807,17 +12383,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 904 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWaveFormBase::pClassPointer = NULL;
 
 // Class Engine.World
 // 0x03F4 (0x0454 - 0x0060)
@@ -14830,17 +12398,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 906 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWorld::pClassPointer = NULL;
 
 // Class Engine.EnvironmentVolume
 // 0x0014 (0x02D8 - 0x02C4)
@@ -14855,18 +12415,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 928 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetSplitNavMesh ( unsigned long bNewValue );
 };
-
-UClass* AEnvironmentVolume::pClassPointer = NULL;
 
 // Class Engine.TestSplittingVolume
 // 0x0008 (0x02CC - 0x02C4)
@@ -14879,17 +12431,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 930 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ATestSplittingVolume::pClassPointer = NULL;
 
 // Class Engine.AIController
 // 0x002A (0x04D0 - 0x04A6)
@@ -14909,13 +12453,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 932 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetMyBalancingTickGroup ( );
 	bool CanFireWeapon ( class AWeapon* Wpn, unsigned char FireModeNum );
@@ -14934,8 +12472,6 @@ public:
 	void eventPreBeginPlay ( );
 };
 
-UClass* AAIController::pClassPointer = NULL;
-
 // Class Engine.CrowdAgentBase
 // 0x0008 (0x028C - 0x0284)
 class ACrowdAgentBase : public AActor
@@ -14947,18 +12483,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 934 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotifyPathChanged ( );
 };
-
-UClass* ACrowdAgentBase::pClassPointer = NULL;
 
 // Class Engine.CrowdPopulationManagerBase
 // 0x0000 (0x0284 - 0x0284)
@@ -14970,17 +12498,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 936 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ACrowdPopulationManagerBase::pClassPointer = NULL;
 
 // Class Engine.PathTargetPoint
 // 0x0000 (0x0284 - 0x0284)
@@ -14992,17 +12512,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 938 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APathTargetPoint::pClassPointer = NULL;
 
 // Class Engine.NavMeshObstacle
 // 0x000C (0x0290 - 0x0284)
@@ -15017,13 +12529,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 940 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetEnabled ( unsigned long bInEnabled );
 	void OnToggle ( class USeqAct_Toggle* Action );
@@ -15031,8 +12537,6 @@ public:
 	void UnRegisterObstacle ( );
 	void RegisterObstacle ( );
 };
-
-UClass* ANavMeshObstacle::pClassPointer = NULL;
 
 // Class Engine.PylonSeed
 // 0x0008 (0x028C - 0x0284)
@@ -15045,17 +12549,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 942 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APylonSeed::pClassPointer = NULL;
 
 // Class Engine.CoverGroupRenderingComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -15067,17 +12563,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 944 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCoverGroupRenderingComponent::pClassPointer = NULL;
 
 // Class Engine.CoverMeshComponent
 // 0x0054 (0x0318 - 0x02C4)
@@ -15098,17 +12586,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 946 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCoverMeshComponent::pClassPointer = NULL;
 
 // Class Engine.NavMeshRenderingComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -15120,17 +12600,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 948 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UNavMeshRenderingComponent::pClassPointer = NULL;
 
 // Class Engine.PathRenderingComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -15142,17 +12614,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 950 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPathRenderingComponent::pClassPointer = NULL;
 
 // Class Engine.RouteRenderingComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -15164,17 +12628,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 952 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URouteRenderingComponent::pClassPointer = NULL;
 
 // Class Engine.Interface_NavMeshPathObject
 // 0x0000 (0x0060 - 0x0060)
@@ -15186,17 +12642,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 954 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterface_NavMeshPathObject::pClassPointer = NULL;
 
 // Class Engine.Interface_NavMeshPathSwitch
 // 0x0000 (0x0060 - 0x0060)
@@ -15208,18 +12656,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 956 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventAIActivateSwitch ( class AAIController* AI );
 };
-
-UClass* UInterface_NavMeshPathSwitch::pClassPointer = NULL;
 
 // Class Engine.Interface_NavMeshPathObstacle
 // 0x0000 (0x0060 - 0x0060)
@@ -15231,17 +12671,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 958 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterface_NavMeshPathObstacle::pClassPointer = NULL;
 
 // Class Engine.NavMeshPathConstraint
 // 0x0018 (0x0078 - 0x0060)
@@ -15258,19 +12690,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 960 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDumpString ( );
 	void eventRecycle ( );
 };
-
-UClass* UNavMeshPathConstraint::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_AlongLine
 // 0x000C (0x0084 - 0x0078)
@@ -15283,19 +12707,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 962 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool AlongLine ( class UNavigationHandle* NavHandle, struct FVector Dir );
 };
-
-UClass* UNavMeshPath_AlongLine::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_EnforceTwoWayEdges
 // 0x0000 (0x0078 - 0x0078)
@@ -15307,18 +12723,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 964 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool EnforceTwoWayEdges ( class UNavigationHandle* NavHandle );
 };
-
-UClass* UNavMeshPath_EnforceTwoWayEdges::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_MinDistBetweenSpecsOfType
 // 0x0011 (0x0089 - 0x0078)
@@ -15333,19 +12741,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 966 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool EnforceMinDist ( class UNavigationHandle* NavHandle, float InMinDist, unsigned char InEdgeType, struct FVector LastLocation );
 };
-
-UClass* UNavMeshPath_MinDistBetweenSpecsOfType::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_Toward
 // 0x0014 (0x008C - 0x0078)
@@ -15359,20 +12759,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 968 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool TowardPoint ( class UNavigationHandle* NavHandle, struct FVector Point );
 	bool TowardGoal ( class UNavigationHandle* NavHandle, class AActor* Goal );
 };
-
-UClass* UNavMeshPath_Toward::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_WithinDistanceEnvelope
 // 0x001C (0x0094 - 0x0078)
@@ -15390,19 +12782,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 970 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool StayWithinEnvelopeToLoc ( class UNavigationHandle* NavHandle, struct FVector InEnvelopeTestPoint, float InMaxDistance, float InMinDistance, unsigned long bInSoft, float InSoftStartPenalty, unsigned long bOnlyTossOutSpecsThatLeave );
 };
-
-UClass* UNavMeshPath_WithinDistanceEnvelope::pClassPointer = NULL;
 
 // Class Engine.NavMeshPath_WithinTraversalDist
 // 0x000C (0x0084 - 0x0078)
@@ -15417,19 +12801,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 972 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool DontExceedMaxDist ( class UNavigationHandle* NavHandle, float InMaxTraversalDist, unsigned long bInSoft );
 };
-
-UClass* UNavMeshPath_WithinTraversalDist::pClassPointer = NULL;
 
 // Class Engine.NavMeshPathGoalEvaluator
 // 0x0018 (0x0078 - 0x0060)
@@ -15446,19 +12822,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 974 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDumpString ( );
 	void eventRecycle ( );
 };
-
-UClass* UNavMeshPathGoalEvaluator::pClassPointer = NULL;
 
 // Class Engine.NavMeshGoal_At
 // 0x0024 (0x009C - 0x0078)
@@ -15475,21 +12843,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 976 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool AtLocation ( class UNavigationHandle* NavHandle, struct FVector GoalLocation, float Dist, unsigned long bReturnPartial );
 	bool AtActor ( class UNavigationHandle* NavHandle, class AActor* GoalActor, float Dist, unsigned long bReturnPartial );
 	void RecycleNative ( );
 };
-
-UClass* UNavMeshGoal_At::pClassPointer = NULL;
 
 // Class Engine.NavMeshGoal_ClosestActorInList
 // 0x0060 (0x00D8 - 0x0078)
@@ -15504,20 +12864,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 978 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RecycleInternal ( );
 	void eventRecycle ( );
 	class UNavMeshGoal_ClosestActorInList* ClosestActorInList ( class UNavigationHandle* NavHandle, struct TArray<struct FBiasedGoalActor>* InGoalList );
 };
-
-UClass* UNavMeshGoal_ClosestActorInList::pClassPointer = NULL;
 
 // Class Engine.NavMeshGoal_Null
 // 0x0008 (0x0080 - 0x0078)
@@ -15530,20 +12882,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 980 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	void RecycleNative ( );
 	bool GoUntilBust ( class UNavigationHandle* NavHandle, int InMaxPathVisits );
 };
-
-UClass* UNavMeshGoal_Null::pClassPointer = NULL;
 
 // Class Engine.NavMeshGoal_PolyEncompassesAI
 // 0x0000 (0x0078 - 0x0078)
@@ -15555,19 +12899,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 982 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool MakeSureAIFits ( class UNavigationHandle* NavHandle );
 };
-
-UClass* UNavMeshGoal_PolyEncompassesAI::pClassPointer = NULL;
 
 // Class Engine.NavigationHandle
 // 0x00B4 (0x0114 - 0x0060)
@@ -15593,13 +12929,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 984 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculatePathDistance ( struct FVector FinalDest );
 	struct FVector GetFirstMoveLocation ( );
@@ -15633,8 +12963,6 @@ public:
 	void ClearConstraints ( );
 };
 
-UClass* UNavigationHandle::pClassPointer = NULL;
-
 // Class Engine.PathConstraint
 // 0x000C (0x006C - 0x0060)
 class UPathConstraint : public UObject
@@ -15647,19 +12975,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 986 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDumpString ( );
 	void eventRecycle ( );
 };
-
-UClass* UPathConstraint::pClassPointer = NULL;
 
 // Class Engine.Path_AlongLine
 // 0x000C (0x0078 - 0x006C)
@@ -15672,19 +12992,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 988 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool AlongLine ( class APawn* P, struct FVector Dir );
 };
-
-UClass* UPath_AlongLine::pClassPointer = NULL;
 
 // Class Engine.Path_AvoidInEscapableNodes
 // 0x0010 (0x007C - 0x006C)
@@ -15700,20 +13012,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 990 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool DontGetStuck ( class APawn* P );
 	void CachePawnReacFlags ( class APawn* P );
 };
-
-UClass* UPath_AvoidInEscapableNodes::pClassPointer = NULL;
 
 // Class Engine.Path_MinDistBetweenSpecsOfType
 // 0x0018 (0x0084 - 0x006C)
@@ -15728,19 +13032,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 992 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool EnforceMinDist ( class APawn* P, float InMinDist, class UClass* InSpecClass, struct FVector LastLocation );
 };
-
-UClass* UPath_MinDistBetweenSpecsOfType::pClassPointer = NULL;
 
 // Class Engine.Path_TowardGoal
 // 0x0008 (0x0074 - 0x006C)
@@ -15753,19 +13049,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 994 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool TowardGoal ( class APawn* P, class AActor* Goal );
 };
-
-UClass* UPath_TowardGoal::pClassPointer = NULL;
 
 // Class Engine.Path_TowardPoint
 // 0x000C (0x0078 - 0x006C)
@@ -15778,19 +13066,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 996 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool TowardPoint ( class APawn* P, struct FVector Point );
 };
-
-UClass* UPath_TowardPoint::pClassPointer = NULL;
 
 // Class Engine.Path_WithinDistanceEnvelope
 // 0x001C (0x0088 - 0x006C)
@@ -15808,19 +13088,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 998 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool StayWithinEnvelopeToLoc ( class APawn* P, struct FVector InEnvelopeTestPoint, float InMaxDistance, float InMinDistance, unsigned long bInSoft, float InSoftStartPenalty, unsigned long bOnlyTossOutSpecsThatLeave );
 };
-
-UClass* UPath_WithinDistanceEnvelope::pClassPointer = NULL;
 
 // Class Engine.Path_WithinTraversalDist
 // 0x000C (0x0078 - 0x006C)
@@ -15835,19 +13107,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1000 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool DontExceedMaxDist ( class APawn* P, float InMaxTraversalDist, unsigned long bInSoft );
 };
-
-UClass* UPath_WithinTraversalDist::pClassPointer = NULL;
 
 // Class Engine.PathGoalEvaluator
 // 0x001C (0x007C - 0x0060)
@@ -15864,19 +13128,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1002 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDumpString ( );
 	void eventRecycle ( );
 };
-
-UClass* UPathGoalEvaluator::pClassPointer = NULL;
 
 // Class Engine.Goal_AtActor
 // 0x0010 (0x008C - 0x007C)
@@ -15891,19 +13147,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1004 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool AtActor ( class APawn* P, class AActor* Goal, float Dist, unsigned long bReturnPartial );
 };
-
-UClass* UGoal_AtActor::pClassPointer = NULL;
 
 // Class Engine.Goal_Null
 // 0x0000 (0x007C - 0x007C)
@@ -15915,19 +13163,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1006 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Recycle ( );
 	bool GoUntilBust ( class APawn* P, int InMaxPathVisits );
 };
-
-UClass* UGoal_Null::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshActor
 // 0x004C (0x02D0 - 0x0284)
@@ -15949,13 +13189,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1008 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USkeletalMeshComponent* GetPrimarySkelMeshComponent ( );
 	void SkelMeshActorOnParticleSystemFinished ( class UParticleSystemComponent* PSC );
@@ -15992,8 +13226,6 @@ public:
 	void eventPostBeginPlay ( );
 };
 
-UClass* ASkeletalMeshActor::pClassPointer = NULL;
-
 // Class Engine.SkeletalMeshActorBasedOnExtremeContent
 // 0x0020 (0x02F0 - 0x02D0)
 class ASkeletalMeshActorBasedOnExtremeContent : public ASkeletalMeshActor
@@ -16006,19 +13238,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1010 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetMaterialBasedOnExtremeContent ( );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ASkeletalMeshActorBasedOnExtremeContent::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshActorSpawnable
 // 0x0000 (0x02D0 - 0x02D0)
@@ -16030,17 +13254,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1012 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASkeletalMeshActorSpawnable::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshCinematicActor
 // 0x0000 (0x02D0 - 0x02D0)
@@ -16052,17 +13268,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1014 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASkeletalMeshCinematicActor::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshActorMAT
 // 0x0010 (0x02E0 - 0x02D0)
@@ -16075,13 +13283,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1016 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetSkelControlScale ( struct FName SkelControlName, float Scale );
 	void eventSetMorphWeight ( struct FName MorphNodeName, float MorphWeight );
@@ -16097,8 +13299,6 @@ public:
 	void MAT_SetAnimWeights ( struct TArray<struct FAnimSlotInfo> SlotInfos );
 };
 
-UClass* ASkeletalMeshActorMAT::pClassPointer = NULL;
-
 // Class Engine.AnimMetaData
 // 0x0000 (0x0060 - 0x0060)
 class UAnimMetaData : public UObject
@@ -16109,17 +13309,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1018 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimMetaData::pClassPointer = NULL;
 
 // Class Engine.AnimMetaData_SkelControl
 // 0x0014 (0x0074 - 0x0060)
@@ -16133,17 +13325,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1020 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimMetaData_SkelControl::pClassPointer = NULL;
 
 // Class Engine.AnimMetaData_SkelControlKeyFrame
 // 0x0010 (0x0084 - 0x0074)
@@ -16156,17 +13340,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1022 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimMetaData_SkelControlKeyFrame::pClassPointer = NULL;
 
 // Class Engine.AnimNotify
 // 0x0000 (0x0060 - 0x0060)
@@ -16178,18 +13354,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1024 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool FindNextNotifyOfClass ( class UAnimNodeSequence* AnimSeqInstigator, class UClass* NotifyClass, struct FAnimNotifyEvent* OutEvent );
 };
-
-UClass* UAnimNotify::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_CameraEffect
 // 0x0008 (0x0068 - 0x0060)
@@ -16202,17 +13370,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1026 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_CameraEffect::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Footstep
 // 0x0004 (0x0064 - 0x0060)
@@ -16225,17 +13385,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1028 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Footstep::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Kismet
 // 0x0008 (0x0068 - 0x0060)
@@ -16248,17 +13400,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1030 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Kismet::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_PlayParticleEffect
 // 0x001C (0x007C - 0x0060)
@@ -16276,17 +13420,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1032 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_PlayParticleEffect::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Rumble
 // 0x0018 (0x0078 - 0x0060)
@@ -16302,17 +13438,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1034 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Rumble::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Script
 // 0x0018 (0x0078 - 0x0060)
@@ -16327,17 +13455,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1036 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Script::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Scripted
 // 0x0000 (0x0060 - 0x0060)
@@ -16349,18 +13469,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1038 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotify ( class AActor* Owner, class UAnimNodeSequence* AnimSeqInstigator );
 };
-
-UClass* UAnimNotify_Scripted::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_ViewShake
 // 0x0054 (0x00B4 - 0x0060)
@@ -16384,18 +13496,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1040 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotify ( class AActor* Owner, class UAnimNodeSequence* AnimSeqInstigator );
 };
-
-UClass* UAnimNotify_ViewShake::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Sound
 // 0x0018 (0x0078 - 0x0060)
@@ -16412,17 +13516,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1042 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Sound::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Trails
 // 0x0050 (0x00B0 - 0x0060)
@@ -16448,18 +13544,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1044 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetNumSteps ( int InLastTrailIndex );
 };
-
-UClass* UAnimNotify_Trails::pClassPointer = NULL;
 
 // Class Engine.AnimObject
 // 0x0008 (0x0068 - 0x0060)
@@ -16472,17 +13560,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1046 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimObject::pClassPointer = NULL;
 
 // Class Engine.AnimNode
 // 0x007D (0x00E5 - 0x0068)
@@ -16511,13 +13591,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1048 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ReplayAnim ( );
 	void StopAnim ( );
@@ -16527,8 +13601,6 @@ public:
 	void eventOnBecomeRelevant ( );
 	void eventOnInit ( );
 };
-
-UClass* UAnimNode::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendBase
 // 0x0018 (0x00FD - 0x00E5)
@@ -16543,20 +13615,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1050 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ReplayAnim ( );
 	void StopAnim ( );
 	void PlayAnim ( unsigned long bLoop, float Rate, float StartTime );
 };
-
-UClass* UAnimNodeBlendBase::pClassPointer = NULL;
 
 // Class Engine.AnimNodeAimOffset
 // 0x0068 (0x0165 - 0x00FD)
@@ -16582,19 +13646,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1052 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetActiveProfileByIndex ( int ProfileIndex );
 	void SetActiveProfileByName ( struct FName ProfileName );
 };
-
-UClass* UAnimNodeAimOffset::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlend
 // 0x0013 (0x0110 - 0x00FD)
@@ -16610,18 +13666,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1054 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetBlendTarget ( float BlendTarget, float BlendTime );
 };
-
-UClass* UAnimNodeBlend::pClassPointer = NULL;
 
 // Class Engine.AnimNodeAdditiveBlending
 // 0x0004 (0x0114 - 0x0110)
@@ -16634,17 +13682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1056 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeAdditiveBlending::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendPerBone
 // 0x0034 (0x0144 - 0x0110)
@@ -16660,17 +13700,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1058 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendPerBone::pClassPointer = NULL;
 
 // Class Engine.AnimNodeCrossfader
 // 0x0010 (0x0120 - 0x0110)
@@ -16685,21 +13717,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1060 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UAnimNodeSequence* GetActiveChild ( );
 	struct FName GetAnimName ( );
 	void BlendToLoopingAnim ( struct FName AnimSeqName, float BlendInTime, float Rate );
 	void PlayOneShotAnim ( struct FName AnimSeqName, float BlendInTime, float BlendOutTime, unsigned long bDontBlendOut, float Rate );
 };
-
-UClass* UAnimNodeCrossfader::pClassPointer = NULL;
 
 // Class Engine.AnimNodePlayCustomAnim
 // 0x0008 (0x0118 - 0x0110)
@@ -16713,13 +13737,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1062 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetRootBoneAxisOption ( unsigned char AxisX, unsigned char AxisY, unsigned char AxisZ );
 	class UAnimNodeSequence* GetCustomAnimNodeSeq ( );
@@ -16729,8 +13747,6 @@ public:
 	void PlayCustomAnimByDuration ( struct FName AnimName, float Duration, float BlendInTime, float BlendOutTime, unsigned long bLooping, unsigned long bOverride );
 	float PlayCustomAnim ( struct FName AnimName, float Rate, float BlendInTime, float BlendOutTime, unsigned long bLooping, unsigned long bOverride );
 };
-
-UClass* UAnimNodePlayCustomAnim::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendDirectional
 // 0x001B (0x0118 - 0x00FD)
@@ -16746,17 +13762,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1064 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendDirectional::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendList
 // 0x001F (0x011C - 0x00FD)
@@ -16774,18 +13782,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1066 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetActiveChild ( int ChildIndex, float BlendTime );
 };
-
-UClass* UAnimNodeBlendList::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendByBase
 // 0x001D (0x0139 - 0x011C)
@@ -16802,17 +13802,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1068 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendByBase::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendByPhysics
 // 0x0000 (0x011C - 0x011C)
@@ -16824,17 +13816,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1070 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendByPhysics::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendByPosture
 // 0x0000 (0x011C - 0x011C)
@@ -16846,17 +13830,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1072 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendByPosture::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendByProperty
 // 0x0038 (0x0154 - 0x011C)
@@ -16880,17 +13856,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1074 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendByProperty::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendBySpeed
 // 0x0034 (0x0150 - 0x011C)
@@ -16912,17 +13880,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1076 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeBlendBySpeed::pClassPointer = NULL;
 
 // Class Engine.AnimNodeRandom
 // 0x001C (0x0138 - 0x011C)
@@ -16937,17 +13897,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1078 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeRandom::pClassPointer = NULL;
 
 // Class Engine.AnimNodeBlendMultiBone
 // 0x0023 (0x0120 - 0x00FD)
@@ -16961,18 +13913,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetTargetStartBone ( int TargetIdx, struct FName StartBoneName, float PerBoneIncrease );
 };
-
-UClass* UAnimNodeBlendMultiBone::pClassPointer = NULL;
 
 // Class Engine.AnimNodeMirror
 // 0x0007 (0x0104 - 0x00FD)
@@ -16985,17 +13929,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1082 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeMirror::pClassPointer = NULL;
 
 // Class Engine.AnimNodeScalePlayRate
 // 0x0007 (0x0104 - 0x00FD)
@@ -17008,17 +13944,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1084 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeScalePlayRate::pClassPointer = NULL;
 
 // Class Engine.AnimNodeScaleRateBySpeed
 // 0x0004 (0x0108 - 0x0104)
@@ -17031,17 +13959,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1086 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeScaleRateBySpeed::pClassPointer = NULL;
 
 // Class Engine.AnimNodeSlot
 // 0x002F (0x012C - 0x00FD)
@@ -17063,13 +13983,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1088 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void AddToSynchGroup ( struct FName GroupName );
 	void AccelerateBlend ( float BlendAmount );
@@ -17084,8 +13998,6 @@ public:
 	float PlayCustomAnim ( struct FName AnimName, float Rate, float BlendInTime, float BlendOutTime, unsigned long bLooping, unsigned long bOverride, float StartTime );
 };
 
-UClass* UAnimNodeSlot::pClassPointer = NULL;
-
 // Class Engine.AnimNodeSynch
 // 0x0013 (0x0110 - 0x00FD)
 class UAnimNodeSynch : public UAnimNodeBlendBase
@@ -17097,13 +14009,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1090 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetGroupRateScale ( struct FName GroupName, float NewRateScale );
 	float GetRelativePosition ( struct FName GroupName );
@@ -17112,8 +14018,6 @@ public:
 	void RemoveNodeFromGroup ( class UAnimNodeSequence* SeqNode, struct FName GroupName );
 	void AddNodeToGroup ( class UAnimNodeSequence* SeqNode, struct FName GroupName );
 };
-
-UClass* UAnimNodeSynch::pClassPointer = NULL;
 
 // Class Engine.AnimNode_MultiBlendPerBone
 // 0x001C (0x0119 - 0x00FD)
@@ -17128,18 +14032,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1092 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetMaskWeight ( int MaskIndex, float DesiredWeight, float BlendTime );
 };
-
-UClass* UAnimNode_MultiBlendPerBone::pClassPointer = NULL;
 
 // Class Engine.AnimTree
 // 0x0067 (0x0164 - 0x00FD)
@@ -17158,13 +14054,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetGroupIndex ( struct FName GroupName );
 	float GetGroupRateScale ( struct FName GroupName );
@@ -17178,8 +14068,6 @@ public:
 	class UMorphNodeBase* FindMorphNode ( struct FName InNodeName );
 	class USkelControlBase* FindSkelControl ( struct FName InControlName );
 };
-
-UClass* UAnimTree::pClassPointer = NULL;
 
 // Class Engine.AnimNodeSequence
 // 0x0055 (0x013A - 0x00E5)
@@ -17224,13 +14112,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1096 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetTimeLeft ( );
 	float GetAnimPlaybackLength ( );
@@ -17246,8 +14128,6 @@ public:
 	void SetAnim ( struct FName Sequence );
 };
 
-UClass* UAnimNodeSequence::pClassPointer = NULL;
-
 // Class Engine.AnimNodeSequenceBlendBase
 // 0x0012 (0x014C - 0x013A)
 class UAnimNodeSequenceBlendBase : public UAnimNodeSequence
@@ -17259,17 +14139,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1098 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNodeSequenceBlendBase::pClassPointer = NULL;
 
 // Class Engine.AnimNodeSequenceBlendByAim
 // 0x0070 (0x01BC - 0x014C)
@@ -17295,18 +14167,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1100 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CheckAnimsUpToDate ( );
 };
-
-UClass* UAnimNodeSequenceBlendByAim::pClassPointer = NULL;
 
 // Class Engine.MorphNodeBase
 // 0x000C (0x0074 - 0x0068)
@@ -17320,17 +14184,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1102 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphNodeBase::pClassPointer = NULL;
 
 // Class Engine.MorphNodeMultiPose
 // 0x0030 (0x00A4 - 0x0074)
@@ -17345,20 +14201,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1104 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateMorphTarget ( class UMorphTarget* Target, float InWeight );
 	void RemoveMorphTarget ( struct FName MorphTargetName );
 	bool AddMorphTarget ( struct FName MorphTargetName, float InWeight );
 };
-
-UClass* UMorphNodeMultiPose::pClassPointer = NULL;
 
 // Class Engine.MorphNodePose
 // 0x0014 (0x0088 - 0x0074)
@@ -17373,18 +14221,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1106 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetMorphTarget ( struct FName MorphTargetName );
 };
-
-UClass* UMorphNodePose::pClassPointer = NULL;
 
 // Class Engine.MorphNodeWeightBase
 // 0x0010 (0x0084 - 0x0074)
@@ -17397,17 +14237,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1108 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphNodeWeightBase::pClassPointer = NULL;
 
 // Class Engine.MorphNodeWeight
 // 0x0004 (0x0088 - 0x0084)
@@ -17420,18 +14252,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1110 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetNodeWeight ( float NewWeight );
 };
-
-UClass* UMorphNodeWeight::pClassPointer = NULL;
 
 // Class Engine.MorphNodeWeightByBoneAngle
 // 0x0042 (0x00C6 - 0x0084)
@@ -17456,17 +14280,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1112 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphNodeWeightByBoneAngle::pClassPointer = NULL;
 
 // Class Engine.MorphNodeWeightByBoneRotation
 // 0x0039 (0x00BD - 0x0084)
@@ -17488,17 +14304,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1114 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphNodeWeightByBoneRotation::pClassPointer = NULL;
 
 // Class Engine.SkelControlBase
 // 0x0069 (0x00D1 - 0x0068)
@@ -17532,20 +14340,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1116 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTickSkelControl ( float DeltaTime, class USkeletalMeshComponent* SkelComp );
 	void SetSkelControlStrength ( float NewStrength, float InBlendTime );
 	void SetSkelControlActive ( unsigned long bInActive );
 };
-
-UClass* USkelControlBase::pClassPointer = NULL;
 
 // Class Engine.SkelControlLimb
 // 0x0043 (0x0114 - 0x00D1)
@@ -17572,17 +14372,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1118 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlLimb::pClassPointer = NULL;
 
 // Class Engine.SkelControlFootPlacement
 // 0x0021 (0x0135 - 0x0114)
@@ -17603,17 +14395,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1120 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlFootPlacement::pClassPointer = NULL;
 
 // Class Engine.SkelControlLookAt
 // 0x0077 (0x0148 - 0x00D1)
@@ -17655,21 +14439,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1122 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CanLookAtPoint ( struct FVector PointLoc, unsigned long bDrawDebugInfo, unsigned long bDebugUsePersistentLines, unsigned long bDebugFlushLinesFirst );
 	void SetLookAtAlpha ( float DesiredAlpha, float DesiredBlendTime );
 	void InterpolateTargetLocation ( float DeltaTime );
 	void SetTargetLocation ( struct FVector NewTargetLocation );
 };
-
-UClass* USkelControlLookAt::pClassPointer = NULL;
 
 // Class Engine.SkelControlSingleBone
 // 0x0031 (0x0102 - 0x00D1)
@@ -17692,17 +14468,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1124 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlSingleBone::pClassPointer = NULL;
 
 // Class Engine.SkelControlHandlebars
 // 0x0014 (0x0116 - 0x0102)
@@ -17719,17 +14487,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1126 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlHandlebars::pClassPointer = NULL;
 
 // Class Engine.SkelControlWheel
 // 0x0018 (0x011A - 0x0102)
@@ -17749,17 +14509,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1128 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlWheel::pClassPointer = NULL;
 
 // Class Engine.SkelControlSpline
 // 0x0015 (0x00E6 - 0x00D1)
@@ -17777,17 +14529,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1130 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlSpline::pClassPointer = NULL;
 
 // Class Engine.SkelControlTrail
 // 0x0080 (0x0151 - 0x00D1)
@@ -17812,17 +14556,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1132 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControlTrail::pClassPointer = NULL;
 
 // Class Engine.SkelControl_CCD_IK
 // 0x004C (0x011D - 0x00D1)
@@ -17846,17 +14582,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1134 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControl_CCD_IK::pClassPointer = NULL;
 
 // Class Engine.SkelControl_TwistBone
 // 0x000F (0x00E0 - 0x00D1)
@@ -17870,17 +14598,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1136 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkelControl_TwistBone::pClassPointer = NULL;
 
 // Class Engine.AnimSequence
 // 0x00C3 (0x0123 - 0x0060)
@@ -17920,18 +14640,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1138 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetNotifyTimeByClass ( class UClass* NotifyClass, float PlayRate, float StartPosition );
 };
-
-UClass* UAnimSequence::pClassPointer = NULL;
 
 // Class Engine.AnimSet
 // 0x0020 (0x0080 - 0x0060)
@@ -17946,17 +14658,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1140 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimSet::pClassPointer = NULL;
 
 // Class Engine.BioDynamicAnimSet
 // 0x0058 (0x00D8 - 0x0080)
@@ -17971,17 +14675,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1142 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDynamicAnimSet::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm
 // 0x0016 (0x0076 - 0x0060)
@@ -17997,17 +14693,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1144 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm_BitwiseCompressOnly
 // 0x0002 (0x0078 - 0x0076)
@@ -18019,17 +14707,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1146 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm_BitwiseCompressOnly::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm_RemoveEverySecondKey
 // 0x000A (0x0080 - 0x0076)
@@ -18043,17 +14723,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1148 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm_RemoveEverySecondKey::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm_RemoveLinearKeys
 // 0x001A (0x0090 - 0x0076)
@@ -18071,17 +14743,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1150 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm_RemoveLinearKeys::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm_RemoveTrivialKeys
 // 0x000A (0x0080 - 0x0076)
@@ -18095,17 +14759,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1152 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm_RemoveTrivialKeys::pClassPointer = NULL;
 
 // Class Engine.AnimationCompressionAlgorithm_RevertToRaw
 // 0x0002 (0x0078 - 0x0076)
@@ -18117,17 +14773,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1154 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimationCompressionAlgorithm_RevertToRaw::pClassPointer = NULL;
 
 // Class Engine.BioAnimSetData
 // 0x0044 (0x00A4 - 0x0060)
@@ -18144,17 +14792,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1156 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimSetData::pClassPointer = NULL;
 
 // Class Engine.MorphTarget
 // 0x0044 (0x00A4 - 0x0060)
@@ -18172,17 +14812,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1158 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphTarget::pClassPointer = NULL;
 
 // Class Engine.MorphTargetSet
 // 0x0018 (0x0078 - 0x0060)
@@ -18196,18 +14828,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1160 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UMorphTarget* FindMorphTarget ( struct FName MorphTargetName );
 };
-
-UClass* UMorphTargetSet::pClassPointer = NULL;
 
 // Class Engine.MorphWeightSequence
 // 0x0000 (0x0060 - 0x0060)
@@ -18219,17 +14843,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1162 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMorphWeightSequence::pClassPointer = NULL;
 
 // Class Engine.DecalActorBase
 // 0x0008 (0x028C - 0x0284)
@@ -18242,17 +14858,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1164 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADecalActorBase::pClassPointer = NULL;
 
 // Class Engine.DecalActor
 // 0x0000 (0x028C - 0x028C)
@@ -18264,17 +14872,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1166 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADecalActor::pClassPointer = NULL;
 
 // Class Engine.DecalActorMovable
 // 0x0000 (0x028C - 0x028C)
@@ -18286,17 +14886,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1168 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADecalActorMovable::pClassPointer = NULL;
 
 // Class Engine.DecalComponent
 // 0x0152 (0x0372 - 0x0220)
@@ -18360,13 +14952,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1170 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DisconnectFromManager ( );
 	void ConnectToManager ( );
@@ -18375,8 +14961,6 @@ public:
 	void SetDecalMaterial ( class UMaterialInterface* NewDecalMaterial, unsigned long bShouldReattach );
 	void ResetToDefaults ( );
 };
-
-UClass* UDecalComponent::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryDecal
 // 0x0008 (0x0094 - 0x008C)
@@ -18389,17 +14973,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1172 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryDecal::pClassPointer = NULL;
 
 // Class Engine.DecalLifetime
 // 0x0020 (0x0080 - 0x0060)
@@ -18413,17 +14989,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1174 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDecalLifetime::pClassPointer = NULL;
 
 // Class Engine.DecalLifetimeAge
 // 0x0000 (0x0080 - 0x0080)
@@ -18435,17 +15003,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1176 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDecalLifetimeAge::pClassPointer = NULL;
 
 // Class Engine.DecalLifetimeData
 // 0x0010 (0x0070 - 0x0060)
@@ -18458,17 +15018,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1178 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDecalLifetimeData::pClassPointer = NULL;
 
 // Class Engine.DecalLifetimeDataAge
 // 0x0008 (0x0078 - 0x0070)
@@ -18482,17 +15034,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1180 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDecalLifetimeDataAge::pClassPointer = NULL;
 
 // Class Engine.DecalManager
 // 0x0010 (0x0070 - 0x0060)
@@ -18505,19 +15049,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1182 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Disconnect ( class UDecalComponent* InDecalComponent );
 	void Connect ( class UDecalComponent* InDecalComponent );
 };
-
-UClass* UDecalManager::pClassPointer = NULL;
 
 // Class Engine.DecalMaterial
 // 0x0002 (0x03C8 - 0x03C6)
@@ -18529,17 +15065,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1184 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDecalMaterial::pClassPointer = NULL;
 
 // Class Engine.FogVolumeDensityInfo
 // 0x0014 (0x0298 - 0x0284)
@@ -18554,13 +15082,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1186 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct AFogVolumeDensityInfo_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct AFogVolumeDensityInfo_FCheckpointRecord* Record );
@@ -18569,8 +15091,6 @@ public:
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AFogVolumeDensityInfo::pClassPointer = NULL;
 
 // Class Engine.FogVolumeConeDensityInfo
 // 0x0000 (0x0298 - 0x0298)
@@ -18582,17 +15102,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1188 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFogVolumeConeDensityInfo::pClassPointer = NULL;
 
 // Class Engine.FogVolumeConstantDensityInfo
 // 0x0000 (0x0298 - 0x0298)
@@ -18604,17 +15116,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1190 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFogVolumeConstantDensityInfo::pClassPointer = NULL;
 
 // Class Engine.FogVolumeLinearHalfspaceDensityInfo
 // 0x0000 (0x0298 - 0x0298)
@@ -18626,17 +15130,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1192 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFogVolumeLinearHalfspaceDensityInfo::pClassPointer = NULL;
 
 // Class Engine.FogVolumeSphericalDensityInfo
 // 0x0000 (0x0298 - 0x0298)
@@ -18648,17 +15144,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1194 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFogVolumeSphericalDensityInfo::pClassPointer = NULL;
 
 // Class Engine.FogVolumeDensityComponent
 // 0x004A (0x00D0 - 0x0086)
@@ -18678,18 +15166,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1196 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetEnabled ( unsigned long bSetEnabled );
 };
-
-UClass* UFogVolumeDensityComponent::pClassPointer = NULL;
 
 // Class Engine.FogVolumeConeDensityComponent
 // 0x002C (0x00FC - 0x00D0)
@@ -18707,17 +15187,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1198 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFogVolumeConeDensityComponent::pClassPointer = NULL;
 
 // Class Engine.FogVolumeConstantDensityComponent
 // 0x0004 (0x00D4 - 0x00D0)
@@ -18730,17 +15202,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFogVolumeConstantDensityComponent::pClassPointer = NULL;
 
 // Class Engine.FogVolumeLinearHalfspaceDensityComponent
 // 0x0014 (0x00E4 - 0x00D0)
@@ -18754,17 +15218,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1202 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFogVolumeLinearHalfspaceDensityComponent::pClassPointer = NULL;
 
 // Class Engine.FogVolumeSphericalDensityComponent
 // 0x001C (0x00EC - 0x00D0)
@@ -18780,17 +15236,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1204 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFogVolumeSphericalDensityComponent::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryFogVolumeConstantDensityInfo
 // 0x000C (0x0098 - 0x008C)
@@ -18804,17 +15252,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1206 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryFogVolumeConstantDensityInfo::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryFogVolumeLinearHalfspaceDensityInfo
 // 0x0000 (0x0098 - 0x0098)
@@ -18826,17 +15266,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1208 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryFogVolumeLinearHalfspaceDensityInfo::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryFogVolumeSphericalDensityInfo
 // 0x0000 (0x0098 - 0x0098)
@@ -18848,17 +15280,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1210 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryFogVolumeSphericalDensityInfo::pClassPointer = NULL;
 
 // Class Engine.ApexDestructibleActor
 // 0x0018 (0x029C - 0x0284)
@@ -18872,19 +15296,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1212 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApexTakeRadiusDamage ( class AController* InstigatedBy, float BaseDamage, float DamageRadius, class UClass* DamageType, float Momentum, struct FVector HurtOrigin, unsigned long bFullDamage, class AActor* DamageCauser );
 	void TakeDamage ( float Damage, class AController* EventInstigator, struct FVector HitLocation, struct FVector Momentum, class UClass* DamageType, struct FTraceHitInfo HitInfo, class AActor* DamageCauser, class UDamageType* pDamage );
 };
-
-UClass* AApexDestructibleActor::pClassPointer = NULL;
 
 // Class Engine.ApexComponentBase
 // 0x001C (0x0270 - 0x0254)
@@ -18901,17 +15317,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1214 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexComponentBase::pClassPointer = NULL;
 
 // Class Engine.ApexDynamicComponent
 // 0x0008 (0x0278 - 0x0270)
@@ -18924,17 +15332,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1216 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexDynamicComponent::pClassPointer = NULL;
 
 // Class Engine.ApexStaticComponent
 // 0x0000 (0x0270 - 0x0270)
@@ -18946,17 +15346,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1218 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexStaticComponent::pClassPointer = NULL;
 
 // Class Engine.ApexStaticDestructibleComponent
 // 0x0010 (0x0280 - 0x0270)
@@ -18970,17 +15362,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1220 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexStaticDestructibleComponent::pClassPointer = NULL;
 
 // Class Engine.InstancedStaticMeshComponent
 // 0x002C (0x02F0 - 0x02C4)
@@ -18997,17 +15381,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1222 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInstancedStaticMeshComponent::pClassPointer = NULL;
 
 // Class Engine.SplineMeshComponent
 // 0x0068 (0x032C - 0x02C4)
@@ -19022,17 +15398,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1224 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USplineMeshComponent::pClassPointer = NULL;
 
 // Class Engine.ApexAsset
 // 0x0010 (0x0070 - 0x0060)
@@ -19045,17 +15413,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1226 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexAsset::pClassPointer = NULL;
 
 // Class Engine.ApexClothingAsset
 // 0x002C (0x009C - 0x0070)
@@ -19079,17 +15439,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1228 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexClothingAsset::pClassPointer = NULL;
 
 // Class Engine.ApexDestructibleAsset
 // 0x00BC (0x012C - 0x0070)
@@ -19107,17 +15459,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1230 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexDestructibleAsset::pClassPointer = NULL;
 
 // Class Engine.ApexGenericAsset
 // 0x0008 (0x0078 - 0x0070)
@@ -19130,17 +15474,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1232 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UApexGenericAsset::pClassPointer = NULL;
 
 // Class Engine.InterpFilter
 // 0x0010 (0x0070 - 0x0060)
@@ -19153,17 +15489,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1234 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpFilter::pClassPointer = NULL;
 
 // Class Engine.InterpFilter_Classes
 // 0x0000 (0x0070 - 0x0070)
@@ -19175,17 +15503,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1236 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpFilter_Classes::pClassPointer = NULL;
 
 // Class Engine.InterpFilter_Custom
 // 0x0000 (0x0070 - 0x0070)
@@ -19197,17 +15517,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1238 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpFilter_Custom::pClassPointer = NULL;
 
 // Class Engine.InterpGroup
 // 0x003C (0x009C - 0x0060)
@@ -19231,17 +15543,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1240 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroup::pClassPointer = NULL;
 
 // Class Engine.InterpGroupAI
 // 0x0014 (0x00B0 - 0x009C)
@@ -19256,17 +15560,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1242 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroupAI::pClassPointer = NULL;
 
 // Class Engine.InterpGroupDirector
 // 0x0000 (0x009C - 0x009C)
@@ -19278,17 +15574,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1244 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroupDirector::pClassPointer = NULL;
 
 // Class Engine.InterpGroupInst
 // 0x0020 (0x0080 - 0x0060)
@@ -19303,17 +15591,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1246 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroupInst::pClassPointer = NULL;
 
 // Class Engine.InterpGroupInstAI
 // 0x0009 (0x0089 - 0x0080)
@@ -19327,17 +15607,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1248 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroupInstAI::pClassPointer = NULL;
 
 // Class Engine.InterpGroupInstDirector
 // 0x0000 (0x0080 - 0x0080)
@@ -19349,17 +15621,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1250 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpGroupInstDirector::pClassPointer = NULL;
 
 // Class Engine.BioInterpTrack
 // 0x0018 (0x00A8 - 0x0090)
@@ -19374,13 +15638,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1252 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -19388,8 +15646,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioInterpTrack::pClassPointer = NULL;
 
 // Class Engine.InterpTrackDirector
 // 0x0014 (0x00A4 - 0x0090)
@@ -19403,17 +15659,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackDirector::pClassPointer = NULL;
 
 // Class Engine.InterpTrackEvent
 // 0x0014 (0x00A4 - 0x0090)
@@ -19429,17 +15677,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1256 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackEvent::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFaceFX
 // 0x00A4 (0x0134 - 0x0090)
@@ -19461,17 +15701,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFaceFX::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFloatBase
 // 0x0018 (0x00A8 - 0x0090)
@@ -19485,17 +15717,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1260 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFloatBase::pClassPointer = NULL;
 
 // Class Engine.InterpTrackAnimControl
 // 0x0028 (0x00D0 - 0x00A8)
@@ -19510,17 +15734,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1262 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackAnimControl::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFade
 // 0x0004 (0x00AC - 0x00A8)
@@ -19533,17 +15749,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1264 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFade::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFloatMaterialParam
 // 0x0018 (0x00C0 - 0x00A8)
@@ -19557,17 +15765,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1266 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFloatMaterialParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFloatParticleParam
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19580,17 +15780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1268 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFloatParticleParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackFloatProp
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19603,17 +15795,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1270 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackFloatProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackMorphWeight
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19626,17 +15810,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackMorphWeight::pClassPointer = NULL;
 
 // Class Engine.InterpTrackSkelControlScale
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19649,17 +15825,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackSkelControlScale::pClassPointer = NULL;
 
 // Class Engine.InterpTrackSlomo
 // 0x0000 (0x00A8 - 0x00A8)
@@ -19671,17 +15839,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1276 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackSlomo::pClassPointer = NULL;
 
 // Class Engine.InterpTrackLinearColorBase
 // 0x0018 (0x00A8 - 0x0090)
@@ -19695,17 +15855,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1278 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackLinearColorBase::pClassPointer = NULL;
 
 // Class Engine.InterpTrackLinearColorProp
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19718,17 +15870,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1280 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackLinearColorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackMove
 // 0x004E (0x00DE - 0x0090)
@@ -19754,17 +15898,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1282 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackMove::pClassPointer = NULL;
 
 // Class Engine.InterpTrackParticleReplay
 // 0x0010 (0x00A0 - 0x0090)
@@ -19777,17 +15913,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1284 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackParticleReplay::pClassPointer = NULL;
 
 // Class Engine.InterpTrackToggle
 // 0x0014 (0x00A4 - 0x0090)
@@ -19804,17 +15932,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1286 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackToggle::pClassPointer = NULL;
 
 // Class Engine.InterpTrackVectorBase
 // 0x0018 (0x00A8 - 0x0090)
@@ -19828,17 +15948,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1288 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackVectorBase::pClassPointer = NULL;
 
 // Class Engine.InterpTrackAudioMaster
 // 0x0000 (0x00A8 - 0x00A8)
@@ -19850,17 +15962,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1290 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackAudioMaster::pClassPointer = NULL;
 
 // Class Engine.InterpTrackColorProp
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19873,17 +15977,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1292 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackColorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackColorScale
 // 0x0000 (0x00A8 - 0x00A8)
@@ -19895,17 +15991,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1294 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackColorScale::pClassPointer = NULL;
 
 // Class Engine.InterpTrackSound
 // 0x0014 (0x00BC - 0x00A8)
@@ -19922,17 +16010,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1296 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackSound::pClassPointer = NULL;
 
 // Class Engine.InterpTrackVectorMaterialParam
 // 0x0018 (0x00C0 - 0x00A8)
@@ -19946,17 +16026,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1298 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackVectorMaterialParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackVectorProp
 // 0x0008 (0x00B0 - 0x00A8)
@@ -19969,17 +16041,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1300 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackVectorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackVisibility
 // 0x0014 (0x00A4 - 0x0090)
@@ -19995,17 +16059,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1302 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackVisibility::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInst
 // 0x0000 (0x0060 - 0x0060)
@@ -20017,17 +16073,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1304 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInst::pClassPointer = NULL;
 
 // Class Engine.BioInterpTrackInst
 // 0x0004 (0x0064 - 0x0060)
@@ -20040,17 +16088,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1306 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioInterpTrackInst::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstAnimControl
 // 0x0014 (0x0074 - 0x0060)
@@ -20064,17 +16104,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1308 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstAnimControl::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstAudioMaster
 // 0x0000 (0x0060 - 0x0060)
@@ -20086,17 +16118,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1310 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstAudioMaster::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstColorScale
 // 0x0000 (0x0060 - 0x0060)
@@ -20108,17 +16132,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1312 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstColorScale::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstDirector
 // 0x0008 (0x0068 - 0x0060)
@@ -20131,17 +16147,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstDirector::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstEvent
 // 0x0004 (0x0064 - 0x0060)
@@ -20154,17 +16162,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1316 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstEvent::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstFaceFX
 // 0x0008 (0x0068 - 0x0060)
@@ -20178,17 +16178,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1318 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstFaceFX::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstFade
 // 0x0000 (0x0060 - 0x0060)
@@ -20200,17 +16192,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1320 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstFade::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstFloatMaterialParam
 // 0x0010 (0x0070 - 0x0060)
@@ -20223,17 +16207,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1322 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstFloatMaterialParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstFloatParticleParam
 // 0x0004 (0x0064 - 0x0060)
@@ -20246,17 +16222,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1324 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstFloatParticleParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstMorphWeight
 // 0x0000 (0x0060 - 0x0060)
@@ -20268,17 +16236,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1326 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstMorphWeight::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstMove
 // 0x0069 (0x00C9 - 0x0060)
@@ -20295,17 +16255,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstMove::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstParticleReplay
 // 0x0004 (0x0064 - 0x0060)
@@ -20318,17 +16270,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1330 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstParticleReplay::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstProperty
 // 0x0010 (0x0070 - 0x0060)
@@ -20342,17 +16286,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1332 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstProperty::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstColorProp
 // 0x000C (0x007C - 0x0070)
@@ -20366,17 +16302,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1334 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstColorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstFloatProp
 // 0x000C (0x007C - 0x0070)
@@ -20390,17 +16318,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1336 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstFloatProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstLinearColorProp
 // 0x0018 (0x0088 - 0x0070)
@@ -20414,17 +16334,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1338 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstLinearColorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstVectorProp
 // 0x0014 (0x0084 - 0x0070)
@@ -20438,17 +16350,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstVectorProp::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstSkelControlScale
 // 0x0000 (0x0060 - 0x0060)
@@ -20460,17 +16364,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstSkelControlScale::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstSlomo
 // 0x0004 (0x0064 - 0x0060)
@@ -20483,17 +16379,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1344 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstSlomo::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstSound
 // 0x000C (0x006C - 0x0060)
@@ -20507,17 +16395,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstSound::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstToggle
 // 0x0009 (0x0069 - 0x0060)
@@ -20532,17 +16412,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1348 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstToggle::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstVectorMaterialParam
 // 0x0010 (0x0070 - 0x0060)
@@ -20555,17 +16427,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1350 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstVectorMaterialParam::pClassPointer = NULL;
 
 // Class Engine.InterpTrackInstVisibility
 // 0x0005 (0x0065 - 0x0060)
@@ -20579,17 +16443,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1352 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpTrackInstVisibility::pClassPointer = NULL;
 
 // Class Engine.BioMaterialExpressionEffectMatBaseProperty
 // 0x0009 (0x0069 - 0x0060)
@@ -20603,17 +16459,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1354 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionEffectMatBaseProperty::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionAbs
 // 0x0020 (0x0080 - 0x0060)
@@ -20626,17 +16474,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1356 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionAbs::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionAdd
 // 0x0040 (0x00A0 - 0x0060)
@@ -20650,17 +16490,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1358 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionAdd::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionAppendVector
 // 0x0040 (0x00A0 - 0x0060)
@@ -20674,17 +16506,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1360 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionAppendVector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionBumpOffset
 // 0x0048 (0x00A8 - 0x0060)
@@ -20700,17 +16524,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1362 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionBumpOffset::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCameraVector
 // 0x0000 (0x0060 - 0x0060)
@@ -20722,17 +16538,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1364 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCameraVector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCameraWorldPosition
 // 0x0000 (0x0060 - 0x0060)
@@ -20744,17 +16552,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1366 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCameraWorldPosition::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCeil
 // 0x0020 (0x0080 - 0x0060)
@@ -20767,17 +16567,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1368 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCeil::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionClamp
 // 0x0060 (0x00C0 - 0x0060)
@@ -20792,17 +16584,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1370 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionClamp::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionComment
 // 0x0020 (0x0080 - 0x0060)
@@ -20819,17 +16603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1372 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionComment::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionComponentMask
 // 0x0024 (0x0084 - 0x0060)
@@ -20846,17 +16622,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionComponentMask::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCompound
 // 0x0024 (0x0084 - 0x0060)
@@ -20871,17 +16639,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1376 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCompound::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstant
 // 0x0004 (0x0064 - 0x0060)
@@ -20894,17 +16654,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstant::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstant2Vector
 // 0x0008 (0x0068 - 0x0060)
@@ -20918,17 +16670,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1380 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstant2Vector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstant3Vector
 // 0x000C (0x006C - 0x0060)
@@ -20943,17 +16687,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1382 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstant3Vector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstant4Vector
 // 0x0010 (0x0070 - 0x0060)
@@ -20969,17 +16705,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1384 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstant4Vector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstantBiasScale
 // 0x0028 (0x0088 - 0x0060)
@@ -20994,17 +16722,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1386 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstantBiasScale::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionConstantClamp
 // 0x0028 (0x0088 - 0x0060)
@@ -21019,17 +16739,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1388 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionConstantClamp::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCosine
 // 0x0024 (0x0084 - 0x0060)
@@ -21043,17 +16755,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1390 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCosine::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCrossProduct
 // 0x0040 (0x00A0 - 0x0060)
@@ -21067,17 +16771,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1392 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCrossProduct::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCustom
 // 0x0031 (0x0091 - 0x0060)
@@ -21093,17 +16789,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1394 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCustom::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionCustomTexture
 // 0x0008 (0x0068 - 0x0060)
@@ -21116,17 +16804,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1396 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionCustomTexture::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDepthBiasedAlpha
 // 0x0048 (0x00A8 - 0x0060)
@@ -21142,17 +16822,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1398 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDepthBiasedAlpha::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDepthBiasedBlend
 // 0x0068 (0x00C8 - 0x0060)
@@ -21169,17 +16841,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1400 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDepthBiasedBlend::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDeriveNormalZ
 // 0x0020 (0x0080 - 0x0060)
@@ -21192,17 +16856,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1402 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDeriveNormalZ::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDesaturation
 // 0x0050 (0x00B0 - 0x0060)
@@ -21217,17 +16873,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1404 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDesaturation::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDestColor
 // 0x0000 (0x0060 - 0x0060)
@@ -21239,17 +16887,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1406 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDestColor::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDestDepth
 // 0x0004 (0x0064 - 0x0060)
@@ -21262,17 +16902,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1408 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDestDepth::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDistance
 // 0x0040 (0x00A0 - 0x0060)
@@ -21286,17 +16918,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1410 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDistance::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDivide
 // 0x0040 (0x00A0 - 0x0060)
@@ -21310,17 +16934,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1412 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDivide::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDotProduct
 // 0x0040 (0x00A0 - 0x0060)
@@ -21334,17 +16950,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1414 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDotProduct::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDynamicBranch
 // 0x00A0 (0x0100 - 0x0060)
@@ -21361,17 +16969,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1416 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDynamicBranch::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDynamicParameter
 // 0x0010 (0x0070 - 0x0060)
@@ -21384,17 +16984,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1418 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDynamicParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionMeshEmitterDynamicParameter
 // 0x0000 (0x0070 - 0x0070)
@@ -21406,17 +16998,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1420 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionMeshEmitterDynamicParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFloor
 // 0x0020 (0x0080 - 0x0060)
@@ -21429,17 +17013,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1422 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFloor::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFluidNormal
 // 0x0000 (0x0060 - 0x0060)
@@ -21451,17 +17027,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1424 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFluidNormal::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFmod
 // 0x0040 (0x00A0 - 0x0060)
@@ -21475,17 +17043,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1426 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFmod::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFoliageImpulseDirection
 // 0x0000 (0x0060 - 0x0060)
@@ -21497,17 +17057,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1428 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFoliageImpulseDirection::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFoliageNormalizedRotationAxisAndAngle
 // 0x0000 (0x0060 - 0x0060)
@@ -21519,17 +17071,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1430 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFoliageNormalizedRotationAxisAndAngle::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFontSample
 // 0x000C (0x006C - 0x0060)
@@ -21543,17 +17087,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFontSample::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFontSampleParameter
 // 0x0018 (0x0084 - 0x006C)
@@ -21567,17 +17103,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1434 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFontSampleParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFrac
 // 0x0020 (0x0080 - 0x0060)
@@ -21590,17 +17118,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFrac::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFresnel
 // 0x0024 (0x0084 - 0x0060)
@@ -21614,17 +17134,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1438 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFresnel::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionIf
 // 0x00A0 (0x0100 - 0x0060)
@@ -21641,17 +17153,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1440 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionIf::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionLightVector
 // 0x0000 (0x0060 - 0x0060)
@@ -21663,17 +17167,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionLightVector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionLightmapUVs
 // 0x0000 (0x0060 - 0x0060)
@@ -21685,17 +17181,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1444 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionLightmapUVs::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionLightmassReplace
 // 0x0040 (0x00A0 - 0x0060)
@@ -21709,17 +17197,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1446 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionLightmassReplace::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionLinearInterpolate
 // 0x0060 (0x00C0 - 0x0060)
@@ -21734,17 +17214,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1448 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionLinearInterpolate::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionMeshEmitterVertexColor
 // 0x0000 (0x0060 - 0x0060)
@@ -21756,17 +17228,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionMeshEmitterVertexColor::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionMultiply
 // 0x0040 (0x00A0 - 0x0060)
@@ -21780,17 +17244,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1452 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionMultiply::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionNormalize
 // 0x0020 (0x0080 - 0x0060)
@@ -21803,17 +17259,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1454 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionNormalize::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionObjectOrientation
 // 0x0000 (0x0060 - 0x0060)
@@ -21825,17 +17273,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1456 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionObjectOrientation::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionObjectRadius
 // 0x0000 (0x0060 - 0x0060)
@@ -21847,17 +17287,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1458 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionObjectRadius::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionObjectWorldPosition
 // 0x0000 (0x0060 - 0x0060)
@@ -21869,17 +17301,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1460 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionObjectWorldPosition::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionOcclusionPercentage
 // 0x0000 (0x0060 - 0x0060)
@@ -21891,17 +17315,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1462 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionOcclusionPercentage::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionOneMinus
 // 0x0020 (0x0080 - 0x0060)
@@ -21914,17 +17330,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1464 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionOneMinus::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionPanner
 // 0x0048 (0x00A8 - 0x0060)
@@ -21940,17 +17348,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1466 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionPanner::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionParameter
 // 0x0018 (0x0078 - 0x0060)
@@ -21964,17 +17364,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1468 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionScalarParameter
 // 0x0004 (0x007C - 0x0078)
@@ -21987,17 +17379,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1470 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionScalarParameter::pClassPointer = NULL;
 
 // Class Engine.BioMaterialExpressionEffectMatFractionEnabled
 // 0x0000 (0x007C - 0x007C)
@@ -22009,17 +17393,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1472 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionEffectMatFractionEnabled::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionStaticComponentMaskParameter
 // 0x002C (0x00A4 - 0x0078)
@@ -22037,17 +17413,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1474 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionStaticComponentMaskParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionStaticSwitchParameter
 // 0x004C (0x00C4 - 0x0078)
@@ -22064,17 +17432,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1476 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionStaticSwitchParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionVectorParameter
 // 0x0010 (0x0088 - 0x0078)
@@ -22087,17 +17447,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1478 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionVectorParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionParticleMacroUV
 // 0x0004 (0x0064 - 0x0060)
@@ -22110,17 +17462,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionParticleMacroUV::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionPerInstanceRandom
 // 0x0000 (0x0060 - 0x0060)
@@ -22132,17 +17476,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1482 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionPerInstanceRandom::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionPixelDepth
 // 0x0004 (0x0064 - 0x0060)
@@ -22155,17 +17491,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1484 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionPixelDepth::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionPower
 // 0x0040 (0x00A0 - 0x0060)
@@ -22179,17 +17507,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1486 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionPower::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionReflectionVector
 // 0x0000 (0x0060 - 0x0060)
@@ -22201,17 +17521,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1488 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionReflectionVector::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionRotateAboutAxis
 // 0x0060 (0x00C0 - 0x0060)
@@ -22226,17 +17538,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1490 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionRotateAboutAxis::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionRotator
 // 0x004C (0x00AC - 0x0060)
@@ -22253,17 +17557,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1492 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionRotator::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSceneDepth
 // 0x0024 (0x0084 - 0x0060)
@@ -22277,17 +17573,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1494 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSceneDepth::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSceneTexture
 // 0x0025 (0x0085 - 0x0060)
@@ -22302,17 +17590,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1496 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSceneTexture::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionScreenPosition
 // 0x0004 (0x0064 - 0x0060)
@@ -22325,17 +17605,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1498 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionScreenPosition::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSine
 // 0x0024 (0x0084 - 0x0060)
@@ -22349,17 +17621,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1500 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSine::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSphereMask
 // 0x0048 (0x00A8 - 0x0060)
@@ -22375,17 +17639,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1502 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSphereMask::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSquareRoot
 // 0x0020 (0x0080 - 0x0060)
@@ -22398,17 +17654,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSquareRoot::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionSubtract
 // 0x0040 (0x00A0 - 0x0060)
@@ -22422,17 +17670,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1506 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionSubtract::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureCoordinate
 // 0x0010 (0x0070 - 0x0060)
@@ -22449,17 +17689,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1508 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureCoordinate::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSample
 // 0x002C (0x008C - 0x0060)
@@ -22474,17 +17706,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1510 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSample::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionDepthBiasBlend
 // 0x0028 (0x00B4 - 0x008C)
@@ -22499,17 +17723,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1512 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionDepthBiasBlend::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionFlipBookSample
 // 0x0000 (0x008C - 0x008C)
@@ -22521,17 +17737,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1514 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionFlipBookSample::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionMeshSubUV
 // 0x0000 (0x008C - 0x008C)
@@ -22543,17 +17751,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1516 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionMeshSubUV::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionMeshSubUVBlend
 // 0x0000 (0x008C - 0x008C)
@@ -22565,17 +17765,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1518 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionMeshSubUVBlend::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionParticleSubUV
 // 0x0000 (0x008C - 0x008C)
@@ -22587,17 +17779,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1520 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionParticleSubUV::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameter
 // 0x0018 (0x00A4 - 0x008C)
@@ -22611,17 +17795,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1522 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameter::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameter2D
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22633,17 +17809,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1524 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameter2D::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionAntialiasedTextureMask
 // 0x0005 (0x00A9 - 0x00A4)
@@ -22657,17 +17825,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1526 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionAntialiasedTextureMask::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterMeshSubUV
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22679,17 +17839,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1528 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterMeshSubUV::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterMeshSubUVBlend
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22701,17 +17853,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1530 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterMeshSubUVBlend::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterSubUV
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22723,17 +17867,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1532 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterSubUV::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterCube
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22745,17 +17881,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1534 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterCube::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterMovie
 // 0x0000 (0x00A4 - 0x00A4)
@@ -22767,17 +17895,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1536 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterMovie::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTextureSampleParameterNormal
 // 0x0008 (0x00AC - 0x00A4)
@@ -22790,17 +17910,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1538 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTextureSampleParameterNormal::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTime
 // 0x0004 (0x0064 - 0x0060)
@@ -22813,17 +17925,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1540 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTime::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTransform
 // 0x0022 (0x0082 - 0x0060)
@@ -22838,17 +17942,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1542 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTransform::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTransformPosition
 // 0x0021 (0x0081 - 0x0060)
@@ -22862,17 +17958,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTransformPosition::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionTwoSidedSign
 // 0x0000 (0x0060 - 0x0060)
@@ -22884,17 +17972,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1546 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionTwoSidedSign::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionVertexColor
 // 0x0000 (0x0060 - 0x0060)
@@ -22906,17 +17986,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1548 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionVertexColor::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionWindDirectionAndSpeed
 // 0x0000 (0x0060 - 0x0060)
@@ -22928,17 +18000,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1550 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionWindDirectionAndSpeed::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionWorldNormal
 // 0x0000 (0x0060 - 0x0060)
@@ -22950,17 +18014,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1552 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionWorldNormal::pClassPointer = NULL;
 
 // Class Engine.MaterialExpressionWorldPosition
 // 0x0000 (0x0060 - 0x0060)
@@ -22972,17 +18028,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1554 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMaterialExpressionWorldPosition::pClassPointer = NULL;
 
 // Class Engine.MaterialInstance
 // 0x0054 (0x00F8 - 0x00A4)
@@ -23003,13 +18051,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1556 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsInMapOrTransientPackage ( );
 	void ClearParameterValues ( );
@@ -23022,8 +18064,6 @@ public:
 	void SetVectorParameterValue ( struct FName ParameterName, struct FLinearColor* Value );
 	void SetParent ( class UMaterialInterface* NewParent );
 };
-
-UClass* UMaterialInstance::pClassPointer = NULL;
 
 // Class Engine.MaterialInstanceConstant
 // 0x0040 (0x0138 - 0x00F8)
@@ -23039,13 +18079,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1558 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearParameterValues ( );
 	void SetFontParameterValue ( struct FName ParameterName, class UFont* FontValue, int FontPage );
@@ -23054,8 +18088,6 @@ public:
 	void SetScalarParameterValue ( struct FName ParameterName, float Value );
 	void SetParent ( class UMaterialInterface* NewParent );
 };
-
-UClass* UMaterialInstanceConstant::pClassPointer = NULL;
 
 // Class Engine.BioMaterialInstanceConstant
 // 0x0000 (0x0138 - 0x0138)
@@ -23067,17 +18099,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1560 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialInstanceConstant::pClassPointer = NULL;
 
 // Class Engine.MaterialInstanceTimeVarying
 // 0x0048 (0x0140 - 0x00F8)
@@ -23095,13 +18119,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1562 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetMaxDurationFromAllParameters ( );
 	void ClearParameterValues ( );
@@ -23116,8 +18134,6 @@ public:
 	void SetScalarParameterValue ( struct FName ParameterName, float Value );
 	void SetParent ( class UMaterialInterface* NewParent );
 };
-
-UClass* UMaterialInstanceTimeVarying::pClassPointer = NULL;
 
 // Class Engine.EmitterCameraLensEffectBase
 // 0x0024 (0x02BC - 0x0298)
@@ -23135,13 +18151,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1564 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateLocation ( float CamFOVDeg, struct FVector* CamLoc, struct FRotator* CamRot );
 	void ActivateLensEffect ( );
@@ -23150,8 +18160,6 @@ public:
 	void RegisterCamera ( class ACamera* C );
 	void Destroyed ( );
 };
-
-UClass* AEmitterCameraLensEffectBase::pClassPointer = NULL;
 
 // Class Engine.PhysXEmitterSpawnable
 // 0x0010 (0x02A8 - 0x0298)
@@ -23165,21 +18173,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1566 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventSetTemplate ( class UParticleSystem* NewTemplate, unsigned long bDestroyOnFinish );
 	void eventDestroyed ( );
 	void Term ( );
 };
-
-UClass* APhysXEmitterSpawnable::pClassPointer = NULL;
 
 // Class Engine.ParticleEventManager
 // 0x0000 (0x0284 - 0x0284)
@@ -23191,18 +18191,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1568 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleParticleModuleEventSendToGame ( class UParticleModuleEventSendToGame* InEvent, struct FVector* InCollideDirection, struct FVector* inHitLocation, struct FVector* InHitNormal, struct FName* InBoneName );
 };
-
-UClass* AParticleEventManager::pClassPointer = NULL;
 
 // Class Engine.ParticleSystemComponent
 // 0x013A (0x035A - 0x0220)
@@ -23266,13 +18258,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1570 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetStopSpawning ( int InEmitterIndex, unsigned long bInStopSpawning );
 	void ResetToDefaults ( );
@@ -23318,8 +18304,6 @@ public:
 	void OnSystemFinished ( class UParticleSystemComponent* PSystem );
 };
 
-UClass* UParticleSystemComponent::pClassPointer = NULL;
-
 // Class Engine.DistributionFloatParticleParameter
 // 0x0003 (0x009C - 0x0099)
 class UDistributionFloatParticleParameter : public UDistributionFloatParameterBase
@@ -23330,17 +18314,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1572 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatParticleParameter::pClassPointer = NULL;
 
 // Class Engine.DistributionVectorParticleParameter
 // 0x0001 (0x00CC - 0x00CB)
@@ -23352,17 +18328,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1574 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionVectorParticleParameter::pClassPointer = NULL;
 
 // Class Engine.ParticleDataManager
 // 0x0000 (0x0060 - 0x0060)
@@ -23374,17 +18342,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1576 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleDataManager::pClassPointer = NULL;
 
 // Class Engine.ParticleEmitter
 // 0x0039 (0x0099 - 0x0060)
@@ -23406,17 +18366,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1578 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleEmitter::pClassPointer = NULL;
 
 // Class Engine.ParticleMeshEmitter
 // 0x0003 (0x009C - 0x0099)
@@ -23428,17 +18380,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1580 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleMeshEmitter::pClassPointer = NULL;
 
 // Class Engine.ParticleSpriteEmitter
 // 0x0003 (0x009C - 0x0099)
@@ -23450,17 +18394,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1582 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSpriteEmitter::pClassPointer = NULL;
 
 // Class Engine.ParticleSpriteSubUVEmitter
 // 0x0000 (0x009C - 0x009C)
@@ -23472,17 +18408,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1584 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSpriteSubUVEmitter::pClassPointer = NULL;
 
 // Class Engine.ParticleEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23494,17 +18422,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1586 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleBeam2EmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23516,17 +18436,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1588 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleBeam2EmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleBeamEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23538,17 +18450,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1590 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleBeamEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleMeshEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23560,17 +18464,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1592 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleMeshEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleSpriteEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23582,17 +18478,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1594 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSpriteEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleSpriteSubUVEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23604,17 +18492,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1596 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSpriteSubUVEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleSpriteNxFluidEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23626,17 +18506,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1598 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSpriteNxFluidEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleTrail2EmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23648,17 +18520,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1600 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleTrail2EmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleTrailEmitterInstance
 // 0x0000 (0x0060 - 0x0060)
@@ -23670,17 +18534,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1602 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleTrailEmitterInstance::pClassPointer = NULL;
 
 // Class Engine.ParticleLODLevel
 // 0x009C (0x00FC - 0x0060)
@@ -23707,17 +18563,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1604 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleLODLevel::pClassPointer = NULL;
 
 // Class Engine.ParticleModule
 // 0x0005 (0x0065 - 0x0060)
@@ -23740,17 +18588,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1606 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModule::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAccelerationBase
 // 0x0007 (0x006C - 0x0065)
@@ -23763,17 +18603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1608 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAccelerationBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAcceleration
 // 0x0030 (0x009C - 0x006C)
@@ -23787,17 +18619,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1610 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAcceleration::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAccelerationOverLifetime
 // 0x002C (0x0098 - 0x006C)
@@ -23810,17 +18634,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1612 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAccelerationOverLifetime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAttractorBase
 // 0x0003 (0x0068 - 0x0065)
@@ -23832,17 +18648,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1614 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAttractorBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAttractorLine
 // 0x0060 (0x00C8 - 0x0068)
@@ -23858,17 +18666,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1616 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAttractorLine::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAttractorParticle
 // 0x0059 (0x00C1 - 0x0068)
@@ -23889,17 +18689,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1618 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAttractorParticle::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleAttractorPoint
 // 0x0078 (0x00E0 - 0x0068)
@@ -23918,17 +18710,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1620 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleAttractorPoint::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleBeamBase
 // 0x0003 (0x0068 - 0x0065)
@@ -23940,17 +18724,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1622 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleBeamBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleBeamModifier
 // 0x008D (0x00F5 - 0x0068)
@@ -23970,17 +18746,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1624 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleBeamModifier::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleBeamNoise
 // 0x00E4 (0x014C - 0x0068)
@@ -24012,17 +18780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1626 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleBeamNoise::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleBeamSource
 // 0x008A (0x00F2 - 0x0068)
@@ -24044,17 +18804,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1628 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleBeamSource::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleBeamTarget
 // 0x008E (0x00F6 - 0x0068)
@@ -24077,17 +18829,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1630 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleBeamTarget::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleCollisionBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24099,17 +18843,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1632 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleCollisionBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleCollision
 // 0x00D1 (0x0139 - 0x0068)
@@ -24134,17 +18870,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1634 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleCollision::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleColorBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24156,17 +18884,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1636 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleColorBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleColor
 // 0x0054 (0x00BC - 0x0068)
@@ -24181,17 +18901,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1638 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleColor::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleColorByParameter
 // 0x000C (0x0074 - 0x0068)
@@ -24205,17 +18917,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1640 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleColorByParameter::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleColorOverLife
 // 0x0054 (0x00BC - 0x0068)
@@ -24230,17 +18934,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1642 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleColorOverLife::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleColorScaleOverLife
 // 0x0054 (0x00BC - 0x0068)
@@ -24255,17 +18951,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1644 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleColorScaleOverLife::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24277,17 +18965,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1646 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleEventBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventGenerator
 // 0x0010 (0x0078 - 0x0068)
@@ -24300,17 +18980,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1648 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleEventGenerator::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventReceiverBase
 // 0x0009 (0x0071 - 0x0068)
@@ -24324,17 +18996,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1650 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleEventReceiverBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventReceiverKillParticles
 // 0x0007 (0x0078 - 0x0071)
@@ -24347,17 +19011,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1652 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleEventReceiverKillParticles::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventReceiverSpawn
 // 0x0057 (0x00C8 - 0x0071)
@@ -24374,17 +19030,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1654 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleEventReceiverSpawn::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleKillBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24396,17 +19044,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1656 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleKillBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleKillBox
 // 0x005C (0x00C4 - 0x0068)
@@ -24422,17 +19062,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1658 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleKillBox::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleKillHeight
 // 0x0028 (0x0090 - 0x0068)
@@ -24447,17 +19079,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1660 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleKillHeight::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLifetimeBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24469,17 +19093,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1662 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLifetimeBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLifetime
 // 0x0024 (0x008C - 0x0068)
@@ -24492,17 +19108,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1664 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLifetime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationBase
 // 0x000F (0x0074 - 0x0065)
@@ -24517,17 +19125,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1666 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocation
 // 0x002C (0x00A0 - 0x0074)
@@ -24540,17 +19140,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1668 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocation::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationDirect
 // 0x00B0 (0x0124 - 0x0074)
@@ -24566,17 +19158,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1670 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationDirect::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationEmitter
 // 0x0015 (0x0089 - 0x0074)
@@ -24594,17 +19178,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1672 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationEmitter::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationEmitterDirect
 // 0x0008 (0x007C - 0x0074)
@@ -24617,17 +19193,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1674 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationEmitterDirect::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationPrimitiveBase
 // 0x0054 (0x00C8 - 0x0074)
@@ -24649,17 +19217,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1676 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationPrimitiveBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationPrimitiveCylinder
 // 0x004D (0x0115 - 0x00C8)
@@ -24675,17 +19235,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1678 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationPrimitiveCylinder::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleLocationPrimitiveSphere
 // 0x0024 (0x00EC - 0x00C8)
@@ -24698,17 +19250,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1680 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleLocationPrimitiveSphere::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSourceMovement
 // 0x002C (0x00A0 - 0x0074)
@@ -24721,17 +19265,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1682 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSourceMovement::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMaterialBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24743,17 +19279,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1684 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMaterialBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMaterialByParameter
 // 0x0020 (0x0088 - 0x0068)
@@ -24767,17 +19295,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1686 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMaterialByParameter::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMeshMaterial
 // 0x0010 (0x0078 - 0x0068)
@@ -24790,17 +19310,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1688 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMeshMaterial::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleOrbitBase
 // 0x0007 (0x006C - 0x0065)
@@ -24813,17 +19325,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1690 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleOrbitBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleOrbit
 // 0x0091 (0x00FD - 0x006C)
@@ -24842,17 +19346,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1692 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleOrbit::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleOrientationBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24864,17 +19360,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1694 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleOrientationBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleOrientationAxisLock
 // 0x0001 (0x0069 - 0x0068)
@@ -24887,17 +19375,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1696 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleOrientationAxisLock::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleParameterBase
 // 0x0003 (0x0068 - 0x0065)
@@ -24909,17 +19389,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1698 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleParameterBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleParameterDynamic
 // 0x0010 (0x0078 - 0x0068)
@@ -24932,17 +19404,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1700 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleParameterDynamic::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRequired
 // 0x008C (0x00F1 - 0x0065)
@@ -24986,17 +19450,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1702 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRequired::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotationBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25008,17 +19464,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1704 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotationBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMeshRotation
 // 0x0030 (0x0098 - 0x0068)
@@ -25032,17 +19480,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1706 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMeshRotation::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotation
 // 0x0024 (0x008C - 0x0068)
@@ -25055,17 +19495,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1708 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotation::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotationOverLifetime
 // 0x0028 (0x0090 - 0x0068)
@@ -25079,17 +19511,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1710 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotationOverLifetime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotationRateBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25101,17 +19525,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1712 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotationRateBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMeshRotationRate
 // 0x002C (0x0094 - 0x0068)
@@ -25124,17 +19540,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1714 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMeshRotationRate::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleMeshRotationRateMultiplyLife
 // 0x002C (0x0094 - 0x0068)
@@ -25147,17 +19555,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1716 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleMeshRotationRateMultiplyLife::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotationRate
 // 0x0024 (0x008C - 0x0068)
@@ -25170,17 +19570,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1718 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotationRate::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleRotationRateMultiplyLife
 // 0x0024 (0x008C - 0x0068)
@@ -25193,17 +19585,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1720 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleRotationRateMultiplyLife::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSizeBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25215,17 +19599,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1722 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSizeBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSize
 // 0x002C (0x0094 - 0x0068)
@@ -25238,17 +19614,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1724 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSize::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSizeMultiplyLife
 // 0x0030 (0x0098 - 0x0068)
@@ -25264,17 +19632,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1726 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSizeMultiplyLife::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSizeMultiplyVelocity
 // 0x0030 (0x0098 - 0x0068)
@@ -25290,17 +19650,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1728 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSizeMultiplyVelocity::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSizeScale
 // 0x0030 (0x0098 - 0x0068)
@@ -25316,17 +19668,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1730 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSizeScale::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSizeScaleByTime
 // 0x0030 (0x0098 - 0x0068)
@@ -25342,17 +19686,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1732 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSizeScaleByTime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSpawnBase
 // 0x0007 (0x006C - 0x0065)
@@ -25366,17 +19702,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1734 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSpawnBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSpawn
 // 0x0059 (0x00C5 - 0x006C)
@@ -25392,17 +19720,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1736 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSpawn::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSpawnPerUnit
 // 0x0030 (0x009C - 0x006C)
@@ -25418,17 +19738,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1738 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSpawnPerUnit::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleStoreSpawnTimeBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25440,17 +19752,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1740 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleStoreSpawnTimeBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleStoreSpawnTime
 // 0x0000 (0x0068 - 0x0068)
@@ -25462,17 +19766,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1742 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleStoreSpawnTime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSubUVBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25484,17 +19780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1744 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSubUVBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSubUV
 // 0x0024 (0x008C - 0x0068)
@@ -25507,17 +19795,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1746 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSubUV::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSubUVMovie
 // 0x002C (0x00B8 - 0x008C)
@@ -25532,17 +19812,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1748 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSubUVMovie::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSubUVDirect
 // 0x0058 (0x00C0 - 0x0068)
@@ -25556,17 +19828,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1750 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSubUVDirect::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleSubUVSelect
 // 0x002C (0x0094 - 0x0068)
@@ -25579,17 +19843,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1752 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleSubUVSelect::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTrailBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25601,17 +19857,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1754 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTrailBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTrailSource
 // 0x0046 (0x00AE - 0x0068)
@@ -25631,17 +19879,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1756 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTrailSource::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTrailSpawn
 // 0x000C (0x0074 - 0x0068)
@@ -25655,17 +19895,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1758 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTrailSpawn::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTrailTaper
 // 0x0025 (0x008D - 0x0068)
@@ -25679,17 +19911,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1760 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTrailTaper::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataBase
 // 0x0003 (0x0068 - 0x0065)
@@ -25701,17 +19925,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1762 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataAnimTrail
 // 0x001C (0x0084 - 0x0068)
@@ -25736,17 +19952,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1764 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataAnimTrail::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataBeam
 // 0x00D2 (0x013A - 0x0068)
@@ -25771,17 +19979,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1766 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataBeam::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataBeam2
 // 0x0096 (0x00FE - 0x0068)
@@ -25811,17 +20011,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1768 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataBeam2::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataMesh
 // 0x001B (0x0083 - 0x0068)
@@ -25845,17 +20037,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1770 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataMesh::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataMeshPhysX
 // 0x0026 (0x00A9 - 0x0083)
@@ -25872,17 +20056,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1772 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataMeshPhysX::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataNxFluid
 // 0x006B (0x00D3 - 0x0068)
@@ -25924,17 +20100,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1774 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataNxFluid::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataPhysX
 // 0x0018 (0x0080 - 0x0068)
@@ -25948,17 +20116,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1776 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataPhysX::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataRibbon
 // 0x0025 (0x008D - 0x0068)
@@ -25987,17 +20147,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1778 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataRibbon::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataTrail
 // 0x0038 (0x00A0 - 0x0068)
@@ -26017,17 +20169,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1780 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataTrail::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleTypeDataTrail2
 // 0x0020 (0x0088 - 0x0068)
@@ -26051,17 +20195,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1782 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleTypeDataTrail2::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberBase
 // 0x0013 (0x0078 - 0x0065)
@@ -26074,17 +20210,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1784 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberLTISIVCL
 // 0x00D8 (0x0150 - 0x0078)
@@ -26102,17 +20230,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1786 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberLTISIVCL::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberLTISIVCLIL
 // 0x00FC (0x0174 - 0x0078)
@@ -26131,17 +20251,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1788 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberLTISIVCLIL::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberLTISIVCLILIRSSBLIRR
 // 0x016C (0x01E4 - 0x0078)
@@ -26166,17 +20278,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1790 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberLTISIVCLILIRSSBLIRR::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberRainDrops
 // 0x0085 (0x00FD - 0x0078)
@@ -26215,17 +20319,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1792 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberRainDrops::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberRainImpacts
 // 0x016D (0x01E5 - 0x0078)
@@ -26262,17 +20358,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1794 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberRainImpacts::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberRainSplashA
 // 0x00DC (0x0154 - 0x0078)
@@ -26294,17 +20382,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1796 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberRainSplashA::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleUberRainSplashB
 // 0x00DC (0x0154 - 0x0078)
@@ -26325,17 +20405,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1798 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleUberRainSplashB::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleVelocityBase
 // 0x0007 (0x006C - 0x0065)
@@ -26348,17 +20420,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1800 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleVelocityBase::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleVelocity
 // 0x0050 (0x00BC - 0x006C)
@@ -26372,17 +20436,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1802 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleVelocity::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleVelocityInheritParent
 // 0x002C (0x0098 - 0x006C)
@@ -26395,17 +20451,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1804 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleVelocityInheritParent::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleVelocityOverLifetime
 // 0x0030 (0x009C - 0x006C)
@@ -26419,17 +20467,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1806 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleModuleVelocityOverLifetime::pClassPointer = NULL;
 
 // Class Engine.ParticleModuleEventSendToGame
 // 0x0000 (0x0060 - 0x0060)
@@ -26441,18 +20481,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1808 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoEvent ( struct FVector* InCollideDirection, struct FVector* inHitLocation, struct FVector* InHitNormal, struct FName* InBoneName );
 };
-
-UClass* UParticleModuleEventSendToGame::pClassPointer = NULL;
 
 // Class Engine.ParticleSystem
 // 0x00E7 (0x0147 - 0x0060)
@@ -26499,13 +20531,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1810 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SetLODDistance ( int LODLevelIndex, float InDistance );
 	void SetCurrentLODMethod ( unsigned char InMethod );
@@ -26513,8 +20539,6 @@ public:
 	int GetLODLevelCount ( );
 	unsigned char GetCurrentLODMethod ( );
 };
-
-UClass* UParticleSystem::pClassPointer = NULL;
 
 // Class Engine.ParticleSystemReplay
 // 0x0014 (0x0074 - 0x0060)
@@ -26528,17 +20552,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1812 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleSystemReplay::pClassPointer = NULL;
 
 // Class Engine.PhysXParticleSystem
 // 0x005F (0x00BF - 0x0060)
@@ -26578,17 +20594,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1814 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPhysXParticleSystem::pClassPointer = NULL;
 
 // Class Engine.KActor
 // 0x00DC (0x03A8 - 0x02CC)
@@ -26626,13 +20634,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1816 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Reset ( );
 	void OnTeleport ( class USeqAct_Teleport* inAction );
@@ -26650,8 +20652,6 @@ public:
 	class UPhysicalMaterial* GetKActorPhysMaterial ( );
 };
 
-UClass* AKActor::pClassPointer = NULL;
-
 // Class Engine.KActorFromStatic
 // 0x000C (0x03B4 - 0x03A8)
 class AKActorFromStatic : public AKActor
@@ -26664,13 +20664,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1818 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void TakeRadiusDamage ( class AController* InstigatedBy, float BaseDamage, float DamageRadius, class UClass* DamageType, float Momentum, struct FVector HurtOrigin, unsigned long bFullDamage, class AActor* DamageCauser, class UDamageType* pDamage, float DamageFalloffExponent );
 	void eventBump ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitNormal );
@@ -26681,8 +20675,6 @@ public:
 	void eventOnWakeRBPhysics ( );
 	void eventOnSleepRBPhysics ( );
 };
-
-UClass* AKActorFromStatic::pClassPointer = NULL;
 
 // Class Engine.KActorSpawnable
 // 0x0004 (0x03AC - 0x03A8)
@@ -26696,21 +20688,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1820 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetComponents ( );
 	void eventRecycleInternal ( );
 	void Recycle ( );
 	void Initialize ( );
 };
-
-UClass* AKActorSpawnable::pClassPointer = NULL;
 
 // Class Engine.KAsset
 // 0x001C (0x02A0 - 0x0284)
@@ -26728,13 +20712,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1822 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoKismetAttachment ( class AActor* Attachment, class USeqAct_AttachToActor* Action );
 	void OnTeleport ( class USeqAct_Teleport* inAction );
@@ -26745,8 +20723,6 @@ public:
 	void SetMeshAndPhysAsset ( class USkeletalMesh* NewMesh, class UPhysicsAsset* NewPhysAsset );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AKAsset::pClassPointer = NULL;
 
 // Class Engine.Pawn
 // 0x03C9 (0x064D - 0x0284)
@@ -26985,13 +20961,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1824 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnFaceFXAnimStopped ( );
 	void eventOnFaceFXAnimStarted ( );
@@ -27251,8 +21221,6 @@ public:
 	bool EpicSetDesiredRotation ( struct FRotator TargetDesiredRotation, unsigned long InLockDesiredRotation, unsigned long InUnlockWhenReached, float InterpolationTime );
 };
 
-UClass* APawn::pClassPointer = NULL;
-
 // Class Engine.Vehicle
 // 0x0074 (0x06C1 - 0x064D)
 class AVehicle : public APawn
@@ -27290,13 +21258,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1826 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyDriverTakeHit ( class AController* InstigatedBy, struct FVector HitLocation, int Damage, class UClass* DamageType, struct FVector Momentum );
 	void eventReplicatedEvent ( struct FName VarName );
@@ -27346,8 +21308,6 @@ public:
 	void DisplayDebug ( class AHUD* HUD, float* out_YL, float* out_YPos );
 	void NotifyTeamChanged ( );
 };
-
-UClass* AVehicle::pClassPointer = NULL;
 
 // Class Engine.SVehicle
 // 0x014F (0x0810 - 0x06C1)
@@ -27411,13 +21371,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1828 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetSVehicleDebug ( struct TArray<struct FString>* DebugInfo );
 	float HermiteEval ( float Slip );
@@ -27449,8 +21403,6 @@ public:
 	void SetWheelCollision ( int WheelNum, unsigned long bCollision );
 };
 
-UClass* ASVehicle::pClassPointer = NULL;
-
 // Class Engine.RB_ConstraintActor
 // 0x0034 (0x02B8 - 0x0284)
 class ARB_ConstraintActor : public ARigidBodyBase
@@ -27470,13 +21422,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1830 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggleConstraintDrive ( class USeqAct_ToggleConstraintDrive* Action );
 	void OnToggle ( class USeqAct_Toggle* Action );
@@ -27485,8 +21431,6 @@ public:
 	void InitConstraint ( class AActor* Actor1, class AActor* Actor2, struct FName Actor1Bone, struct FName Actor2Bone, float BreakThreshold );
 	void SetDisableCollision ( unsigned long NewDisableCollision );
 };
-
-UClass* ARB_ConstraintActor::pClassPointer = NULL;
 
 // Class Engine.RB_LineImpulseActor
 // 0x0015 (0x0299 - 0x0284)
@@ -27505,20 +21449,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1832 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReplicatedEvent ( struct FName VarName );
 	void OnToggle ( class USeqAct_Toggle* inAction );
 	void FireLineImpulse ( );
 };
-
-UClass* ARB_LineImpulseActor::pClassPointer = NULL;
 
 // Class Engine.RB_RadialImpulseActor
 // 0x0011 (0x0295 - 0x0284)
@@ -27533,19 +21469,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1834 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReplicatedEvent ( struct FName VarName );
 	void OnToggle ( class USeqAct_Toggle* inAction );
 };
-
-UClass* ARB_RadialImpulseActor::pClassPointer = NULL;
 
 // Class Engine.RB_Thruster
 // 0x0008 (0x028C - 0x0284)
@@ -27559,18 +21487,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1836 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 };
-
-UClass* ARB_Thruster::pClassPointer = NULL;
 
 // Class Engine.RB_ConstraintDrawComponent
 // 0x0008 (0x0228 - 0x0220)
@@ -27583,17 +21503,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1838 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_ConstraintDrawComponent::pClassPointer = NULL;
 
 // Class Engine.RB_RadialImpulseComponent
 // 0x0015 (0x0235 - 0x0220)
@@ -27610,18 +21522,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1840 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void FireImpulse ( struct FVector Origin );
 };
-
-UClass* URB_RadialImpulseComponent::pClassPointer = NULL;
 
 // Class Engine.RB_Handle
 // 0x0076 (0x00FC - 0x0086)
@@ -27650,13 +21554,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1842 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FQuat GetOrientation ( );
 	void SetOrientation ( struct FQuat* NewOrientation );
@@ -27666,8 +21564,6 @@ public:
 	void ReleaseComponent ( );
 	void GrabComponent ( class UPrimitiveComponent* Component, struct FName InBoneName, struct FVector GrabLocation, unsigned long bConstrainRotation );
 };
-
-UClass* URB_Handle::pClassPointer = NULL;
 
 // Class Engine.RB_Spring
 // 0x0062 (0x00E8 - 0x0086)
@@ -27695,19 +21591,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1844 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Clear ( );
 	void SetComponents ( class UPrimitiveComponent* InComponent1, struct FName InBoneName1, struct FVector Position1, class UPrimitiveComponent* InComponent2, struct FName InBoneName2, struct FVector Position2 );
 };
-
-UClass* URB_Spring::pClassPointer = NULL;
 
 // Class Engine.SVehicleSimBase
 // 0x0036 (0x00BC - 0x0086)
@@ -27732,17 +21620,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1846 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USVehicleSimBase::pClassPointer = NULL;
 
 // Class Engine.SVehicleSimCar
 // 0x003C (0x00F8 - 0x00BC)
@@ -27765,17 +21645,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1848 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USVehicleSimCar::pClassPointer = NULL;
 
 // Class Engine.SVehicleSimCarTransmission
 // 0x0054 (0x014C - 0x00F8)
@@ -27796,17 +21668,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1850 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USVehicleSimCarTransmission::pClassPointer = NULL;
 
 // Class Engine.SVehicleSimTank
 // 0x0034 (0x012C - 0x00F8)
@@ -27827,17 +21691,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1852 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USVehicleSimTank::pClassPointer = NULL;
 
 // Class Engine.PhysicalMaterial
 // 0x0098 (0x00F8 - 0x0060)
@@ -27878,21 +21734,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1854 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void AllPhysicalMaterials ( class UPhysicalMaterial** OutPhysMat );
 	class UPhysicalMaterialPropertyBase* GetPhysicalMaterialProperty ( class UClass* DesiredClass );
 	void FindFractureSounds ( class USoundCue** OutSoundExplosion, class USoundCue** OutSoundSingle );
 	struct FPhysEffectInfo FindPhysEffectInfo ( unsigned char Type );
 };
-
-UClass* UPhysicalMaterial::pClassPointer = NULL;
 
 // Class Engine.PhysicalMaterialPropertyBase
 // 0x0000 (0x0060 - 0x0060)
@@ -27904,17 +21752,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1856 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPhysicalMaterialPropertyBase::pClassPointer = NULL;
 
 // Class Engine.PhysicsAsset
 // 0x0080 (0x00E0 - 0x0060)
@@ -27931,18 +21771,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1858 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int FindBodyIndex ( struct FName BodyName );
 };
-
-UClass* UPhysicsAsset::pClassPointer = NULL;
 
 // Class Engine.PhysicsAssetInstance
 // 0x0090 (0x00F0 - 0x0060)
@@ -27967,13 +21799,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1860 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class URB_ConstraintInstance* FindConstraintInstance ( struct FName ConName, class UPhysicsAsset* InAsset );
 	class URB_BodyInstance* FindBodyInstance ( struct FName BodyName, class UPhysicsAsset* InAsset );
@@ -27994,8 +21820,6 @@ public:
 	void SetLinearDriveScale ( float InLinearSpringScale, float InLinearDampingScale, float InLinearForceLimitScale );
 };
 
-UClass* UPhysicsAssetInstance::pClassPointer = NULL;
-
 // Class Engine.PhysicsLODVerticalDestructible
 // 0x0008 (0x0068 - 0x0060)
 class UPhysicsLODVerticalDestructible : public UObject
@@ -28008,17 +21832,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1862 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPhysicsLODVerticalDestructible::pClassPointer = NULL;
 
 // Class Engine.PhysicsLODVerticalEmitter
 // 0x0004 (0x0064 - 0x0060)
@@ -28031,17 +21847,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1864 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPhysicsLODVerticalEmitter::pClassPointer = NULL;
 
 // Class Engine.RB_BodyInstance
 // 0x0078 (0x00D8 - 0x0060)
@@ -28084,13 +21892,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1866 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateDampingProperties ( );
 	void UpdateMassProperties ( class URB_BodySetup* Setup );
@@ -28111,8 +21913,6 @@ public:
 	void SetFixed ( unsigned long bNewFixed );
 	float GetBodyMass ( );
 };
-
-UClass* URB_BodyInstance::pClassPointer = NULL;
 
 // Class Engine.RB_ConstraintInstance
 // 0x0080 (0x00E0 - 0x0060)
@@ -28154,13 +21954,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1868 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MoveKinActorTransform ( struct FMatrix* NewTM );
 	void SetLinearLimitSize ( float NewLimitSize );
@@ -28180,8 +21974,6 @@ public:
 	void TermConstraint ( );
 	void InitConstraint ( class UPrimitiveComponent* PrimComp1, class UPrimitiveComponent* PrimComp2, class URB_ConstraintSetup* Setup, float Scale, class AActor* InOwner, class UPrimitiveComponent* InPrimComp, unsigned long bMakeKinForBody1 );
 };
-
-UClass* URB_ConstraintInstance::pClassPointer = NULL;
 
 // Class Engine.RB_ConstraintSetup
 // 0x00C4 (0x0124 - 0x0060)
@@ -28229,17 +22021,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1870 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_ConstraintSetup::pClassPointer = NULL;
 
 // Class Engine.RB_BSJointSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28251,17 +22035,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1872 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_BSJointSetup::pClassPointer = NULL;
 
 // Class Engine.RB_DistanceJointSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28273,17 +22049,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1874 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_DistanceJointSetup::pClassPointer = NULL;
 
 // Class Engine.RB_HingeSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28295,17 +22063,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1876 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_HingeSetup::pClassPointer = NULL;
 
 // Class Engine.RB_PrismaticSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28317,17 +22077,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1878 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_PrismaticSetup::pClassPointer = NULL;
 
 // Class Engine.RB_PulleyJointSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28339,17 +22091,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1880 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_PulleyJointSetup::pClassPointer = NULL;
 
 // Class Engine.RB_SkelJointSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28361,17 +22105,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1882 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_SkelJointSetup::pClassPointer = NULL;
 
 // Class Engine.RB_StayUprightSetup
 // 0x0000 (0x0124 - 0x0124)
@@ -28383,17 +22119,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1884 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* URB_StayUprightSetup::pClassPointer = NULL;
 
 // Class Engine.SVehicleWheel
 // 0x00DD (0x014D - 0x0070)
@@ -28448,17 +22176,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1886 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USVehicleWheel::pClassPointer = NULL;
 
 // Class Engine.NxGenericForceFieldBrush
 // 0x00DE (0x03A2 - 0x02C4)
@@ -28492,19 +22212,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1888 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool StopsProjectile ( class AProjectile* P );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ANxGenericForceFieldBrush::pClassPointer = NULL;
 
 // Class Engine.RB_ForceFieldExcludeVolume
 // 0x0004 (0x02C8 - 0x02C4)
@@ -28517,17 +22229,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1890 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_ForceFieldExcludeVolume::pClassPointer = NULL;
 
 // Class Engine.NxForceField
 // 0x0051 (0x02D5 - 0x0284)
@@ -28549,19 +22253,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1892 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* inAction );
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxForceField::pClassPointer = NULL;
 
 // Class Engine.NxCylindricalForceField
 // 0x0033 (0x0308 - 0x02D5)
@@ -28584,17 +22280,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1894 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxCylindricalForceField::pClassPointer = NULL;
 
 // Class Engine.NxCylindricalForceFieldCapsule
 // 0x0008 (0x0310 - 0x0308)
@@ -28607,18 +22295,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1896 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxCylindricalForceFieldCapsule::pClassPointer = NULL;
 
 // Class Engine.NxForceFieldGeneric
 // 0x00BC (0x0391 - 0x02D5)
@@ -28650,18 +22330,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1898 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxForceFieldGeneric::pClassPointer = NULL;
 
 // Class Engine.NxForceFieldRadial
 // 0x0028 (0x02FD - 0x02D5)
@@ -28680,18 +22352,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1900 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxForceFieldRadial::pClassPointer = NULL;
 
 // Class Engine.NxForceFieldTornado
 // 0x0047 (0x031C - 0x02D5)
@@ -28717,18 +22381,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1902 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxForceFieldTornado::pClassPointer = NULL;
 
 // Class Engine.NxGenericForceField
 // 0x00A0 (0x0375 - 0x02D5)
@@ -28755,17 +22411,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1904 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxGenericForceField::pClassPointer = NULL;
 
 // Class Engine.NxGenericForceFieldBox
 // 0x0017 (0x038C - 0x0375)
@@ -28779,18 +22427,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1906 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoInitRBPhys ( );
 };
-
-UClass* ANxGenericForceFieldBox::pClassPointer = NULL;
 
 // Class Engine.NxGenericForceFieldCapsule
 // 0x0013 (0x0388 - 0x0375)
@@ -28805,17 +22445,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1908 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxGenericForceFieldCapsule::pClassPointer = NULL;
 
 // Class Engine.NxRadialForceField
 // 0x001C (0x02F1 - 0x02D5)
@@ -28832,17 +22464,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1910 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxRadialForceField::pClassPointer = NULL;
 
 // Class Engine.NxRadialCustomForceField
 // 0x000F (0x0300 - 0x02F1)
@@ -28856,17 +22480,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1912 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxRadialCustomForceField::pClassPointer = NULL;
 
 // Class Engine.NxTornadoAngularForceField
 // 0x0037 (0x030C - 0x02D5)
@@ -28890,17 +22506,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1914 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxTornadoAngularForceField::pClassPointer = NULL;
 
 // Class Engine.NxTornadoAngularForceFieldCapsule
 // 0x0008 (0x0314 - 0x030C)
@@ -28913,17 +22521,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1916 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxTornadoAngularForceFieldCapsule::pClassPointer = NULL;
 
 // Class Engine.NxTornadoForceField
 // 0x0033 (0x0308 - 0x02D5)
@@ -28946,17 +22546,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1918 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxTornadoForceField::pClassPointer = NULL;
 
 // Class Engine.NxTornadoForceFieldCapsule
 // 0x0008 (0x0310 - 0x0308)
@@ -28969,17 +22561,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1920 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANxTornadoForceFieldCapsule::pClassPointer = NULL;
 
 // Class Engine.RB_CylindricalForceActor
 // 0x0034 (0x02B8 - 0x0284)
@@ -29007,18 +22591,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1922 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* inAction );
 };
-
-UClass* ARB_CylindricalForceActor::pClassPointer = NULL;
 
 // Class Engine.RB_RadialForceActor
 // 0x0022 (0x02A6 - 0x0284)
@@ -29043,18 +22619,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1924 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* inAction );
 };
-
-UClass* ARB_RadialForceActor::pClassPointer = NULL;
 
 // Class Engine.ForceFieldShape
 // 0x0000 (0x0060 - 0x0060)
@@ -29066,13 +22634,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1926 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPrimitiveComponent* eventGetDrawComponent ( );
 	void eventFillByCylinder ( float BottomRadius, float TopRadius, float Height, float HeightOffset );
@@ -29080,8 +22642,6 @@ public:
 	void eventFillByBox ( struct FVector Dimension );
 	void eventFillBySphere ( float Radius );
 };
-
-UClass* UForceFieldShape::pClassPointer = NULL;
 
 // Class Engine.ForceFieldShapeBox
 // 0x0008 (0x0068 - 0x0060)
@@ -29094,13 +22654,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1928 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPrimitiveComponent* eventGetDrawComponent ( );
 	void eventFillByCylinder ( float BottomRadius, float TopRadius, float Height, float HeightOffset );
@@ -29109,8 +22663,6 @@ public:
 	void eventFillBySphere ( float Radius );
 	struct FVector eventGetRadii ( );
 };
-
-UClass* UForceFieldShapeBox::pClassPointer = NULL;
 
 // Class Engine.ForceFieldShapeCapsule
 // 0x0008 (0x0068 - 0x0060)
@@ -29123,13 +22675,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1930 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPrimitiveComponent* eventGetDrawComponent ( );
 	void eventFillByCylinder ( float BottomRadius, float TopRadius, float Height, float HeightOffset );
@@ -29139,8 +22685,6 @@ public:
 	float eventGetRadius ( );
 	float eventGetHeight ( );
 };
-
-UClass* UForceFieldShapeCapsule::pClassPointer = NULL;
 
 // Class Engine.ForceFieldShapeSphere
 // 0x0008 (0x0068 - 0x0060)
@@ -29153,13 +22697,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1932 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPrimitiveComponent* eventGetDrawComponent ( );
 	void eventFillByCylinder ( float BottomRadius, float TopRadius, float Height, float HeightOffset );
@@ -29168,8 +22706,6 @@ public:
 	void eventFillBySphere ( float Radius );
 	float eventGetRadius ( );
 };
-
-UClass* UForceFieldShapeSphere::pClassPointer = NULL;
 
 // Class Engine.PrefabInstance
 // 0x00EC (0x0370 - 0x0284)
@@ -29192,17 +22728,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1934 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APrefabInstance::pClassPointer = NULL;
 
 // Class Engine.Prefab
 // 0x002C (0x008C - 0x0060)
@@ -29218,17 +22746,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1936 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPrefab::pClassPointer = NULL;
 
 // Class Engine.SequenceObject
 // 0x0028 (0x0088 - 0x0060)
@@ -29247,13 +22767,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1938 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventIsPastingIntoUISequenceAllowed ( );
@@ -29263,8 +22777,6 @@ public:
 	class AWorldInfo* GetWorldInfo ( );
 	void ScriptLog ( struct FString LogText, unsigned long bWarning );
 };
-
-UClass* USequenceObject::pClassPointer = NULL;
 
 // Class Engine.SequenceFrame
 // 0x0000 (0x0088 - 0x0088)
@@ -29276,18 +22788,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1940 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USequenceFrame::pClassPointer = NULL;
 
 // Class Engine.SequenceFrameWrapped
 // 0x0000 (0x0088 - 0x0088)
@@ -29299,17 +22803,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1942 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceFrameWrapped::pClassPointer = NULL;
 
 // Class Engine.SequenceOp
 // 0x0051 (0x00D9 - 0x0088)
@@ -29333,13 +22829,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1944 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ForceActivateInput ( int InputIdx );
 	class AController* GetController ( class AActor* TheActor );
@@ -29373,8 +22863,6 @@ public:
 	bool HasLinkedOps ( unsigned long bConsiderInputLinks );
 };
 
-UClass* USequenceOp::pClassPointer = NULL;
-
 // Class Engine.Sequence
 // 0x00BB (0x0194 - 0x00D9)
 class USequence : public USequenceOp
@@ -29405,13 +22893,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1946 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeDelayedActiveOpPostLoadGame ( int i_IndexOfActiveOp, struct FActivateOp i_newActiveOp );
 	void InitializeInternalArrayPostLoadGame ( struct TArray<int> i_ArrayOfIndexes, unsigned char i_arrayType );
@@ -29420,8 +22902,6 @@ public:
 	void FindSeqObjectsByName ( struct FString SeqObjName, unsigned long bCheckComment, unsigned long bRecursive, struct TArray<class USequenceObject*>* OutputObjects );
 	void FindSeqObjectsByClass ( class UClass* DesiredClass, unsigned long bRecursive, struct TArray<class USequenceObject*>* OutputObjects );
 };
-
-UClass* USequence::pClassPointer = NULL;
 
 // Class Engine.PrefabSequence
 // 0x0008 (0x019C - 0x0194)
@@ -29434,19 +22914,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1948 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class APrefabInstance* GetOwnerPrefab ( );
 	void SetOwnerPrefab ( class APrefabInstance* InOwner );
 };
-
-UClass* UPrefabSequence::pClassPointer = NULL;
 
 // Class Engine.PrefabSequenceContainer
 // 0x0000 (0x0194 - 0x0194)
@@ -29458,17 +22930,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1950 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPrefabSequenceContainer::pClassPointer = NULL;
 
 // Class Engine.SequenceReference
 // 0x0018 (0x01AC - 0x0194)
@@ -29483,17 +22947,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1952 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceReference::pClassPointer = NULL;
 
 // Class Engine.SequenceAction
 // 0x001F (0x00F8 - 0x00D9)
@@ -29508,17 +22964,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1954 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceAction::pClassPointer = NULL;
 
 // Class Engine.BioSeqAct_BlockForTextureStreaming
 // 0x0000 (0x00F8 - 0x00F8)
@@ -29530,17 +22978,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1956 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_BlockForTextureStreaming::pClassPointer = NULL;
 
 // Class Engine.BioSeqAct_SetProximityRange
 // 0x000C (0x0104 - 0x00F8)
@@ -29554,17 +22994,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1958 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetProximityRange::pClassPointer = NULL;
 
 // Class Engine.BioSeqAct_SkynetEvent
 // 0x002D (0x0125 - 0x00F8)
@@ -29582,17 +23014,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1960 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SkynetEvent::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ActivateRemoteEvent
 // 0x0024 (0x011C - 0x00F8)
@@ -29608,18 +23032,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1962 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ActivateRemoteEvent::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AndGate
 // 0x0024 (0x011C - 0x00F8)
@@ -29634,17 +23050,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1964 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AndGate::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ApplySoundNode
 // 0x0010 (0x0108 - 0x00F8)
@@ -29658,17 +23066,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1966 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ApplySoundNode::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AttachToEvent
 // 0x0004 (0x00FC - 0x00F8)
@@ -29681,17 +23081,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1968 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AttachToEvent::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CameraFade
 // 0x0024 (0x011C - 0x00F8)
@@ -29709,18 +23101,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1970 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_CameraFade::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CameraLookAt
 // 0x0038 (0x0130 - 0x00F8)
@@ -29750,18 +23134,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1972 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_CameraLookAt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CameraShake
 // 0x0025 (0x011D - 0x00F8)
@@ -29783,18 +23159,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1974 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_CameraShake::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CauseDamage
 // 0x0018 (0x0110 - 0x00F8)
@@ -29810,18 +23178,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1976 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_CauseDamage::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ChangeCollision
 // 0x0005 (0x00FD - 0x00F8)
@@ -29837,18 +23197,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1978 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ChangeCollision::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CommitMapChange
 // 0x0000 (0x00F8 - 0x00F8)
@@ -29860,17 +23212,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1980 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_CommitMapChange::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ConvertToString
 // 0x0018 (0x0110 - 0x00F8)
@@ -29885,18 +23229,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1982 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ConvertToString::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CrossFadeMusicTracks
 // 0x0020 (0x0118 - 0x00F8)
@@ -29913,20 +23249,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1984 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void StopAllMusicManagerSounds ( );
 	void CrossFadeTrack ( struct FMusicTrackStruct* TrackToPlay );
 };
-
-UClass* USeqAct_CrossFadeMusicTracks::pClassPointer = NULL;
 
 // Class Engine.SeqAct_DrawText
 // 0x0038 (0x0130 - 0x00F8)
@@ -29941,18 +23269,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1986 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_DrawText::pClassPointer = NULL;
 
 // Class Engine.SeqAct_FinishSequence
 // 0x0010 (0x0108 - 0x00F8)
@@ -29965,17 +23285,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1988 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_FinishSequence::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Gate
 // 0x000C (0x0104 - 0x00F8)
@@ -29990,18 +23302,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1990 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Gate::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GetDistance
 // 0x0004 (0x00FC - 0x00F8)
@@ -30014,17 +23318,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1992 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_GetDistance::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GetLocationAndRotation
 // 0x0020 (0x0118 - 0x00F8)
@@ -30039,18 +23335,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1994 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_GetLocationAndRotation::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GetProperty
 // 0x0008 (0x0100 - 0x00F8)
@@ -30063,17 +23351,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1996 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_GetProperty::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GetVectorComponents
 // 0x0018 (0x0110 - 0x00F8)
@@ -30089,17 +23369,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 1998 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_GetVectorComponents::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GetVelocity
 // 0x0010 (0x0108 - 0x00F8)
@@ -30113,18 +23385,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2000 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_GetVelocity::pClassPointer = NULL;
 
 // Class Engine.SeqAct_IsInObjectList
 // 0x0004 (0x00FC - 0x00F8)
@@ -30138,18 +23402,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2002 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_IsInObjectList::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Latent
 // 0x0014 (0x010C - 0x00F8)
@@ -30164,19 +23420,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2004 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventUpdate ( float DeltaTime );
 	void AbortFor ( class AActor* latentActor, unsigned long bCancel );
 };
-
-UClass* USeqAct_Latent::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AIMoveToActor
 // 0x0024 (0x0130 - 0x010C)
@@ -30194,19 +23442,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2006 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class AActor* PickDestination ( class AActor* Requestor );
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_AIMoveToActor::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ActorFactory
 // 0x0065 (0x0171 - 0x010C)
@@ -30233,18 +23473,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2008 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ActorFactory::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ActorFactoryEx
 // 0x0003 (0x0174 - 0x0171)
@@ -30256,17 +23488,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2010 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ActorFactoryEx::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Delay
 // 0x0014 (0x0120 - 0x010C)
@@ -30284,20 +23508,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2012 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetDelayActive ( );
 	void Reset ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Delay::pClassPointer = NULL;
 
 // Class Engine.SeqAct_DelaySwitch
 // 0x0010 (0x011C - 0x010C)
@@ -30313,17 +23529,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2014 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_DelaySwitch::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ForceGarbageCollection
 // 0x0000 (0x010C - 0x010C)
@@ -30335,17 +23543,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2016 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ForceGarbageCollection::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ForceMaterialMipsResident
 // 0x0028 (0x0134 - 0x010C)
@@ -30361,17 +23561,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2018 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ForceMaterialMipsResident::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Interp
 // 0x00C9 (0x01D5 - 0x010C)
@@ -30429,13 +23621,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2020 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Reset ( );
@@ -30447,8 +23633,6 @@ public:
 	void BioResetScrubbingCamera ( );
 	void BioSetScrubbingCamera ( struct FVector vCamPos, struct FRotator rCamRot, float fFov, float fNearPlane, int nPriority );
 };
-
-UClass* USeqAct_Interp::pClassPointer = NULL;
 
 // Class Engine.SeqAct_LevelStreamingBase
 // 0x0004 (0x0110 - 0x010C)
@@ -30463,17 +23647,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2022 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_LevelStreamingBase::pClassPointer = NULL;
 
 // Class Engine.SeqAct_LevelStreaming
 // 0x0014 (0x0124 - 0x0110)
@@ -30488,17 +23664,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2024 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_LevelStreaming::pClassPointer = NULL;
 
 // Class Engine.SeqAct_MultiLevelStreaming
 // 0x0014 (0x0124 - 0x0110)
@@ -30513,17 +23681,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2026 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_MultiLevelStreaming::pClassPointer = NULL;
 
 // Class Engine.SeqAct_LevelVisibility
 // 0x0014 (0x0120 - 0x010C)
@@ -30538,17 +23698,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2028 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_LevelVisibility::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PlaySound
 // 0x0024 (0x0130 - 0x010C)
@@ -30569,18 +23721,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2030 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_PlaySound::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PrepareMapChange
 // 0x001C (0x0128 - 0x010C)
@@ -30596,17 +23740,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2032 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_PrepareMapChange::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetDOFParams
 // 0x0060 (0x016C - 0x010C)
@@ -30638,17 +23774,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2034 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetDOFParams::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMotionBlurParams
 // 0x0010 (0x011C - 0x010C)
@@ -30664,17 +23792,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2036 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMotionBlurParams::pClassPointer = NULL;
 
 // Class Engine.SeqAct_StreamInTextures
 // 0x0034 (0x0140 - 0x010C)
@@ -30693,19 +23813,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2038 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_StreamInTextures::pClassPointer = NULL;
 
 // Class Engine.SeqAct_WaitForLevelsVisible
 // 0x0014 (0x0120 - 0x010C)
@@ -30719,17 +23831,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2040 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_WaitForLevelsVisible::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Log
 // 0x0014 (0x010C - 0x00F8)
@@ -30745,19 +23849,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2042 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Log::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ModifyCover
 // 0x0015 (0x010D - 0x00F8)
@@ -30772,17 +23868,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2044 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ModifyCover::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ModifyHealth
 // 0x0020 (0x0118 - 0x00F8)
@@ -30802,18 +23890,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2046 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ModifyHealth::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Nuke
 // 0x0000 (0x00F8 - 0x00F8)
@@ -30825,17 +23905,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2048 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_Nuke::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ParticleEventGenerator
 // 0x0068 (0x0160 - 0x00F8)
@@ -30857,18 +23929,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2050 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_ParticleEventGenerator::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PlayCameraAnim
 // 0x0025 (0x011D - 0x00F8)
@@ -30889,19 +23953,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2052 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPreVersionUpdated ( int OldVersion, int NewVersion );
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_PlayCameraAnim::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PlayFaceFXAnim
 // 0x0030 (0x0128 - 0x00F8)
@@ -30917,17 +23973,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2054 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_PlayFaceFXAnim::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PlayMusicTrack
 // 0x0024 (0x011C - 0x00F8)
@@ -30940,17 +23988,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2056 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_PlayMusicTrack::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Possess
 // 0x000C (0x0104 - 0x00F8)
@@ -30965,17 +24005,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2058 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_Possess::pClassPointer = NULL;
 
 // Class Engine.SeqAct_RangeSwitch
 // 0x0010 (0x0108 - 0x00F8)
@@ -30988,17 +24020,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2060 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_RangeSwitch::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetBlockRigidBody
 // 0x0000 (0x00F8 - 0x00F8)
@@ -31010,17 +24034,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2062 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetBlockRigidBody::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetCameraTarget
 // 0x0014 (0x010C - 0x00F8)
@@ -31034,18 +24050,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2064 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetCameraTarget::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMatInstScalarParam
 // 0x0014 (0x010C - 0x00F8)
@@ -31060,17 +24068,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2066 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMatInstScalarParam::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMatInstTexParam
 // 0x0018 (0x0110 - 0x00F8)
@@ -31085,17 +24085,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2068 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMatInstTexParam::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMatInstVectorParam
 // 0x0020 (0x0118 - 0x00F8)
@@ -31110,18 +24102,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2070 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetMatInstVectorParam::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMaterial
 // 0x000C (0x0104 - 0x00F8)
@@ -31135,17 +24119,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2072 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMaterial::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMesh
 // 0x0015 (0x010D - 0x00F8)
@@ -31162,17 +24138,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2074 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMesh::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetMusicTrack
 // 0x0008 (0x0100 - 0x00F8)
@@ -31185,17 +24153,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2076 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetMusicTrack::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetPhysics
 // 0x0001 (0x00F9 - 0x00F8)
@@ -31208,17 +24168,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2078 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetPhysics::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetRigidBodyIgnoreVehicles
 // 0x0000 (0x00F8 - 0x00F8)
@@ -31230,17 +24182,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetRigidBodyIgnoreVehicles::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetSequenceVariable
 // 0x0000 (0x00F8 - 0x00F8)
@@ -31252,18 +24196,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2082 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_SetSequenceVariable::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AccessObjectList
 // 0x000C (0x0104 - 0x00F8)
@@ -31277,17 +24213,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2084 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AccessObjectList::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AddFloat
 // 0x0010 (0x0108 - 0x00F8)
@@ -31303,17 +24231,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2086 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AddFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AddInt
 // 0x0010 (0x0108 - 0x00F8)
@@ -31329,17 +24249,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2088 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AddInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CastToFloat
 // 0x0008 (0x0100 - 0x00F8)
@@ -31353,17 +24265,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2090 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_CastToFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_CastToInt
 // 0x000C (0x0104 - 0x00F8)
@@ -31378,17 +24282,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2092 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_CastToInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_DivideFloat
 // 0x0010 (0x0108 - 0x00F8)
@@ -31404,17 +24300,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_DivideFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_DivideInt
 // 0x0010 (0x0108 - 0x00F8)
@@ -31430,17 +24318,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2096 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_DivideInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ModifyObjectList
 // 0x0004 (0x00FC - 0x00F8)
@@ -31453,17 +24333,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2098 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ModifyObjectList::pClassPointer = NULL;
 
 // Class Engine.SeqAct_MultiplyFloat
 // 0x0010 (0x0108 - 0x00F8)
@@ -31479,17 +24351,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2100 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_MultiplyFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_MultiplyInt
 // 0x0010 (0x0108 - 0x00F8)
@@ -31505,17 +24369,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2102 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_MultiplyInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetBool
 // 0x0004 (0x00FC - 0x00F8)
@@ -31529,18 +24385,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2104 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetBool::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetFloat
 // 0x0014 (0x010C - 0x00F8)
@@ -31554,18 +24402,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2106 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetInt
 // 0x0018 (0x0110 - 0x00F8)
@@ -31580,18 +24420,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2108 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetLocation
 // 0x0024 (0x011C - 0x00F8)
@@ -31608,18 +24440,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2110 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetLocation::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetObject
 // 0x0010 (0x0108 - 0x00F8)
@@ -31633,18 +24457,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2112 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetObject::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetString
 // 0x0020 (0x0118 - 0x00F8)
@@ -31658,18 +24474,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2114 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetString::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SubtractFloat
 // 0x0010 (0x0108 - 0x00F8)
@@ -31685,17 +24493,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2116 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SubtractFloat::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SubtractInt
 // 0x0010 (0x0108 - 0x00F8)
@@ -31711,17 +24511,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2118 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SubtractInt::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetVectorComponents
 // 0x0018 (0x0110 - 0x00F8)
@@ -31737,17 +24529,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2120 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetVectorComponents::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Switch
 // 0x001C (0x0114 - 0x00F8)
@@ -31764,18 +24548,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2122 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Switch::pClassPointer = NULL;
 
 // Class Engine.SeqAct_RandomSwitch
 // 0x0010 (0x0124 - 0x0114)
@@ -31788,17 +24564,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2124 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_RandomSwitch::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Timer
 // 0x0008 (0x0100 - 0x00F8)
@@ -31812,18 +24580,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2126 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Timer::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Toggle
 // 0x0000 (0x00F8 - 0x00F8)
@@ -31835,18 +24595,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2128 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_Toggle::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleDynamicChannel
 // 0x0000 (0x00F8 - 0x00F8)
@@ -31858,17 +24610,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2130 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ToggleDynamicChannel::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleHUD
 // 0x0004 (0x00FC - 0x00F8)
@@ -31881,20 +24625,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2132 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void DoActivatedWork ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_ToggleHUD::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Trace
 // 0x0040 (0x0138 - 0x00F8)
@@ -31914,18 +24650,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2134 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_Trace::pClassPointer = NULL;
 
 // Class Engine.SequenceCondition
 // 0x0003 (0x00DC - 0x00D9)
@@ -31937,18 +24665,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2136 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USequenceCondition::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareBool
 // 0x0000 (0x00DC - 0x00DC)
@@ -31960,17 +24680,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2138 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareBool::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareFloat
 // 0x0008 (0x00E4 - 0x00DC)
@@ -31984,17 +24696,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2140 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareFloat::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareInt
 // 0x0008 (0x00E4 - 0x00DC)
@@ -32008,17 +24712,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2142 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareInt::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareName
 // 0x0010 (0x00EC - 0x00DC)
@@ -32032,17 +24728,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2144 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareName::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareObject
 // 0x0000 (0x00DC - 0x00DC)
@@ -32054,17 +24742,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2146 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareObject::pClassPointer = NULL;
 
 // Class Engine.SeqCond_CompareString
 // 0x0020 (0x00FC - 0x00DC)
@@ -32078,17 +24758,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2148 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_CompareString::pClassPointer = NULL;
 
 // Class Engine.SeqCond_GetServerType
 // 0x0000 (0x00DC - 0x00DC)
@@ -32100,18 +24772,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2150 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqCond_GetServerType::pClassPointer = NULL;
 
 // Class Engine.SeqCond_Increment
 // 0x000C (0x00E8 - 0x00DC)
@@ -32126,17 +24790,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2152 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_Increment::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IncrementFloat
 // 0x000C (0x00E8 - 0x00DC)
@@ -32151,17 +24807,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2154 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_IncrementFloat::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IsAlive
 // 0x0000 (0x00DC - 0x00DC)
@@ -32173,17 +24821,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2156 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_IsAlive::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IsConsole
 // 0x0000 (0x00DC - 0x00DC)
@@ -32195,17 +24835,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2158 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_IsConsole::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IsInCombat
 // 0x0000 (0x00DC - 0x00DC)
@@ -32217,17 +24849,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2160 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_IsInCombat::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IsLoggedIn
 // 0x0004 (0x00E0 - 0x00DC)
@@ -32240,18 +24864,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2162 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventCheckLogins ( );
 };
-
-UClass* USeqCond_IsLoggedIn::pClassPointer = NULL;
 
 // Class Engine.SeqCond_IsSameTeam
 // 0x0000 (0x00DC - 0x00DC)
@@ -32263,17 +24879,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2164 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqCond_IsSameTeam::pClassPointer = NULL;
 
 // Class Engine.SeqCond_SwitchBase
 // 0x0000 (0x00DC - 0x00DC)
@@ -32285,21 +24893,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2166 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRemoveValueEntry ( int RemoveIndex );
 	void eventInsertValueEntry ( int InsertIndex );
 	bool eventIsFallThruEnabled ( int ValueIndex );
 	void eventVerifyDefaultCaseValue ( );
 };
-
-UClass* USeqCond_SwitchBase::pClassPointer = NULL;
 
 // Class Engine.SeqCond_SwitchClass
 // 0x0010 (0x00EC - 0x00DC)
@@ -32312,21 +24912,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2168 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRemoveValueEntry ( int RemoveIndex );
 	void eventInsertValueEntry ( int InsertIndex );
 	bool eventIsFallThruEnabled ( int ValueIndex );
 	void eventVerifyDefaultCaseValue ( );
 };
-
-UClass* USeqCond_SwitchClass::pClassPointer = NULL;
 
 // Class Engine.SeqCond_SwitchObject
 // 0x0018 (0x00F4 - 0x00DC)
@@ -32340,21 +24932,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2170 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRemoveValueEntry ( int RemoveIndex );
 	void eventInsertValueEntry ( int InsertIndex );
 	bool eventIsFallThruEnabled ( int ValueIndex );
 	void eventVerifyDefaultCaseValue ( );
 };
-
-UClass* USeqCond_SwitchObject::pClassPointer = NULL;
 
 // Class Engine.SeqCond_SwitchPlatform
 // 0x0000 (0x00DC - 0x00DC)
@@ -32366,18 +24950,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2172 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqCond_SwitchPlatform::pClassPointer = NULL;
 
 // Class Engine.SequenceEvent
 // 0x004D (0x0126 - 0x00D9)
@@ -32404,13 +24980,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2174 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventToggled ( );
 	void Reset ( );
@@ -32418,8 +24988,6 @@ public:
 	bool CheckActivate ( class AActor* InOriginator, class AActor* InInstigator, unsigned long bTest, unsigned long bPushTop, struct TArray<int>* ActivateIndices );
 	void eventRegisterEvent ( );
 };
-
-UClass* USequenceEvent::pClassPointer = NULL;
 
 // Class Engine.BioSeqEvt_DisengagedCover
 // 0x0002 (0x0128 - 0x0126)
@@ -32431,17 +24999,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2176 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_DisengagedCover::pClassPointer = NULL;
 
 // Class Engine.BioSeqEvt_EngagedCover
 // 0x0002 (0x0128 - 0x0126)
@@ -32453,17 +25013,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2178 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_EngagedCover::pClassPointer = NULL;
 
 // Class Engine.BioSeqEvt_HearNoise
 // 0x0002 (0x0128 - 0x0126)
@@ -32475,17 +25027,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2180 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_HearNoise::pClassPointer = NULL;
 
 // Class Engine.BioSeqEvt_LoadingScreenClosed
 // 0x0002 (0x0128 - 0x0126)
@@ -32497,17 +25041,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2182 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_LoadingScreenClosed::pClassPointer = NULL;
 
 // Class Engine.BioSeqEvt_ProximityAlarm
 // 0x0002 (0x0128 - 0x0126)
@@ -32519,18 +25055,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2184 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_ProximityAlarm::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_AISeeEnemy
 // 0x0006 (0x012C - 0x0126)
@@ -32543,17 +25071,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2186 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_AISeeEnemy::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_AnimNotify
 // 0x000A (0x0130 - 0x0126)
@@ -32566,17 +25086,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2188 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_AnimNotify::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Console
 // 0x001A (0x0140 - 0x0126)
@@ -32590,17 +25102,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2190 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_Console::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_ConstraintBroken
 // 0x0002 (0x0128 - 0x0126)
@@ -32612,17 +25116,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2192 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_ConstraintBroken::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Destroyed
 // 0x0002 (0x0128 - 0x0126)
@@ -32634,17 +25130,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2194 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_Destroyed::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_GetInventory
 // 0x0002 (0x0128 - 0x0126)
@@ -32656,17 +25144,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2196 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_GetInventory::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_LevelBeginning
 // 0x0002 (0x0128 - 0x0126)
@@ -32678,17 +25158,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2198 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_LevelBeginning::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_LevelLoaded
 // 0x0002 (0x0128 - 0x0126)
@@ -32700,18 +25172,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqEvent_LevelLoaded::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_LevelStartup
 // 0x0002 (0x0128 - 0x0126)
@@ -32723,17 +25187,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2202 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_LevelStartup::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Mover
 // 0x0006 (0x012C - 0x0126)
@@ -32746,13 +25202,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2204 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyFinishedOpen ( );
 	void NotifyDetached ( class AActor* Other );
@@ -32760,8 +25210,6 @@ public:
 	void NotifyEncroachingOn ( class AActor* Hit );
 	void eventRegisterEvent ( );
 };
-
-UClass* USeqEvent_Mover::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_ParticleEvent
 // 0x0033 (0x0159 - 0x0126)
@@ -32780,18 +25228,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2206 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqEvent_ParticleEvent::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_ProjectileLanded
 // 0x0006 (0x012C - 0x0126)
@@ -32804,17 +25244,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2208 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_ProjectileLanded::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_RemoteEvent
 // 0x001E (0x0144 - 0x0126)
@@ -32829,19 +25261,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2210 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	class USeqEvent_RemoteEvent* FindRemoteEvent ( struct FName fnEventName );
 };
-
-UClass* USeqEvent_RemoteEvent::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_RigidBodyCollision
 // 0x0006 (0x012C - 0x0126)
@@ -32854,17 +25278,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2212 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_RigidBodyCollision::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_SeeDeath
 // 0x0002 (0x0128 - 0x0126)
@@ -32876,17 +25292,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2214 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_SeeDeath::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_SequenceActivated
 // 0x0012 (0x0138 - 0x0126)
@@ -32899,17 +25307,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2216 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_SequenceActivated::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_TakeDamage
 // 0x0046 (0x016C - 0x0126)
@@ -32929,13 +25329,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2218 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventToggled ( );
 	int eventGetObjClassVersion ( );
@@ -32943,8 +25337,6 @@ public:
 	void HandleDamage ( class AActor* InOriginator, class AActor* InInstigator, class UClass* inDamageType, float inAmount, struct FVector inHitLocation, class AActor* DamageCauser );
 	bool IsValidDamageType ( class UClass* inDamageType );
 };
-
-UClass* USeqEvent_TakeDamage::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Touch
 // 0x0036 (0x015C - 0x0126)
@@ -32963,13 +25355,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2220 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void NotifyTouchingPawnDied ( class APawn* P );
@@ -32977,8 +25363,6 @@ public:
 	bool CheckUnTouchActivate ( class AActor* InOriginator, class AActor* InInstigator, unsigned long bTest );
 	bool CheckTouchActivate ( class AActor* InOriginator, class AActor* InInstigator, unsigned long bTest );
 };
-
-UClass* USeqEvent_Touch::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Used
 // 0x0042 (0x0168 - 0x0126)
@@ -32996,19 +25380,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2222 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPreVersionUpdated ( int OldVersion, int NewVersion );
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqEvent_Used::pClassPointer = NULL;
 
 // Class Engine.SequenceVariable
 // 0x0008 (0x0090 - 0x0088)
@@ -33021,18 +25397,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2224 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USequenceVariable::pClassPointer = NULL;
 
 // Class Engine.BioSeqVar_StrRef
 // 0x0004 (0x0094 - 0x0090)
@@ -33045,17 +25413,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2226 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_StrRef::pClassPointer = NULL;
 
 // Class Engine.BioSeqVar_StrRefLiteral
 // 0x0004 (0x0098 - 0x0094)
@@ -33068,17 +25428,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2228 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_StrRefLiteral::pClassPointer = NULL;
 
 // Class Engine.InterpData
 // 0x0040 (0x00D0 - 0x0090)
@@ -33099,17 +25451,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2230 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInterpData::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Bool
 // 0x0004 (0x0094 - 0x0090)
@@ -33122,17 +25466,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2232 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Bool::pClassPointer = NULL;
 
 // Class Engine.SeqVar_External
 // 0x0018 (0x00A8 - 0x0090)
@@ -33146,17 +25482,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2234 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_External::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Float
 // 0x0004 (0x0094 - 0x0090)
@@ -33169,17 +25497,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2236 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Float::pClassPointer = NULL;
 
 // Class Engine.SeqVar_RandomFloat
 // 0x0008 (0x009C - 0x0094)
@@ -33193,17 +25513,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2238 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_RandomFloat::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Int
 // 0x0004 (0x0094 - 0x0090)
@@ -33216,17 +25528,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2240 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Int::pClassPointer = NULL;
 
 // Class Engine.SeqVar_RandomInt
 // 0x0008 (0x009C - 0x0094)
@@ -33240,17 +25544,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2242 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_RandomInt::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Name
 // 0x0008 (0x0098 - 0x0090)
@@ -33263,17 +25559,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2244 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Name::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Named
 // 0x0014 (0x00A4 - 0x0090)
@@ -33288,17 +25576,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2246 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Named::pClassPointer = NULL;
 
 // Class Engine.SeqVar_ScopedNamed
 // 0x0000 (0x00A4 - 0x00A4)
@@ -33310,17 +25590,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2248 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_ScopedNamed::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Object
 // 0x0024 (0x00B4 - 0x0090)
@@ -33335,19 +25607,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2250 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetObjectValue ( class UObject* NewValue );
 	class UObject* GetObjectValue ( );
 };
-
-UClass* USeqVar_Object::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Character
 // 0x0008 (0x00BC - 0x00B4)
@@ -33360,17 +25624,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2252 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Character::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Group
 // 0x001C (0x00D0 - 0x00B4)
@@ -33385,17 +25641,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Group::pClassPointer = NULL;
 
 // Class Engine.SeqVar_MusicTrack
 // 0x0024 (0x00D8 - 0x00B4)
@@ -33408,17 +25656,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2256 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_MusicTrack::pClassPointer = NULL;
 
 // Class Engine.SeqVar_MusicTrackBank
 // 0x0010 (0x00C4 - 0x00B4)
@@ -33431,17 +25671,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_MusicTrackBank::pClassPointer = NULL;
 
 // Class Engine.SeqVar_ObjectList
 // 0x0010 (0x00C4 - 0x00B4)
@@ -33454,19 +25686,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2260 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetObjectValue ( class UObject* NewValue );
 	class UObject* GetObjectValue ( );
 };
-
-UClass* USeqVar_ObjectList::pClassPointer = NULL;
 
 // Class Engine.SeqVar_ObjectVolume
 // 0x0028 (0x00DC - 0x00B4)
@@ -33482,17 +25706,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2262 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_ObjectVolume::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Player
 // 0x0028 (0x00DC - 0x00B4)
@@ -33509,19 +25725,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2264 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* GetObjectValue ( );
 	void UpdatePlayersList ( );
 };
-
-UClass* USeqVar_Player::pClassPointer = NULL;
 
 // Class Engine.SeqVar_String
 // 0x0010 (0x00A0 - 0x0090)
@@ -33534,17 +25742,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2266 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_String::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Union
 // 0x0034 (0x00C4 - 0x0090)
@@ -33562,17 +25762,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2268 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Union::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Vector
 // 0x000C (0x009C - 0x0090)
@@ -33585,17 +25777,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2270 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Vector::pClassPointer = NULL;
 
 // Class Engine.AmbientSound
 // 0x0014 (0x0298 - 0x0284)
@@ -33612,17 +25796,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AAmbientSound::pClassPointer = NULL;
 
 // Class Engine.AmbientSoundMovable
 // 0x0000 (0x0298 - 0x0298)
@@ -33634,17 +25810,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AAmbientSoundMovable::pClassPointer = NULL;
 
 // Class Engine.AmbientSoundSimple
 // 0x0018 (0x02B0 - 0x0298)
@@ -33659,17 +25827,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2276 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AAmbientSoundSimple::pClassPointer = NULL;
 
 // Class Engine.AmbientSoundNonLoop
 // 0x0000 (0x02B0 - 0x02B0)
@@ -33681,17 +25841,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2278 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AAmbientSoundNonLoop::pClassPointer = NULL;
 
 // Class Engine.AmbientSoundSimpleToggleable
 // 0x0014 (0x02C4 - 0x02B0)
@@ -33709,13 +25861,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2280 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct AAmbientSoundSimpleToggleable_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct AAmbientSoundSimpleToggleable_FCheckpointRecord* Record );
@@ -33725,8 +25871,6 @@ public:
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AAmbientSoundSimpleToggleable::pClassPointer = NULL;
 
 // Class Engine.DistributionFloatSoundParameter
 // 0x0003 (0x009C - 0x0099)
@@ -33738,17 +25882,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2282 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDistributionFloatSoundParameter::pClassPointer = NULL;
 
 // Class Engine.SoundNodeAmbient
 // 0x009D (0x0131 - 0x0094)
@@ -33768,17 +25904,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2284 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeAmbient::pClassPointer = NULL;
 
 // Class Engine.SoundNodeAmbientNonLoop
 // 0x0037 (0x0168 - 0x0131)
@@ -33792,17 +25920,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2286 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeAmbientNonLoop::pClassPointer = NULL;
 
 // Class Engine.SoundNodeAttenuation
 // 0x004D (0x00E1 - 0x0094)
@@ -33819,17 +25939,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2288 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeAttenuation::pClassPointer = NULL;
 
 // Class Engine.SoundNodeConcatenator
 // 0x0010 (0x00A4 - 0x0094)
@@ -33842,17 +25954,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2290 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeConcatenator::pClassPointer = NULL;
 
 // Class Engine.SoundNodeDelay
 // 0x0024 (0x00B8 - 0x0094)
@@ -33865,17 +25969,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2292 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeDelay::pClassPointer = NULL;
 
 // Class Engine.SoundNodeDistanceCrossFade
 // 0x0010 (0x00A4 - 0x0094)
@@ -33888,17 +25984,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2294 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeDistanceCrossFade::pClassPointer = NULL;
 
 // Class Engine.SoundNodeLooping
 // 0x0028 (0x00BC - 0x0094)
@@ -33912,17 +26000,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2296 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeLooping::pClassPointer = NULL;
 
 // Class Engine.SoundNodeMature
 // 0x0000 (0x0094 - 0x0094)
@@ -33934,17 +26014,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2298 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeMature::pClassPointer = NULL;
 
 // Class Engine.SoundNodeMixer
 // 0x0010 (0x00A4 - 0x0094)
@@ -33957,17 +26029,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2300 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeMixer::pClassPointer = NULL;
 
 // Class Engine.SoundNodeModulator
 // 0x0048 (0x00DC - 0x0094)
@@ -33981,17 +26045,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2302 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeModulator::pClassPointer = NULL;
 
 // Class Engine.SoundNodeModulatorContinuous
 // 0x0048 (0x00DC - 0x0094)
@@ -34005,17 +26061,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2304 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeModulatorContinuous::pClassPointer = NULL;
 
 // Class Engine.SoundNodeOscillator
 // 0x0094 (0x0128 - 0x0094)
@@ -34033,17 +26081,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2306 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeOscillator::pClassPointer = NULL;
 
 // Class Engine.SoundNodeRandom
 // 0x0028 (0x00BC - 0x0094)
@@ -34059,17 +26099,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2308 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundNodeRandom::pClassPointer = NULL;
 
 // Class Engine.SoundNodeWaveStreaming
 // 0x0010 (0x020C - 0x01FC)
@@ -34082,21 +26114,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2310 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventGeneratePCMData ( int SamplesNeeded, struct TArray<unsigned char>* Buffer );
 	int eventAvailableAudioBytes ( );
 	void eventResetAudio ( );
 	void eventQueueAudio ( struct TArray<unsigned char> Data );
 };
-
-UClass* USoundNodeWaveStreaming::pClassPointer = NULL;
 
 // Class Engine.Terrain
 // 0x0150 (0x03D4 - 0x0284)
@@ -34161,19 +26185,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2312 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostBeginPlay ( );
 	void CalcLayerBounds ( );
 };
-
-UClass* ATerrain::pClassPointer = NULL;
 
 // Class Engine.TerrainComponent
 // 0x00D0 (0x02F0 - 0x0220)
@@ -34209,17 +26225,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTerrainComponent::pClassPointer = NULL;
 
 // Class Engine.TerrainWeightMapTexture
 // 0x0019 (0x01CC - 0x01B3)
@@ -34233,17 +26241,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2316 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTerrainWeightMapTexture::pClassPointer = NULL;
 
 // Class Engine.TerrainLayerSetup
 // 0x0010 (0x0070 - 0x0060)
@@ -34256,19 +26256,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2318 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PostBeginPlay ( );
 	void SetMaterials ( struct TArray<struct FTerrainFilteredMaterial> NewMaterials );
 };
-
-UClass* UTerrainLayerSetup::pClassPointer = NULL;
 
 // Class Engine.TerrainMaterial
 // 0x0075 (0x00D5 - 0x0060)
@@ -34290,17 +26282,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2320 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTerrainMaterial::pClassPointer = NULL;
 
 // Class Engine.UIRoot
 // 0x0000 (0x0060 - 0x0060)
@@ -34312,13 +26296,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2322 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UOnlinePlayerInterfaceEx* GetOnlinePlayerInterfaceEx ( );
 	class UOnlinePlayerInterface* GetOnlinePlayerInterface ( );
@@ -34340,8 +26318,6 @@ public:
 	bool IsConsole ( unsigned char ConsoleType );
 	unsigned char GetInputPlatformType ( class ULocalPlayer* OwningPlayer );
 };
-
-UClass* UUIRoot::pClassPointer = NULL;
 
 // Class Engine.UIScreenObject
 // 0x01C0 (0x0220 - 0x0060)
@@ -34395,13 +26371,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2324 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LogCurrentState ( int Indent );
 	int Find_UIAnimTrackCompletedHandler ( struct FScriptDelegate TrackCompletedDelegate );
@@ -34562,8 +26532,6 @@ public:
 	void NotifyActiveSkinChanged ( );
 };
 
-UClass* UUIScreenObject::pClassPointer = NULL;
-
 // Class Engine.UIComponent
 // 0x0000 (0x0070 - 0x0070)
 class UUIComponent : public UComponent
@@ -34574,17 +26542,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2326 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIComponent::pClassPointer = NULL;
 
 // Class Engine.UIComp_Event
 // 0x0030 (0x00A0 - 0x0070)
@@ -34600,19 +26560,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UnregisterInputEvents ( class UUIState* InputEventOwner, int PlayerIndex );
 	void RegisterInputEvents ( class UUIState* InputEventOwner, int PlayerIndex );
 };
-
-UClass* UUIComp_Event::pClassPointer = NULL;
 
 // Class Engine.UIEventContainer
 // 0x0000 (0x0060 - 0x0060)
@@ -34624,21 +26576,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2330 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveSequenceObjects ( struct TArray<class USequenceObject*> ObjectsToRemove );
 	void RemoveSequenceObject ( class USequenceObject* ObjectToRemove );
 	bool AddSequenceObject ( class USequenceObject* NewObj, unsigned long bRecurse );
 	void GetUIEvents ( class UClass* LimitClass, struct TArray<class UUIEvent*>* out_Events );
 };
-
-UClass* UUIEventContainer::pClassPointer = NULL;
 
 // Class Engine.DataStoreClient
 // 0x0050 (0x00B0 - 0x0060)
@@ -34655,13 +26599,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2332 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugDumpDataStoreInfo ( unsigned long bVerbose );
 	void eventNotifyGameSessionEnded ( );
@@ -34674,8 +26612,6 @@ public:
 	class UUIDataStore* CreateDataStore ( class UClass* DataStoreClass );
 	class UUIDataStore* FindDataStore ( struct FName DataStoreTag, class ULocalPlayer* PlayerOwner );
 };
-
-UClass* UDataStoreClient::pClassPointer = NULL;
 
 // Class Engine.Interaction
 // 0x0040 (0x00A0 - 0x0060)
@@ -34691,13 +26627,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2334 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyPlayerRemoved ( int PlayerIndex, class ULocalPlayer* RemovedPlayer );
 	void NotifyPlayerAdded ( int PlayerIndex, class ULocalPlayer* AddedPlayer );
@@ -34711,8 +26641,6 @@ public:
 	bool OnReceivedNativeInputAxis ( int ControllerId, struct FName Key, float Delta, float DeltaTime, unsigned long bGamepad );
 	bool OnReceivedNativeInputKey ( int ControllerId, struct FName Key, unsigned char EventType, float AmountDepressed, unsigned long bGamepad );
 };
-
-UClass* UInteraction::pClassPointer = NULL;
 
 // Class Engine.Console
 // 0x01C0 (0x0260 - 0x00A0)
@@ -34751,13 +26679,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2336 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateCompleteIndices ( );
 	void BuildRuntimeAutoCompleteList ( unsigned long bForce );
@@ -34780,8 +26702,6 @@ public:
 	void Initialized ( );
 };
 
-UClass* UConsole::pClassPointer = NULL;
-
 // Class Engine.Input
 // 0x00C9 (0x0169 - 0x00A0)
 class UInput : public UInteraction
@@ -34800,19 +26720,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2338 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetBind ( unsigned long Control, unsigned long Shift, unsigned long Alt, struct FName* Key );
 	void ResetInput ( );
 };
-
-UClass* UInput::pClassPointer = NULL;
 
 // Class Engine.PlayerInput
 // 0x00A2 (0x020B - 0x0169)
@@ -34876,13 +26788,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float SmoothMouse ( float aMouse, float DeltaTime, int Index, unsigned char* SampleCount );
 	void ClearSmoothing ( );
@@ -34901,8 +26807,6 @@ public:
 	bool InvertMouse ( );
 };
 
-UClass* UPlayerInput::pClassPointer = NULL;
-
 // Class Engine.PlayerManagerInteraction
 // 0x0000 (0x00A0 - 0x00A0)
 class UPlayerManagerInteraction : public UInteraction
@@ -34913,17 +26817,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPlayerManagerInteraction::pClassPointer = NULL;
 
 // Class Engine.UIInteraction
 // 0x0184 (0x0224 - 0x00A0)
@@ -34963,13 +26859,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2344 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyGameSessionEnded ( );
 	unsigned char eventGetNATType ( );
@@ -34996,8 +26886,6 @@ public:
 	int GetPlayerCount ( );
 };
 
-UClass* UUIInteraction::pClassPointer = NULL;
-
 // Class Engine.UIInputConfiguration
 // 0x0020 (0x0080 - 0x0060)
 class UUIInputConfiguration : public UUIRoot
@@ -35010,19 +26898,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyGameSessionEnded ( );
 	void LoadInputAliasClasses ( );
 };
-
-UClass* UUIInputConfiguration::pClassPointer = NULL;
 
 // Class Engine.UILayerBase
 // 0x0000 (0x0060 - 0x0060)
@@ -35034,17 +26914,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2348 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUILayerBase::pClassPointer = NULL;
 
 // Class Engine.UISceneClient
 // 0x00D4 (0x0134 - 0x0060)
@@ -35069,13 +26941,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2350 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeSceneClient ( );
 	struct FMatrix GetInverseCanvasToScreen ( class UUIObject* Widget );
@@ -35095,8 +26961,6 @@ public:
 	bool ChangeActiveSkin ( class UUISkin* NewActiveSkin );
 };
 
-UClass* UUISceneClient::pClassPointer = NULL;
-
 // Class Engine.UIState
 // 0x003A (0x009A - 0x0060)
 class UUIState : public UUIRoot
@@ -35114,13 +26978,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2352 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveSequenceObjects ( struct TArray<class USequenceObject*>* ObjectsToRemove );
 	void RemoveSequenceObject ( class USequenceObject* ObjectToRemove );
@@ -35135,8 +26993,6 @@ public:
 	bool eventIsWidgetClassSupported ( class UClass* WidgetClass );
 };
 
-UClass* UUIState::pClassPointer = NULL;
-
 // Class Engine.UIState_Disabled
 // 0x0002 (0x009C - 0x009A)
 class UUIState_Disabled : public UUIState
@@ -35147,19 +27003,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2354 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsStateAllowed ( class UUIScreenObject* Target, class UUIState* NewState, int PlayerIndex );
 	bool eventActivateState ( class UUIScreenObject* Target, int PlayerIndex );
 };
-
-UClass* UUIState_Disabled::pClassPointer = NULL;
 
 // Class Engine.UIState_Enabled
 // 0x0002 (0x009C - 0x009A)
@@ -35171,17 +27019,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2356 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIState_Enabled::pClassPointer = NULL;
 
 // Class Engine.UIString
 // 0x00B4 (0x0114 - 0x0060)
@@ -35196,21 +27036,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2358 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ContainsMarkup ( );
 	void GetAutoScaleValue ( struct FVector2D BoundingRegionSize, struct FVector2D StringSize, struct FVector2D* out_AutoScalePercent );
 	struct FString GetValue ( unsigned long bReturnProcessedText );
 	bool SetValue ( struct FString InputString, unsigned long bIgnoreMarkup );
 };
-
-UClass* UUIString::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider
 // 0x0021 (0x0081 - 0x0060)
@@ -35225,13 +27057,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2360 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int ParseTagArrayDelimiter ( struct FName* FieldName );
 	bool RemovePropertyNotificationChangeRequest ( struct FScriptDelegate InDelegate );
@@ -35250,8 +27076,6 @@ public:
 	void OnDataProviderPropertyChange ( class UUIDataProvider* SourceProvider, struct FName PropTag );
 };
 
-UClass* UUIDataProvider::pClassPointer = NULL;
-
 // Class Engine.UIDataStore
 // 0x002B (0x00AC - 0x0081)
 class UUIDataStore : public UUIDataProvider
@@ -35265,13 +27089,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2362 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UDataStoreClient* GetDataStoreClient ( );
 	void OnCommit ( );
@@ -35283,8 +27101,6 @@ public:
 	void eventRegistered ( class ULocalPlayer* PlayerOwner );
 	void OnDataStoreValueUpdated ( class UUIDataStore* SourceDataStore, unsigned long bValuesInvalidated, struct FName PropertyTag, class UUIDataProvider* SourceProvider, int ArrayIndex );
 };
-
-UClass* UUIDataStore::pClassPointer = NULL;
 
 // Class Engine.UISkin
 // 0x0160 (0x020C - 0x00AC)
@@ -35304,13 +27120,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2364 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSubscriberDetached ( class UUIDataStoreSubscriber* Subscriber );
 	void eventSubscriberAttached ( class UUIDataStoreSubscriber* Subscriber );
@@ -35328,8 +27138,6 @@ public:
 	void GetAvailableStyles ( unsigned long bIncludeInheritedStyles, struct TArray<class UUIStyle*>* out_Styles );
 };
 
-UClass* UUISkin::pClassPointer = NULL;
-
 // Class Engine.UIStyle
 // 0x0088 (0x00E8 - 0x0060)
 class UUIStyle : public UUIRoot
@@ -35346,20 +27154,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2366 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIStyle_Data* eventGetDefaultStyle ( );
 	class UUIStyle_Data* GetStyleForStateByClass ( class UClass* StateClass );
 	class UUIStyle_Data* GetStyleForState ( class UUIState* StateObject );
 };
-
-UClass* UUIStyle::pClassPointer = NULL;
 
 // Class Engine.UIObject
 // 0x02F6 (0x0516 - 0x0220)
@@ -35408,13 +27208,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2368 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LogRenderBounds ( int Indent );
 	void ClearDockTargets ( );
@@ -35471,8 +27265,6 @@ public:
 	void OnCreate ( class UUIObject* CreatedWidget, class UUIScreenObject* CreatorContainer );
 };
 
-UClass* UUIObject::pClassPointer = NULL;
-
 // Class Engine.UIComp_AutoAlignment
 // 0x0002 (0x0072 - 0x0070)
 class UUIComp_AutoAlignment : public UUIComponent
@@ -35485,17 +27277,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2370 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIComp_AutoAlignment::pClassPointer = NULL;
 
 // Class Engine.UIComp_DrawComponents
 // 0x0025 (0x0095 - 0x0070)
@@ -35514,21 +27298,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2372 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnFadeComplete ( class UUIComp_DrawComponents* Sender );
 	void ResetFade ( );
 	void Pulse ( float MaxAlpha, float MinAlpha, float PulseRate );
 	void Fade ( float FromAlpha, float ToAlpha, float TargetFadeTime );
 };
-
-UClass* UUIComp_DrawComponents::pClassPointer = NULL;
 
 // Class Engine.UIComp_DrawImage
 // 0x00A7 (0x013C - 0x0095)
@@ -35546,13 +27322,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool NotifyResolveStyle ( class UUISkin* ActiveSkin, unsigned long bClearExistingValue, class UUIState* CurrentMenuState, struct FName StylePropertyName );
 	bool SetStyleResolverTag ( struct FName NewResolverTag );
@@ -35571,8 +27341,6 @@ public:
 	void SetImage ( class USurface* NewImage );
 	class UUIStyle_Image* GetAppliedImageStyle ( class UUIState* DesiredMenuState );
 };
-
-UClass* UUIComp_DrawImage::pClassPointer = NULL;
 
 // Class Engine.UIComp_DrawString
 // 0x012B (0x01C0 - 0x0095)
@@ -35601,13 +27369,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2376 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetAutoSizePadding ( unsigned char Orientation, float NearValue, float FarValue, unsigned char NearScaleType, unsigned char FarScaleType );
 	void eventEnableAutoSizing ( unsigned char Orientation, unsigned long bShouldEnable );
@@ -35653,8 +27415,6 @@ public:
 	struct FString GetValue ( unsigned long bReturnProcessedText );
 	void SetValue ( struct FString NewText );
 };
-
-UClass* UUIComp_DrawString::pClassPointer = NULL;
 
 // Class Engine.UIList
 // 0x034A (0x0860 - 0x0516)
@@ -35720,13 +27480,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnStateChanged ( class UUIScreenObject* Sender, int PlayerIndex, class UUIState* NewlyActiveState, class UUIState* PreviouslyActiveState );
 	void ClickedScrollZone ( class UUIScrollbar* Sender, float PositionPerc, int PlayerIndex );
@@ -35786,8 +27540,6 @@ public:
 	void OnSubmitSelection ( class UUIList* Sender, int PlayerIndex );
 };
 
-UClass* UUIList::pClassPointer = NULL;
-
 // Class Engine.UIComp_ListComponentBase
 // 0x0000 (0x0070 - 0x0070)
 class UUIComp_ListComponentBase : public UUIComponent
@@ -35798,17 +27550,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2380 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIComp_ListComponentBase::pClassPointer = NULL;
 
 // Class Engine.UIComp_ListElementSorter
 // 0x0024 (0x0094 - 0x0070)
@@ -35828,21 +27572,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2382 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ResortItems ( unsigned long bCaseSensitive );
 	bool SortItems ( int ColumnIndex, unsigned long bSecondarySort, unsigned long bCaseSensitive );
 	void ResetSortColumns ( unsigned long bResort );
 	bool OverrideListSort ( class UUIList* Sender, struct FName CollectionFieldName, struct FUIListSortingParameters* SortParameters, struct TArray<int>* OrderedIndices );
 };
-
-UClass* UUIComp_ListElementSorter::pClassPointer = NULL;
 
 // Class Engine.UIComp_ListPresenterBase
 // 0x0004 (0x0074 - 0x0070)
@@ -35855,13 +27591,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2384 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetMaxElementsPerPage ( );
 	void SetMaxElementsPerPage ( int NewMaxVisibleElements );
@@ -35877,8 +27607,6 @@ public:
 	int GetSchemaCellCount ( );
 	class UUIListElementCellProvider* GetCellSchemaProvider ( );
 };
-
-UClass* UUIComp_ListPresenterBase::pClassPointer = NULL;
 
 // Class Engine.UIComp_ListPresenter
 // 0x00E0 (0x0154 - 0x0074)
@@ -35900,18 +27628,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2386 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int FindElementIndex ( int DataSourceIndex );
 };
-
-UClass* UUIComp_ListPresenter::pClassPointer = NULL;
 
 // Class Engine.UIDataStoreSubscriber
 // 0x0000 (0x0060 - 0x0060)
@@ -35923,13 +27643,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2388 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearBoundDataStores ( );
 	void GetBoundDataStores ( struct TArray<class UUIDataStore*>* out_BoundDataStores );
@@ -35938,8 +27652,6 @@ public:
 	struct FString GetDataStoreBinding ( int BindingIndex );
 	void SetDataStoreBinding ( struct FString MarkupText, int BindingIndex );
 };
-
-UClass* UUIDataStoreSubscriber::pClassPointer = NULL;
 
 // Class Engine.UIDataStorePublisher
 // 0x0000 (0x0060 - 0x0060)
@@ -35951,18 +27663,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2390 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SaveSubscriberValue ( int BindingIndex, struct TArray<class UUIDataStore*>* out_BoundDataStores );
 };
-
-UClass* UUIDataStorePublisher::pClassPointer = NULL;
 
 // Class Engine.UIListElementCellProvider
 // 0x0000 (0x0060 - 0x0060)
@@ -35974,17 +27678,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2392 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIListElementCellProvider::pClassPointer = NULL;
 
 // Class Engine.UIListElementProvider
 // 0x0000 (0x0060 - 0x0060)
@@ -35996,17 +27692,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2394 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIListElementProvider::pClassPointer = NULL;
 
 // Class Engine.UIAnimation
 // 0x0000 (0x0060 - 0x0060)
@@ -36018,17 +27706,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2396 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAnimation::pClassPointer = NULL;
 
 // Class Engine.UIAnimationSeq
 // 0x0019 (0x0079 - 0x0060)
@@ -36043,21 +27723,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2398 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetSequenceLength ( );
 	bool GetTrackLength ( int TrackIndex, float* out_TrackLength );
 	bool GetFrameLength ( int TrackIndex, int FrameIndex, float* out_FrameLength );
 	bool IsValidFrameIndex ( int TrackIndex, int FrameIndex );
 };
-
-UClass* UUIAnimationSeq::pClassPointer = NULL;
 
 // Class Engine.UIConfigProvider
 // 0x0003 (0x0084 - 0x0081)
@@ -36069,17 +27741,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2400 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIConfigProvider::pClassPointer = NULL;
 
 // Class Engine.UIConfigFileProvider
 // 0x0020 (0x00A4 - 0x0084)
@@ -36093,17 +27757,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2402 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIConfigFileProvider::pClassPointer = NULL;
 
 // Class Engine.UIConfigSectionProvider
 // 0x0010 (0x0094 - 0x0084)
@@ -36116,17 +27772,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2404 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIConfigSectionProvider::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlinePlayerDataBase
 // 0x000B (0x008C - 0x0081)
@@ -36139,19 +27787,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2406 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnUnregister ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlinePlayerDataBase::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlineClanMates
 // 0x0008 (0x0094 - 0x008C)
@@ -36164,19 +27804,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2408 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnClanMatesReadComplete ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlineClanMates::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlineFriendMessages
 // 0x0078 (0x0104 - 0x008C)
@@ -36196,13 +27828,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2410 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnGameInviteReceived ( unsigned char LocalUserNum, struct FString InviterName );
 	void OnLoginChange ( unsigned char LocalUserNum );
@@ -36212,8 +27838,6 @@ public:
 	void eventOnUnregister ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlineFriendMessages::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlineFriends
 // 0x00F8 (0x0184 - 0x008C)
@@ -36241,13 +27865,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2412 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRefreshFriendsList ( );
 	void OnLoginChange ( unsigned char LocalUserNum );
@@ -36255,8 +27873,6 @@ public:
 	void eventOnUnregister ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlineFriends::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlinePartyChatList
 // 0x0098 (0x0124 - 0x008C)
@@ -36278,21 +27894,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2414 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRefreshMembersList ( );
 	void OnLoginChange ( unsigned char LocalUserNum );
 	void eventOnUnregister ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlinePartyChatList::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlinePlayerStorage
 // 0x0024 (0x00B0 - 0x008C)
@@ -36308,13 +27916,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2416 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnSettingValueUpdated ( struct FName SettingName );
 	void ArrayProviderPropertyChanged ( class UUIDataProvider* SourceProvider, struct FName PropTag );
@@ -36330,8 +27932,6 @@ public:
 	bool ReadData ( class UOnlinePlayerInterface* PlayerInterface, unsigned char LocalUserNum, class UOnlinePlayerStorage* PlayerStorage );
 };
 
-UClass* UUIDataProvider_OnlinePlayerStorage::pClassPointer = NULL;
-
 // Class Engine.UIDataProvider_OnlineProfileSettings
 // 0x0000 (0x00B0 - 0x00B0)
 class UUIDataProvider_OnlineProfileSettings : public UUIDataProvider_OnlinePlayerStorage
@@ -36342,21 +27942,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2418 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearReadCompleteDelegate ( class UOnlinePlayerInterface* PlayerInterface, unsigned char LocalUserNum );
 	void AddReadCompleteDelegate ( class UOnlinePlayerInterface* PlayerInterface, unsigned char LocalUserNum );
 	bool WriteData ( class UOnlinePlayerInterface* PlayerInterface, unsigned char LocalUserNum, class UOnlinePlayerStorage* PlayerStorage );
 	bool ReadData ( class UOnlinePlayerInterface* PlayerInterface, unsigned char LocalUserNum, class UOnlinePlayerStorage* PlayerStorage );
 };
-
-UClass* UUIDataProvider_OnlineProfileSettings::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlinePlayers
 // 0x0008 (0x0094 - 0x008C)
@@ -36369,19 +27961,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2420 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPlayersReadComplete ( );
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 };
-
-UClass* UUIDataProvider_OnlinePlayers::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_PlayerAchievements
 // 0x0018 (0x00A4 - 0x008C)
@@ -36395,13 +27979,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2422 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateAchievements ( );
 	void OnLoginChange ( unsigned char LocalUserNum );
@@ -36415,8 +27993,6 @@ public:
 	int GetMaxTotalGamerScore ( );
 	int GetTotalGamerScore ( );
 };
-
-UClass* UUIDataProvider_PlayerAchievements::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_OnlinePlayerStorageArray
 // 0x0047 (0x00C8 - 0x0081)
@@ -36435,17 +28011,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2424 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataProvider_OnlinePlayerStorageArray::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_SettingsArray
 // 0x0047 (0x00C8 - 0x0081)
@@ -36464,17 +28032,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2426 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataProvider_SettingsArray::pClassPointer = NULL;
 
 // Class Engine.SceneDataStore
 // 0x0020 (0x00CC - 0x00AC)
@@ -36490,13 +28050,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2428 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRegistered ( class ULocalPlayer* PlayerOwner );
 	void SceneDataFieldChanged ( class UUIDataProvider* SourceProvider, struct FName PropTag );
@@ -36516,8 +28070,6 @@ public:
 	bool AddField ( struct FName FieldName, unsigned char FieldType, unsigned long bPersistent, int* out_InsertPosition );
 };
 
-UClass* USceneDataStore::pClassPointer = NULL;
-
 // Class Engine.UIDataStore_Color
 // 0x0000 (0x00AC - 0x00AC)
 class UUIDataStore_Color : public UUIDataStore
@@ -36528,17 +28080,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2430 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Color::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_DynamicResource
 // 0x0070 (0x011C - 0x00AC)
@@ -36555,13 +28099,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnregistered ( class ULocalPlayer* PlayerOwner );
 	void eventRegistered ( class ULocalPlayer* PlayerOwner );
@@ -36575,8 +28113,6 @@ public:
 	int FindProviderTypeIndex ( struct FName ProviderTag );
 };
 
-UClass* UUIDataStore_DynamicResource::pClassPointer = NULL;
-
 // Class Engine.UIDataStore_Fonts
 // 0x0000 (0x00AC - 0x00AC)
 class UUIDataStore_Fonts : public UUIDataStore
@@ -36587,17 +28123,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2434 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Fonts::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_GameResource
 // 0x0060 (0x010C - 0x00AC)
@@ -36612,13 +28140,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int FindProviderIndexByFieldValue ( struct FName ProviderTag, struct FName SearchField, struct FUIProviderScriptFieldValue* ValueToSearchFor );
 	bool GetProviderFieldValue ( struct FName ProviderTag, struct FName SearchField, int ProviderIndex, struct FUIProviderScriptFieldValue* out_FieldValue );
@@ -36628,8 +28150,6 @@ public:
 	struct FName GenerateProviderAccessTag ( int ProviderIndex, int InstanceIndex );
 	int FindProviderTypeIndex ( struct FName ProviderTag );
 };
-
-UClass* UUIDataStore_GameResource::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_MenuItems
 // 0x0060 (0x016C - 0x010C)
@@ -36644,13 +28164,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2438 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnregistered ( class ULocalPlayer* PlayerOwner );
 	void eventRegistered ( class ULocalPlayer* PlayerOwner );
@@ -36659,8 +28173,6 @@ public:
 	void AppendToSet ( struct FName SetName, int NumOptions );
 	void ClearSet ( struct FName SetName );
 };
-
-UClass* UUIDataStore_MenuItems::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_GameState
 // 0x0010 (0x00BC - 0x00AC)
@@ -36673,19 +28185,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2440 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool NotifyGameSessionEnded ( );
 	void OnRefreshDataFieldValue ( );
 };
-
-UClass* UUIDataStore_GameState::pClassPointer = NULL;
 
 // Class Engine.CurrentGameDataStore
 // 0x005C (0x0118 - 0x00BC)
@@ -36705,13 +28209,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnAddTeamProvider ( class UTeamDataProvider* Provider );
 	bool NotifyGameSessionEnded ( );
@@ -36734,8 +28232,6 @@ public:
 	void CreateGameDataProvider ( class AGameReplicationInfo* GRI );
 };
 
-UClass* UCurrentGameDataStore::pClassPointer = NULL;
-
 // Class Engine.PlayerOwnerDataStore
 // 0x0050 (0x010C - 0x00BC)
 class UPlayerOwnerDataStore : public UUIDataStore_GameState
@@ -36751,20 +28247,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2444 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool NotifyGameSessionEnded ( );
 	void ClearDataProviders ( );
 	void SetPlayerDataProvider ( class UPlayerDataProvider* NewPlayerData );
 };
-
-UClass* UPlayerOwnerDataStore::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Gamma
 // 0x0000 (0x00AC - 0x00AC)
@@ -36776,17 +28264,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2446 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Gamma::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Images
 // 0x0000 (0x00AC - 0x00AC)
@@ -36798,17 +28278,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2448 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Images::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_OnlinePlaylists
 // 0x0040 (0x00EC - 0x00AC)
@@ -36825,13 +28297,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UOnlinePlaylistProvider* GetOnlinePlaylistProvider ( struct FName ProviderTag, int PlaylistId, int* ProviderIndex );
 	bool GetPlaylistProvider ( struct FName ProviderTag, int ProviderIndex, class UUIResourceDataProvider** out_Provider );
@@ -36841,8 +28307,6 @@ public:
 	bool GetResourceProviders ( struct FName ProviderTag, struct TArray<class UUIResourceDataProvider*>* out_Providers );
 	int GetProviderCount ( struct FName ProviderTag );
 };
-
-UClass* UUIDataStore_OnlinePlaylists::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Registry
 // 0x0008 (0x00B4 - 0x00AC)
@@ -36855,18 +28319,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2452 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIDynamicFieldProvider* GetDataProvider ( );
 };
-
-UClass* UUIDataStore_Registry::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Remote
 // 0x0000 (0x00AC - 0x00AC)
@@ -36878,17 +28334,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2454 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Remote::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_OnlineGameSearch
 // 0x0048 (0x00F4 - 0x00AC)
@@ -36909,13 +28357,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2456 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearAllSearchResults ( );
 	void eventMoveToPrevious ( unsigned long bInvalidateExistingSearchResults );
@@ -36934,8 +28376,6 @@ public:
 	bool InvalidateCurrentSearchResults ( );
 	void eventInit ( );
 };
-
-UClass* UUIDataStore_OnlineGameSearch::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_OnlinePlayerData
 // 0x0128 (0x01D4 - 0x00AC)
@@ -36976,13 +28416,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2458 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UOnlinePlayerStorage* eventGetCachedPlayerStorage ( int ControllerId );
 	class UOnlineProfileSettings* eventGetCachedPlayerProfile ( int ControllerId );
@@ -36996,8 +28430,6 @@ public:
 	void eventOnRegister ( class ULocalPlayer* InPlayer );
 	void OnSettingProviderChanged ( class UUIDataProvider* SourceProvider, struct FName SettingsName );
 };
-
-UClass* UUIDataStore_OnlinePlayerData::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_OnlineStats
 // 0x0099 (0x0145 - 0x00AC)
@@ -37023,13 +28455,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2460 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SortResultsByRank ( );
 	void OnReadComplete ( unsigned long bWasSuccessful );
@@ -37038,8 +28464,6 @@ public:
 	void SetStatsReadInfo ( );
 	void eventInit ( );
 };
-
-UClass* UUIDataStore_OnlineStats::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Settings
 // 0x0000 (0x00AC - 0x00AC)
@@ -37051,17 +28475,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2462 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Settings::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_OnlineGameSettings
 // 0x001C (0x00C8 - 0x00AC)
@@ -37076,13 +28492,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2464 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnregistered ( class ULocalPlayer* PlayerOwner );
 	void eventRegistered ( class ULocalPlayer* PlayerOwner );
@@ -37095,8 +28505,6 @@ public:
 	bool eventCreateGame ( unsigned char ControllerIndex );
 	void OnSettingProviderChanged ( class UUIDataProvider* SourceProvider, struct FName SettingsName );
 };
-
-UClass* UUIDataStore_OnlineGameSettings::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_SessionSettings
 // 0x0030 (0x00DC - 0x00AC)
@@ -37111,19 +28519,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2466 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool NotifyGameSessionEnded ( );
 	void ClearDataProviders ( );
 };
-
-UClass* UUIDataStore_SessionSettings::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_StringBase
 // 0x0000 (0x00AC - 0x00AC)
@@ -37135,17 +28535,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2468 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_StringBase::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_InputAlias
 // 0x0058 (0x0104 - 0x00AC)
@@ -37159,13 +28551,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2470 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool HasAliasMappingForPlatform ( struct FName DesiredAlias, unsigned char DesiredPlatform );
 	int FindInputAliasIndex ( struct FName DesiredAlias );
@@ -37176,8 +28562,6 @@ public:
 	struct FString GetAliasFontMarkupByIndex ( int AliasIndex, unsigned char OverridePlatform );
 	struct FString GetAliasFontMarkup ( struct FName DesiredAlias, unsigned char OverridePlatform );
 };
-
-UClass* UUIDataStore_InputAlias::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_StringAliasMap
 // 0x005C (0x0108 - 0x00AC)
@@ -37192,20 +28576,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2472 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetStringWithFieldName ( struct FString FieldName, struct FString* MappedString );
 	int FindMappingWithFieldName ( struct FString FieldName, struct FString SetName );
 	class ULocalPlayer* GetPlayerOwner ( );
 };
-
-UClass* UUIDataStore_StringAliasMap::pClassPointer = NULL;
 
 // Class Engine.UIDataStore_Strings
 // 0x0010 (0x00BC - 0x00AC)
@@ -37218,17 +28594,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2474 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIDataStore_Strings::pClassPointer = NULL;
 
 // Class Engine.UICustomSkin
 // 0x0048 (0x0254 - 0x020C)
@@ -37241,17 +28609,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2476 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUICustomSkin::pClassPointer = NULL;
 
 // Class Engine.UIDynamicFieldProvider
 // 0x00B3 (0x0134 - 0x0081)
@@ -37267,13 +28627,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2478 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int FindCollectionValueIndex ( struct FName FieldName, unsigned long bPersistent, struct FName CellTag, struct FString* ValueToFind );
 	bool GetCollectionValue ( struct FName FieldName, int ValueIndex, unsigned long bPersistent, struct FName CellTag, struct FString* out_Value );
@@ -37296,8 +28650,6 @@ public:
 	void InitializeRuntimeFields ( );
 };
 
-UClass* UUIDynamicFieldProvider::pClassPointer = NULL;
-
 // Class Engine.UIPropertyDataProvider
 // 0x0023 (0x00A4 - 0x0081)
 class UUIPropertyDataProvider : public UUIDataProvider
@@ -37310,19 +28662,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventGetCustomPropertyValue ( int ArrayIndex, struct FUIProviderScriptFieldValue* PropertyValue );
 	bool CanSupportComplexPropertyType ( class UProperty* UnsupportedProperty );
 };
-
-UClass* UUIPropertyDataProvider::pClassPointer = NULL;
 
 // Class Engine.UIDynamicDataProvider
 // 0x0018 (0x00BC - 0x00A4)
@@ -37337,13 +28681,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2482 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventCleanupDataProvider ( );
 	class UObject* GetDataSource ( );
@@ -37353,8 +28691,6 @@ public:
 	bool UnbindProviderInstance ( );
 	bool BindProviderInstance ( class UObject* DataSourceInstance );
 };
-
-UClass* UUIDynamicDataProvider::pClassPointer = NULL;
 
 // Class Engine.GameInfoDataProvider
 // 0x0008 (0x00C4 - 0x00BC)
@@ -37367,18 +28703,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2484 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventProviderInstanceBound ( class UObject* DataSourceInstance );
 };
-
-UClass* UGameInfoDataProvider::pClassPointer = NULL;
 
 // Class Engine.InventoryDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37390,17 +28718,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2486 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInventoryDataProvider::pClassPointer = NULL;
 
 // Class Engine.PowerupDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37412,18 +28732,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2488 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidDataSourceClass ( class UClass* PotentialDataSourceClass );
 };
-
-UClass* UPowerupDataProvider::pClassPointer = NULL;
 
 // Class Engine.WeaponDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37435,17 +28747,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2490 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UWeaponDataProvider::pClassPointer = NULL;
 
 // Class Engine.CurrentWeaponDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37457,17 +28761,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2492 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCurrentWeaponDataProvider::pClassPointer = NULL;
 
 // Class Engine.PickupDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37479,17 +28775,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2494 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPickupDataProvider::pClassPointer = NULL;
 
 // Class Engine.PlayerDataProvider
 // 0x0000 (0x00BC - 0x00BC)
@@ -37501,17 +28789,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2496 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPlayerDataProvider::pClassPointer = NULL;
 
 // Class Engine.PlayerOwnerDataProvider
 // 0x0008 (0x00C4 - 0x00BC)
@@ -37524,19 +28804,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2498 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventCleanupDataProvider ( );
 	void SetPlayerDataProvider ( class UPlayerDataProvider* NewPlayerData );
 };
-
-UClass* UPlayerOwnerDataProvider::pClassPointer = NULL;
 
 // Class Engine.TeamDataProvider
 // 0x0020 (0x00DC - 0x00BC)
@@ -37551,18 +28823,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2500 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RegeneratePlayerLists ( struct TArray<class UPlayerDataProvider*> AllPlayers );
 };
-
-UClass* UTeamDataProvider::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_Settings
 // 0x001C (0x00D8 - 0x00BC)
@@ -37577,21 +28841,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2502 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnSettingValueUpdated ( struct FName SettingName );
 	void ArrayProviderPropertyChanged ( class UUIDataProvider* SourceProvider, struct FName PropTag );
 	void eventProviderInstanceUnbound ( class UObject* DataSourceInstance );
 	void eventProviderInstanceBound ( class UObject* DataSourceInstance );
 };
-
-UClass* UUIDataProvider_Settings::pClassPointer = NULL;
 
 // Class Engine.UIResourceDataProvider
 // 0x0014 (0x00B8 - 0x00A4)
@@ -37607,18 +28863,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeProvider ( unsigned long bIsEditor );
 };
-
-UClass* UUIResourceDataProvider::pClassPointer = NULL;
 
 // Class Engine.UIDataProvider_MenuItem
 // 0x00A6 (0x015E - 0x00B8)
@@ -37652,18 +28900,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2506 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsFiltered ( );
 };
-
-UClass* UUIDataProvider_MenuItem::pClassPointer = NULL;
 
 // Class Engine.UIMapSummary
 // 0x0040 (0x00F8 - 0x00B8)
@@ -37679,17 +28919,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2508 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIMapSummary::pClassPointer = NULL;
 
 // Class Engine.UISettingsProvider
 // 0x0008 (0x00AC - 0x00A4)
@@ -37702,21 +28934,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2510 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventCleanupDataProvider ( );
 	bool OnModifiedProperty ( struct FName PropertyName, class UUIObject* Widget );
 	void SavePropertyValue ( struct FName PropertyName, class UUIObject* Widget );
 	void LoadPropertyValue ( struct FName PropertyName, class UUIObject* Widget );
 };
-
-UClass* UUISettingsProvider::pClassPointer = NULL;
 
 // Class Engine.SessionSettingsProvider
 // 0x0018 (0x00C4 - 0x00AC)
@@ -37731,13 +28955,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2512 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventCleanupDataProvider ( );
 	bool eventIsValidDataSourceClass ( class UClass* PotentialDataSourceClass );
@@ -37746,8 +28964,6 @@ public:
 	bool UnbindProviderClient ( );
 	bool BindProviderClient ( class UClass* DataSourceClass );
 };
-
-UClass* USessionSettingsProvider::pClassPointer = NULL;
 
 // Class Engine.UIResourceCombinationProvider
 // 0x0023 (0x00A4 - 0x0081)
@@ -37763,13 +28979,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2514 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ReplaceProviderCollection ( struct FName TargetFieldTag, struct TArray<struct FUIDataProviderField>* out_Fields, struct TArray<class UUIDataProvider*>* ReplacementProviders );
 	bool ReplaceProviderValue ( struct FName TargetFieldTag, class UUIDataProvider* ReplacementProvider, struct TArray<struct FUIDataProviderField>* out_Fields );
@@ -37785,8 +28995,6 @@ public:
 	struct TArray<struct FName> eventGetElementProviderTags ( );
 	void eventInitializeProvider ( unsigned long bIsEditor, class UUIResourceDataProvider* InStaticResourceProvider, class UUIDataProvider_OnlineProfileSettings* InProfileProvider );
 };
-
-UClass* UUIResourceCombinationProvider::pClassPointer = NULL;
 
 // Class Engine.GameUISceneClient
 // 0x00D4 (0x0208 - 0x0134)
@@ -37835,13 +29043,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2516 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIAnimationSeq* FindUIAnimation ( struct FName NameOfSequence );
 	void ShowMenuProgression ( );
@@ -37899,8 +29101,6 @@ public:
 	unsigned char GetCurrentNetMode ( );
 };
 
-UClass* UGameUISceneClient::pClassPointer = NULL;
-
 // Class Engine.UIButton
 // 0x0012 (0x0528 - 0x0516)
 class UUIButton : public UUIObject
@@ -37913,18 +29113,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2518 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetImage ( class USurface* NewImage );
 };
-
-UClass* UUIButton::pClassPointer = NULL;
 
 // Class Engine.UILabelButton
 // 0x0050 (0x0578 - 0x0528)
@@ -37939,13 +29131,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2520 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SaveSubscriberValue ( int BindingIndex, struct TArray<class UUIDataStore*>* out_BoundDataStores );
 	void ClearBoundDataStores ( );
@@ -37958,8 +29144,6 @@ public:
 	struct FString eventGetCaption ( );
 	void SetCaption ( struct FString NewText );
 };
-
-UClass* UUILabelButton::pClassPointer = NULL;
 
 // Class Engine.UICalloutButton
 // 0x0025 (0x059D - 0x0578)
@@ -37977,13 +29161,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2522 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIEvent_CalloutButtonInputProxy* GetCalloutInputProxy ( unsigned long bCreateIfNecessary );
 	bool VerifyDefaultMarkupString ( );
@@ -38000,8 +29178,6 @@ public:
 	void SetInputTag ( struct FName NewInputAlias );
 	class UUIDataStore_InputAlias* GetCalloutDataStore ( class ULocalPlayer* AlternatePlayer );
 };
-
-UClass* UUICalloutButton::pClassPointer = NULL;
 
 // Class Engine.UIScrollbar
 // 0x00FB (0x0611 - 0x0516)
@@ -38035,13 +29211,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2524 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetMarkerSizePercent ( );
 	float GetMarkerPosPercent ( );
@@ -38066,8 +29236,6 @@ public:
 	bool OnScrollActivity ( class UUIScrollbar* Sender, float PositionChange, unsigned long bPositionMaxed );
 };
 
-UClass* UUIScrollbar::pClassPointer = NULL;
-
 // Class Engine.UIScrollbarButton
 // 0x0000 (0x0528 - 0x0528)
 class UUIScrollbarButton : public UUIButton
@@ -38078,17 +29246,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2526 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIScrollbarButton::pClassPointer = NULL;
 
 // Class Engine.UIScrollbarMarkerButton
 // 0x0010 (0x0538 - 0x0528)
@@ -38101,18 +29261,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2528 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnButtonDragged ( class UUIScrollbarMarkerButton* Sender, int PlayerIndex );
 };
-
-UClass* UUIScrollbarMarkerButton::pClassPointer = NULL;
 
 // Class Engine.UIContainer
 // 0x000A (0x0520 - 0x0516)
@@ -38125,17 +29277,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2530 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIContainer::pClassPointer = NULL;
 
 // Class Engine.UICalloutButtonPanel
 // 0x0086 (0x05A6 - 0x0520)
@@ -38157,13 +29301,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2532 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnButtonVisibilityChanged ( class UUIScreenObject* SourceWidget, unsigned long bIsVisible );
 	void InitializeInputProxy ( );
@@ -38194,8 +29332,6 @@ public:
 	void PopulateCalloutButtonArray ( );
 };
 
-UClass* UUICalloutButtonPanel::pClassPointer = NULL;
-
 // Class Engine.UISafeRegionPanel
 // 0x000D (0x052D - 0x0520)
 class UUISafeRegionPanel : public UUIContainer
@@ -38211,17 +29347,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2534 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUISafeRegionPanel::pClassPointer = NULL;
 
 // Class Engine.UIImage
 // 0x0052 (0x0568 - 0x0516)
@@ -38236,13 +29364,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2536 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SaveSubscriberValue ( int BindingIndex, struct TArray<class UUIDataStore*>* out_BoundDataStores );
 	void ClearBoundDataStores ( );
@@ -38253,8 +29375,6 @@ public:
 	void SetDataStoreBinding ( struct FString MarkupText, int BindingIndex );
 	void SetValue ( class USurface* NewImage );
 };
-
-UClass* UUIImage::pClassPointer = NULL;
 
 // Class Engine.UILabel
 // 0x0062 (0x0578 - 0x0516)
@@ -38271,13 +29391,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2538 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void IgnoreMarkup ( unsigned long bShouldIgnoreMarkup );
 	struct FString GetValue ( );
@@ -38292,8 +29406,6 @@ public:
 	void SetValue ( struct FString NewText );
 };
 
-UClass* UUILabel::pClassPointer = NULL;
-
 // Class Engine.UIContextMenu
 // 0x001C (0x087C - 0x0860)
 class UUIContextMenu : public UUIList
@@ -38307,13 +29419,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2540 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventFindMenuItemIndex ( class UUIObject* Widget, struct FString ItemToFind );
 	bool eventGetMenuItem ( class UUIObject* Widget, int IndexToGet, struct FString* out_MenuItem );
@@ -38327,8 +29433,6 @@ public:
 	bool Open ( int PlayerIndex );
 	bool IsActiveContextMenu ( );
 };
-
-UClass* UUIContextMenu::pClassPointer = NULL;
 
 // Class Engine.UIPrefab
 // 0x001E (0x0534 - 0x0516)
@@ -38345,17 +29449,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2542 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIPrefab::pClassPointer = NULL;
 
 // Class Engine.UIPrefabInstance
 // 0x009E (0x05B4 - 0x0516)
@@ -38371,18 +29467,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DetachFromSourcePrefab ( );
 };
-
-UClass* UUIPrefabInstance::pClassPointer = NULL;
 
 // Class Engine.UIScene
 // 0x045C (0x067C - 0x0220)
@@ -38465,13 +29553,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2546 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugShowAnimators ( );
 	void LogCurrentState ( int Indent );
@@ -38547,8 +29629,6 @@ public:
 	unsigned char GetSceneInputModeOverride ( );
 };
 
-UClass* UUIScene::pClassPointer = NULL;
-
 // Class Engine.UIState_Active
 // 0x0002 (0x009C - 0x009A)
 class UUIState_Active : public UUIState
@@ -38559,17 +29639,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2548 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIState_Active::pClassPointer = NULL;
 
 // Class Engine.UIState_Focused
 // 0x0002 (0x009C - 0x009A)
@@ -38581,18 +29653,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2550 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventActivateState ( class UUIScreenObject* Target, int PlayerIndex );
 };
-
-UClass* UUIState_Focused::pClassPointer = NULL;
 
 // Class Engine.UIState_Pressed
 // 0x0002 (0x009C - 0x009A)
@@ -38604,17 +29668,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2552 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIState_Pressed::pClassPointer = NULL;
 
 // Class Engine.UIListString
 // 0x0000 (0x0114 - 0x0114)
@@ -38626,17 +29682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2554 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIListString::pClassPointer = NULL;
 
 // Class Engine.UIStyle_Data
 // 0x002C (0x008C - 0x0060)
@@ -38653,18 +29701,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2556 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool MatchesStyleData ( class UUIStyle_Data* OtherStyle );
 };
-
-UClass* UUIStyle_Data::pClassPointer = NULL;
 
 // Class Engine.UIStyle_Combo
 // 0x0060 (0x00EC - 0x008C)
@@ -38678,19 +29718,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2558 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIStyle_Image* GetComboImageStyle ( );
 	class UUIStyle_Text* GetComboTextStyle ( );
 };
-
-UClass* UUIStyle_Combo::pClassPointer = NULL;
 
 // Class Engine.UIStyle_Image
 // 0x0040 (0x00CC - 0x008C)
@@ -38705,17 +29737,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2560 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIStyle_Image::pClassPointer = NULL;
 
 // Class Engine.UIStyle_Text
 // 0x0028 (0x00B4 - 0x008C)
@@ -38735,17 +29759,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2562 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIStyle_Text::pClassPointer = NULL;
 
 // Class Engine.UITexture
 // 0x00A4 (0x0104 - 0x0060)
@@ -38759,21 +29775,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2564 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USurface* GetSurface ( );
 	bool HasValidStyleData ( );
 	void SetImageStyle ( class UUIStyle_Image* NewImageStyle );
 	class UUIScreenObject* GetOwnerWidget ( class UUIComponent** OwnerComponent );
 };
-
-UClass* UUITexture::pClassPointer = NULL;
 
 // Class Engine.UITickableObjectProxy
 // 0x0018 (0x0078 - 0x0060)
@@ -38787,19 +29795,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2566 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventScriptTick ( float DeltaTime );
 	void OnScriptTick ( class UUITickableObjectProxy* Sender, float DeltaTime );
 };
-
-UClass* UUITickableObjectProxy::pClassPointer = NULL;
 
 // Class Engine.UIStringRenderer
 // 0x0000 (0x0060 - 0x0060)
@@ -38811,18 +29811,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2568 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetTextAlignment ( unsigned char Horizontal, unsigned char Vertical );
 };
-
-UClass* UUIStringRenderer::pClassPointer = NULL;
 
 // Class Engine.UIStyleResolver
 // 0x0000 (0x0060 - 0x0060)
@@ -38834,20 +29826,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2570 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool NotifyResolveStyle ( class UUISkin* ActiveSkin, unsigned long bClearExistingValue, class UUIState* CurrentMenuState, struct FName StylePropertyName );
 	bool SetStyleResolverTag ( struct FName NewResolverTag );
 	struct FName GetStyleResolverTag ( );
 };
-
-UClass* UUIStyleResolver::pClassPointer = NULL;
 
 // Class Engine.UITickableObject
 // 0x0000 (0x0060 - 0x0060)
@@ -38859,17 +29843,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2572 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUITickableObject::pClassPointer = NULL;
 
 // Class Engine.UISequence
 // 0x0018 (0x01AC - 0x0194)
@@ -38883,13 +29859,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2574 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveSequenceObjects ( struct TArray<class USequenceObject*>* ObjectsToRemove );
 	void RemoveSequenceObject ( class USequenceObject* ObjectToRemove );
@@ -38897,8 +29867,6 @@ public:
 	void GetUIEvents ( class UClass* LimitClass, struct TArray<class UUIEvent*>* out_Events );
 	class UUIScreenObject* GetOwner ( );
 };
-
-UClass* UUISequence::pClassPointer = NULL;
 
 // Class Engine.UIStateSequence
 // 0x0000 (0x01AC - 0x01AC)
@@ -38910,18 +29878,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2576 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UUIState* GetOwnerState ( );
 };
-
-UClass* UUIStateSequence::pClassPointer = NULL;
 
 // Class Engine.UIAction
 // 0x0004 (0x00FC - 0x00F8)
@@ -38934,13 +29894,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2578 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
@@ -38948,8 +29902,6 @@ public:
 	class UUIScene* GetOwnerScene ( );
 	class UUIScreenObject* GetOwner ( );
 };
-
-UClass* UUIAction::pClassPointer = NULL;
 
 // Class Engine.UIEvent
 // 0x003A (0x0160 - 0x0126)
@@ -38968,13 +29920,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2580 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventShouldAlwaysInstance ( );
@@ -38988,8 +29934,6 @@ public:
 	bool AllowEventActivation ( int ControllerIndex, class UUIScreenObject* InEventOwner, class UObject* InEventActivator, unsigned long bActivateImmediately, struct TArray<int>* IndicesToActivate );
 };
 
-UClass* UUIEvent::pClassPointer = NULL;
-
 // Class Engine.UIEvent_CalloutButtonInputProxy
 // 0x0008 (0x0168 - 0x0160)
 class UUIEvent_CalloutButtonInputProxy : public UUIEvent
@@ -39001,13 +29945,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2582 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	bool eventIsPastingIntoUISequenceAllowed ( );
@@ -39017,8 +29955,6 @@ public:
 	bool UnregisterButtonAlias ( struct FName ButtonAliasName );
 	bool RegisterButtonAlias ( struct FName ButtonAliasName );
 };
-
-UClass* UUIEvent_CalloutButtonInputProxy::pClassPointer = NULL;
 
 // Class Engine.UIEvent_MetaObject
 // 0x0008 (0x0168 - 0x0160)
@@ -39031,19 +29967,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2584 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsPastingIntoUISequenceAllowed ( );
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* UUIEvent_MetaObject::pClassPointer = NULL;
 
 // Class Engine.UIEvent_ProcessInput
 // 0x0048 (0x01A8 - 0x0160)
@@ -39056,18 +29984,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2586 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* UUIEvent_ProcessInput::pClassPointer = NULL;
 
 // Class Engine.Scene
 // 0x0000 (0x0060 - 0x0060)
@@ -39079,17 +29999,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2588 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UScene::pClassPointer = NULL;
 
 // Class Engine.BioEffectsMaterials
 // 0x0000 (0x0060 - 0x0060)
@@ -39101,17 +30013,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2590 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEffectsMaterials::pClassPointer = NULL;
 
 // Class Engine.FoliageFactory
 // 0x002C (0x02F0 - 0x02C4)
@@ -39131,17 +30035,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2592 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFoliageFactory::pClassPointer = NULL;
 
 // Class Engine.InteractiveFoliageActor
 // 0x005C (0x02F0 - 0x0294)
@@ -39167,19 +30063,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2594 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 	void eventTakeDamage ( float Damage, class AController* EventInstigator, struct FVector HitLocation, struct FVector Momentum, class UClass* DamageType, struct FTraceHitInfo HitInfo, class AActor* DamageCauser, class UDamageType* pDamage );
 };
-
-UClass* AInteractiveFoliageActor::pClassPointer = NULL;
 
 // Class Engine.FoliageComponent
 // 0x009C (0x02BC - 0x0220)
@@ -39205,17 +30093,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2596 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFoliageComponent::pClassPointer = NULL;
 
 // Class Engine.InteractiveFoliageComponent
 // 0x0008 (0x02CC - 0x02C4)
@@ -39228,17 +30108,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2598 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UInteractiveFoliageComponent::pClassPointer = NULL;
 
 // Class Engine.ActorFactoryInteractiveFoliage
 // 0x0000 (0x00A0 - 0x00A0)
@@ -39250,17 +30122,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2600 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactoryInteractiveFoliage::pClassPointer = NULL;
 
 // Class Engine.FluidInfluenceActor
 // 0x001C (0x02A0 - 0x0284)
@@ -39277,19 +30141,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2602 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReplicatedEvent ( struct FName VarName );
 	void OnToggle ( class USeqAct_Toggle* inAction );
 };
-
-UClass* AFluidInfluenceActor::pClassPointer = NULL;
 
 // Class Engine.FluidSurfaceActor
 // 0x0010 (0x0294 - 0x0284)
@@ -39303,19 +30159,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2604 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 	void eventTakeDamage ( float Damage, class AController* EventInstigator, struct FVector HitLocation, struct FVector Momentum, class UClass* DamageType, struct FTraceHitInfo HitInfo, class AActor* DamageCauser, class UDamageType* pDamage );
 };
-
-UClass* AFluidSurfaceActor::pClassPointer = NULL;
 
 // Class Engine.FluidSurfaceActorMovable
 // 0x0000 (0x0294 - 0x0294)
@@ -39327,17 +30175,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2606 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AFluidSurfaceActorMovable::pClassPointer = NULL;
 
 // Class Engine.FluidInfluenceComponent
 // 0x0065 (0x0285 - 0x0220)
@@ -39375,17 +30215,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2608 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UFluidInfluenceComponent::pClassPointer = NULL;
 
 // Class Engine.FluidSurfaceComponent
 // 0x00FC (0x031C - 0x0220)
@@ -39449,20 +30281,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2610 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetSimulationPosition ( struct FVector WorldPos );
 	void SetDetailPosition ( struct FVector WorldPos );
 	void ApplyForce ( struct FVector WorldPos, float Strength, float Radius, unsigned long bImpulse );
 };
-
-UClass* UFluidSurfaceComponent::pClassPointer = NULL;
 
 // Class Engine.SpeedTreeActor
 // 0x0008 (0x028C - 0x0284)
@@ -39475,17 +30299,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2612 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASpeedTreeActor::pClassPointer = NULL;
 
 // Class Engine.SpeedTreeComponent
 // 0x00E4 (0x0304 - 0x0220)
@@ -39522,19 +30338,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2614 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetMaterial ( unsigned char MeshType, class UMaterialInterface* Material );
 	class UMaterialInterface* GetMaterial ( unsigned char MeshType );
 };
-
-UClass* USpeedTreeComponent::pClassPointer = NULL;
 
 // Class Engine.SpeedTreeActorFactory
 // 0x0008 (0x0094 - 0x008C)
@@ -39547,17 +30355,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2616 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USpeedTreeActorFactory::pClassPointer = NULL;
 
 // Class Engine.SpeedTreeComponentFactory
 // 0x0008 (0x006C - 0x0064)
@@ -39570,17 +30370,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2618 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USpeedTreeComponentFactory::pClassPointer = NULL;
 
 // Class Engine.SpeedTree
 // 0x0060 (0x00C0 - 0x0060)
@@ -39604,17 +30396,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2620 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USpeedTree::pClassPointer = NULL;
 
 // Class Engine.TextureFlipBook
 // 0x0046 (0x01F9 - 0x01B3)
@@ -39645,21 +30429,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2622 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetCurrentFrame ( int Row, int Col );
 	void Stop ( );
 	void Pause ( );
 	void Play ( );
 };
-
-UClass* UTextureFlipBook::pClassPointer = NULL;
 
 // Class Engine.Texture2DComposite
 // 0x0014 (0x010C - 0x00F8)
@@ -39673,20 +30449,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2624 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetSourceRegions ( );
 	void UpdateCompositeTexture ( int NumMipsToGenerate );
 	bool SourceTexturesFullyStreamedIn ( );
 };
-
-UClass* UTexture2DComposite::pClassPointer = NULL;
 
 // Class Engine.Texture2DDynamic
 // 0x0011 (0x0109 - 0x00F8)
@@ -39703,19 +30471,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2626 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UTexture2DDynamic* Create ( int InSizeX, int InSizeY, unsigned char InFormat, unsigned long InIsResolveTarget );
 	void Init ( int InSizeX, int InSizeY, unsigned char InFormat, unsigned long InIsResolveTarget );
 };
-
-UClass* UTexture2DDynamic::pClassPointer = NULL;
 
 // Class Engine.TextureCube
 // 0x0041 (0x0139 - 0x00F8)
@@ -39738,17 +30498,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2628 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCube::pClassPointer = NULL;
 
 // Class Engine.TextureMovie
 // 0x0068 (0x0160 - 0x00F8)
@@ -39775,20 +30527,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2630 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Stop ( );
 	void Pause ( );
 	void Play ( );
 };
-
-UClass* UTextureMovie::pClassPointer = NULL;
 
 // Class Engine.TextureRenderTarget
 // 0x0004 (0x00FC - 0x00F8)
@@ -39803,17 +30547,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2632 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureRenderTarget::pClassPointer = NULL;
 
 // Class Engine.TextureRenderTarget2D
 // 0x001F (0x011B - 0x00FC)
@@ -39832,18 +30568,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2634 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UTextureRenderTarget2D* Create ( int InSizeX, int InSizeY, unsigned char InFormat, struct FLinearColor InClearColor, unsigned long bOnlyRenderOnce );
 };
-
-UClass* UTextureRenderTarget2D::pClassPointer = NULL;
 
 // Class Engine.ScriptedTexture
 // 0x0015 (0x0130 - 0x011B)
@@ -39858,18 +30586,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2636 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Render ( class UCanvas* C );
 };
-
-UClass* UScriptedTexture::pClassPointer = NULL;
 
 // Class Engine.TextureRenderTargetCube
 // 0x0005 (0x0101 - 0x00FC)
@@ -39883,17 +30603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2638 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureRenderTargetCube::pClassPointer = NULL;
 
 // Class Engine.SoundClass
 // 0x0078 (0x00D8 - 0x0060)
@@ -39909,17 +30621,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2640 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundClass::pClassPointer = NULL;
 
 // Class Engine.SoundMode
 // 0x0020 (0x0080 - 0x0060)
@@ -39936,17 +30640,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2642 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundMode::pClassPointer = NULL;
 
 // Class Engine.DebugCameraController
 // 0x0046 (0x0800 - 0x07BA)
@@ -39968,13 +30664,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2644 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString ConsoleCommand ( struct FString Command, unsigned long bWriteToLog );
 	void ShowDebugSelectedInfo ( );
@@ -39991,8 +30681,6 @@ public:
 	void PrimarySelect ( struct FVector HitLoc, struct FVector HitNormal, struct FTraceHitInfo HitInfo );
 };
 
-UClass* ADebugCameraController::pClassPointer = NULL;
-
 // Class Engine.MatineePawn
 // 0x0003 (0x0650 - 0x064D)
 class AMatineePawn : public APawn
@@ -40003,17 +30691,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2646 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AMatineePawn::pClassPointer = NULL;
 
 // Class Engine.Scout
 // 0x0077 (0x06C4 - 0x064D)
@@ -40050,18 +30730,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2648 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPreBeginPlay ( );
 };
-
-UClass* AScout::pClassPointer = NULL;
 
 // Class Engine.LightVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -40073,17 +30745,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2650 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ALightVolume::pClassPointer = NULL;
 
 // Class Engine.Light
 // 0x000C (0x0290 - 0x0284)
@@ -40097,19 +30761,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2652 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 	void eventReplicatedEvent ( struct FName VarName );
 };
-
-UClass* ALight::pClassPointer = NULL;
 
 // Class Engine.DirectionalLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40121,17 +30777,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2654 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADirectionalLight::pClassPointer = NULL;
 
 // Class Engine.DirectionalLightToggleable
 // 0x0000 (0x0290 - 0x0290)
@@ -40143,17 +30791,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2656 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADirectionalLightToggleable::pClassPointer = NULL;
 
 // Class Engine.DominantDirectionalLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40165,17 +30805,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2658 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADominantDirectionalLight::pClassPointer = NULL;
 
 // Class Engine.PointLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40187,17 +30819,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2660 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APointLight::pClassPointer = NULL;
 
 // Class Engine.DominantPointLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40209,17 +30833,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2662 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADominantPointLight::pClassPointer = NULL;
 
 // Class Engine.PointLightMovable
 // 0x0000 (0x0290 - 0x0290)
@@ -40231,17 +30847,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2664 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* APointLightMovable::pClassPointer = NULL;
 
 // Class Engine.PointLightToggleable
 // 0x0000 (0x0290 - 0x0290)
@@ -40253,20 +30861,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2666 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct APointLightToggleable_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct APointLightToggleable_FCheckpointRecord* Record );
 	bool ShouldSaveForCheckpoint ( );
 };
-
-UClass* APointLightToggleable::pClassPointer = NULL;
 
 // Class Engine.SkyLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40278,17 +30878,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2668 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASkyLight::pClassPointer = NULL;
 
 // Class Engine.SkyLightToggleable
 // 0x0000 (0x0290 - 0x0290)
@@ -40300,17 +30892,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2670 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASkyLightToggleable::pClassPointer = NULL;
 
 // Class Engine.SpotLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40322,17 +30906,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2672 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASpotLight::pClassPointer = NULL;
 
 // Class Engine.DominantSpotLight
 // 0x0000 (0x0290 - 0x0290)
@@ -40344,17 +30920,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2674 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADominantSpotLight::pClassPointer = NULL;
 
 // Class Engine.SpotLightMovable
 // 0x0000 (0x0290 - 0x0290)
@@ -40366,17 +30934,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2676 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASpotLightMovable::pClassPointer = NULL;
 
 // Class Engine.SpotLightToggleable
 // 0x0000 (0x0290 - 0x0290)
@@ -40388,20 +30948,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2678 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyCheckpointRecord ( struct ASpotLightToggleable_FCheckpointRecord* Record );
 	void CreateCheckpointRecord ( struct ASpotLightToggleable_FCheckpointRecord* Record );
 	bool ShouldSaveForCheckpoint ( );
 };
-
-UClass* ASpotLightToggleable::pClassPointer = NULL;
 
 // Class Engine.StaticLightCollectionActor
 // 0x0014 (0x02A4 - 0x0290)
@@ -40415,17 +30967,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2680 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AStaticLightCollectionActor::pClassPointer = NULL;
 
 // Class Engine.LightComponent
 // 0x017E (0x0204 - 0x0086)
@@ -40494,13 +31038,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2682 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUpdatePropertyOcclusionMaskDarkness ( );
 	void OnUpdatePropertyBloomTint ( );
@@ -40512,8 +31050,6 @@ public:
 	void SetLightProperties ( float NewBrightness, struct FColor NewLightColor, class ULightFunction* NewLightFunction );
 	void SetEnabled ( unsigned long bSetEnabled );
 };
-
-UClass* ULightComponent::pClassPointer = NULL;
 
 // Class Engine.DirectionalLightComponent
 // 0x0018 (0x021C - 0x0204)
@@ -40528,19 +31064,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2684 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUpdatePropertyBrightness ( );
 	void OnUpdatePropertyLightColor ( );
 };
-
-UClass* UDirectionalLightComponent::pClassPointer = NULL;
 
 // Class Engine.DominantDirectionalLightComponent
 // 0x00C4 (0x02E0 - 0x021C)
@@ -40555,17 +31083,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2686 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDominantDirectionalLightComponent::pClassPointer = NULL;
 
 // Class Engine.PointLightComponent
 // 0x0090 (0x0294 - 0x0204)
@@ -40589,20 +31109,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2688 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUpdatePropertyBrightness ( );
 	void OnUpdatePropertyLightColor ( );
 	void SetTranslation ( struct FVector NewTranslation );
 };
-
-UClass* UPointLightComponent::pClassPointer = NULL;
 
 // Class Engine.DominantPointLightComponent
 // 0x0000 (0x0294 - 0x0294)
@@ -40614,17 +31126,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2690 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDominantPointLightComponent::pClassPointer = NULL;
 
 // Class Engine.SpotLightComponent
 // 0x001C (0x02B0 - 0x0294)
@@ -40641,17 +31145,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2692 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USpotLightComponent::pClassPointer = NULL;
 
 // Class Engine.DominantSpotLightComponent
 // 0x00C0 (0x0370 - 0x02B0)
@@ -40665,17 +31161,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2694 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDominantSpotLightComponent::pClassPointer = NULL;
 
 // Class Engine.SkyLightComponent
 // 0x0008 (0x020C - 0x0204)
@@ -40689,17 +31177,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2696 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkyLightComponent::pClassPointer = NULL;
 
 // Class Engine.SphericalHarmonicLightComponent
 // 0x00A0 (0x02A4 - 0x0204)
@@ -40714,17 +31194,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2698 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USphericalHarmonicLightComponent::pClassPointer = NULL;
 
 // Class Engine.LightEnvironmentComponent
 // 0x001E (0x00A4 - 0x0086)
@@ -40741,19 +31213,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2700 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsEnabled ( );
 	void SetEnabled ( unsigned long bNewEnabled );
 };
-
-UClass* ULightEnvironmentComponent::pClassPointer = NULL;
 
 // Class Engine.DynamicLightEnvironmentComponent
 // 0x010D (0x01B1 - 0x00A4)
@@ -40821,17 +31285,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2702 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDynamicLightEnvironmentComponent::pClassPointer = NULL;
 
 // Class Engine.ParticleLightEnvironmentComponent
 // 0x000B (0x01BC - 0x01B1)
@@ -40845,17 +31301,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2704 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UParticleLightEnvironmentComponent::pClassPointer = NULL;
 
 // Class Engine.DrawLightConeComponent
 // 0x0000 (0x0230 - 0x0230)
@@ -40867,17 +31315,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2706 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawLightConeComponent::pClassPointer = NULL;
 
 // Class Engine.DrawLightRadiusComponent
 // 0x0000 (0x0238 - 0x0238)
@@ -40889,17 +31329,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2708 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDrawLightRadiusComponent::pClassPointer = NULL;
 
 // Class Engine.LightFunction
 // 0x0014 (0x0074 - 0x0060)
@@ -40913,17 +31345,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2710 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ULightFunction::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshComponent
 // 0x053C (0x0790 - 0x0254)
@@ -41135,13 +31559,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2712 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void BreakConstraint ( struct FVector Impulse, struct FVector HitLocation, struct FName InBoneName, unsigned long bVelChange );
 	void SkelMeshCompOnParticleSystemFinished ( class UParticleSystemComponent* PSC );
@@ -41268,8 +31686,6 @@ public:
 	void AttachComponent ( class UActorComponent* Component, struct FName BoneName, struct FVector RelativeLocation, struct FRotator RelativeRotation, struct FVector RelativeScale );
 };
 
-UClass* USkeletalMeshComponent::pClassPointer = NULL;
-
 // Class Engine.SkeletalMesh
 // 0x03C4 (0x0424 - 0x0060)
 class USkeletalMesh : public UObject
@@ -41393,17 +31809,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2714 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkeletalMesh::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshSocket
 // 0x003C (0x009C - 0x0060)
@@ -41421,17 +31829,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2716 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USkeletalMeshSocket::pClassPointer = NULL;
 
 // Class Engine.SplineActor
 // 0x0068 (0x02EC - 0x0284)
@@ -41455,13 +31855,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2718 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* inAction );
 	void GetAllConnectedSplineActors ( struct TArray<class ASplineActor*>* OutSet );
@@ -41479,8 +31873,6 @@ public:
 	void UpdateSplineComponents ( unsigned long bFinish );
 	struct FVector GetWorldSpaceTangent ( );
 };
-
-UClass* ASplineActor::pClassPointer = NULL;
 
 // Class Engine.SplineLoftActor
 // 0x004C (0x0338 - 0x02EC)
@@ -41502,18 +31894,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2720 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearLoftMesh ( );
 };
-
-UClass* ASplineLoftActor::pClassPointer = NULL;
 
 // Class Engine.SplineComponent
 // 0x003C (0x025C - 0x0220)
@@ -41532,13 +31916,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2722 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FVector GetTangentAtDistanceAlongSpline ( float Distance );
 	struct FVector GetLocationAtDistanceAlongSpline ( float Distance );
@@ -41546,8 +31924,6 @@ public:
 	void UpdateSplineReparamTable ( );
 	void UpdateSplineCurviness ( );
 };
-
-UClass* USplineComponent::pClassPointer = NULL;
 
 // Class Engine.ProcBuilding
 // 0x0084 (0x0348 - 0x02C4)
@@ -41585,13 +31961,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2724 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int FindEdgeForTopLevelScope ( int TopLevelScopeIndex, unsigned char Edge );
 	void GetAllGroupedProcBuildings ( struct TArray<class AProcBuilding*>* OutSet );
@@ -41599,8 +31969,6 @@ public:
 	struct TArray<class UStaticMeshComponent*> FindComponentsForTopLevelScope ( int TopLevelScopeIndex );
 	void ClearBuildingMeshes ( );
 };
-
-UClass* AProcBuilding::pClassPointer = NULL;
 
 // Class Engine.ProcBuilding_SimpleLODActor
 // 0x0000 (0x0294 - 0x0294)
@@ -41612,17 +31980,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2726 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AProcBuilding_SimpleLODActor::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeBase
 // 0x0010 (0x0070 - 0x0060)
@@ -41635,17 +31995,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2728 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeBase::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeAlternate
 // 0x000D (0x007D - 0x0070)
@@ -41662,17 +32014,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2730 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeAlternate::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeComment
 // 0x0018 (0x0088 - 0x0070)
@@ -41690,17 +32034,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2732 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeComment::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeCorner
 // 0x0029 (0x0099 - 0x0070)
@@ -41721,17 +32057,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2734 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeCorner::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeEdgeAngle
 // 0x0011 (0x0081 - 0x0070)
@@ -41745,17 +32073,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2736 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeEdgeAngle::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeEdgeMesh
 // 0x0008 (0x0078 - 0x0070)
@@ -41769,17 +32089,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2738 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeEdgeMesh::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeExtractTopBottom
 // 0x0010 (0x0080 - 0x0070)
@@ -41795,17 +32107,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2740 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeExtractTopBottom::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeLODQuad
 // 0x0004 (0x0074 - 0x0070)
@@ -41818,17 +32122,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2742 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeLODQuad::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeMesh
 // 0x0060 (0x00D0 - 0x0070)
@@ -41844,18 +32140,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2744 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int PickRandomBuildingMesh ( );
 };
-
-UClass* UPBRuleNodeMesh::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeOcclusion
 // 0x0000 (0x0070 - 0x0070)
@@ -41867,17 +32155,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2746 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeOcclusion::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeQuad
 // 0x001C (0x008C - 0x0070)
@@ -41895,17 +32175,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2748 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeQuad::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeRandom
 // 0x000C (0x007C - 0x0070)
@@ -41920,17 +32192,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2750 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeRandom::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeRepeat
 // 0x0005 (0x0075 - 0x0070)
@@ -41944,17 +32208,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2752 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeRepeat::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeSize
 // 0x0009 (0x0079 - 0x0070)
@@ -41969,17 +32225,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2754 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeSize::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeSplit
 // 0x0011 (0x0081 - 0x0070)
@@ -41993,17 +32241,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2756 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeSplit::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeSubRuleset
 // 0x0008 (0x0078 - 0x0070)
@@ -42016,17 +32256,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2758 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeSubRuleset::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeTransform
 // 0x0018 (0x0088 - 0x0070)
@@ -42041,17 +32273,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2760 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeTransform::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeVariation
 // 0x0004 (0x0074 - 0x0070)
@@ -42064,17 +32288,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2762 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeVariation::pClassPointer = NULL;
 
 // Class Engine.PBRuleNodeWindowWall
 // 0x0028 (0x0098 - 0x0070)
@@ -42095,17 +32311,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2764 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UPBRuleNodeWindowWall::pClassPointer = NULL;
 
 // Class Engine.ProcBuildingRuleset
 // 0x0064 (0x00C4 - 0x0060)
@@ -42134,17 +32342,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2766 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UProcBuildingRuleset::pClassPointer = NULL;
 
 // Class Engine.ReplicationInfo
 // 0x0000 (0x0284 - 0x0284)
@@ -42156,17 +32356,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2768 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AReplicationInfo::pClassPointer = NULL;
 
 // Class Engine.GameReplicationInfo
 // 0x0080 (0x0304 - 0x0284)
@@ -42194,13 +32386,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2770 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventShouldShowGore ( );
 	bool IsCoopMultiplayerGame ( );
@@ -42225,8 +32411,6 @@ public:
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AGameReplicationInfo::pClassPointer = NULL;
 
 // Class Engine.PlayerReplicationInfo
 // 0x00DA (0x035E - 0x0284)
@@ -42283,13 +32467,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2772 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UnregisterPlayerFromSession ( );
 	void RegisterPlayerWithSession ( );
@@ -42328,8 +32506,6 @@ public:
 	struct FString GetPlayerAlias ( );
 };
 
-UClass* APlayerReplicationInfo::pClassPointer = NULL;
-
 // Class Engine.TeamInfo
 // 0x0020 (0x02A4 - 0x0284)
 class ATeamInfo : public AReplicationInfo
@@ -42345,13 +32521,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2774 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetTeamNum ( );
 	struct FColor GetTextColor ( );
@@ -42364,8 +32534,6 @@ public:
 	class UCurrentGameDataStore* GetCurrentGameDS ( );
 	void eventReplicatedEvent ( struct FName VarName );
 };
-
-UClass* ATeamInfo::pClassPointer = NULL;
 
 // Class Engine.Camera
 // 0x0294 (0x0518 - 0x0284)
@@ -42415,13 +32583,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2776 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void StopCameraAnim ( class UCameraAnimInst* AnimInst, unsigned long bImmediate );
 	void StopAllCameraAnimsByType ( class UCameraAnim* Anim, unsigned long bImmediate );
@@ -42456,8 +32618,6 @@ public:
 	class UCameraModifier* CreateCameraModifier ( class UClass* ModifierClass );
 };
 
-UClass* ACamera::pClassPointer = NULL;
-
 // Class Engine.CameraActor
 // 0x0100 (0x0384 - 0x0284)
 class ACameraActor : public AActor
@@ -42475,19 +32635,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2778 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DisplayDebug ( class AHUD* HUD, float* out_YL, float* out_YPos );
 	void GetCameraView ( float DeltaTime, struct FTPOV* OutPOV );
 };
-
-UClass* ACameraActor::pClassPointer = NULL;
 
 // Class Engine.DynamicCameraActor
 // 0x0000 (0x0384 - 0x0384)
@@ -42499,17 +32651,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2780 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADynamicCameraActor::pClassPointer = NULL;
 
 // Class Engine.CameraAnim
 // 0x0110 (0x0170 - 0x0060)
@@ -42527,17 +32671,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2782 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UCameraAnim::pClassPointer = NULL;
 
 // Class Engine.CameraAnimInst
 // 0x0179 (0x01D9 - 0x0060)
@@ -42573,13 +32709,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2784 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetPlaySpace ( unsigned char NewSpace, struct FRotator UserPlaySpace );
 	void ApplyTransientScaling ( float Scalar );
@@ -42589,8 +32719,6 @@ public:
 	void PlayEx ( class UCameraAnim* Anim, class AActor* CamActor, float InRate, float InScale, float StartTime, float InBlendInTime, float InBlendOutTime, unsigned long bInLoop, unsigned long bRandomStartTime, float Duration );
 	void Play ( class UCameraAnim* Anim, class AActor* CamActor, float InRate, float InScale, float InBlendInTime, float InBlendOutTime, unsigned long bInLoop, unsigned long bRandomStartTime, float Duration );
 };
-
-UClass* UCameraAnimInst::pClassPointer = NULL;
 
 // Class Engine.CameraModifier
 // 0x001D (0x007D - 0x0060)
@@ -42612,13 +32740,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2786 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateAlpha ( class ACamera* Camera, float DeltaTime );
 	bool ProcessViewRotation ( class AActor* ViewTarget, float DeltaTime, struct FRotator* out_ViewRotation, struct FRotator* out_DeltaRot );
@@ -42632,8 +32754,6 @@ public:
 	void Init ( );
 };
 
-UClass* UCameraModifier::pClassPointer = NULL;
-
 // Class Engine.CameraModifier_CameraShake
 // 0x0017 (0x0094 - 0x007D)
 class UCameraModifier_CameraShake : public UCameraModifier
@@ -42646,13 +32766,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2788 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ModifyCamera ( class ACamera* Camera, float DeltaTime, struct FTPOV* OutPOV );
 	void UpdateCameraShake ( float DeltaTime, struct FCameraShakeInstance* Shake, struct FTPOV* OutPOV );
@@ -42663,8 +32777,6 @@ public:
 	void ReinitShake ( int ActiveShakeIdx, float Scale );
 	float InitializeOffset ( struct FFOscillator* Param );
 };
-
-UClass* UCameraModifier_CameraShake::pClassPointer = NULL;
 
 // Class Engine.CameraShake
 // 0x0080 (0x00E0 - 0x0060)
@@ -42690,19 +32802,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2790 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetLocOscillationMagnitude ( );
 	float GetRotOscillationMagnitude ( );
 };
-
-UClass* UCameraShake::pClassPointer = NULL;
 
 // Class Engine.BioGuiSoundCooker
 // 0x0010 (0x0070 - 0x0060)
@@ -42715,17 +32819,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2792 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGuiSoundCooker::pClassPointer = NULL;
 
 // Class Engine.BioSFSharedBase
 // 0x0000 (0x0060 - 0x0060)
@@ -42737,17 +32833,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2794 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSFSharedBase::pClassPointer = NULL;
 
 // Class Engine.BioSFHandler
 // 0x0039 (0x0099 - 0x0060)
@@ -42767,13 +32855,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2796 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void PlayGuiSoundString ( struct FString sSound );
@@ -42805,8 +32887,6 @@ public:
 	void eventHandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 	void SetHighShadowBias ( unsigned long bTurn );
 };
-
-UClass* UBioSFHandler::pClassPointer = NULL;
 
 // Class Engine.BioSFManager
 // 0x0103 (0x0163 - 0x0060)
@@ -42841,13 +32921,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2798 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsTriggerShoulderSwapped ( );
 	bool IsTriggerSouthpaw ( );
@@ -42887,8 +32961,6 @@ public:
 	void AddPanel ( class UBioSFPanel* oPanel, unsigned long bModal, unsigned long bAddDefaultHandler );
 	class UBioSFPanel* CreatePanel ( struct FName nmMovieTag, unsigned long bAddPanel, unsigned long bModal, int Platform );
 };
-
-UClass* UBioSFManager::pClassPointer = NULL;
 
 // Class Engine.BioSFPanel
 // 0x0110 (0x0170 - 0x0060)
@@ -42933,13 +33005,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2800 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetProfileTimes ( float* fUpdateTime, float* fRenderTime, float* fAdvanceTime );
 	class UBioSFHandler* GetDefaultHandler ( );
@@ -43004,8 +33070,6 @@ public:
 	struct FBioScaleformResource GetMovieResource ( );
 };
 
-UClass* UBioSFPanel::pClassPointer = NULL;
-
 // Class Engine.BioSFTexture
 // 0x0035 (0x0095 - 0x0060)
 class UBioSFTexture : public UObject
@@ -43027,17 +33091,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2802 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSFTexture::pClassPointer = NULL;
 
 // Class Engine.BioRemoteLogger
 // 0x016C (0x01CC - 0x0060)
@@ -43088,13 +33144,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2804 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTPMCheckinTestPlan ( );
 	void eventTPMCheckoutTestPlan ( int nTestPlanID );
@@ -43137,8 +33187,6 @@ public:
 	class UBioRemoteLogger* GetLogger ( );
 };
 
-UClass* UBioRemoteLogger::pClassPointer = NULL;
-
 // Class Engine.BioDynamicLightEnvironmentComponent
 // 0x0071 (0x0222 - 0x01B1)
 class UBioDynamicLightEnvironmentComponent : public UDynamicLightEnvironmentComponent
@@ -43178,13 +33226,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2806 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUpdatePropertyRimLightControl ( );
 	void OnUpdatePropertyRimLightColor ( );
@@ -43198,8 +33240,6 @@ public:
 	void OnUpdatePropertyBouncedKeyLightingIntensity ( );
 	void SetQuality ( unsigned char Quality );
 };
-
-UClass* UBioDynamicLightEnvironmentComponent::pClassPointer = NULL;
 
 // Class Engine.SFXUberPostProcessEffect
 // 0x000F (0x012C - 0x011D)
@@ -43215,17 +33255,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2808 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXUberPostProcessEffect::pClassPointer = NULL;
 
 // Class Engine.Bio2DA
 // 0x0118 (0x0178 - 0x0060)
@@ -43244,13 +33276,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2810 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetRowNumber ( int nRowIndex );
 	struct TArray<struct FName> GetRowNames ( );
@@ -43288,8 +33314,6 @@ public:
 	int GetNumColumns ( );
 };
 
-UClass* UBio2DA::pClassPointer = NULL;
-
 // Class Engine.Bio2DANumberedRows
 // 0x0068 (0x01E0 - 0x0178)
 class UBio2DANumberedRows : public UBio2DA
@@ -43303,17 +33327,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2812 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio2DANumberedRows::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_HitWall
 // 0x0002 (0x0128 - 0x0126)
@@ -43325,17 +33341,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 6481 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_HitWall::pClassPointer = NULL;
 
 // Class Engine.LocalMessage
 // 0x0014 (0x0074 - 0x0060)
@@ -43357,13 +33365,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 6782 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool PartiallyDuplicates ( int Switch1, int Switch2, class UObject* OptionalObject1, class UObject* OptionalObject2 );
 	bool IsKeyObjectiveMessage ( int Switch );
@@ -43377,8 +33379,6 @@ public:
 	void ClientReceive ( class APlayerController* P, int Switch, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01, class UObject* OptionalObject );
 };
 
-UClass* ULocalMessage::pClassPointer = NULL;
-
 // Class Engine.SFXModule_DamageBase
 // 0x0000 (0x006C - 0x006C)
 class USFXModule_DamageBase : public USFXModule
@@ -43389,19 +33389,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 6836 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SFXTakeRadiusDamage ( float Damage, float DamageRadius, unsigned long bFullDamage, struct FVector HurtOrigin, float Momentum, class UClass* DamageType, class AController* InstigatedBy, class AActor* DamageCauser );
 	void SFXTakeDamage ( float Damage, class UClass* DamageType, class AController* InstigatedBy, class AActor* DamageCauser, struct FTraceHitInfo* HitInfo, struct FVector* HitLocation, struct FVector* Momentum );
 };
-
-UClass* USFXModule_DamageBase::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Destroy
 // 0x0014 (0x010C - 0x00F8)
@@ -43415,17 +33407,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_Destroy::pClassPointer = NULL;
 
 // Class Engine.SeqAct_Teleport
 // 0x0004 (0x00FC - 0x00F8)
@@ -43439,17 +33423,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7113 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_Teleport::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetVelocity
 // 0x0014 (0x010C - 0x00F8)
@@ -43464,18 +33440,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7124 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_SetVelocity::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleHidden
 // 0x0014 (0x010C - 0x00F8)
@@ -43489,18 +33457,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7153 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_ToggleHidden::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AttachToActor
 // 0x0024 (0x011C - 0x00F8)
@@ -43519,18 +33479,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7158 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_AttachToActor::pClassPointer = NULL;
 
 // Class Engine.SeqAct_MakeNoise
 // 0x0004 (0x00FC - 0x00F8)
@@ -43543,18 +33495,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_MakeNoise::pClassPointer = NULL;
 
 // Class Engine.AccessControl
 // 0x011C (0x03A0 - 0x0284)
@@ -43581,13 +33525,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7506 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsIDBanned ( struct FUniqueNetId* NetId );
 	bool CheckIPPolicy ( struct FString Address );
@@ -43609,8 +33547,6 @@ public:
 	bool IsAdmin ( class APlayerController* P );
 };
 
-UClass* AAccessControl::pClassPointer = NULL;
-
 // Class Engine.Admin
 // 0x0002 (0x07BC - 0x07BA)
 class AAdmin : public APlayerController
@@ -43621,13 +33557,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7515 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ServerSwitch ( struct FString URL );
 	void Switch ( struct FString URL );
@@ -43643,8 +33573,6 @@ public:
 	void eventPostBeginPlay ( );
 };
 
-UClass* AAdmin::pClassPointer = NULL;
-
 // Class Engine.ActivateOpSaveObject
 // 0x000C (0x0084 - 0x0078)
 class UActivateOpSaveObject : public UBioBaseSaveObject
@@ -43658,17 +33586,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7621 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActivateOpSaveObject::pClassPointer = NULL;
 
 // Class Engine.EmitterSpawnable
 // 0x0008 (0x02A0 - 0x0298)
@@ -43681,19 +33601,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7673 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventSetTemplate ( class UParticleSystem* NewTemplate, unsigned long bDestroyOnFinish );
 };
-
-UClass* AEmitterSpawnable::pClassPointer = NULL;
 
 // Class Engine.KAssetSpawnable
 // 0x0000 (0x02A0 - 0x02A0)
@@ -43705,17 +33617,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7687 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AKAssetSpawnable::pClassPointer = NULL;
 
 // Class Engine.ActorFactorySkeletalMeshCinematic
 // 0x0000 (0x00A4 - 0x00A4)
@@ -43727,17 +33631,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7981 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactorySkeletalMeshCinematic::pClassPointer = NULL;
 
 // Class Engine.ActorFactorySkeletalMeshMAT
 // 0x0000 (0x00A4 - 0x00A4)
@@ -43749,17 +33645,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 7983 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UActorFactorySkeletalMeshMAT::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_Death
 // 0x0002 (0x0128 - 0x0126)
@@ -43771,18 +33659,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 8094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqEvent_Death::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleGodMode
 // 0x0000 (0x00F8 - 0x00F8)
@@ -43794,18 +33674,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 8394 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_ToggleGodMode::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleAffectedByHitEffects
 // 0x0000 (0x00F8 - 0x00F8)
@@ -43817,18 +33689,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 8397 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_ToggleAffectedByHitEffects::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ControlMovieTexture
 // 0x0008 (0x0100 - 0x00F8)
@@ -43841,18 +33705,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9025 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* USeqAct_ControlMovieTexture::pClassPointer = NULL;
 
 // Class Engine.OnlineAccountInterface
 // 0x0010 (0x0070 - 0x0060)
@@ -43865,13 +33721,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9066 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetLocalAccountNames ( struct TArray<struct FString>* Accounts );
 	bool DeleteLocalAccount ( struct FString UserName, struct FString Password );
@@ -43882,8 +33732,6 @@ public:
 	void OnCreateOnlineAccountCompleted ( unsigned char ErrorStatus );
 	bool CreateOnlineAccount ( struct FString UserName, struct FString Password, struct FString EmailAddress, struct FString ProductKey );
 };
-
-UClass* UOnlineAccountInterface::pClassPointer = NULL;
 
 // Class Engine.OnlinePlayerInterface
 // 0x0150 (0x01B0 - 0x0060)
@@ -43916,13 +33764,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9068 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetAchievements ( unsigned char LocalUserNum, int TitleId, int SetIndex, struct TArray<struct FAchievementDetails>* Achievements );
 	void ClearReadAchievementsCompleteDelegate ( unsigned char LocalUserNum, struct FScriptDelegate ReadAchievementsCompleteDelegate );
@@ -44034,8 +33876,6 @@ public:
 	void OnLoginChange ( unsigned char LocalUserNum );
 };
 
-UClass* UOnlinePlayerInterface::pClassPointer = NULL;
-
 // Class Engine.OnlinePlayerInterfaceEx
 // 0x0020 (0x0080 - 0x0060)
 class UOnlinePlayerInterfaceEx : public UInterface
@@ -44048,13 +33888,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9070 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowCustomPlayersUI ( unsigned char LocalUserNum, struct FString Title, struct FString Description, struct TArray<struct FUniqueNetId>* Players );
 	bool ShowPlayersUI ( unsigned char LocalUserNum );
@@ -44078,8 +33912,6 @@ public:
 	bool ShowFeedbackUI ( unsigned char LocalUserNum, struct FUniqueNetId PlayerID );
 };
 
-UClass* UOnlinePlayerInterfaceEx::pClassPointer = NULL;
-
 // Class Engine.OnlineSystemInterface
 // 0x0060 (0x00C0 - 0x0060)
 class UOnlineSystemInterface : public UInterface
@@ -44096,13 +33928,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9072 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetTitleFileState ( struct FString Filename );
 	bool GetTitleFileContents ( struct FString Filename, struct TArray<unsigned char>* FileContents );
@@ -44132,8 +33958,6 @@ public:
 	bool HasLinkConnection ( );
 };
 
-UClass* UOnlineSystemInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineGameInterface
 // 0x00C0 (0x0120 - 0x0060)
 class UOnlineGameInterface : public UInterface
@@ -44156,13 +33980,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9074 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool RecalculateSkillRating ( struct FName SessionName, struct TArray<struct FUniqueNetId>* Players );
 	bool AcceptGameInvite ( unsigned char LocalUserNum, struct FName SessionName );
@@ -44224,8 +34042,6 @@ public:
 	bool CreateOnlineGame ( unsigned char HostingPlayerNum, struct FName SessionName, class UOnlineGameSettings* NewGameSettings );
 };
 
-UClass* UOnlineGameInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineContentInterface
 // 0x0030 (0x0090 - 0x0060)
 class UOnlineContentInterface : public UInterface
@@ -44239,13 +34055,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9076 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetAvailableDownloadCounts ( unsigned char LocalUserNum, int* NewDownloads, int* TotalDownloads );
 	void ClearQueryAvailableDownloadsComplete ( unsigned char LocalUserNum, struct FScriptDelegate QueryDownloadsDelegate );
@@ -44262,8 +34072,6 @@ public:
 	void OnContentChange ( );
 };
 
-UClass* UOnlineContentInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineVoiceInterface
 // 0x0020 (0x0080 - 0x0060)
 class UOnlineVoiceInterface : public UInterface
@@ -44276,13 +34084,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9078 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UnmuteAll ( unsigned char LocalUserNum );
 	bool MuteAll ( unsigned char LocalUserNum, unsigned long bAllowFriends );
@@ -44311,8 +34113,6 @@ public:
 	bool RegisterLocalTalker ( unsigned char LocalUserNum );
 };
 
-UClass* UOnlineVoiceInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineStatsInterface
 // 0x0030 (0x0090 - 0x0060)
 class UOnlineStatsInterface : public UInterface
@@ -44326,13 +34126,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool RegisterStatGuid ( struct FUniqueNetId PlayerID, struct FString* ClientStatGuid );
 	struct FString GetClientStatGuid ( );
@@ -44357,8 +34151,6 @@ public:
 	bool ReadOnlineStats ( class UOnlineStatsRead* StatsRead, struct TArray<struct FUniqueNetId>* Players );
 };
 
-UClass* UOnlineStatsInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineNewsInterface
 // 0x0010 (0x0070 - 0x0060)
 class UOnlineNewsInterface : public UInterface
@@ -44370,13 +34162,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9082 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetNews ( unsigned char LocalUserNum, unsigned char NewsType );
 	void ClearReadNewsCompletedDelegate ( struct FScriptDelegate ReadNewsDelegate );
@@ -44384,8 +34170,6 @@ public:
 	void OnReadNewsCompleted ( unsigned long bWasSuccessful, unsigned char NewsType );
 	bool ReadNews ( unsigned char LocalUserNum, unsigned char NewsType );
 };
-
-UClass* UOnlineNewsInterface::pClassPointer = NULL;
 
 // Class Engine.OnlinePartyChatInterface
 // 0x0010 (0x0070 - 0x0060)
@@ -44398,13 +34182,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 9084 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowCommunitySessionsUI ( unsigned char LocalUserNum );
 	bool ShowVoiceChannelUI ( unsigned char LocalUserNum );
@@ -44418,8 +34196,6 @@ public:
 	bool SendPartyGameInvites ( unsigned char LocalUserNum );
 };
 
-UClass* UOnlinePartyChatInterface::pClassPointer = NULL;
-
 // Class Engine.CoverReplicator
 // 0x0010 (0x0294 - 0x0284)
 class ACoverReplicator : public AReplicationInfo
@@ -44431,13 +34207,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 10090 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClientReceiveLinkDisabledState ( int Index, class ACoverLink* Link, unsigned long bLinkDisabled );
 	void ServerSendLinkDisabledState ( int Index );
@@ -44460,8 +34230,6 @@ public:
 	void ReplicateInitialCoverInfo ( );
 	void PurgeOldEntries ( );
 };
-
-UClass* ACoverReplicator::pClassPointer = NULL;
 
 // Class Engine.GameMessage
 // 0x0170 (0x01E4 - 0x0074)
@@ -44496,18 +34264,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 10119 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetString ( int Switch, unsigned long bPRI1HUD, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01, class UObject* OptionalObject );
 };
-
-UClass* UGameMessage::pClassPointer = NULL;
 
 // Class Engine.ScoreBoard
 // 0x0004 (0x05C0 - 0x05BC)
@@ -44520,21 +34280,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 10256 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ChangeState ( unsigned long bIsVisible );
 	void UpdateScoreBoard ( );
 	bool UpdateGRI ( );
 	void DrawHUD ( );
 };
-
-UClass* AScoreBoard::pClassPointer = NULL;
 
 // Class Engine.DmgType_Suicided
 // 0x0000 (0x00C0 - 0x00C0)
@@ -44546,17 +34298,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 10373 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDmgType_Suicided::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleInput
 // 0x0004 (0x00FC - 0x00F8)
@@ -44571,18 +34315,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11343 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* USeqAct_ToggleInput::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ForceFeedback
 // 0x0010 (0x0108 - 0x00F8)
@@ -44596,17 +34332,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ForceFeedback::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleCinematicMode
 // 0x0004 (0x00FC - 0x00F8)
@@ -44625,19 +34353,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 	void eventActivated ( );
 };
-
-UClass* USeqAct_ToggleCinematicMode::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ConsoleCommand
 // 0x0020 (0x0118 - 0x00F8)
@@ -44651,19 +34371,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11486 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void VersionUpdated ( int OldVersion, int NewVersion );
 };
-
-UClass* USeqAct_ConsoleCommand::pClassPointer = NULL;
 
 // Class Engine.SeqAct_FlyThroughHasEnded
 // 0x0000 (0x00F8 - 0x00F8)
@@ -44675,17 +34387,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11831 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_FlyThroughHasEnded::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetSoundMode
 // 0x000C (0x0104 - 0x00F8)
@@ -44699,19 +34403,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 11878 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void eventActivated ( );
 };
-
-UClass* USeqAct_SetSoundMode::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_DestroyEffect
 // 0x0000 (0x0060 - 0x0060)
@@ -44723,17 +34419,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 13077 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_DestroyEffect::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Effect
 // 0x0000 (0x0060 - 0x0060)
@@ -44745,17 +34433,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 13079 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Effect::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_PlayFaceFXAnim
 // 0x0038 (0x0098 - 0x0060)
@@ -44773,18 +34453,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 13086 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventNotify ( class AActor* Owner, class UAnimNodeSequence* AnimSeqInstigator );
 };
-
-UClass* UAnimNotify_PlayFaceFXAnim::pClassPointer = NULL;
 
 // Class Engine.AnimNotify_Trigger
 // 0x0000 (0x0060 - 0x0060)
@@ -44796,17 +34468,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 13139 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UAnimNotify_Trigger::pClassPointer = NULL;
 
 // Class Engine.BioLineBloomEffect
 // 0x0063 (0x00E8 - 0x0085)
@@ -44822,17 +34486,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 14671 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioLineBloomEffect::pClassPointer = NULL;
 
 // Class Engine.BioSeqAct_EffectsMaterial
 // 0x0015 (0x010D - 0x00F8)
@@ -44850,19 +34506,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 15078 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void SetUpInputs ( );
 };
-
-UClass* UBioSeqAct_EffectsMaterial::pClassPointer = NULL;
 
 // Class Engine.BroadcastHandler
 // 0x0008 (0x028C - 0x0284)
@@ -44876,13 +34524,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 16089 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventAllowBroadcastLocalizedTeam ( int TeamIndex, class AActor* Sender, class UClass* Message, int Switch, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01, class UObject* OptionalObject );
 	void eventAllowBroadcastLocalized ( class AActor* Sender, class UClass* Message, int Switch, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01, class UObject* OptionalObject );
@@ -44893,8 +34535,6 @@ public:
 	bool AllowsBroadcast ( class AActor* broadcaster, int InLen );
 	void UpdateSentText ( );
 };
-
-UClass* ABroadcastHandler::pClassPointer = NULL;
 
 // Class Engine.ColorScaleVolume
 // 0x0010 (0x02D4 - 0x02C4)
@@ -44908,19 +34548,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 16873 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* AColorScaleVolume::pClassPointer = NULL;
 
 // Class Engine.DebugCameraHUD
 // 0x0000 (0x05BC - 0x05BC)
@@ -44932,20 +34564,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostRender ( );
 	bool DisplayMaterials ( float X, float DY, class UMeshComponent* MeshComp, float* Y );
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADebugCameraHUD::pClassPointer = NULL;
 
 // Class Engine.DebugCameraInput
 // 0x0001 (0x020C - 0x020B)
@@ -44957,18 +34581,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18241 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool InputKey ( int ControllerId, struct FName Key, unsigned char Event, float AmountDepressed, unsigned long bGamepad );
 };
-
-UClass* UDebugCameraInput::pClassPointer = NULL;
 
 // Class Engine.VolumeTimer
 // 0x0008 (0x028C - 0x0284)
@@ -44981,19 +34597,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18706 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTimer ( );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AVolumeTimer::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetDamageInstigator
 // 0x0008 (0x0100 - 0x00F8)
@@ -45006,17 +34614,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18745 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetDamageInstigator::pClassPointer = NULL;
 
 // Class Engine.DialogueManager
 // 0x0000 (0x0284 - 0x0284)
@@ -45028,18 +34628,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18770 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool TriggerDialogueEvent ( class UClass* InEventClass, class AActor* InInstigator, class AActor* InOriginator );
 };
-
-UClass* ADialogueManager::pClassPointer = NULL;
 
 // Class Engine.DialogueTree
 // 0x0000 (0x0194 - 0x0194)
@@ -45051,17 +34643,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18841 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDialogueTree::pClassPointer = NULL;
 
 // Class Engine.DmgType_Crushed
 // 0x0000 (0x00C0 - 0x00C0)
@@ -45073,17 +34657,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18890 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDmgType_Crushed::pClassPointer = NULL;
 
 // Class Engine.DmgType_Fell
 // 0x0000 (0x00C0 - 0x00C0)
@@ -45095,17 +34671,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18892 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDmgType_Fell::pClassPointer = NULL;
 
 // Class Engine.DmgType_Telefragged
 // 0x0000 (0x00C0 - 0x00C0)
@@ -45117,17 +34685,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 18895 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UDmgType_Telefragged::pClassPointer = NULL;
 
 // Class Engine.DynamicPhysicsVolume
 // 0x0004 (0x0318 - 0x0314)
@@ -45140,18 +34700,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 19073 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADynamicPhysicsVolume::pClassPointer = NULL;
 
 // Class Engine.DynamicSMActor_Spawnable
 // 0x0000 (0x02CC - 0x02CC)
@@ -45163,17 +34715,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 19129 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ADynamicSMActor_Spawnable::pClassPointer = NULL;
 
 // Class Engine.DynamicTriggerVolume
 // 0x0004 (0x02C8 - 0x02C4)
@@ -45186,18 +34730,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 19138 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPostBeginPlay ( );
 };
-
-UClass* ADynamicTriggerVolume::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetParticleSysParam
 // 0x0018 (0x0110 - 0x00F8)
@@ -45212,17 +34748,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 19467 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetParticleSysParam::pClassPointer = NULL;
 
 // Class Engine.FailedConnect
 // 0x0040 (0x00B4 - 0x0074)
@@ -45235,19 +34763,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 20007 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetString ( int Switch, unsigned long bPRI1HUD, class APlayerReplicationInfo* RelatedPRI, class APlayerReplicationInfo* RelatedPRI01, class UObject* OptionalObject );
 	int GetFailSwitch ( struct FString FailString );
 };
-
-UClass* UFailedConnect::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_PlayerSpawned
 // 0x000A (0x0130 - 0x0126)
@@ -45260,17 +34780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 20685 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_PlayerSpawned::pClassPointer = NULL;
 
 // Class Engine.GameRules
 // 0x0008 (0x028C - 0x0284)
@@ -45283,13 +34795,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 21670 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NetDamage ( int OriginalDamage, class APawn* injured, class AController* InstigatedBy, struct FVector HitLocation, class UClass* DamageType, int* Damage, struct FVector* Momentum );
 	bool CriticalPlayer ( class AController* Other );
@@ -45304,8 +34810,6 @@ public:
 	class ANavigationPoint* FindPlayerStart ( class AController* Player, unsigned char InTeam, struct FString IncomingName );
 	void AddGameRules ( class AGameRules* GR );
 };
-
-UClass* AGameRules::pClassPointer = NULL;
 
 // Class Engine.UIMessageBoxBase
 // 0x0074 (0x06F0 - 0x067C)
@@ -45331,13 +34835,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 22009 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HandleSceneActivated ( class UUIScene* ActivatedScene, unsigned long bInitialActivation );
 	bool OptionChosen ( class UUIScreenObject* EventObject, int PlayerIndex );
@@ -45358,8 +34856,6 @@ public:
 	bool OnOptionSelected ( class UUIMessageBoxBase* Sender, struct FName SelectedInputAlias, int PlayerIndex );
 };
 
-UClass* UUIMessageBoxBase::pClassPointer = NULL;
-
 // Class Engine.UIMessageBox
 // 0x0000 (0x06F0 - 0x06F0)
 class UUIMessageBox : public UUIMessageBoxBase
@@ -45370,18 +34866,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 22139 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetupDockingRelationships ( );
 };
-
-UClass* UUIMessageBox::pClassPointer = NULL;
 
 // Class Engine.HeightFog
 // 0x000C (0x0290 - 0x0284)
@@ -45395,20 +34883,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 22473 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggle ( class USeqAct_Toggle* Action );
 	void eventReplicatedEvent ( struct FName VarName );
 	void eventPostBeginPlay ( );
 };
-
-UClass* AHeightFog::pClassPointer = NULL;
 
 // Class Engine.InterpActor_ForCinematic
 // 0x0000 (0x0318 - 0x0318)
@@ -45420,17 +34900,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 22671 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AInterpActor_ForCinematic::pClassPointer = NULL;
 
 // Class Engine.KActorHack
 // 0x0000 (0x03A8 - 0x03A8)
@@ -45442,17 +34914,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 23228 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AKActorHack::pClassPointer = NULL;
 
 // Class Engine.LevelInfo
 // 0x0000 (0x0298 - 0x0298)
@@ -45464,17 +34928,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 23311 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ALevelInfo::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AssignController
 // 0x0008 (0x0100 - 0x00F8)
@@ -45487,17 +34943,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 24266 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AssignController::pClassPointer = NULL;
 
 // Class Engine.SeqAct_GiveInventory
 // 0x0014 (0x010C - 0x00F8)
@@ -45512,17 +34960,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 24272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_GiveInventory::pClassPointer = NULL;
 
 // Class Engine.NavMeshBoundsVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -45534,17 +34974,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 25019 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ANavMeshBoundsVolume::pClassPointer = NULL;
 
 // Class Engine.OnlineCommunityContentInterface
 // 0x0050 (0x00B0 - 0x0060)
@@ -45561,13 +34993,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 25379 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RateContent ( unsigned char PlayerNum, int NewRating, struct FCommunityContentFile* FileToRate );
 	void ClearGetContentPayloadCompleteDelegate ( struct FScriptDelegate GetContentPayloadCompleteDelegate );
@@ -45596,8 +35022,6 @@ public:
 	bool Init ( );
 };
 
-UClass* UOnlineCommunityContentInterface::pClassPointer = NULL;
-
 // Class Engine.OnlineEventsInterface
 // 0x0000 (0x0060 - 0x0060)
 class UOnlineEventsInterface : public UInterface
@@ -45608,20 +35032,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 25508 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UploadHardwareData ( struct FUniqueNetId UniqueId, struct FString PlayerNick );
 	bool UploadGameplayEventsData ( class UOnlineGameplayEvents* Events );
 	bool UploadProfileData ( struct FUniqueNetId UniqueId, struct FString PlayerNick, class UOnlineProfileSettings* ProfileSettings );
 };
-
-UClass* UOnlineEventsInterface::pClassPointer = NULL;
 
 // Class Engine.OnlinePlaylistGameTypeProvider
 // 0x002C (0x00E4 - 0x00B8)
@@ -45637,17 +35053,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 26375 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UOnlinePlaylistGameTypeProvider::pClassPointer = NULL;
 
 // Class Engine.OnlinePlaylistProvider
 // 0x002C (0x00E4 - 0x00B8)
@@ -45664,17 +35072,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 26447 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UOnlinePlaylistProvider::pClassPointer = NULL;
 
 // Class Engine.OnlineRecentPlayersList
 // 0x0058 (0x00B8 - 0x0060)
@@ -45694,13 +35094,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 26496 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetCurrentPlayersListCount ( );
 	void SetCurrentPlayersList ( struct TArray<struct FCurrentPlayerMet> Players );
@@ -45720,8 +35114,6 @@ public:
 	void AddPlayerToRecentPlayers ( struct FUniqueNetId NewPlayer );
 };
 
-UClass* UOnlineRecentPlayersList::pClassPointer = NULL;
-
 // Class Engine.PathNode_Dynamic
 // 0x0000 (0x0384 - 0x0384)
 class APathNode_Dynamic : public APathNode
@@ -45732,18 +35124,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 27806 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetDebugAbbrev ( );
 };
-
-UClass* APathNode_Dynamic::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_PickupStatusChange
 // 0x0002 (0x0128 - 0x0126)
@@ -45755,17 +35139,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 28258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_PickupStatusChange::pClassPointer = NULL;
 
 // Class Engine.RadialBlurActor
 // 0x0008 (0x028C - 0x0284)
@@ -45778,17 +35154,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 28715 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARadialBlurActor::pClassPointer = NULL;
 
 // Class Engine.SeqAct_ToggleConstraintDrive
 // 0x0004 (0x00FC - 0x00F8)
@@ -45804,17 +35172,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 28922 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_ToggleConstraintDrive::pClassPointer = NULL;
 
 // Class Engine.RB_BSJointActor
 // 0x0000 (0x02B8 - 0x02B8)
@@ -45826,17 +35186,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 28971 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_BSJointActor::pClassPointer = NULL;
 
 // Class Engine.RB_ConstraintActorSpawnable
 // 0x0000 (0x02B8 - 0x02B8)
@@ -45848,17 +35200,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 28976 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_ConstraintActorSpawnable::pClassPointer = NULL;
 
 // Class Engine.RB_HingeActor
 // 0x0000 (0x02B8 - 0x02B8)
@@ -45870,17 +35214,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29036 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_HingeActor::pClassPointer = NULL;
 
 // Class Engine.RB_PrismaticActor
 // 0x0000 (0x02B8 - 0x02B8)
@@ -45892,17 +35228,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29053 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_PrismaticActor::pClassPointer = NULL;
 
 // Class Engine.RB_PulleyJointActor
 // 0x0000 (0x02B8 - 0x02B8)
@@ -45914,17 +35242,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29058 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ARB_PulleyJointActor::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AddRemoveFaceFXAnimSet
 // 0x0000 (0x00F8 - 0x00F8)
@@ -45936,17 +35256,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29471 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AddRemoveFaceFXAnimSet::pClassPointer = NULL;
 
 // Class Engine.SeqAct_AIAbortMoveToActor
 // 0x0000 (0x00F8 - 0x00F8)
@@ -45958,17 +35270,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29473 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_AIAbortMoveToActor::pClassPointer = NULL;
 
 // Class Engine.SequenceObjectSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -45980,17 +35284,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29706 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceObjectSaveObject::pClassPointer = NULL;
 
 // Class Engine.SequenceOpSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -46002,17 +35298,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29708 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceOpSaveObject::pClassPointer = NULL;
 
 // Class Engine.SequenceActionSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -46024,17 +35312,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29710 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceActionSaveObject::pClassPointer = NULL;
 
 // Class Engine.SeqAct_LatentSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -46046,17 +35326,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29712 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_LatentSaveObject::pClassPointer = NULL;
 
 // Class Engine.SeqAct_PlayReplicatedSound
 // 0x0018 (0x0110 - 0x00F8)
@@ -46070,19 +35342,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29789 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void eventActivated ( );
 };
-
-UClass* USeqAct_PlayReplicatedSound::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetName
 // 0x0010 (0x0108 - 0x00F8)
@@ -46096,18 +35360,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29896 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* USeqAct_SetName::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetSkelControlTarget
 // 0x0018 (0x0110 - 0x00F8)
@@ -46121,17 +35377,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29907 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetSkelControlTarget::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetSkeletalMesh
 // 0x0008 (0x0100 - 0x00F8)
@@ -46144,17 +35392,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29912 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetSkeletalMesh::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetStaticMesh
 // 0x0008 (0x0100 - 0x00F8)
@@ -46167,17 +35407,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29922 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqAct_SetStaticMesh::pClassPointer = NULL;
 
 // Class Engine.SeqAct_SetVector
 // 0x000C (0x0104 - 0x00F8)
@@ -46190,18 +35422,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 29929 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* USeqAct_SetVector::pClassPointer = NULL;
 
 // Class Engine.SeqAct_UpdateDynamicCover
 // 0x0000 (0x00F8 - 0x00F8)
@@ -46213,18 +35437,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30023 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_UpdateDynamicCover::pClassPointer = NULL;
 
 // Class Engine.SeqAct_UpdatePhysBonesFromAnim
 // 0x0000 (0x00F8 - 0x00F8)
@@ -46236,18 +35452,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30027 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqAct_UpdatePhysBonesFromAnim::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_AIReachedRouteActor
 // 0x0002 (0x0128 - 0x0126)
@@ -46259,17 +35467,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30100 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_AIReachedRouteActor::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_LevelReset
 // 0x0002 (0x0128 - 0x0126)
@@ -46281,17 +35481,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30110 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_LevelReset::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_LOS
 // 0x000E (0x0134 - 0x0126)
@@ -46306,19 +35498,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30112 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventPreVersionUpdated ( int OldVersion, int NewVersion );
 	int eventGetObjClassVersion ( );
 };
-
-UClass* USeqEvent_LOS::pClassPointer = NULL;
 
 // Class Engine.SeqEvent_UnTouch
 // 0x0002 (0x0128 - 0x0126)
@@ -46330,17 +35514,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30219 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqEvent_UnTouch::pClassPointer = NULL;
 
 // Class Engine.SequenceEventSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -46352,17 +35528,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30232 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceEventSaveObject::pClassPointer = NULL;
 
 // Class Engine.SequenceSaveObject
 // 0x0050 (0x00C8 - 0x0078)
@@ -46379,17 +35547,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30240 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceSaveObject::pClassPointer = NULL;
 
 // Class Engine.SequenceReferenceSaveObject
 // 0x0000 (0x00C8 - 0x00C8)
@@ -46401,17 +35561,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30252 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceReferenceSaveObject::pClassPointer = NULL;
 
 // Class Engine.SequenceVariableSaveObject
 // 0x0000 (0x0078 - 0x0078)
@@ -46423,17 +35575,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USequenceVariableSaveObject::pClassPointer = NULL;
 
 // Class Engine.SeqVar_Byte
 // 0x0000 (0x0090 - 0x0090)
@@ -46445,17 +35589,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30257 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_Byte::pClassPointer = NULL;
 
 // Class Engine.SeqVar_UniqueNetId
 // 0x0000 (0x0090 - 0x0090)
@@ -46467,17 +35603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USeqVar_UniqueNetId::pClassPointer = NULL;
 
 // Class Engine.UISettingsClient
 // 0x0000 (0x0060 - 0x0060)
@@ -46489,17 +35617,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUISettingsClient::pClassPointer = NULL;
 
 // Class Engine.SessionSettingsProvider_GameInfo
 // 0x0000 (0x00C4 - 0x00C4)
@@ -46511,17 +35631,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30347 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USessionSettingsProvider_GameInfo::pClassPointer = NULL;
 
 // Class Engine.SkeletalMeshActorMATSpawnable
 // 0x0000 (0x02E0 - 0x02E0)
@@ -46533,17 +35645,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30914 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ASkeletalMeshActorMATSpawnable::pClassPointer = NULL;
 
 // Class Engine.SoundLocalization
 // 0x0000 (0x0060 - 0x0060)
@@ -46555,17 +35659,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 30953 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USoundLocalization::pClassPointer = NULL;
 
 // Class Engine.TextureCompressionProfile
 // 0x0000 (0x0060 - 0x0060)
@@ -46577,17 +35673,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32015 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCompressionProfile::pClassPointer = NULL;
 
 // Class Engine.TextureCompressionDefault
 // 0x0000 (0x0060 - 0x0060)
@@ -46599,17 +35687,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32017 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCompressionDefault::pClassPointer = NULL;
 
 // Class Engine.TextureCompressionDisplacement
 // 0x0000 (0x0060 - 0x0060)
@@ -46621,17 +35701,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32019 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCompressionDisplacement::pClassPointer = NULL;
 
 // Class Engine.TextureCompressionNone
 // 0x0000 (0x0060 - 0x0060)
@@ -46643,17 +35715,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32021 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCompressionNone::pClassPointer = NULL;
 
 // Class Engine.TextureCompressionNormalmap
 // 0x0000 (0x0060 - 0x0060)
@@ -46665,17 +35729,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32023 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTextureCompressionNormalmap::pClassPointer = NULL;
 
 // Class Engine.Trigger_Dynamic
 // 0x0000 (0x0294 - 0x0294)
@@ -46687,17 +35743,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ATrigger_Dynamic::pClassPointer = NULL;
 
 // Class Engine.Trigger_LOS
 // 0x0010 (0x02A4 - 0x0294)
@@ -46710,18 +35758,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32098 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTick ( float DeltaTime );
 };
-
-UClass* ATrigger_LOS::pClassPointer = NULL;
 
 // Class Engine.TriggeredPath
 // 0x000C (0x0390 - 0x0384)
@@ -46735,20 +35775,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32116 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventSuggestMovePreparation ( class APawn* Other );
 	class AActor* eventSpecialHandling ( class APawn* Other );
 	void OnToggle ( class USeqAct_Toggle* inAction );
 };
-
-UClass* ATriggeredPath::pClassPointer = NULL;
 
 // Class Engine.TriggerStreamingLevel
 // 0x0010 (0x02A4 - 0x0294)
@@ -46761,18 +35793,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32130 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ATriggerStreamingLevel::pClassPointer = NULL;
 
 // Class Engine.UIAction_ChangeVisibility
 // 0x0004 (0x0100 - 0x00FC)
@@ -46785,17 +35809,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32160 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ChangeVisibility::pClassPointer = NULL;
 
 // Class Engine.UIAction_ConsoleCommand
 // 0x0010 (0x010C - 0x00FC)
@@ -46808,17 +35824,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32163 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ConsoleCommand::pClassPointer = NULL;
 
 // Class Engine.UIAction_SetControllerId
 // 0x0000 (0x00FC - 0x00FC)
@@ -46830,17 +35838,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32166 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_SetControllerId::pClassPointer = NULL;
 
 // Class Engine.UIAction_SetValue
 // 0x0000 (0x00FC - 0x00FC)
@@ -46852,17 +35852,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32168 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_SetValue::pClassPointer = NULL;
 
 // Class Engine.UIAction_SetDatastoreBinding
 // 0x0010 (0x010C - 0x00FC)
@@ -46875,17 +35867,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32170 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_SetDatastoreBinding::pClassPointer = NULL;
 
 // Class Engine.UIAction_SetLabelText
 // 0x0010 (0x010C - 0x00FC)
@@ -46898,17 +35882,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32173 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_SetLabelText::pClassPointer = NULL;
 
 // Class Engine.UIAction_SetListIndex
 // 0x0008 (0x0104 - 0x00FC)
@@ -46923,17 +35899,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32176 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_SetListIndex::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowAchievementsUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -46945,17 +35913,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32181 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowAchievementsUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowContentMarketplaceUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -46967,17 +35927,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32183 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowContentMarketplaceUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowFeedbackUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -46989,17 +35941,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32185 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowFeedbackUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowFriendInviteUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47011,17 +35955,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32187 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowFriendInviteUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowFriendsUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47033,17 +35969,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32189 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowFriendsUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowGamerCardUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47055,17 +35983,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32191 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowGamerCardUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowMembershipMarketplaceUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47077,17 +35997,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32193 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowMembershipMarketplaceUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowMessagesUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47099,17 +36011,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32195 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowMessagesUI::pClassPointer = NULL;
 
 // Class Engine.UIAction_ShowPlayersUI
 // 0x0000 (0x00FC - 0x00FC)
@@ -47121,17 +36025,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 32197 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIAction_ShowPlayersUI::pClassPointer = NULL;
 
 // Class Engine.UIEvent_Initialized
 // 0x0000 (0x0160 - 0x0160)
@@ -47143,17 +36039,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 33146 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UUIEvent_Initialized::pClassPointer = NULL;
 
 // Class Engine.UICharacterSummary
 // 0x0034 (0x00EC - 0x00B8)
@@ -47169,18 +36057,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 33581 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsProviderDisabled ( );
 };
-
-UClass* UUICharacterSummary::pClassPointer = NULL;
 
 // Class Engine.UIFocusHint
 // 0x0000 (0x0578 - 0x0578)
@@ -47192,18 +36072,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 35109 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventRemovedFromParent ( class UUIScreenObject* WidgetOwner );
 };
-
-UClass* UUIFocusHint::pClassPointer = NULL;
 
 // Class Engine.UIWeaponSummary
 // 0x0034 (0x00EC - 0x00B8)
@@ -47219,18 +36091,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 35931 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsProviderDisabled ( );
 };
-
-UClass* UUIWeaponSummary::pClassPointer = NULL;
 
 // Class Engine.WaterVolume
 // 0x0028 (0x033C - 0x0314)
@@ -47247,21 +36111,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 35947 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PlayExitSplash ( class AActor* Other );
 	void eventUnTouch ( class AActor* Other );
 	void PlayEntrySplash ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* AWaterVolume::pClassPointer = NULL;
 
 // Class Engine.WindDirectionalSource
 // 0x0008 (0x028C - 0x0284)
@@ -47274,17 +36130,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36289 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* AWindDirectionalSource::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

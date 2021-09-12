@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: GFxUI_f_structs.h
 # ========================================================================================= #
@@ -36,7 +36,7 @@ struct UGFxFSCmdHandler_eventFSCommand_Parms
 	class UGFxMovie*                                   Movie;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Cmd;                                              		// 0x0008 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     arg;                                              		// 0x0018 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0028 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0028 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxGameViewportClient.Init
@@ -44,7 +44,7 @@ struct UGFxFSCmdHandler_eventFSCommand_Parms
 struct UGFxGameViewportClient_eventInit_Parms
 {
 	struct FString                                     OutError;                                         		// 0x0000 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// int                                             oldlen;                                           		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -66,8 +66,8 @@ struct UGFxInteraction_execGetFocusMovie_Parms
 struct UGFxInteraction_execSetFocusMovie_Parms
 {
 	struct FString                                     MovieName;                                        		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      captureInput : 1;                                 		// 0x0010 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      captureInput;                                     		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.UnregisterGFxValue
@@ -75,7 +75,7 @@ struct UGFxInteraction_execSetFocusMovie_Parms
 struct UGFxMovie_execUnregisterGFxValue_Parms
 {
 	class UGFxValue*                                   i_val;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.RegisterGFxValue
@@ -83,7 +83,7 @@ struct UGFxMovie_execUnregisterGFxValue_Parms
 struct UGFxMovie_execRegisterGFxValue_Parms
 {
 	class UGFxValue*                                   i_val;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.ActionScriptSetFunction
@@ -187,7 +187,7 @@ struct UGFxMovie_execSetVariableStringArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FString>                      arg;                                              		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.SetVariableFloatArray
@@ -197,7 +197,7 @@ struct UGFxMovie_execSetVariableFloatArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<float>                               arg;                                              		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.SetVariableIntArray
@@ -207,7 +207,7 @@ struct UGFxMovie_execSetVariableIntArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<int>                                 arg;                                              		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.SetVariableArray
@@ -217,7 +217,7 @@ struct UGFxMovie_execSetVariableArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FASValue>                     arg;                                              		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.GetVariableStringArray
@@ -227,7 +227,7 @@ struct UGFxMovie_execGetVariableStringArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FString>                      arg;                                              		// 0x0014 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.GetVariableFloatArray
@@ -237,7 +237,7 @@ struct UGFxMovie_execGetVariableFloatArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<float>                               arg;                                              		// 0x0014 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.GetVariableIntArray
@@ -247,7 +247,7 @@ struct UGFxMovie_execGetVariableIntArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<int>                                 arg;                                              		// 0x0014 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.GetVariableArray
@@ -257,7 +257,7 @@ struct UGFxMovie_execGetVariableArray_Parms
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                Index;                                            		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FASValue>                     arg;                                              		// 0x0014 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.SetVariableString
@@ -281,7 +281,7 @@ struct UGFxMovie_execSetVariableNumber_Parms
 struct UGFxMovie_execSetVariableBool_Parms
 {
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      B : 1;                                            		// 0x0010 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      B;                                                		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxMovie.SetVariable
@@ -313,7 +313,7 @@ struct UGFxMovie_execGetVariableNumber_Parms
 struct UGFxMovie_execGetVariableBool_Parms
 {
 	struct FString                                     Path;                                             		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.GetVariable
@@ -370,7 +370,7 @@ struct UGFxMovie_execSetTimingMode_Parms
 // [0x00024400] ( FUNC_Native )
 struct UGFxMovie_execPause_Parms
 {
-	unsigned long                                      pauseplay : 1;                                    		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      pauseplay;                                        		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 };
 
 // Function GFxUI.GFxMovie.Update
@@ -393,21 +393,21 @@ struct UGFxMovie_execSetExternalTexture_Parms
 {
 	struct FString                                     Resource;                                         		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	class UTexture*                                    Texture;                                          		// 0x0010 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.IsUsingGamepad
 // [0x00020400] ( FUNC_Native )
 struct UGFxMovie_execIsUsingGamepad_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxMovie.FlushPlayerInput
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct UGFxMovie_execFlushPlayerInput_Parms
 {
-	unsigned long                                      capturekeysonly : 1;                              		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      capturekeysonly;                                  		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxMovie.ClearFocusIgnoreKeys
@@ -440,8 +440,8 @@ struct UGFxMovie_execAddCaptureKey_Parms
 // [0x00024401] ( FUNC_Final | FUNC_Native )
 struct UGFxMovie_execSetFocus_Parms
 {
-	unsigned long                                      captureInput : 1;                                 		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      Focus : 1;                                        		// 0x0004 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      captureInput;                                     		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      Focus;                                            		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 };
 
 // Function GFxUI.GFxMovie.SetSceneDPG
@@ -523,15 +523,15 @@ struct UGFxMovie_eventOnClose_Parms
 // [0x00024401] ( FUNC_Final | FUNC_Native )
 struct UGFxMovie_execClose_Parms
 {
-	unsigned long                                      Unload : 1;                                       		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      Unload;                                           		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 };
 
 // Function GFxUI.GFxMovie.Start
 // [0x00024C00] ( FUNC_Event | FUNC_Native )
 struct UGFxMovie_eventStart_Parms
 {
-	unsigned long                                      StartPaused : 1;                                  		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      StartPaused;                                      		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxValue.ActionScriptSetFunctionOn
@@ -620,7 +620,7 @@ struct UGFxValue_execSetElementMemberBool_Parms
 {
 	int                                                Index;                                            		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     member;                                           		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      B : 1;                                            		// 0x0014 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      B;                                                		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxValue.SetElementMemberObject
@@ -665,7 +665,7 @@ struct UGFxValue_execGetElementMemberBool_Parms
 {
 	int                                                Index;                                            		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     member;                                           		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxValue.GetElementMemberObject
@@ -709,7 +709,7 @@ struct UGFxValue_execSetElementPosition_Parms
 struct UGFxValue_execSetElementVisible_Parms
 {
 	int                                                Index;                                            		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      Visible : 1;                                      		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      Visible;                                          		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxValue.SetElementDisplayMatrix
@@ -749,7 +749,7 @@ struct UGFxValue_execSetElementNumber_Parms
 struct UGFxValue_execSetElementBool_Parms
 {
 	int                                                Index;                                            		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      B : 1;                                            		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      B;                                                		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxValue.SetElementObject
@@ -805,7 +805,7 @@ struct UGFxValue_execGetElementNumber_Parms
 struct UGFxValue_execGetElementBool_Parms
 {
 	int                                                Index;                                            		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxValue.GetElementObject
@@ -907,7 +907,7 @@ struct UGFxValue_execSetPosition_Parms
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct UGFxValue_execSetVisible_Parms
 {
-	unsigned long                                      Visible : 1;                                      		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      Visible;                                          		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxValue.SetDisplayMatrix3D
@@ -937,7 +937,7 @@ struct UGFxValue_execGetPosition_Parms
 {
 	float                                              X;                                                		// 0x0000 (0x0004) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
 	float                                              Y;                                                		// 0x0004 (0x0004) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxValue.GetColorTransform
@@ -982,7 +982,7 @@ struct UGFxValue_execSetNumber_Parms
 struct UGFxValue_execSetBool_Parms
 {
 	struct FString                                     member;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      B : 1;                                            		// 0x0010 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      B;                                                		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function GFxUI.GFxValue.SetFunction
@@ -1031,7 +1031,7 @@ struct UGFxValue_execGetNumber_Parms
 struct UGFxValue_execGetBool_Parms
 {
 	struct FString                                     member;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxValue.GetObject
@@ -1064,35 +1064,35 @@ struct UGFxValue_execInvoke_Parms
 // [0x00020802] ( FUNC_Event )
 struct UGFxAction_CloseMovie_eventIsValidLevelSequenceObject_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxAction_GetVariable.IsValidLevelSequenceObject
 // [0x00020802] ( FUNC_Event )
 struct UGFxAction_GetVariable_eventIsValidLevelSequenceObject_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxAction_Invoke.IsValidLevelSequenceObject
 // [0x00020802] ( FUNC_Event )
 struct UGFxAction_Invoke_eventIsValidLevelSequenceObject_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxAction_OpenMovie.IsValidLevelSequenceObject
 // [0x00020802] ( FUNC_Event )
 struct UGFxAction_OpenMovie_eventIsValidLevelSequenceObject_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxAction_SetVariable.IsValidLevelSequenceObject
 // [0x00020802] ( FUNC_Event )
 struct UGFxAction_SetVariable_eventIsValidLevelSequenceObject_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxFSCmdHandler_Kismet.FSCommand
@@ -1102,7 +1102,7 @@ struct UGFxFSCmdHandler_Kismet_eventFSCommand_Parms
 	class UGFxMovie*                                   Movie;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Cmd;                                              		// 0x0008 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     arg;                                              		// 0x0018 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0028 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0028 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxDataStoreSubscriber.SaveSubscriberValue
@@ -1111,7 +1111,7 @@ struct UGFxDataStoreSubscriber_execSaveSubscriberValue_Parms
 {
 	struct TArray<class UUIDataStore*>                 out_BoundDataStores;                              		// 0x0000 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
 	int                                                BindingIndex;                                     		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxDataStoreSubscriber.ClearBoundDataStores
@@ -1132,7 +1132,7 @@ struct UGFxDataStoreSubscriber_execGetBoundDataStores_Parms
 struct UGFxDataStoreSubscriber_execNotifyDataStoreValueUpdated_Parms
 {
 	class UUIDataStore*                                SourceDataStore;                                  		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bValuesInvalidated : 1;                           		// 0x0008 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bValuesInvalidated;                               		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FName                                       PropertyTag;                                      		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	class UUIDataProvider*                             SourceProvider;                                   		// 0x0014 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                ArrayIndex;                                       		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
@@ -1143,7 +1143,7 @@ struct UGFxDataStoreSubscriber_execNotifyDataStoreValueUpdated_Parms
 struct UGFxDataStoreSubscriber_execRefreshSubscriberValue_Parms
 {
 	int                                                BindingIndex;                                     		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function GFxUI.GFxDataStoreSubscriber.GetDataStoreBinding

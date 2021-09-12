@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: PlotManagerDLC_UNC_f_structs.h
 # ========================================================================================= #
@@ -35,7 +35,7 @@ struct UBioAutoConditionals_execF1798_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -45,7 +45,7 @@ struct UBioAutoConditionals_execF1826_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -55,7 +55,7 @@ struct UBioAutoConditionals_execF1824_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -65,7 +65,7 @@ struct UBioAutoConditionals_execF1823_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -75,7 +75,7 @@ struct UBioAutoConditionals_execF1822_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -85,7 +85,7 @@ struct UBioAutoConditionals_execF1816_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -95,7 +95,7 @@ struct UBioAutoConditionals_execF1815_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -105,7 +105,7 @@ struct UBioAutoConditionals_execF1814_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -115,7 +115,7 @@ struct UBioAutoConditionals_execF1813_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -125,7 +125,7 @@ struct UBioAutoConditionals_execF1808_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -135,7 +135,7 @@ struct UBioAutoConditionals_execF1807_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -145,7 +145,7 @@ struct UBioAutoConditionals_execF1806_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -155,7 +155,7 @@ struct UBioAutoConditionals_execF1805_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -165,7 +165,7 @@ struct UBioAutoConditionals_execF1804_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -175,7 +175,7 @@ struct UBioAutoConditionals_execF1803_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -185,7 +185,7 @@ struct UBioAutoConditionals_execF1802_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -195,7 +195,7 @@ struct UBioAutoConditionals_execF1801_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -205,7 +205,7 @@ struct UBioAutoConditionals_execF1799_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -215,7 +215,7 @@ struct UBioAutoConditionals_execF2017_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -225,7 +225,7 @@ struct UBioAutoConditionals_execF2016_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -235,7 +235,7 @@ struct UBioAutoConditionals_execF2015_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -245,7 +245,7 @@ struct UBioAutoConditionals_execF1828_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -255,7 +255,7 @@ struct UBioAutoConditionals_execF1827_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -265,7 +265,7 @@ struct UBioAutoConditionals_execF1789_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -275,7 +275,7 @@ struct UBioAutoConditionals_execF1790_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -285,7 +285,7 @@ struct UBioAutoConditionals_execF1791_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -295,7 +295,7 @@ struct UBioAutoConditionals_execF1797_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -305,7 +305,7 @@ struct UBioAutoConditionals_execF1796_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -315,7 +315,7 @@ struct UBioAutoConditionals_execF1795_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -325,7 +325,7 @@ struct UBioAutoConditionals_execF1794_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -335,7 +335,7 @@ struct UBioAutoConditionals_execF1793_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -345,7 +345,7 @@ struct UBioAutoConditionals_execF1792_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -355,7 +355,7 @@ struct UBioAutoConditionals_execF1809_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -365,7 +365,7 @@ struct UBioAutoConditionals_execF1800_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -375,7 +375,7 @@ struct UBioAutoConditionals_execF1812_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -385,7 +385,7 @@ struct UBioAutoConditionals_execF1811_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -395,7 +395,7 @@ struct UBioAutoConditionals_execF1810_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -405,7 +405,7 @@ struct UBioAutoConditionals_execF1821_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -415,7 +415,7 @@ struct UBioAutoConditionals_execF1820_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -425,7 +425,7 @@ struct UBioAutoConditionals_execF1819_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -435,7 +435,7 @@ struct UBioAutoConditionals_execF1818_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -445,7 +445,7 @@ struct UBioAutoConditionals_execF1817_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -455,7 +455,7 @@ struct UBioAutoConditionals_execF1832_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -465,7 +465,7 @@ struct UBioAutoConditionals_execF1831_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -475,7 +475,7 @@ struct UBioAutoConditionals_execF1825_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -485,7 +485,7 @@ struct UBioAutoConditionals_execF1830_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -495,7 +495,7 @@ struct UBioAutoConditionals_execF1829_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -505,7 +505,7 @@ struct UBioAutoConditionals_execF1779_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -515,7 +515,7 @@ struct UBioAutoConditionals_execF1778_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -525,7 +525,7 @@ struct UBioAutoConditionals_execF1777_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -535,7 +535,7 @@ struct UBioAutoConditionals_execF1780_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -545,7 +545,7 @@ struct UBioAutoConditionals_execF1781_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -555,7 +555,7 @@ struct UBioAutoConditionals_execF1776_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function PlotManagerDLC_UNC.BioAutoConditionals.F1775
@@ -564,7 +564,7 @@ struct UBioAutoConditionals_execF1775_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -574,7 +574,7 @@ struct UBioAutoConditionals_execF1774_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -584,7 +584,7 @@ struct UBioAutoConditionals_execF1773_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -594,7 +594,7 @@ struct UBioAutoConditionals_execF1772_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -604,7 +604,7 @@ struct UBioAutoConditionals_execF1771_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -614,7 +614,7 @@ struct UBioAutoConditionals_execF1770_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -624,7 +624,7 @@ struct UBioAutoConditionals_execF1769_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -634,7 +634,7 @@ struct UBioAutoConditionals_execF1768_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -644,7 +644,7 @@ struct UBioAutoConditionals_execF1767_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -654,7 +654,7 @@ struct UBioAutoConditionals_execF1766_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -664,7 +664,7 @@ struct UBioAutoConditionals_execF1765_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -674,7 +674,7 @@ struct UBioAutoConditionals_execF1764_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -684,7 +684,7 @@ struct UBioAutoConditionals_execF1763_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -694,7 +694,7 @@ struct UBioAutoConditionals_execF1762_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -704,7 +704,7 @@ struct UBioAutoConditionals_execF1761_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -714,7 +714,7 @@ struct UBioAutoConditionals_execF1758_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -724,7 +724,7 @@ struct UBioAutoConditionals_execF1755_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -734,7 +734,7 @@ struct UBioAutoConditionals_execF1754_Parms
 {
 	class ABioWorldInfo*                               bioWorld;                                         		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Argument;                                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGlobalVariableTable*                  gv;                                               		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 

@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXGameContent_Powers_f_structs.h
 # ========================================================================================= #
@@ -36,7 +36,7 @@ struct UBioPowerScriptDesign_execAdjustInventoryResource_Parms
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	unsigned char                                      eResource;                                        		// 0x0008 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fAmount;                                          		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oBehavior;                                        		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class ABioPlayerSquad*                          oPlayerSquad;                                     		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioInventory*                            oInventory;                                       		// 0x0024 (0x0008) [0x0000000000000000]              
@@ -50,7 +50,7 @@ struct UBioPowerScriptDesign_execEffectCarnageSetup_Parms
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nNumberOfUses;                                    		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioGamePropertyConditionalOnWeaponChange* oWeaponChangeConditional;                         		// 0x0024 (0x0008) [0x0000000000000000]              
@@ -63,7 +63,7 @@ struct UBioPowerScriptDesign_execInstantRegenerateShield_Parms
 {
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fPercentOfShieldRegained;                         		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oBehavior;                                        		// 0x0010 (0x0008) [0x0000000000000000]              
 	// float                                           fAmount;                                          		// 0x0018 (0x0004) [0x0000000000000000]              
 };
@@ -74,11 +74,11 @@ struct UBioPowerScriptDesign_execIncreaseAllPowerCooldowns_Parms
 {
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fPercentOfTotalToIncreaseBy;                      		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bIncreaseTech : 1;                                		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bIncreaseBiotic : 1;                              		// 0x0010 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bIncreaseWeapon : 1;                              		// 0x0014 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bIncreaseCombat : 1;                              		// 0x0018 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bIncreaseTech;                                    		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIncreaseBiotic;                                  		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIncreaseWeapon;                                  		// 0x0014 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIncreaseCombat;                                  		// 0x0018 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oBehavior;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// int                                             nIndex;                                           		// 0x0028 (0x0004) [0x0000000000000000]              
 	// class UBioPower*                                oPower;                                           		// 0x002C (0x0008) [0x0000000000000000]              
@@ -91,7 +91,7 @@ struct UBioPowerScriptDesign_execIncreaseAllPowerCooldowns_Parms
 struct UBioPowerScriptDesign_execClearAllPowerCooldowns_Parms
 {
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oBehavior;                                        		// 0x000C (0x0008) [0x0000000000000000]              
 	// int                                             nIndex;                                           		// 0x0014 (0x0004) [0x0000000000000000]              
 	// class UBioPower*                                oPower;                                           		// 0x0018 (0x0008) [0x0000000000000000]              
@@ -108,7 +108,7 @@ struct UBioPowerScriptDesign_execEffectSingularity_Parms
 	float                                              fForceInterval;                                   		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fBubbleRadius;                                    		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x002C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x002C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0030 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oCasterBehavior;                                  		// 0x0038 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oTargetBehavior;                                  		// 0x0040 (0x0008) [0x0000000000000000]              
@@ -130,7 +130,7 @@ struct UBioPowerScriptDesign_execEffectRagdoll_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nGroupID;                                         		// 0x0014 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oCasterBehavior;                                  		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oTargetBehavior;                                  		// 0x002C (0x0008) [0x0000000000000000]              
@@ -145,7 +145,7 @@ struct UBioPowerScriptDesign_execEffectEntrenchShield_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fShieldInc;                                       		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioEpicPawnBehavior*                     oImpactedInfo;                                    		// 0x002C (0x0008) [0x0000000000000000]              
@@ -160,7 +160,7 @@ struct UBioPowerScriptDesign_execEffectRegenerateShield_Parms
 	float                                              fAmountPerInterval;                               		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fInterval;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0028 (0x0008) [0x0000000000000000]              
 };
@@ -173,7 +173,7 @@ struct UBioPowerScriptDesign_execEffectDamageVulnerability_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDamageMultiplier;                                		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 };
@@ -185,7 +185,7 @@ struct UBioPowerScriptDesign_execEffectRegen_Parms
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHealingFactor;                                   		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -198,7 +198,7 @@ struct UBioPowerScriptDesign_execEffectHealInstant_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHealth;                                          		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fToxic;                                           		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 };
@@ -213,7 +213,7 @@ struct UBioPowerScriptDesign_execEffectHeal_Parms
 	float                                              fToxicPerInterval;                                		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fInterval;                                        		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x002C (0x0008) [0x0000000000000000]              
 };
@@ -229,7 +229,7 @@ struct UBioPowerScriptDesign_execEffectCombatBoost_Parms
 	float                                              fRegenBonus;                                      		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fSuppResistBonus;                                 		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fMobilityBonus;                                   		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0028 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0030 (0x0008) [0x0000000000000000]              
 };
@@ -241,7 +241,7 @@ struct UBioPowerScriptDesign_execEffectImmunity_Parms
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDamageResistBonus;                               		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -256,7 +256,7 @@ struct UBioPowerScriptDesign_execEffectSniperCritical_Parms
 	float                                              fStunDuration;                                    		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMaxDriftRed;                                     		// 0x0014 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMinDriftRed;                                     		// 0x0018 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         pStunSubProperty;                                 		// 0x0028 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0030 (0x0008) [0x0000000000000000]              
@@ -276,7 +276,7 @@ struct UBioPowerScriptDesign_execEffectOverkill_Parms
 	float                                              fKickbackRed;                                     		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHeatRed;                                         		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDamageBonus;                                     		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0028 (0x0008) [0x0000000000000000]              
 	// class UBioGamePropertyConditionalOnWeaponChange* oConditional;                                     		// 0x0030 (0x0008) [0x0000000000000000]              
@@ -293,7 +293,7 @@ struct UBioPowerScriptDesign_execEffectMarksman_Parms
 	float                                              fDamageBonus;                                     		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fRPSBonus;                                        		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHeatRed;                                         		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x002C (0x0008) [0x0000000000000000]              
 	// class UBioGamePropertyConditionalOnWeaponChange* oConditional;                                     		// 0x0034 (0x0008) [0x0000000000000000]              
@@ -307,7 +307,7 @@ struct UBioPowerScriptDesign_execEffectCorrosion_Parms
 	class AActor*                                      oCaster;                                          		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fCorrosion;                                       		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 };
@@ -319,7 +319,7 @@ struct UBioPowerScriptDesign_execEffectSuppressingFire_Parms
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDriftInc;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -335,7 +335,7 @@ struct UBioPowerScriptDesign_execEffectZeroGLift_Parms
 	float                                              fLiftDistance;                                    		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDeceleration;                                    		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fMinVelocity;                                     		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oCasterBehavior;                                  		// 0x0028 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oTargetBehavior;                                  		// 0x0030 (0x0008) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oTargetPawnBehavior;                              		// 0x0038 (0x0008) [0x0000000000000000]              
@@ -347,7 +347,7 @@ struct UBioPowerScriptDesign_execEffectZeroGLift_Parms
 	// class UBioBaseAppearance*                       oAppearance;                                      		// 0x0074 (0x0008) [0x0000000000000000]              
 	// struct FVector                                  vDeceleration;                                    		// 0x007C (0x000C) [0x0000000000000000]              
 	// class ABioPawn*                                 oBioPawn;                                         		// 0x0088 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bApplyToAllBones : 1;                             		// 0x0090 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bApplyToAllBones;                                 		// 0x0090 (0x0004) [0x0000000000000000]              
 	// class ABioArtPlaceable*                         oArtPlaceable;                                    		// 0x0094 (0x0008) [0x0000000000000000]              
 	// class UBioArtPlaceableType*                     oArtPlaceableType;                                		// 0x009C (0x0008) [0x0000000000000000]              
 };
@@ -359,7 +359,7 @@ struct UBioPowerScriptDesign_execEffectAIHacking_Parms
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x0018 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oTargetBehavior;                                  		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0028 (0x0008) [0x0000000000000000]              
@@ -374,11 +374,11 @@ struct UBioPowerScriptDesign_execEffectDisablePowers_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nGFXGroup;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bDisableTech : 1;                                 		// 0x0018 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bDisableBiotics : 1;                              		// 0x001C (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bDisableWeaponPowers : 1;                         		// 0x0020 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bDisableCombat : 1;                               		// 0x0024 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0028 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bDisableTech;                                     		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bDisableBiotics;                                  		// 0x001C (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bDisableWeaponPowers;                             		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bDisableCombat;                                   		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0028 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x002C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0034 (0x0008) [0x0000000000000000]              
 };
@@ -391,7 +391,7 @@ struct UBioPowerScriptDesign_execEffectOverheatWeapons_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHeat;                                            		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oCasterBehavior;                                  		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oImpactedBehavior;                                		// 0x002C (0x0008) [0x0000000000000000]              
@@ -407,7 +407,7 @@ struct UBioPowerScriptDesign_execEffectDisableWeapons_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nGFXGroup;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 };
@@ -420,9 +420,9 @@ struct UBioPowerScriptDesign_execEffectDisableActions_Parms
 	class AActor*                                      oImpacted;                                        		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nGFXGroup;                                        		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bDisableActionQueue : 1;                          		// 0x0018 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bDisableMovementStack : 1;                        		// 0x001C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bDisableActionQueue;                              		// 0x0018 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bDisableMovementStack;                            		// 0x001C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x002C (0x0008) [0x0000000000000000]              
 };
@@ -436,7 +436,7 @@ struct UBioPowerScriptDesign_execEffectAdjustStability_Parms
 	float                                              fAmount;                                          		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fApplyInterval;                                   		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fTotalTime;                                       		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x0028 (0x0008) [0x0000000000000000]              
 };
@@ -453,7 +453,7 @@ struct UBioPowerScriptDesign_execEffectDamageOverTime_Parms
 	float                                              fInterval;                                        		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x002C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nGroup;                                           		// 0x0030 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0034 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0034 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oPawn;                                            		// 0x0038 (0x0008) [0x0000000000000000]              
 	// class AController*                              oController;                                      		// 0x0040 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         oProperty;                                        		// 0x0048 (0x0008) [0x0000000000000000]              
@@ -469,7 +469,7 @@ struct UBioPowerScriptDesign_execEffectTakeDamage_Parms
 	float                                              fDamage;                                          		// 0x0010 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FVector                                     vMomentum;                                        		// 0x0014 (0x000C) [0x0000000000000080]              ( CPF_Parm )
 	class UBioDamageType*                              pDamage;                                          		// 0x0020 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0028 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0028 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oPawn;                                            		// 0x002C (0x0008) [0x0000000000000000]              
 	// class AController*                              oController;                                      		// 0x0034 (0x0008) [0x0000000000000000]              
 	// class UBioGameProperty*                         oProperty;                                        		// 0x003C (0x0008) [0x0000000000000000]              
@@ -487,9 +487,9 @@ struct UBioPowerScriptDesign_execSpawnBeacon_Parms
 	struct FVector                                     vLocation;                                        		// 0x0018 (0x000C) [0x0000000000000080]              ( CPF_Parm )
 	struct FRotator                                    vFacing;                                          		// 0x0024 (0x000C) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0030 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bFloatingBeacon : 1;                              		// 0x0034 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bSnapToFloor : 1;                                 		// 0x0038 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bSpawnAsProxMine : 1;                             		// 0x003C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bFloatingBeacon;                                  		// 0x0034 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bSnapToFloor;                                     		// 0x0038 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bSpawnAsProxMine;                                 		// 0x003C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fSquadActivateDelay;                              		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fRadiusMulti;                                     		// 0x0044 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fDamageMulti;                                     		// 0x0048 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
@@ -521,8 +521,8 @@ struct UBioPowerScriptDesign_execSpawnBarrier_Parms
 	struct FRotator                                    vFacing;                                          		// 0x0024 (0x000C) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fHealth;                                          		// 0x0030 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x0034 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bSnapToFloor : 1;                                 		// 0x0038 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bAddToSquadCover : 1;                             		// 0x003C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bSnapToFloor;                                     		// 0x0038 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bAddToSquadCover;                                 		// 0x003C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class AActor*                                      oOwner;                                           		// 0x0040 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class AActor*                                      ReturnValue;                                      		// 0x0048 (0x0008) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class AActor*                                   oBarrier;                                         		// 0x0050 (0x0008) [0x0000000000000000]              
@@ -536,7 +536,7 @@ struct UBioPowerScriptDesign_execSpawnBarrier_Parms
 struct UBioPowerScriptDesign_execWeaponPowerActivated_Parms
 {
 	class AActor*                                      Caster;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bNeedsRetrigger : 1;                              		// 0x0008 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bNeedsRetrigger;                                  		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	// class APawn*                                    PawnCaster;                                       		// 0x000C (0x0008) [0x0000000000000000]              
 	// class ABioWeaponRanged*                         Weapon;                                           		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class ASFXInventoryManager*                     Inventory;                                        		// 0x001C (0x0008) [0x0000000000000000]              
@@ -547,7 +547,7 @@ struct UBioPowerScriptDesign_execWeaponPowerActivated_Parms
 struct UBioPowerScriptDesign_execShouldIncrementPowerUsage_Parms
 {
 	class AActor*                                      Caster;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 BP;                                               		// 0x000C (0x0008) [0x0000000000000000]              
 	// class UBioActivePower*                          Active;                                           		// 0x0014 (0x0008) [0x0000000000000000]              
 };
@@ -639,7 +639,7 @@ struct UBioPowerScriptDesign_execIsOfRace_Parms
 {
 	class AActor*                                      oImpacted;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	unsigned char                                      eRace;                                            		// 0x0008 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oImpactedPawn;                                    		// 0x0010 (0x0008) [0x0000000000000000]              
 };
 
@@ -648,8 +648,8 @@ struct UBioPowerScriptDesign_execIsOfRace_Parms
 struct UBioPowerScriptDesign_execHasShields_Parms
 {
 	class AActor*                                      oImpacted;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bCheckMax : 1;                                    		// 0x0008 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bCheckMax;                                        		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oImpactedInfo;                                    		// 0x0010 (0x0008) [0x0000000000000000]              
 	// class UBioShield*                               oImpactedShield;                                  		// 0x0018 (0x0008) [0x0000000000000000]              
 	// class UBioAttributesShield*                     oShieldInfo;                                      		// 0x0020 (0x0008) [0x0000000000000000]              
@@ -660,7 +660,7 @@ struct UBioPowerScriptDesign_execHasShields_Parms
 struct UBioPowerScriptDesign_execIsDeadBody_Parms
 {
 	class AActor*                                      oImpacted;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oImpactPawn;                                      		// 0x000C (0x0008) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oImpactPawnBehavior;                              		// 0x0014 (0x0008) [0x0000000000000000]              
 };
@@ -670,7 +670,7 @@ struct UBioPowerScriptDesign_execIsDeadBody_Parms
 struct UBioPowerScriptDesign_execIsPlaceable_Parms
 {
 	class AActor*                                      oImpacted;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioArtPlaceable*                         oImpactedPlaceable;                               		// 0x000C (0x0008) [0x0000000000000000]              
 };
 
@@ -689,7 +689,7 @@ struct UBioAdrenalineScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCooldownRemaining;                               		// 0x001C (0x0004) [0x0000000000000000]              
 };
 
@@ -700,7 +700,7 @@ struct UBioAdrenalineScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioBarrierScript.OnImpact
@@ -711,7 +711,7 @@ struct UBioBarrierScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oImpactedBehavior;                                		// 0x001C (0x0008) [0x0000000000000000]              
 	// struct FVector                                  vRotation;                                        		// 0x0024 (0x000C) [0x0000000000000000]              
 	// struct FVector                                  vUpDir;                                           		// 0x0030 (0x000C) [0x0000000000000000]              
@@ -731,7 +731,7 @@ struct UBioCarnageScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x001C (0x000C) [0x0000000000000000]              
 };
 
@@ -742,7 +742,7 @@ struct UBioCarnageScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDamageBonus;                                     		// 0x0014 (0x0004) [0x0000000000000000]              
 	// class UBioAttributesItemWeapon*                 oShotgunData;                                     		// 0x0018 (0x0008) [0x0000000000000000]              
 	// float                                           fShotgunDamage;                                   		// 0x0020 (0x0004) [0x0000000000000000]              
@@ -766,7 +766,7 @@ struct UBioCarnageSetupScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// int                                             nNumberOfUses;                                    		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0020 (0x0004) [0x0000000000000000]              
 };
@@ -779,7 +779,7 @@ struct UBioSpawnBeacon_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioSpawnBeacon.EndPhase
@@ -788,7 +788,7 @@ struct UBioSpawnBeacon_eventEndPhase_Parms
 {
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vBeaconLocation;                                  		// 0x0010 (0x000C) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x001C (0x0004) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oCasterInfo;                                      		// 0x0020 (0x0008) [0x0000000000000000]              
@@ -807,7 +807,7 @@ struct UBioSpawnBeacon_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioSpawnBeacon.InitializePowerScript
@@ -825,8 +825,8 @@ struct UBioDampingScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
-	// unsigned long                                   bApplyStun : 1;                                   		// 0x001C (0x0004) [0x0000000000000000] [0x00000001] 
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	// unsigned long                                   bApplyStun;                                       		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fTargetResistance;                                		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fCooldownIncPct;                                  		// 0x0024 (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0028 (0x0004) [0x0000000000000000]              
@@ -842,7 +842,7 @@ struct UBioDampingScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 	// float                                           fDifficultyLevel;                                 		// 0x0018 (0x0004) [0x0000000000000000]              
 };
@@ -861,7 +861,7 @@ struct UBioDampingSuicideScript_eventEndPhase_Parms
 {
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x0010 (0x000C) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oCasterInfo;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -882,7 +882,7 @@ struct UBioEMPScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fEMPDamage;                                       		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fSuppressionDamage;                               		// 0x0020 (0x0004) [0x0000000000000000]              
 	// struct FVector                                  vMomentum;                                        		// 0x0024 (0x000C) [0x0000000000000000]              
@@ -897,7 +897,7 @@ struct UBioEMPScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -915,7 +915,7 @@ struct UBioEMPSuicideScript_eventEndPhase_Parms
 {
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x0010 (0x000C) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oCasterInfo;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -936,7 +936,7 @@ struct UBioFakePowerScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// unsigned char                                   eFaction;                                         		// 0x001C (0x0001) [0x0000000000000000]              
 };
 
@@ -947,7 +947,7 @@ struct UBioFakePowerScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioGethCarnageScript.OnImpact
@@ -958,7 +958,7 @@ struct UBioGethCarnageScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x001C (0x000C) [0x0000000000000000]              
 };
 
@@ -969,7 +969,7 @@ struct UBioGethCarnageScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oCasterPawn;                                      		// 0x0014 (0x0008) [0x0000000000000000]              
 	// float                                           fScaledCasterPrecisionBonus;                      		// 0x001C (0x0004) [0x0000000000000000]              
 };
@@ -990,7 +990,7 @@ struct UBioHackingScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oImpactedPawn;                                    		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioPawnChallengeScaledType*              oImpactedActorType;                               		// 0x0024 (0x0008) [0x0000000000000000]              
 	// float                                           fHackingTime;                                     		// 0x002C (0x0004) [0x0000000000000000]              
@@ -1004,7 +1004,7 @@ struct UBioHackingScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1016,7 +1016,7 @@ struct UBioHealScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oImpactedPawn;                                    		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioEpicPawnBehavior*                     oPawnInfo;                                        		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioAttributesEpicPawn*                   oPawnAttribs;                                     		// 0x002C (0x0008) [0x0000000000000000]              
@@ -1029,7 +1029,7 @@ struct UBioHealScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fScaledCasterBonus;                               		// 0x0014 (0x0004) [0x0000000000000000]              
 	// float                                           fHealAmountPerUse;                                		// 0x0018 (0x0004) [0x0000000000000000]              
 	// float                                           fToxicAmountPerUse;                               		// 0x001C (0x0004) [0x0000000000000000]              
@@ -1043,7 +1043,7 @@ struct UBioHealSelfScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oImpactedPawn;                                    		// 0x001C (0x0008) [0x0000000000000000]              
 };
 
@@ -1052,7 +1052,7 @@ struct UBioHealSelfScript_eventOnImpact_Parms
 struct UBioHealSelfScript_eventCanStartPower_Parms
 {
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x000C (0x0008) [0x0000000000000000]              
 	// class UBioAttributesEpicPawn*                   oCasterAttributes;                                		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class UBioAttributesPawn*                       oCasterPawnAttributes;                            		// 0x001C (0x0008) [0x0000000000000000]              
@@ -1066,15 +1066,15 @@ struct UBioHealSquadScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oCasterPawn;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class ABioBaseSquad*                            oCasterSquad;                                     		// 0x002C (0x0008) [0x0000000000000000]              
 	// int                                             nMemberIndex;                                     		// 0x0034 (0x0004) [0x0000000000000000]              
 	// class ABioPawn*                                 oMemberPawn;                                      		// 0x0038 (0x0008) [0x0000000000000000]              
 	// class UBioAttributesPawn*                       oMemberAttribs;                                   		// 0x0040 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bMemberDead : 1;                                  		// 0x0048 (0x0004) [0x0000000000000000] [0x00000001] 
-	// unsigned long                                   bSomeoneHealed : 1;                               		// 0x004C (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bMemberDead;                                      		// 0x0048 (0x0004) [0x0000000000000000]              
+	// unsigned long                                   bSomeoneHealed;                                   		// 0x004C (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXGameContent_Powers.BioHealSquadScript.StartPhase
@@ -1084,7 +1084,7 @@ struct UBioHealSquadScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fHealAmountPerUse;                                		// 0x0014 (0x0004) [0x0000000000000000]              
 	// float                                           fToxicAmountPerUse;                               		// 0x0018 (0x0004) [0x0000000000000000]              
 	// float                                           fMediGelPerUse;                                   		// 0x001C (0x0004) [0x0000000000000000]              
@@ -1096,7 +1096,7 @@ struct UBioHealSquadScript_eventStartPhase_Parms
 struct UBioHealSquadScript_eventCanStartPower_Parms
 {
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioHealSquadScript.AdjustCooldown
@@ -1104,7 +1104,7 @@ struct UBioHealSquadScript_eventCanStartPower_Parms
 struct UBioHealSquadScript_eventAdjustCooldown_Parms
 {
 	float                                              fCoolDownTime;                                    		// 0x0000 (0x0004) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioHealSquadScript.DoesSquadNeedHealing
@@ -1112,7 +1112,7 @@ struct UBioHealSquadScript_eventAdjustCooldown_Parms
 struct UBioHealSquadScript_execDoesSquadNeedHealing_Parms
 {
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x000C (0x0008) [0x0000000000000000]              
 	// class ABioBaseSquad*                            oActorSquad;                                      		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class APawn*                                    oSquadMember;                                     		// 0x001C (0x0008) [0x0000000000000000]              
@@ -1164,7 +1164,7 @@ struct UBioHexBarrierScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oImpactedBehavior;                                		// 0x001C (0x0008) [0x0000000000000000]              
 	// class ABioPawn*                                 oCasterPawn;                                      		// 0x0024 (0x0008) [0x0000000000000000]              
 	// struct FVector                                  vRotation;                                        		// 0x002C (0x000C) [0x0000000000000000]              
@@ -1183,7 +1183,7 @@ struct UBioImmunityScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDamageResistBonus;                               		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0020 (0x0004) [0x0000000000000000]              
 };
@@ -1195,7 +1195,7 @@ struct UBioImmunityScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioLanceArmScript.OnImpact
@@ -1206,7 +1206,7 @@ struct UBioLanceArmScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vDirection;                                       		// 0x001C (0x000C) [0x0000000000000000]              
 	// struct FVector                                  vMomentum;                                        		// 0x0028 (0x000C) [0x0000000000000000]              
 };
@@ -1218,7 +1218,7 @@ struct UBioLanceArmScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1238,7 +1238,7 @@ struct UBioLiftScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fScaledDuration;                                  		// 0x001C (0x0004) [0x0000000000000000]              
 };
 
@@ -1249,7 +1249,7 @@ struct UBioLiftScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioLiftPLCScript.OnImpact
@@ -1260,12 +1260,12 @@ struct UBioLiftPLCScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fScaledDuration;                                  		// 0x001C (0x0004) [0x0000000000000000]              
 	// class ABioPawn*                                 oCasterPawn;                                      		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class ABioAiController*                         oCasterAI;                                        		// 0x0028 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bIsCurrentTarget : 1;                             		// 0x0030 (0x0004) [0x0000000000000000] [0x00000001] 
-	// unsigned long                                   bIsPlaceable : 1;                                 		// 0x0034 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bIsCurrentTarget;                                 		// 0x0030 (0x0004) [0x0000000000000000]              
+	// unsigned long                                   bIsPlaceable;                                     		// 0x0034 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXGameContent_Powers.BioMarksmanScript.OnImpact
@@ -1276,7 +1276,7 @@ struct UBioMarksmanScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDamageBonus;                                     		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fRPSBonus;                                        		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fMaxDriftRed;                                     		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1292,7 +1292,7 @@ struct UBioMarksmanScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioNeuralShockScript.OnImpact
@@ -1303,7 +1303,7 @@ struct UBioNeuralShockScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fToxicDamage;                                     		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0020 (0x0004) [0x0000000000000000]              
 	// struct FVector                                  vPushMomentum;                                    		// 0x0024 (0x000C) [0x0000000000000000]              
@@ -1318,7 +1318,7 @@ struct UBioNeuralShockScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1338,7 +1338,7 @@ struct UBioOverkillScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fSuppDamage;                                      		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fKickbackRed;                                     		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fHeatRed;                                         		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1353,7 +1353,7 @@ struct UBioOverkillScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioRegenBurstScript.OnImpact
@@ -1364,7 +1364,7 @@ struct UBioRegenBurstScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 pPawn;                                            		// 0x001C (0x0008) [0x0000000000000000]              
 	// float                                           fMaxHealth;                                       		// 0x0024 (0x0004) [0x0000000000000000]              
 	// float                                           fHealthToHeal;                                    		// 0x0028 (0x0004) [0x0000000000000000]              
@@ -1384,7 +1384,7 @@ struct UBioRepairScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioVehicleBase*                          oVehicle;                                         		// 0x001C (0x0008) [0x0000000000000000]              
 	// class APawn*                                    oPawn;                                            		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class ABioPlayerController*                     oController;                                      		// 0x002C (0x0008) [0x0000000000000000]              
@@ -1397,7 +1397,7 @@ struct UBioRepairScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fRepairAmount;                                    		// 0x0014 (0x0004) [0x0000000000000000]              
 	// float                                           fRepairAmountPerTalent;                           		// 0x0018 (0x0004) [0x0000000000000000]              
 	// float                                           fSalvagePerUse;                                   		// 0x001C (0x0004) [0x0000000000000000]              
@@ -1408,7 +1408,7 @@ struct UBioRepairScript_eventStartPhase_Parms
 struct UBioRepairScript_eventCanStartPower_Parms
 {
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x000C (0x0008) [0x0000000000000000]              
 	// class UBioAttributesEpicPawn*                   oCasterAttributes;                                		// 0x0014 (0x0008) [0x0000000000000000]              
 };
@@ -1435,7 +1435,7 @@ struct UBioSabotageScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDuration;                                        		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fScaledTargetTechResist;                          		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fDamagePerInterval;                               		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1449,7 +1449,7 @@ struct UBioSabotageScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1467,7 +1467,7 @@ struct UBioSabotageSuicideScript_eventEndPhase_Parms
 {
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x0010 (0x000C) [0x0000000000000000]              
 	// class UBioPawnBehavior*                         oCasterInfo;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 };
@@ -1488,7 +1488,7 @@ struct UBioShieldBoostScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oImpactedPawn;                                    		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioItemArmorShielded*                    oImpactedArmor;                                   		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class UBioAttributesShield*                     oImpactedShield;                                  		// 0x002C (0x0008) [0x0000000000000000]              
@@ -1504,7 +1504,7 @@ struct UBioShieldBoostScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioShieldBoostScript.CanStartPower
@@ -1512,7 +1512,7 @@ struct UBioShieldBoostScript_eventStartPhase_Parms
 struct UBioShieldBoostScript_eventCanStartPower_Parms
 {
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oCasterBehavior;                                  		// 0x000C (0x0008) [0x0000000000000000]              
 	// class UBioShield*                               oShield;                                          		// 0x0014 (0x0008) [0x0000000000000000]              
 	// float                                           fShieldMax;                                       		// 0x001C (0x0004) [0x0000000000000000]              
@@ -1526,7 +1526,7 @@ struct UBioShieldEntrenchScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioShieldEntrenchScript.StartPhase
@@ -1536,7 +1536,7 @@ struct UBioShieldEntrenchScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fShieldsPerSecond;                                		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1548,7 +1548,7 @@ struct UBioSiegePulseScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x001C (0x000C) [0x0000000000000000]              
 };
 
@@ -1559,7 +1559,7 @@ struct UBioSiegePulseScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fSPDamage;                                        		// 0x0014 (0x0004) [0x0000000000000000]              
 	// class ABioPawn*                                 oCasterPawn;                                      		// 0x0018 (0x0008) [0x0000000000000000]              
 	// float                                           fScaledCasterPrecisionBonus;                      		// 0x0020 (0x0004) [0x0000000000000000]              
@@ -1581,7 +1581,7 @@ struct UBioSingularityScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fBioticResistance;                                		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fForcePerInterval;                                		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1594,7 +1594,7 @@ struct UBioSingularityScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1625,7 +1625,7 @@ struct UBioSmashScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vDirection;                                       		// 0x001C (0x000C) [0x0000000000000000]              
 	// struct FVector                                  vMomentum;                                        		// 0x0028 (0x000C) [0x0000000000000000]              
 };
@@ -1637,7 +1637,7 @@ struct UBioSmashScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1657,7 +1657,7 @@ struct UBioSniperCritScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDamageBonus;                                     		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fMinDriftRed;                                     		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1672,7 +1672,7 @@ struct UBioSniperCritScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioStasisScript.OnImpact
@@ -1683,13 +1683,13 @@ struct UBioStasisScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioActorBehavior*                        oImpactedBehavior;                                		// 0x0024 (0x0008) [0x0000000000000000]              
 	// int                                             srImpactText;                                     		// 0x002C (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0030 (0x0004) [0x0000000000000000]              
 	// unsigned char                                   eRelation;                                        		// 0x0034 (0x0001) [0x0000000000000000]              
-	// unsigned long                                   bAllowDamage : 1;                                 		// 0x0038 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bAllowDamage;                                     		// 0x0038 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXGameContent_Powers.BioStasisScript.StartPhase
@@ -1699,7 +1699,7 @@ struct UBioStasisScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fAllowDamage;                                     		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1711,7 +1711,7 @@ struct UBioTakeDownScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oCasterPawn;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioEpicPawnBehavior*                     oCasterData;                                      		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class ABioBaseSquad*                            oCasterSquad;                                     		// 0x002C (0x0008) [0x0000000000000000]              
@@ -1731,7 +1731,7 @@ struct UBioTakeDownScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ABioPawn*                                 oPawn;                                            		// 0x0014 (0x0008) [0x0000000000000000]              
 };
 
@@ -1743,7 +1743,7 @@ struct UBioTeslaBurstScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fEMPDamage;                                       		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fDamage;                                          		// 0x0020 (0x0004) [0x0000000000000000]              
 	// struct FVector                                  vMomentum;                                        		// 0x0024 (0x000C) [0x0000000000000000]              
@@ -1757,7 +1757,7 @@ struct UBioTeslaBurstScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1777,7 +1777,7 @@ struct UBioThrowScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fTargetForce;                                     		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fTargetDamage;                                    		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fScaledTargetBioticResist;                        		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1793,7 +1793,7 @@ struct UBioThrowScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1813,7 +1813,7 @@ struct UBioThrowWarpScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fTargetDamagePerInterval;                         		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fScaledTargetBioticResist;                        		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0024 (0x0004) [0x0000000000000000]              
@@ -1822,7 +1822,7 @@ struct UBioThrowWarpScript_eventOnImpact_Parms
 	// float                                           fThrowDamage;                                     		// 0x0038 (0x0004) [0x0000000000000000]              
 	// struct FVector                                  vThrowDirection;                                  		// 0x003C (0x000C) [0x0000000000000000]              
 	// struct FVector                                  vThrowMomentum;                                   		// 0x0048 (0x000C) [0x0000000000000000]              
-	// unsigned long                                   bSuccess : 1;                                     		// 0x0054 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bSuccess;                                         		// 0x0054 (0x0004) [0x0000000000000000]              
 	// class UBioAttributesDamage*                     oDamageAtt;                                       		// 0x0058 (0x0008) [0x0000000000000000]              
 };
 
@@ -1833,7 +1833,7 @@ struct UBioThrowWarpScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1853,7 +1853,7 @@ struct UBioToxicSpitScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x001C (0x000C) [0x0000000000000000]              
 };
 
@@ -1864,7 +1864,7 @@ struct UBioToxicSpitScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fCasterPrecisionBonus;                            		// 0x0014 (0x0004) [0x0000000000000000]              
 };
 
@@ -1882,7 +1882,7 @@ struct UBioToxicSpitSuicideScript_eventEndPhase_Parms
 {
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  vMomentum;                                        		// 0x0010 (0x000C) [0x0000000000000000]              
 };
 
@@ -1902,7 +1902,7 @@ struct UBioUnityScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oCasterPawn;                                      		// 0x001C (0x0008) [0x0000000000000000]              
 	// class UBioEpicPawnBehavior*                     oCasterBehavior;                                  		// 0x0024 (0x0008) [0x0000000000000000]              
 	// class ABioBaseSquad*                            oCasterSquad;                                     		// 0x002C (0x0008) [0x0000000000000000]              
@@ -1917,7 +1917,7 @@ struct UBioUnityScript_eventOnImpact_Parms
 struct UBioUnityScript_eventCanStartPower_Parms
 {
 	class AActor*                                      oCaster;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioUnityScript.DoesSquadHaveDeadMember
@@ -1925,7 +1925,7 @@ struct UBioUnityScript_eventCanStartPower_Parms
 struct UBioUnityScript_execDoesSquadHaveDeadMember_Parms
 {
 	class AActor*                                      oActor;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class UBioActorBehavior*                        oActorBehavior;                                   		// 0x000C (0x0008) [0x0000000000000000]              
 	// class ABioBaseSquad*                            oActorSquad;                                      		// 0x0014 (0x0008) [0x0000000000000000]              
 	// class APawn*                                    oSquadMember;                                     		// 0x001C (0x0008) [0x0000000000000000]              
@@ -1942,12 +1942,12 @@ struct UBioWarpScript_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fTargetDamagePerInterval;                         		// 0x001C (0x0004) [0x0000000000000000]              
 	// float                                           fScaledTargetBioticResist;                        		// 0x0020 (0x0004) [0x0000000000000000]              
 	// float                                           fDuration;                                        		// 0x0024 (0x0004) [0x0000000000000000]              
 	// struct FVector                                  vMomentum;                                        		// 0x0028 (0x000C) [0x0000000000000000]              
-	// unsigned long                                   bSuccess : 1;                                     		// 0x0034 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bSuccess;                                         		// 0x0034 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXGameContent_Powers.BioWarpScript.StartPhase
@@ -1957,7 +1957,7 @@ struct UBioWarpScript_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioWarpScript.InitializePowerScript
@@ -1976,7 +1976,7 @@ struct UBioArmorEmitter_eventOnImpact_Parms
 	float                                              fCasterStability;                                 		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oImpacted;                                        		// 0x000C (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nPreviouslyImpacted;                              		// 0x0014 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FVector                                  V;                                                		// 0x001C (0x000C) [0x0000000000000000]              
 	// struct FVector                                  vDestab;                                          		// 0x0028 (0x000C) [0x0000000000000000]              
 	// int                                             iType;                                            		// 0x0034 (0x0004) [0x0000000000000000]              
@@ -1993,7 +1993,7 @@ struct UBioArmorEmitter_eventStartPhase_Parms
 	unsigned char                                      ePhase;                                           		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oCaster;                                          		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fDuration;                                        		// 0x000C (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXGameContent_Powers.BioArmorEmitter.InitializePowerScript

@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXGame_classes.h
 # ========================================================================================= #
@@ -4470,17 +4470,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2913 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioActorFactoryPhysicsActor::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceVehicleSettings
 // 0x0004 (0x0074 - 0x0070)
@@ -4493,17 +4485,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2915 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceVehicleSettings::pClassPointer = NULL;
 
 // Class SFXGame.BioCoverVolume
 // 0x0000 (0x02C4 - 0x02C4)
@@ -4515,17 +4499,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2917 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioCoverVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioDEBUGMarker
 // 0x000C (0x0290 - 0x0284)
@@ -4539,21 +4515,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2919 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventClear ( );
 	void eventAddMarker ( struct FVector _Start, int _size, unsigned char _R, unsigned char _G, unsigned char _B );
 	void eventAddLine ( struct FVector _Start, struct FVector _End, unsigned char _R, unsigned char _G, unsigned char _B );
 	void eventTick ( float DeltaTime );
 };
-
-UClass* ABioDEBUGMarker::pClassPointer = NULL;
 
 // Class SFXGame.BioDEBUGMarkerComponent
 // 0x0050 (0x0270 - 0x0220)
@@ -4570,13 +4538,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2921 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventClearMarkers ( );
 	void eventClearCircles ( );
@@ -4591,8 +4553,6 @@ public:
 	void eventAddLine ( struct FVector _Start, struct FVector _End, unsigned char _R, unsigned char _G, unsigned char _B );
 };
 
-UClass* UBioDEBUGMarkerComponent::pClassPointer = NULL;
-
 // Class SFXGame.BioDamageType
 // 0x0014 (0x00D4 - 0x00C0)
 class UBioDamageType : public UDamageType
@@ -4606,13 +4566,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2923 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetDeathVFX ( class UBioDeathVFX* pDeathVFX );
 	class UBioDeathVFX* GetDeathVFX ( );
@@ -4620,8 +4574,6 @@ public:
 	class UBioAttributesDamage* GetAttributes ( );
 	void InitializeDamageType ( class UBioAttributesDamage* pAttributes, class UBioDeathVFX* pDeathVFX );
 };
-
-UClass* UBioDamageType::pClassPointer = NULL;
 
 // Class SFXGame.BioDestinationArrow
 // 0x0008 (0x028C - 0x0284)
@@ -4634,18 +4586,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2925 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetArrowColor ( unsigned char clr );
 };
-
-UClass* ABioDestinationArrow::pClassPointer = NULL;
 
 // Class SFXGame.BioEventDispatcher
 // 0x0048 (0x00A8 - 0x0060)
@@ -4658,20 +4602,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2927 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Dispatch ( struct FName oEventName );
 	bool Unsubscribe ( struct FName oEventName, class UObject* oSubscriber );
 	bool Subscribe ( struct FName oEventName, class UObject* oSubscriber );
 };
-
-UClass* UBioEventDispatcher::pClassPointer = NULL;
 
 // Class SFXGame.BioFollowMarker
 // 0x0000 (0x0284 - 0x0284)
@@ -4683,17 +4619,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2929 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioFollowMarker::pClassPointer = NULL;
 
 // Class SFXGame.BioGameReplicationInfo
 // 0x0014 (0x0318 - 0x0304)
@@ -4708,18 +4636,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2931 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PostBeginPlay ( );
 };
-
-UClass* ABioGameReplicationInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioGamerProfile
 // 0x02A0 (0x0300 - 0x0060)
@@ -4812,13 +4732,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2933 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateRichPresence ( );
 	void UpdateSoundOptions ( );
@@ -4883,8 +4797,6 @@ public:
 	bool SetGamerProfilePlotManagerVariables ( );
 };
 
-UClass* UBioGamerProfile::pClassPointer = NULL;
-
 // Class SFXGame.BioLayers
 // 0x0028 (0x0094 - 0x006C)
 class UBioLayers : public UBioBaseComponent
@@ -4896,17 +4808,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2935 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioLayers::pClassPointer = NULL;
 
 // Class SFXGame.BioLoadingMovie
 // 0x0014 (0x0074 - 0x0060)
@@ -4920,17 +4824,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2937 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioLoadingMovie::pClassPointer = NULL;
 
 // Class SFXGame.BioObject
 // 0x0048 (0x00B4 - 0x006C)
@@ -4943,13 +4839,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2939 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ValidateOwnershipSemantics ( class UObject* Target, unsigned long isVerbose, int recurrence );
 	void ParseIntoArray ( struct FString sDelimitedStrings, struct FString sDelimiter, unsigned long bCullEmptyStrings, struct TArray<struct FString>* aString );
@@ -4957,8 +4847,6 @@ public:
 	bool GetEnumValue ( class UClass* clsEnumDefiner, struct FName nmEnumField, struct FName nmEnumValue, unsigned char* cEnumValue );
 	class UClass* FindClass ( struct FName nmClass );
 };
-
-UClass* UBioObject::pClassPointer = NULL;
 
 // Class SFXGame.BioPathNodeVolume
 // 0x001E (0x02E2 - 0x02C4)
@@ -4980,17 +4868,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2941 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioPathNodeVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioPhysicsSounds
 // 0x0034 (0x0094 - 0x0060)
@@ -5009,19 +4889,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2943 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool RequestSound ( int nPriority, class UPrimitiveComponent* oComp0, class UPrimitiveComponent* oComp1, struct TArray<struct FRigidBodyContactInfo>* ContactInfos );
 	void Initialize ( );
 };
-
-UClass* UBioPhysicsSounds::pClassPointer = NULL;
 
 // Class SFXGame.BioPowerScript
 // 0x0020 (0x0080 - 0x0060)
@@ -5036,13 +4908,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2945 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool PlayForceFeedback ( class AActor* oCaster, class AActor* oImpacted );
 	bool PlayGuiSound ( struct FName nmSound );
@@ -5055,8 +4921,6 @@ public:
 	void eventInitializePowerScript ( class UBioPower* pPower );
 };
 
-UClass* UBioPowerScript::pClassPointer = NULL;
-
 // Class SFXGame.BioRadarMapBoundaries
 // 0x000C (0x0290 - 0x0284)
 class ABioRadarMapBoundaries : public AActor
@@ -5068,17 +4932,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2947 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioRadarMapBoundaries::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PopupLootGui
 // 0x000C (0x0104 - 0x00F8)
@@ -5093,18 +4949,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2949 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_PopupLootGui::pClassPointer = NULL;
 
 // Class SFXGame.BioSocketSupermodel
 // 0x0010 (0x0434 - 0x0424)
@@ -5117,17 +4965,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2951 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSocketSupermodel::pClassPointer = NULL;
 
 // Class SFXGame.BioSpriteTranslucentComponent
 // 0x0034 (0x0274 - 0x0240)
@@ -5150,17 +4990,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2953 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSpriteTranslucentComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioSunFlareComponent
 // 0x0020 (0x0294 - 0x0274)
@@ -5178,17 +5010,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2955 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSunFlareComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioSunFlareStreakComponent
 // 0x0030 (0x02A4 - 0x0274)
@@ -5210,17 +5034,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2957 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSunFlareStreakComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioSunActor
 // 0x012C (0x03B0 - 0x0284)
@@ -5268,17 +5084,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2959 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioSunActor::pClassPointer = NULL;
 
 // Class SFXGame.BioTacticalMoveToIndicator
 // 0x0010 (0x0294 - 0x0284)
@@ -5293,17 +5101,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2961 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioTacticalMoveToIndicator::pClassPointer = NULL;
 
 // Class SFXGame.BioTriggerStream
 // 0x0020 (0x02E4 - 0x02C4)
@@ -5319,13 +5119,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2963 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
@@ -5336,8 +5130,6 @@ public:
 	void DoUntouch ( class AActor* Other );
 	void DoTouch ( );
 };
-
-UClass* ABioTriggerStream::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Base_Settings
 // 0x0004 (0x0074 - 0x0070)
@@ -5350,17 +5142,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2965 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_Base_Settings::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Body_Settings
 // 0x0016 (0x008A - 0x0074)
@@ -5379,17 +5163,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2967 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_Body_Settings::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Hair_Settings
 // 0x0004 (0x0078 - 0x0074)
@@ -5402,17 +5178,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2969 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_Hair_Settings::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_HeadGear_Settings
 // 0x0025 (0x0099 - 0x0074)
@@ -5430,17 +5198,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2971 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_HeadGear_Settings::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Head_Settings
 // 0x0010 (0x0084 - 0x0074)
@@ -5455,17 +5215,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2973 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_Head_Settings::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Settings
 // 0x0018 (0x008C - 0x0074)
@@ -5482,17 +5234,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2975 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_Settings::pClassPointer = NULL;
 
 // Class SFXGame.SFXDifficultyHandler
 // 0x006D (0x00CD - 0x0060)
@@ -5517,13 +5261,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2977 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Update ( );
 	float GetFloatAtDifficulty ( struct FName PropertyName, struct FName DifficultyCategory, unsigned char Difficulty, float Score );
@@ -5531,8 +5269,6 @@ public:
 	bool GetBool ( struct FName PropertyName, struct FName DifficultyCategory );
 	class USFXDifficultyHandler* GetDifficultyHandler ( );
 };
-
-UClass* USFXDifficultyHandler::pClassPointer = NULL;
 
 // Class SFXGame.SFXDynamicEdgeMarker
 // 0x0028 (0x02AC - 0x0284)
@@ -5555,13 +5291,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2979 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugDraw ( );
 	void UpdateLeanFlags ( unsigned char Action );
@@ -5570,8 +5300,6 @@ public:
 	void Initialize ( );
 	void PostBeginPlay ( );
 };
-
-UClass* ASFXDynamicEdgeMarker::pClassPointer = NULL;
 
 // Class SFXGame.SFXGUIInteraction
 // 0x0044 (0x00EC - 0x00A8)
@@ -5588,18 +5316,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2981 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyGameSessionEnded ( );
 };
-
-UClass* USFXGUIInteraction::pClassPointer = NULL;
 
 // Class SFXGame.BioBasePlayerController
 // 0x000A (0x07C4 - 0x07BA)
@@ -5612,19 +5332,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2983 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void QuickLoad ( );
 	void QuickSave ( );
 };
-
-UClass* ABioBasePlayerController::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerController
 // 0x03F4 (0x0BB8 - 0x07C4)
@@ -5756,13 +5468,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2985 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnToggleElevatorMode ( class USFXSeqAct_ToggleElevatorMode* Action );
 	void OnSkipElevatorSequence ( class UBioSeqAct_SkipElevatorSequence* Action );
@@ -5885,8 +5591,6 @@ public:
 	void RegisterCustomPlayerDataStores ( );
 };
 
-UClass* ABioPlayerController::pClassPointer = NULL;
-
 // Class SFXGame.SFXGameModeBase
 // 0x006D (0x00CD - 0x0060)
 class USFXGameModeBase : public UObject
@@ -5920,13 +5624,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2987 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GuiKey ( unsigned char Event );
 	void SquadCommand_Move2 ( );
@@ -5959,8 +5657,6 @@ public:
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
 
-UClass* USFXGameModeBase::pClassPointer = NULL;
-
 // Class SFXGame.SFXGameModeManager
 // 0x0059 (0x00B9 - 0x0060)
 class USFXGameModeManager : public UObject
@@ -5979,13 +5675,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2989 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetLocalizedNameForKey ( struct FName Key, unsigned long Control, unsigned long Shift, unsigned long Alt );
 	void UpdateAllBindMappingCollections ( );
@@ -6031,8 +5721,6 @@ public:
 	bool IsPlayMode ( unsigned char Mode );
 };
 
-UClass* USFXGameModeManager::pClassPointer = NULL;
-
 // Class SFXGame.SFXInventoryManager
 // 0x006C (0x031C - 0x02B0)
 class ASFXInventoryManager : public AInventoryManager
@@ -6060,13 +5748,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2991 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugDraw_Accuracy ( class ABioHUD* HUD );
 	void ResetAccuracy ( );
@@ -6074,8 +5756,6 @@ public:
 	void UpdateKickback ( float DeltaTime, struct FRotator* out_DeltaRot );
 	void SetWeaponRecoil ( float PitchRecoil );
 };
-
-UClass* ASFXInventoryManager::pClassPointer = NULL;
 
 // Class SFXGame.SFXLoadMovieManager
 // 0x0021 (0x0081 - 0x0060)
@@ -6096,13 +5776,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2993 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsLoadingMoviePlaying ( );
 	bool StopLoadingMovie ( unsigned long bDelayStopUntilGameHasRendered );
@@ -6111,8 +5785,6 @@ public:
 	void SetupLoadingMovie ( class UBioLoadingMovie* Movie, unsigned long RequiresExplicitStop, unsigned long PlayToCompletion, unsigned long StreamFromDisc );
 	void ResetToDefaultLoadMovie ( );
 };
-
-UClass* USFXLoadMovieManager::pClassPointer = NULL;
 
 // Class SFXGame.SFXModule_AimAssistTarget
 // 0x0020 (0x008C - 0x006C)
@@ -6126,18 +5798,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2995 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PostBeginPlay ( );
 };
-
-UClass* USFXModule_AimAssistTarget::pClassPointer = NULL;
 
 // Class SFXGame.SFXModule_Cover
 // 0x007C (0x00E8 - 0x006C)
@@ -6168,13 +5832,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2997 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PlayerFinishedCoverAlign ( );
 	void PlayerLeftCover ( );
@@ -6182,8 +5840,6 @@ public:
 	void PostBeginPlay ( );
 	void Tick ( float DeltaTime );
 };
-
-UClass* USFXModule_Cover::pClassPointer = NULL;
 
 // Class SFXGame.SFXObjectSerializerMT
 // 0x001C (0x007C - 0x0060)
@@ -6196,17 +5852,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2999 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXObjectSerializerMT::pClassPointer = NULL;
 
 // Class SFXGame.SFXTrilogyProfileSettings
 // 0x0010 (0x00D8 - 0x00C8)
@@ -6219,13 +5867,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3001 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsComplete ( class ABioPlayerController* PC, int AchievementId );
 	void UnlockAchievement ( class ABioPlayerController* PC, int AchievementId );
@@ -6234,8 +5876,6 @@ public:
 	void UniqueStatIncrement ( int ProfileSettingId, class ABioPlayerController* PC );
 	void GrinderStatIncrement ( int ProfileSettingId, int Amount, class ABioPlayerController* PC );
 };
-
-UClass* USFXTrilogyProfileSettings::pClassPointer = NULL;
 
 // Class SFXGame.BioWeapon
 // 0x005B (0x0420 - 0x03C5)
@@ -6256,13 +5896,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3003 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeWeapon ( );
 	class ABioPawn* DeactivateWeapon ( );
@@ -6280,8 +5914,6 @@ public:
 	void eventProxyPlaySound ( class USoundCue* SoundCue );
 	bool eventAttachToMesh ( class USkeletalMeshComponent* MeshComponent, struct FName SocketName, unsigned long bCinematicsMode );
 };
-
-UClass* ABioWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioWeaponRanged
 // 0x012C (0x054C - 0x0420)
@@ -6344,13 +5976,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3005 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CanStartFiring ( );
 	float GetPlayerAimError ( float Accuracy );
@@ -6394,8 +6020,6 @@ public:
 	class UBioItemWeapon* SetItem ( class UBioItemWeapon* oItem );
 	void OnTargetHit ( unsigned long bIsHeadShot );
 };
-
-UClass* ABioWeaponRanged::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStatsBase
 // 0x01FA (0x025A - 0x0060)
@@ -6487,13 +6111,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3007 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetDamageFromItem ( class UBioItemWeaponRanged* Item );
 	float GetHeatPerShotFromItem ( class UBioItemWeaponRanged* Item );
@@ -6502,8 +6120,6 @@ public:
 	float GetDamagePerSecondValue ( class UBioItemWeaponRanged* Item );
 	float GetHeatsinkEfficiencyValue ( class UBioItemWeaponRanged* Item );
 };
-
-UClass* USFXWeaponStatsBase::pClassPointer = NULL;
 
 // Class SFXGame.BioAFComponent
 // 0x0010 (0x0070 - 0x0060)
@@ -6517,17 +6133,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3009 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAFComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioActive
 // 0x0005 (0x0075 - 0x0070)
@@ -6542,21 +6150,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3011 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventValidSuperMode ( unsigned char eMode );
 	struct FName eventGetEventTypeName ( );
 	void Initialize ( class AActor* oOwner );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActive::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveFall
 // 0x0003 (0x0078 - 0x0075)
@@ -6568,19 +6168,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3013 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventValidSuperMode ( unsigned char eMode );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveFall::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveGrenade
 // 0x005F (0x00D4 - 0x0075)
@@ -6617,21 +6209,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3015 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GUIState ( );
 	struct FName eventGetEventTypeName ( );
 	bool eventValidSuperMode ( unsigned char eMode );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveMount
 // 0x0003 (0x0078 - 0x0075)
@@ -6643,19 +6227,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3017 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventValidSuperMode ( unsigned char eMode );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveMount::pClassPointer = NULL;
 
 // Class SFXGame.BioActivePower
 // 0x00AD (0x0122 - 0x0075)
@@ -6718,13 +6294,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3019 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RecordDebugAimingInfo ( struct FVector vStartLocation1, struct FVector vEndLocation1, struct FVector vStartLocation2, struct FVector vEndLocation2 );
 	void RecordDebugInfo ( );
@@ -6764,8 +6334,6 @@ public:
 	void AnimationReadyForPowerRelease ( );
 };
 
-UClass* UBioActivePower::pClassPointer = NULL;
-
 // Class SFXGame.BioActiveSelectWeapon
 // 0x0037 (0x00AC - 0x0075)
 class UBioActiveSelectWeapon : public UBioActive
@@ -6794,13 +6362,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3021 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool StartActive ( );
 	void FinishDrawAnim ( );
@@ -6811,8 +6373,6 @@ public:
 	void SwapHolsterAnim ( );
 	bool eventValidSuperMode ( unsigned char eMode );
 };
-
-UClass* UBioActiveSelectWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveShootBase
 // 0x000B (0x0080 - 0x0075)
@@ -6825,17 +6385,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3023 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioActiveShootBase::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveShoot
 // 0x001C (0x009C - 0x0080)
@@ -6857,20 +6409,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3025 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName eventGetEventTypeName ( );
 	bool eventValidSuperMode ( unsigned char eMode );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveShoot::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveShootVehicle
 // 0x0004 (0x0084 - 0x0080)
@@ -6883,18 +6427,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3027 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveShootVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveShootVehicleCannon
 // 0x0000 (0x0084 - 0x0084)
@@ -6906,18 +6442,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3029 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveShootVehicleCannon::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveShootVehicleMachineGun
 // 0x0000 (0x0084 - 0x0084)
@@ -6929,18 +6457,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3031 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveShootVehicleMachineGun::pClassPointer = NULL;
 
 // Class SFXGame.BioActiveUseArtPlaceable
 // 0x0013 (0x0088 - 0x0075)
@@ -6955,21 +6475,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3033 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool DisplayProgress ( );
 	float GetProgress ( );
 	bool eventValidSuperMode ( unsigned char eMode );
 	void InitializeInternal ( );
 };
-
-UClass* UBioActiveUseArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioReactive
 // 0x0004 (0x0074 - 0x0070)
@@ -6983,19 +6495,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3035 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( class AActor* oOwner, class AActor* oInstigator );
 	void InitializeInternal ( );
 };
-
-UClass* UBioReactive::pClassPointer = NULL;
 
 // Class SFXGame.BioReactiveUseArtPlaceable
 // 0x0024 (0x0098 - 0x0074)
@@ -7015,18 +6519,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3037 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeInternal ( );
 };
-
-UClass* UBioReactiveUseArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioSuperMode
 // 0x005F (0x00BF - 0x0060)
@@ -7053,18 +6549,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3039 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetReticule ( );
 };
-
-UClass* UBioSuperMode::pClassPointer = NULL;
 
 // Class SFXGame.BioActorFactory
 // 0x0008 (0x0094 - 0x008C)
@@ -7077,17 +6565,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3041 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioActorFactory::pClassPointer = NULL;
 
 // Class SFXGame.BioSpawnPoint
 // 0x0018 (0x029C - 0x0284)
@@ -7102,17 +6582,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3043 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioSpawnPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioSpawnPointVehicle
 // 0x000C (0x02A8 - 0x029C)
@@ -7126,17 +6598,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3045 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioSpawnPointVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioActorType
 // 0x006C (0x00D8 - 0x006C)
@@ -7176,21 +6640,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3047 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsDisintegrationSuppressed ( );
 	bool IsPlotProtected ( );
 	int GetSquadName ( );
 	int GetSquadIcon ( unsigned long bIsDead );
 };
-
-UClass* UBioActorType::pClassPointer = NULL;
 
 // Class SFXGame.BioInteractiveActorType
 // 0x0000 (0x00D8 - 0x00D8)
@@ -7202,17 +6658,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3049 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioInteractiveActorType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableType
 // 0x006B (0x0143 - 0x00D8)
@@ -7257,20 +6705,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3051 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyRoleToBehavior ( class UBioArtPlaceableBehavior* oBehave );
 	void AllowRoleCustomization ( unsigned long bYes );
 	void ApplyRole ( int nNewRole, class UBioArtPlaceableBehavior* oBehave );
 };
-
-UClass* UBioArtPlaceableType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableInertType
 // 0x0001 (0x0144 - 0x0143)
@@ -7282,17 +6722,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3053 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableInertType::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnType
 // 0x0158 (0x0230 - 0x00D8)
@@ -7345,17 +6777,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3055 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPawnType::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnChallengeScaledType
 // 0x0045 (0x0275 - 0x0230)
@@ -7374,19 +6798,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3057 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetBioPawnChallengeRank ( );
 	int ComputeRankedChallengeLevel ( int effectiveChallengeLevel );
 };
-
-UClass* UBioPawnChallengeScaledType::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleBaseType
 // 0x0014 (0x00EC - 0x00D8)
@@ -7401,17 +6817,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3059 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVehicleBaseType::pClassPointer = NULL;
 
 // Class SFXGame.BioStageType
 // 0x0018 (0x00F0 - 0x00D8)
@@ -7425,17 +6833,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3061 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioStageType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableRoles
 // 0x0030 (0x0090 - 0x0060)
@@ -7449,17 +6849,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3063 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableRoles::pClassPointer = NULL;
 
 // Class SFXGame.BioAiController
 // 0x0149 (0x0619 - 0x04D0)
@@ -7531,13 +6923,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3065 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsTargetInFiringArc ( class AActor* pTarget );
 	bool HasLOSToTarget ( class AActor* pTarget, float* fTimeOfHit );
@@ -7692,8 +7078,6 @@ public:
 	void BioOnPawnActionStateChanged ( );
 };
 
-UClass* ABioAiController::pClassPointer = NULL;
-
 // Class SFXGame.BioAI_Ambient
 // 0x0013 (0x062C - 0x0619)
 class ABioAI_Ambient : public ABioAiController
@@ -7706,13 +7090,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3067 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool DoesGameModeAllowMovement ( );
 	void eventTick ( float DeltaTime );
@@ -7721,8 +7099,6 @@ public:
 	bool AdjustSteeringMoveSpeed ( struct FVector vSteering );
 	bool GetSteeringVector ( struct FVector* vSteering );
 };
-
-UClass* ABioAI_Ambient::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Sneaky
 // 0x0000 (0x062C - 0x062C)
@@ -7734,18 +7110,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3069 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetSteeringVector ( struct FVector* vSteering );
 };
-
-UClass* ABioAI_Sneaky::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Core
 // 0x0033 (0x064C - 0x0619)
@@ -7777,13 +7145,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3071 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool RespondToBump ( class AActor* Other, struct FVector HitNormal );
 	bool WantsToRun ( float fDistance );
@@ -7836,8 +7198,6 @@ public:
 	bool FindBestCover ( struct FVector vLocation, struct FCoverRecord* out_CoverRecord );
 };
 
-UClass* ABioAI_Core::pClassPointer = NULL;
-
 // Class SFXGame.BioAI_Drone
 // 0x0004 (0x0650 - 0x064C)
 class ABioAI_Drone : public ABioAI_Core
@@ -7849,18 +7209,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3073 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetSteeringVector ( struct FVector* vSteering );
 };
-
-UClass* ABioAI_Drone::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_SarenFlyer
 // 0x0000 (0x0650 - 0x0650)
@@ -7872,19 +7224,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3075 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnLeftPlaypen ( class ANavigationPoint* oNavPoint );
 	bool GetSteeringVector ( struct FVector* vSteering );
 };
-
-UClass* ABioAI_SarenFlyer::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Henchman
 // 0x000C (0x0658 - 0x064C)
@@ -7899,13 +7243,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3077 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool DoesGameModeAllowMovement ( );
 	bool CanUseSteeringMovement ( );
@@ -7941,8 +7279,6 @@ public:
 	bool GetSteeringVector ( struct FVector* vSteering );
 };
 
-UClass* ABioAI_Henchman::pClassPointer = NULL;
-
 // Class SFXGame.BioAI_Hopper
 // 0x0004 (0x0650 - 0x064C)
 class ABioAI_Hopper : public ABioAI_Core
@@ -7954,13 +7290,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3079 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHearNoise ( float Loudness, class AActor* NoiseMaker, struct FVector vNoiseLocation, struct FName NoiseType );
 	void eventOnSquadSeen ( class AActor* oSquad );
@@ -7972,8 +7302,6 @@ public:
 	bool Hop ( class APawn* oTarget, float fMoveDelay );
 	class ABioWP_Hopper* FindHopperNode ( class APawn* pSource, class APawn* pTarget );
 };
-
-UClass* ABioAI_Hopper::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_SarenBase
 // 0x003C (0x0688 - 0x064C)
@@ -7991,19 +7319,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3081 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugDraw_Saren ( class ABioHUD* HUD );
 	void RefreshDebugWeights ( unsigned long bEvalRocketPoints );
 };
-
-UClass* ABioAI_SarenBase::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_SarenFlyerEND
 // 0x0080 (0x0708 - 0x0688)
@@ -8042,13 +7362,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3083 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateBarrageLOS ( );
 	bool AdjustSteeringMoveSpeed ( struct FVector vSteering );
@@ -8068,8 +7382,6 @@ public:
 	void PawnDied ( class APawn* inPawn );
 	void Initialize ( );
 };
-
-UClass* ABioAI_SarenFlyerEND::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_SarenHopperEND
 // 0x0088 (0x0710 - 0x0688)
@@ -8105,13 +7417,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3085 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateBarrageLOS ( );
 	void PeriodicMoveCheck ( );
@@ -8132,8 +7438,6 @@ public:
 	bool ExcludeFilter ( class ANavigationPoint* NavPoint );
 };
 
-UClass* ABioAI_SarenHopperEND::pClassPointer = NULL;
-
 // Class SFXGame.BioAnimCheckBlendOut
 // 0x0020 (0x0080 - 0x0060)
 class UBioAnimCheckBlendOut : public UObject
@@ -8146,17 +7450,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3087 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimCheckBlendOut::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendBase
 // 0x001F (0x011C - 0x00FD)
@@ -8178,18 +7474,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3089 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetChildAnimTime ( class UAnimNode* oChild, float fTime );
 };
-
-UClass* UBioAnimNodeBlendBase::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditive
 // 0x0000 (0x011C - 0x011C)
@@ -8201,17 +7489,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3091 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendAdditive::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditiveAim
 // 0x000C (0x0128 - 0x011C)
@@ -8226,17 +7506,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3093 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendAdditiveAim::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditiveCover
 // 0x0008 (0x0124 - 0x011C)
@@ -8250,17 +7522,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3095 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendAdditiveCover::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditiveDamage
 // 0x001C (0x0138 - 0x011C)
@@ -8278,17 +7542,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3097 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendAdditiveDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditivePower
 // 0x0009 (0x0125 - 0x011C)
@@ -8303,18 +7559,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3099 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetActivePower ( class UBioActivePower** oActivePower );
 };
-
-UClass* UBioAnimNodeBlendAdditivePower::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendAdditiveWeaponEquip
 // 0x0028 (0x0144 - 0x011C)
@@ -8330,17 +7578,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3101 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendAdditiveWeaponEquip::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeCameraShake
 // 0x001C (0x0138 - 0x011C)
@@ -8362,17 +7602,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3103 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeCameraShake::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByAim
 // 0x0045 (0x0161 - 0x011C)
@@ -8400,17 +7632,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3105 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByAim::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByDamage
 // 0x0008 (0x0124 - 0x011C)
@@ -8424,17 +7648,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3107 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByDeath
 // 0x0050 (0x016C - 0x011C)
@@ -8460,17 +7676,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3109 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByDeath::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByIncline
 // 0x0014 (0x0130 - 0x011C)
@@ -8487,17 +7695,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3111 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByIncline::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByLean
 // 0x0018 (0x0134 - 0x011C)
@@ -8515,17 +7715,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3113 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByLean::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendCombatAction
 // 0x0004 (0x0120 - 0x011C)
@@ -8538,17 +7730,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3115 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendCombatAction::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendDirStart
 // 0x0010 (0x012C - 0x011C)
@@ -8564,17 +7748,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3117 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendDirStart::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendDirectional
 // 0x0008 (0x0124 - 0x011C)
@@ -8588,17 +7764,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3119 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendDirectional::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendFall
 // 0x0008 (0x0124 - 0x011C)
@@ -8614,17 +7782,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3121 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendFall::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendGetUp
 // 0x0000 (0x011C - 0x011C)
@@ -8636,17 +7796,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3123 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendGetUp::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendMoveStop
 // 0x0000 (0x011C - 0x011C)
@@ -8658,17 +7810,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3125 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendMoveStop::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendMultiAdditive
 // 0x004C (0x0168 - 0x011C)
@@ -8682,17 +7826,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3127 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendMultiAdditive::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendPoseAndGestures
 // 0x002C (0x0194 - 0x0168)
@@ -8709,17 +7845,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3129 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendPoseAndGestures::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendPose
 // 0x0024 (0x0140 - 0x011C)
@@ -8737,17 +7865,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3131 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendPose::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendScalar
 // 0x0048 (0x0164 - 0x011C)
@@ -8771,17 +7891,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3133 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendScalar::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendSkidTurn
 // 0x0020 (0x013C - 0x011C)
@@ -8802,17 +7914,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3135 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendSkidTurn::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendSpeed
 // 0x002D (0x0149 - 0x011C)
@@ -8837,17 +7941,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3137 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendSpeed::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendState
 // 0x001C (0x0138 - 0x011C)
@@ -8862,17 +7958,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3139 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendState::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendTurn
 // 0x0000 (0x011C - 0x011C)
@@ -8884,17 +7972,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3141 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendTurn::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendWeaponEquip
 // 0x0010 (0x012C - 0x011C)
@@ -8910,17 +7990,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3143 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendWeaponEquip::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeCombatMode
 // 0x0015 (0x0131 - 0x011C)
@@ -8938,17 +8010,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3145 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeCombatMode::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByAction
 // 0x03CD (0x04E9 - 0x011C)
@@ -8974,17 +8038,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3147 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByAction::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByAnimationStateTracking
 // 0x0028 (0x0144 - 0x011C)
@@ -9001,17 +8057,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3149 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByAnimationStateTracking::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByCustomAnim
 // 0x0000 (0x0110 - 0x0110)
@@ -9023,17 +8071,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3151 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByCustomAnim::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByFireSequence
 // 0x004C (0x0168 - 0x011C)
@@ -9053,18 +8093,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3153 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float eventGetPlayRate ( class UAnimNodeSequence* Seq, int ShotsPerCycle );
 };
-
-UClass* UBioAnimNodeBlendByFireSequence::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByMount
 // 0x001F (0x011C - 0x00FD)
@@ -9082,17 +8114,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3155 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByMount::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByPosture
 // 0x0004 (0x0114 - 0x0110)
@@ -9105,17 +8129,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3157 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByPosture::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByPower
 // 0x0011 (0x012D - 0x011C)
@@ -9131,19 +8147,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3159 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetActivePower ( class UBioActivePower** oActivePower );
 	void Reset ( );
 };
-
-UClass* UBioAnimNodeBlendByPower::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByTargetingPercentage
 // 0x0004 (0x0114 - 0x0110)
@@ -9156,17 +8164,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3161 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByTargetingPercentage::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByWeaponAction
 // 0x0005 (0x0121 - 0x011C)
@@ -9180,18 +8180,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3163 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PlayCurrentChildAnimation ( );
 };
-
-UClass* UBioAnimNodeBlendByWeaponAction::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendPerBone
 // 0x0029 (0x016D - 0x0144)
@@ -9211,17 +8203,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3165 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendPerBone::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendScalarBehavior
 // 0x0010 (0x0070 - 0x0060)
@@ -9234,17 +8218,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3167 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendScalarBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendScalarHoppingBehavior
 // 0x0001 (0x0071 - 0x0070)
@@ -9257,17 +8233,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3169 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendScalarHoppingBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendScalarMovementBehavior
 // 0x0008 (0x0078 - 0x0070)
@@ -9287,17 +8255,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3171 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendScalarMovementBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendSpeed2
 // 0x0024 (0x0140 - 0x011C)
@@ -9316,17 +8276,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3173 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendSpeed2::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendStateBehavior
 // 0x0014 (0x0074 - 0x0060)
@@ -9340,17 +8292,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3175 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendStateBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendStateActionBehavior
 // 0x0005 (0x0079 - 0x0074)
@@ -9364,17 +8308,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3177 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendStateActionBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendStateCombatBehavior
 // 0x0005 (0x0079 - 0x0074)
@@ -9390,17 +8326,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3179 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendStateCombatBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendStateHoppingBehavior
 // 0x0005 (0x0079 - 0x0074)
@@ -9414,17 +8342,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3181 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendStateHoppingBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendStateMovementBehavior
 // 0x0023 (0x0097 - 0x0074)
@@ -9455,17 +8375,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3183 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendStateMovementBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeCover2Actions
 // 0x0038 (0x0154 - 0x011C)
@@ -9490,17 +8402,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3185 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeCover2Actions::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeCover2Transition
 // 0x0023 (0x013F - 0x011C)
@@ -9531,18 +8435,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3187 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventIgnorePlayerInput ( class ABioPawn* pPawn, unsigned long bIgnore );
 };
-
-UClass* UBioAnimNodeCover2Transition::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeCover2Type
 // 0x0001 (0x011D - 0x011C)
@@ -9555,17 +8451,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3189 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeCover2Type::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeFrame
 // 0x0017 (0x00FC - 0x00E5)
@@ -9580,18 +8468,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3191 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CaptureAnimFrame ( );
 };
-
-UClass* UBioAnimNodeFrame::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeRandom
 // 0x0008 (0x0140 - 0x0138)
@@ -9605,17 +8485,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3193 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeRandom::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeSequence
 // 0x0042 (0x017C - 0x013A)
@@ -9635,17 +8507,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3195 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeSequence::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeSequenceByBoneRotation
 // 0x001B (0x0155 - 0x013A)
@@ -9660,17 +8524,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3197 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeSequenceByBoneRotation::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNotifyEvent
 // 0x000C (0x006C - 0x0060)
@@ -9684,17 +8540,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3199 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNotifyEvent::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNotifySound
 // 0x0010 (0x0070 - 0x0060)
@@ -9707,17 +8555,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3201 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNotifySound::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNotifyVFX
 // 0x0008 (0x0068 - 0x0060)
@@ -9730,17 +8570,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3203 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNotifyVFX::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableBlendByTransition
 // 0x0014 (0x0124 - 0x0110)
@@ -9756,19 +8588,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3205 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GotoToState ( struct FName LoopAnim );
 	void TransitionToState ( struct FName TransAnim, struct FName LoopAnim );
 };
-
-UClass* UBioArtPlaceableBlendByTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioGestureAnimSetMgr
 // 0x0050 (0x00B0 - 0x0060)
@@ -9782,17 +8606,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3207 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestureAnimSetMgr::pClassPointer = NULL;
 
 // Class SFXGame.BioSkelControlAdditiveLookAt
 // 0x0008 (0x0150 - 0x0148)
@@ -9806,17 +8622,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3209 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSkelControlAdditiveLookAt::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnLookAtController
 // 0x0072 (0x01C2 - 0x0150)
@@ -9847,17 +8655,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3211 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPawnLookAtController::pClassPointer = NULL;
 
 // Class SFXGame.BioSkelControl_TurretConstrained
 // 0x0032 (0x0134 - 0x0102)
@@ -9880,17 +8680,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3213 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSkelControl_TurretConstrained::pClassPointer = NULL;
 
 // Class SFXGame.SFXAnimNodeSequenceEyeFixup
 // 0x004A (0x0184 - 0x013A)
@@ -9909,21 +8701,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3215 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetPosition ( float NewTime, unsigned long bFireNotifies );
 	void StopAnim ( );
 	void PlayAnim ( unsigned long bLoop, float InRate, float StartTime );
 	void SetAnim ( struct FName Sequence );
 };
-
-UClass* USFXAnimNodeSequenceEyeFixup::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseAppearance
 // 0x003D (0x00A9 - 0x006C)
@@ -9945,20 +8729,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3217 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USkeletalMesh* GetModelByName ( struct FString S );
 	bool GetTargetZoneName ( int nIndex, struct FName* nmZoneName );
 	bool GetTargetZoneLocation ( int nIndex, class USkeletalMeshComponent* oMeshComponent, struct FVector* vLocation );
 };
-
-UClass* UBioBaseAppearance::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItem
 // 0x0003 (0x00AC - 0x00A9)
@@ -9970,17 +8746,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3219 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItem::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemEquippable
 // 0x0000 (0x00AC - 0x00AC)
@@ -9992,17 +8760,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3221 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemEquippable::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemSophisticated
 // 0x0014 (0x00C0 - 0x00AC)
@@ -10016,13 +8776,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3223 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UPhysicsAsset* GetPhysicsAsset ( int Variant );
 	class UAnimTree* GetAnimationTree ( int Variant );
@@ -10030,8 +8784,6 @@ public:
 	void ApplyMaterials ( int Variant, class USkeletalMeshComponent* SkeletalMeshComponent );
 	class USkeletalMesh* GetSkeletalMesh ( int Variant );
 };
-
-UClass* UBioAppearanceItemSophisticated::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemWeapon
 // 0x0018 (0x00D8 - 0x00C0)
@@ -10045,17 +8797,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3225 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceVehicle
 // 0x0267 (0x0310 - 0x00A9)
@@ -10106,17 +8850,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3227 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseAppearancePlaceable
 // 0x00F3 (0x019C - 0x00A9)
@@ -10152,17 +8888,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3229 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioBaseAppearancePlaceable::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Container
 // 0x0000 (0x019C - 0x019C)
@@ -10174,17 +8902,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3231 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Container::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Door
 // 0x0000 (0x019C - 0x019C)
@@ -10196,17 +8916,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3233 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Door::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Inert
 // 0x0000 (0x019C - 0x019C)
@@ -10218,17 +8930,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3235 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Inert::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Useable
 // 0x0000 (0x019C - 0x019C)
@@ -10240,17 +8944,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3237 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Useable::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character
 // 0x00E2 (0x018B - 0x00A9)
@@ -10293,17 +8989,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3239 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Body
 // 0x01D9 (0x0282 - 0x00A9)
@@ -10389,13 +9077,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3241 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetMaterial ( int ArmorType, int ModelVar, int MaterialVar, struct TArray<class UMaterialInterface*>* Materials );
 	bool IsValidVariation ( int ArmorType, int ModelVar, int MaterialVar );
@@ -10403,8 +9085,6 @@ public:
 	struct FString GetPhysics_Name ( int ArmorType, int ModelVar );
 	class USkeletalMesh* GetModel ( int ArmorType, int ModelVar );
 };
-
-UClass* UBio_Appr_Character_Body::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Hair
 // 0x0023 (0x00CC - 0x00A9)
@@ -10419,18 +9099,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3243 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USkeletalMesh* GetModel ( );
 };
-
-UClass* UBio_Appr_Character_Hair::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_Head
 // 0x0097 (0x0140 - 0x00A9)
@@ -10457,18 +9129,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3245 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USkeletalMesh* GetModel ( );
 };
-
-UClass* UBio_Appr_Character_Head::pClassPointer = NULL;
 
 // Class SFXGame.Bio_Appr_Character_HeadGear
 // 0x00E0 (0x0189 - 0x00A9)
@@ -10488,17 +9152,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3247 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBio_Appr_Character_HeadGear::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseInterface
 // 0x0008 (0x0068 - 0x0060)
@@ -10511,17 +9167,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3249 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioBaseInterface::pClassPointer = NULL;
 
 // Class SFXGame.BioInterface_Appearance
 // 0x0014 (0x007C - 0x0068)
@@ -10537,20 +9185,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3251 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	void ResetToDefaults ( );
 	bool UpdateAppearance ( unsigned long bForceUpdate );
 };
-
-UClass* UBioInterface_Appearance::pClassPointer = NULL;
 
 // Class SFXGame.BioInterfaceAppearanceVehicle
 // 0x0010 (0x008C - 0x007C)
@@ -10563,19 +9203,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3253 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetToDefaults ( );
 	bool UpdateAppearance ( unsigned long bForceUpdate );
 };
-
-UClass* UBioInterfaceAppearanceVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioInterface_Appearance_ArtPlaceable
 // 0x0000 (0x007C - 0x007C)
@@ -10587,18 +9219,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3255 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateAppearance ( unsigned long bForceUpdate );
 };
-
-UClass* UBioInterface_Appearance_ArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioInterface_Appearance_Pawn
 // 0x0088 (0x0104 - 0x007C)
@@ -10620,13 +9244,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3257 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetDefaultCollisionReadyHeight ( );
 	float GetDefaultCollisionCrouchHeight ( );
@@ -10637,8 +9255,6 @@ public:
 	bool UpdateAppearance ( unsigned long bForceUpdate );
 	void ExtractResources ( class ABioPawn* Pawn, class UBio_Appr_Character* Appearance );
 };
-
-UClass* UBioInterface_Appearance_Pawn::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceable
 // 0x0184 (0x0408 - 0x0284)
@@ -10691,13 +9307,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3259 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDestroyedCleanupTimer ( );
 	void eventFinishAnimControl ( class UInterpGroup* InInterpGroup );
@@ -10743,8 +9353,6 @@ public:
 	void SetActionStationWP ( class ANavigationPoint* oWP, struct FName nmSocket );
 };
 
-UClass* ABioArtPlaceable::pClassPointer = NULL;
-
 // Class SFXGame.BioArtPlaceableShield
 // 0x0000 (0x0408 - 0x0408)
 class ABioArtPlaceableShield : public ABioArtPlaceable
@@ -10755,18 +9363,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3261 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTick ( float fTimeDelta );
 };
-
-UClass* ABioArtPlaceableShield::pClassPointer = NULL;
 
 // Class SFXGame.BioContainer
 // 0x0000 (0x0408 - 0x0408)
@@ -10778,17 +9378,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3263 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioContainer::pClassPointer = NULL;
 
 // Class SFXGame.BioDoor
 // 0x0010 (0x0418 - 0x0408)
@@ -10803,19 +9395,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3265 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalcDistanceFromDoorPlane ( struct FVector* vWorldLocation );
 	bool BioDoProximityCheck ( );
 };
-
-UClass* ABioDoor::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableCoverInterface
 // 0x0008 (0x0070 - 0x0068)
@@ -10828,13 +9412,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3267 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetSlot ( int SlotIdx, struct FCoverSlot* Slot );
 	int DecBlocked ( int SlotIdx );
@@ -10855,8 +9433,6 @@ public:
 	bool IsValid ( );
 };
 
-UClass* UBioArtPlaceableCoverInterface::pClassPointer = NULL;
-
 // Class SFXGame.BioAPCoverMeshComponent
 // 0x0000 (0x0318 - 0x0318)
 class UBioAPCoverMeshComponent : public UCoverMeshComponent
@@ -10867,17 +9443,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3269 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAPCoverMeshComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributes
 // 0x0004 (0x0070 - 0x006C)
@@ -10890,13 +9458,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3271 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString IntToString ( struct FBioComplexIntStructAttribute* attribute );
 	int GetBaseIntValue ( struct FBioComplexIntStructAttribute* attribute );
@@ -10924,8 +9486,6 @@ public:
 	void SetIntAttribute ( struct FName attribute, int nValue, int nIndexOfAttributeInArray );
 	void EnsureInitialized ( );
 };
-
-UClass* UBioAttributes::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesDamage
 // 0x02A6 (0x0316 - 0x0070)
@@ -10958,18 +9518,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3273 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetWeaponDamageType ( unsigned char nWeaponType );
 };
-
-UClass* UBioAttributesDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesEpicPawn
 // 0x0328 (0x0398 - 0x0070)
@@ -10998,13 +9550,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3275 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetName ( );
 	struct FString GetDesignedName ( );
@@ -11014,8 +9560,6 @@ public:
 	void AddFloatAttributeModifier ( struct FName attribute, unsigned char modType, float fValue, int nIndexOfAttributeInArray );
 	void SetFloatAttribute ( struct FName attribute, float fValue, int nIndexOfAttributeInArray );
 };
-
-UClass* UBioAttributesEpicPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesPawn
 // 0x0B1E (0x0EB6 - 0x0398)
@@ -11083,13 +9627,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3277 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveFloatAttributeModifier ( struct FName attribute, unsigned char modType, float fValue, int nIndexOfAttributeInArray );
 	void RemoveIntAttributeModifier ( struct FName attribute, unsigned char modType, int nValue, int nIndexOfAttributeInArray );
@@ -11098,8 +9636,6 @@ public:
 	void SetFloatAttribute ( struct FName attribute, float fValue, int nIndexOfAttributeInArray );
 	void SetIntAttribute ( struct FName attribute, int nValue, int nIndexOfAttributeInArray );
 };
-
-UClass* UBioAttributesPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesPawnParty
 // 0x0239 (0x10EF - 0x0EB6)
@@ -11123,20 +9659,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3279 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetParagon ( );
 	int GetRenegade ( );
 	bool SetMainAttributes ( int primary, int secondary, int tertiary );
 };
-
-UClass* UBioAttributesPawnParty::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesPawnPlayer
 // 0x01C8 (0x12B7 - 0x10EF)
@@ -11161,17 +9689,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3281 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesPawnPlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesPawnVehicle
 // 0x0040 (0x03D8 - 0x0398)
@@ -11199,17 +9719,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3283 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesPawnVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItem
 // 0x0089 (0x00F9 - 0x0070)
@@ -11229,18 +9741,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3285 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItem::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemSophisticated
 // 0x000B (0x0104 - 0x00F9)
@@ -11254,18 +9758,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3287 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemSophisticated::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemEquippable
 // 0x0000 (0x0104 - 0x0104)
@@ -11277,18 +9773,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3289 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemEquippable::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemBioAmp
 // 0x0144 (0x0248 - 0x0104)
@@ -11306,17 +9794,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3291 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesItemBioAmp::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemXModdable
 // 0x0000 (0x0104 - 0x0104)
@@ -11328,17 +9808,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3293 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesItemXModdable::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemArmor
 // 0x056C (0x0670 - 0x0104)
@@ -11366,18 +9838,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3295 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemArmor::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemGrenade
 // 0x025C (0x0360 - 0x0104)
@@ -11402,19 +9866,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3297 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearStringAttribute ( struct FName nmAttribute, int nIndexOfAttributeInArray );
 	void SetStringAttribute ( struct FName attribute, struct FString sValue, int nIndexOfAttributeInArray );
 };
-
-UClass* UBioAttributesItemGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemOmniTool
 // 0x0144 (0x0248 - 0x0104)
@@ -11432,17 +9888,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3299 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesItemOmniTool::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemWeapon
 // 0x021C (0x0320 - 0x0104)
@@ -11464,18 +9912,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3301 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemWeaponMelee
 // 0x0000 (0x0320 - 0x0320)
@@ -11487,18 +9927,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3303 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemWeaponMelee::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemWeaponRanged
 // 0x0AD5 (0x0DF5 - 0x0320)
@@ -11574,18 +10006,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3305 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemWeaponRanged::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemXMod
 // 0x0000 (0x0104 - 0x0104)
@@ -11597,18 +10021,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3307 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeAttributes ( );
 };
-
-UClass* UBioAttributesItemXMod::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesShield
 // 0x014C (0x01BC - 0x0070)
@@ -11628,13 +10044,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3309 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveFloatAttributeBaseOverrideModifier ( struct FName attribute, int nIndexOfOverride, int nIndexOfAttributeInArray );
 	int AddFloatAttributeBaseOverrideModifier ( struct FName attribute, float Value, int nIndexOfAttributeInArray );
@@ -11642,8 +10052,6 @@ public:
 	void AddFloatAttributeModifier ( struct FName attribute, unsigned char modType, float fValue, int nIndexOfAttributeInArray );
 	void SetFloatAttribute ( struct FName attribute, float fValue, int nIndexOfAttributeInArray );
 };
-
-UClass* UBioAttributesShield::pClassPointer = NULL;
 
 // Class SFXGame.BioPower
 // 0x06AD (0x071D - 0x0070)
@@ -11699,13 +10107,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3311 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventAddParameter ( struct FName nmParameter );
 	bool LoadPlayerLinkedPower ( );
@@ -11764,8 +10166,6 @@ public:
 	void SetFloatAttribute ( struct FName attribute, float fValue, int nIndexOfAttributeInArray );
 };
 
-UClass* UBioPower::pClassPointer = NULL;
-
 // Class SFXGame.BioPowerManager
 // 0x002C (0x008C - 0x0060)
 class UBioPowerManager : public UObject
@@ -11781,13 +10181,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3313 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetAimTargetForPlayer ( float fMaxRange, class AActor** oTarget, struct FVector* vTargetLocation );
 	bool AreActorsFriendly ( class AActor* oFirstActor, class AActor* oSecondActor );
@@ -11800,8 +10194,6 @@ public:
 	bool GetCurrentHealPower ( class UBioEpicPawnBehavior* oBehavior, class UBioPower** oPower, int* nIndexInPowerArray );
 	bool GetCurrentWeaponPower ( class UBioEpicPawnBehavior* oBehavior, class UBioPower** oPower, int* nIndexInPowerArray );
 };
-
-UClass* UBioPowerManager::pClassPointer = NULL;
 
 // Class SFXGame.BioAudioVolume
 // 0x0044 (0x0308 - 0x02C4)
@@ -11819,13 +10211,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3315 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void myTimerPop ( );
 	void TimerPop ( class ABioAudioVolumeTimer* T );
@@ -11833,8 +10219,6 @@ public:
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 	void PostBeginPlay ( );
 };
-
-UClass* ABioAudioVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioMusicVolume
 // 0x003C (0x0300 - 0x02C4)
@@ -11858,13 +10242,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3317 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetContainsPlayer ( unsigned long bContainsPlayer );
 	bool GetIsMusicOverriddenByXBox ( );
@@ -11878,8 +10256,6 @@ public:
 	void PostBeginPlay ( );
 };
 
-UClass* ABioMusicVolume::pClassPointer = NULL;
-
 // Class SFXGame.BioMusicVolumeTimer
 // 0x0008 (0x028C - 0x0284)
 class ABioMusicVolumeTimer : public AInfo
@@ -11891,19 +10267,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3319 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Timer ( );
 	void PostBeginPlay ( );
 };
-
-UClass* ABioMusicVolumeTimer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ReverbPreset
 // 0x0004 (0x00FC - 0x00F8)
@@ -11916,18 +10284,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3321 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ReverbPreset::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ReverbVolume
 // 0x0004 (0x00FC - 0x00F8)
@@ -11940,18 +10300,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3323 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ReverbVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioActorBehavior
 // 0x020D (0x0279 - 0x006C)
@@ -12044,13 +10396,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3325 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GrenadeDetached ( class AActor* oGrenade );
 	void GrenadeAttached ( class AActor* oGrenade );
@@ -12159,8 +10505,6 @@ public:
 	void TickBehavior ( float DeltaTime );
 };
 
-UClass* UBioActorBehavior::pClassPointer = NULL;
-
 // Class SFXGame.BioArtPlaceableBehavior
 // 0x00C5 (0x033E - 0x0279)
 class UBioArtPlaceableBehavior : public UBioActorBehavior
@@ -12217,13 +10561,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3327 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DetonateAttachedGrenades ( );
 	void GrenadeDetached ( class AActor* oGrenade );
@@ -12286,8 +10624,6 @@ public:
 	bool GetPlayerSelectable ( class ABioPlayerController* pPlayerController, unsigned char ePlayerState );
 };
 
-UClass* UBioArtPlaceableBehavior::pClassPointer = NULL;
-
 // Class SFXGame.BioArtPlaceableShieldBehavior
 // 0x0002 (0x0340 - 0x033E)
 class UBioArtPlaceableShieldBehavior : public UBioArtPlaceableBehavior
@@ -12298,19 +10634,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3329 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProxyTakeDamage ( float OriginalDamage, class AController* InstigatedBy, struct FVector HitLocation, class UClass* DamageType, struct FTraceHitInfo HitInfo, class AActor* pDamageCausingActor, class UBioDamageType* pDamage, float* CurrentDamage, struct FVector* Momentum );
 	void Tick ( float fTimeDelta );
 };
-
-UClass* UBioArtPlaceableShieldBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioEpicPawnBehavior
 // 0x00D0 (0x0349 - 0x0279)
@@ -12358,13 +10686,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3331 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetMatriarchZen ( unsigned long bEnabled );
 	bool DisplayEpicPawnVisualEffect ( struct FName nmLabel );
@@ -12436,8 +10758,6 @@ public:
 	struct FVector GetTargetZoneLocation ( );
 	struct FName CanSeeTarget ( float fDeltaTime, struct FVector vSourceLocation, class AActor* oTarget, unsigned long bTraverseList, int nOptLevel );
 };
-
-UClass* UBioEpicPawnBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnBehavior
 // 0x023E (0x0587 - 0x0349)
@@ -12595,13 +10915,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3333 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetPlayerMeleeTime ( float MeleeTime );
 	float GetPlayerMeleeTime ( );
@@ -12728,8 +11042,6 @@ public:
 	void PlaySound ( unsigned char ePawnSound, unsigned char eMode );
 };
 
-UClass* UBioPawnBehavior::pClassPointer = NULL;
-
 // Class SFXGame.BioVehicleBehaviorBase
 // 0x0097 (0x03E0 - 0x0349)
 class UBioVehicleBehaviorBase : public UBioEpicPawnBehavior
@@ -12768,13 +11080,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3335 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	void ReactToDeath ( float fDamage, float fDeathDamage, class AController* pInstigatedBy, struct FVector vHitLocation, struct FVector vMomentum, class UClass* clsDamageType, struct FTraceHitInfo HitInfo, class UBioDamageType* pDamage );
@@ -12829,8 +11135,6 @@ public:
 	void InitializeActionFramework ( );
 };
 
-UClass* UBioVehicleBehaviorBase::pClassPointer = NULL;
-
 // Class SFXGame.BioVehicleBehaviorWheeled
 // 0x0008 (0x03E8 - 0x03E0)
 class UBioVehicleBehaviorWheeled : public UBioVehicleBehaviorBase
@@ -12843,13 +11147,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3337 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeRunTimeOnlyTransients ( );
 	void OnWeaponInstantFire ( class ABioWeaponRanged* oFiredWeapon );
@@ -12862,8 +11160,6 @@ public:
 	bool InitializeVehicle ( );
 };
 
-UClass* UBioVehicleBehaviorWheeled::pClassPointer = NULL;
-
 // Class SFXGame.BioPawnSquadInterface
 // 0x0000 (0x006C - 0x006C)
 class UBioPawnSquadInterface : public UBioBaseComponent
@@ -12874,13 +11170,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3339 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class APawn* FindSquadMemberByTag ( struct FName nmTag );
 	int FindSquadIndex ( );
@@ -12892,8 +11182,6 @@ public:
 	void eventJoinSquad ( class ABioBaseSquad* NewSquad );
 };
 
-UClass* UBioPawnSquadInterface::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_AdditionalContent
 // 0x0003 (0x009C - 0x0099)
 class UBioSFHandler_AdditionalContent : public UBioSFHandler
@@ -12904,17 +11192,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3341 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSFHandler_AdditionalContent::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_AreaMap
 // 0x005F (0x00F8 - 0x0099)
@@ -12937,18 +11217,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3343 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RTNConfirm ( unsigned long bAPressed, int nContext );
 };
-
-UClass* UBioSFHandler_AreaMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_PCAreaMap
 // 0x0000 (0x00F8 - 0x00F8)
@@ -12960,18 +11232,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3345 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 };
-
-UClass* UBioSFHandler_PCAreaMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_BrowserWheel
 // 0x00F5 (0x018E - 0x0099)
@@ -12995,13 +11259,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3347 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ExitToMainMenu ( );
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
@@ -13019,8 +11277,6 @@ public:
 	void UpdateCachedItemCategory ( class UBioSFPanel* oLastPanel );
 	void eventShowSelectedPanel ( int nPanel, class UBioSFManager* oManager );
 };
-
-UClass* UBioSFHandler_BrowserWheel::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Credits
 // 0x0037 (0x00D0 - 0x0099)
@@ -13040,13 +11296,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3349 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPanelRemoved ( );
 	void eventSetFromAdditionalContent ( );
@@ -13057,8 +11307,6 @@ public:
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 	bool SetDataFromIniFile ( struct FString m_sFileName );
 };
-
-UClass* UBioSFHandler_Credits::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_DataCodex
 // 0x003B (0x00D4 - 0x0099)
@@ -13079,20 +11327,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3351 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void eventGoBackToMainMenu ( );
 	void SetFromMainMenu ( );
 };
-
-UClass* UBioSFHandler_DataCodex::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_InGameManual
 // 0x0000 (0x00D4 - 0x00D4)
@@ -13104,17 +11344,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3353 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSFHandler_InGameManual::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_DesignerUI
 // 0x009F (0x0138 - 0x0099)
@@ -13133,13 +11365,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3355 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventEnableCameraMovement ( );
 	void eventDisableCameraMovement ( );
@@ -13174,8 +11400,6 @@ public:
 	void ClearAll ( unsigned long bModal );
 };
 
-UClass* UBioSFHandler_DesignerUI::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_DeviceSelection
 // 0x0027 (0x00C0 - 0x0099)
 class UBioSFHandler_DeviceSelection : public UBioSFHandler
@@ -13190,13 +11414,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3357 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetCancelDelegateEx ( struct FName nmFunction, class UObject* pTarget );
 	void SetCancelDelegate ( struct FScriptDelegate pDelegate );
@@ -13206,8 +11424,6 @@ public:
 	void CancelCallback ( int i_dwDeviceSelectionId );
 	void CompletionCallback ( int i_dwDeviceSelectionId );
 };
-
-UClass* UBioSFHandler_DeviceSelection::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_GalaxyMap
 // 0x0023 (0x00BC - 0x0099)
@@ -13228,19 +11444,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3359 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void TravelConfirm ( unsigned long bAPressed, int nContext );
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 };
-
-UClass* UBioSFHandler_GalaxyMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_GameOver
 // 0x0007 (0x00A0 - 0x0099)
@@ -13253,13 +11461,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3361 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void Update ( float fDeltaT );
@@ -13268,8 +11470,6 @@ public:
 	void SetupGameOver ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_GameOver::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_HUD
 // 0x00B8 (0x0151 - 0x0099)
@@ -13316,13 +11516,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3363 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPanelAdded ( );
 	class UGFxValue* GetVariableObject ( struct FString Path, class UClass* Type );
@@ -13369,8 +11563,6 @@ public:
 	void ToggleKeyMap ( );
 };
 
-UClass* UBioSFHandler_HUD::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_PCHUD
 // 0x0003 (0x0154 - 0x0151)
 class UBioSFHandler_PCHUD : public UBioSFHandler_HUD
@@ -13381,20 +11573,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3365 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 	void Update ( float fDeltaT );
 	void InitializeEverything ( );
 };
-
-UClass* UBioSFHandler_PCHUD::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Journal
 // 0x002F (0x00C8 - 0x0099)
@@ -13410,20 +11594,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3367 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void Update ( float fDeltaT );
 	void HandleInputEvent ( unsigned char Event, float fValue );
 };
-
-UClass* UBioSFHandler_Journal::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Keyboard
 // 0x0037 (0x00D0 - 0x0099)
@@ -13440,18 +11616,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3369 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DisplayKeyboard ( int srTitle, int srDescription, unsigned char nOptions, int nMaxLength, struct FString sDefault );
 };
-
-UClass* UBioSFHandler_Keyboard::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Loot
 // 0x004F (0x00E8 - 0x0099)
@@ -13480,13 +11648,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3371 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void DisplayLootMaxed ( int i_nNumberToSlavage, int i_nMaxItems );
@@ -13505,8 +11667,6 @@ public:
 	struct FString GetInventoryMaxedMessage ( int i_nNumberOver, int i_nMaxItems );
 };
 
-UClass* UBioSFHandler_Loot::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_MainMenu
 // 0x0018 (0x00B1 - 0x0099)
 class UBioSFHandler_MainMenu : public UBioSFHandler
@@ -13524,13 +11684,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3373 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void StartAchievementEnumeration ( );
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
@@ -13548,8 +11702,6 @@ public:
 	bool CheckMaxCareersExceeded ( );
 };
 
-UClass* UBioSFHandler_MainMenu::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_PCMainMenu
 // 0x0003 (0x00B4 - 0x00B1)
 class UBioSFHandler_PCMainMenu : public UBioSFHandler_MainMenu
@@ -13560,18 +11712,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3375 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 };
-
-UClass* UBioSFHandler_PCMainMenu::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_MessageBox
 // 0x003F (0x00D8 - 0x0099)
@@ -13588,13 +11732,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3377 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void OnPanelAdded ( );
@@ -13610,8 +11748,6 @@ public:
 	void UpdateCallback ( float fDeltaT, class UBioSFHandler_MessageBox* oMsgBox );
 	void InputCallback ( unsigned long bAPressed, int nContext, unsigned long bYPressed );
 };
-
-UClass* UBioSFHandler_MessageBox::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_NewCharacter
 // 0x0157 (0x01F0 - 0x0099)
@@ -13663,13 +11799,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3379 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SelectPreviousPregeneratedHead ( );
 	void SelectNextPregeneratedHead ( );
@@ -13714,8 +11844,6 @@ public:
 	void Setup3DModel ( );
 };
 
-UClass* UBioSFHandler_NewCharacter::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_PCNewCharacter
 // 0x0010 (0x0200 - 0x01F0)
 class UBioSFHandler_PCNewCharacter : public UBioSFHandler_NewCharacter
@@ -13730,13 +11858,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3381 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void setZoominFaceVar ( unsigned long zoomIn );
 	void HandleLookAtLeftRightMouse ( float fValue );
@@ -13746,8 +11868,6 @@ public:
 	void OnPanelAdded ( );
 	void eventUpdate ( float fDeltaT );
 };
-
-UClass* UBioSFHandler_PCNewCharacter::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Options
 // 0x0188 (0x0221 - 0x0099)
@@ -13771,13 +11891,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3383 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void ConfirmResetTutorials ( unsigned long bAPressed, int nContext );
@@ -13789,8 +11903,6 @@ public:
 	void OptionsConfirmCommit ( unsigned long bAPressed, int nContext, unsigned long bDoNotClose );
 	void SetOptionsOnGUI ( struct FGameOptions* i_GameOptions );
 };
-
-UClass* UBioSFHandler_Options::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_PCOptions
 // 0x0278 (0x0311 - 0x0099)
@@ -13845,13 +11957,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3385 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void StoreIncomingResolution ( );
 	bool WillChangeDisplay ( );
@@ -13993,8 +12099,6 @@ public:
 	void OptionsConfirmCommit ( unsigned long bAPressed, int nContext );
 };
 
-UClass* UBioSFHandler_PCOptions::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_ReplayCharacterSelect
 // 0x0023 (0x00BC - 0x0099)
 class UBioSFHandler_ReplayCharacterSelect : public UBioSFHandler
@@ -14007,19 +12111,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3387 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void OnPanelAdded ( );
 };
-
-UClass* UBioSFHandler_ReplayCharacterSelect::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Reticule
 // 0x00A4 (0x013D - 0x0099)
@@ -14046,20 +12142,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3389 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessImpacts ( unsigned long bIsHeadShot );
 	void Reset ( );
 	void OnPanelAdded ( );
 };
-
-UClass* UBioSFHandler_Reticule::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_SaveLoadBase
 // 0x0044 (0x00DD - 0x0099)
@@ -14082,13 +12170,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3391 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void Update ( float fDeltaT );
@@ -14098,8 +12180,6 @@ public:
 	void DeviceSelectionCompletion ( int i_dwDeviceSelectionId );
 	void DeleteGameConfirm ( unsigned long bAPressed, int nContext );
 };
-
-UClass* UBioSFHandler_SaveLoadBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_LoadGame
 // 0x0037 (0x0114 - 0x00DD)
@@ -14120,13 +12200,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3393 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Update ( float fDeltaT );
 	void OnPanelRemoved ( );
@@ -14139,8 +12213,6 @@ public:
 	void DeleteCharacterConfirm ( unsigned long bAPressed, int nContext );
 	void LoadGameConfirm ( unsigned long bAPressed, int nContext );
 };
-
-UClass* UBioSFHandler_LoadGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_SaveGame
 // 0x002B (0x0108 - 0x00DD)
@@ -14161,13 +12233,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3395 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void CheckFreeSpaceComplete ( struct FSFXSaveGameCommandEventArgs Args );
 	void OnPanelRemoved ( );
@@ -14177,8 +12243,6 @@ public:
 	void SaveGameConfirm ( unsigned long bAPressed, int nContext );
 	void DeleteGameConfirm ( unsigned long bAPressed, int nContext );
 };
-
-UClass* UBioSFHandler_SaveGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_SharedIGG
 // 0x0007 (0x00A0 - 0x0099)
@@ -14193,19 +12257,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3397 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void BackToMainMenu ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_SharedIGG::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Shop
 // 0x00D9 (0x0172 - 0x0099)
@@ -14260,13 +12316,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3399 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void UpdatePurchaseErrorMsg ( float fDeltaT, class UBioSFHandler_MessageBox* oMsgBox );
@@ -14303,8 +12353,6 @@ public:
 	struct FString GetInventoryFullMessage ( int i_nOverItems, int i_nMaxItems );
 };
 
-UClass* UBioSFHandler_Shop::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_Splash
 // 0x001B (0x00B4 - 0x0099)
 class UBioSFHandler_Splash : public UBioSFHandler
@@ -14321,13 +12369,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3401 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPanelAdded ( );
 	void StartTimeout ( unsigned long bShowLegal );
@@ -14341,8 +12383,6 @@ public:
 	void CheckLogin ( );
 };
 
-UClass* UBioSFHandler_Splash::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_PCSplash
 // 0x0000 (0x00B4 - 0x00B4)
 class UBioSFHandler_PCSplash : public UBioSFHandler_Splash
@@ -14353,21 +12393,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3403 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUpdate ( float fDeltaT );
 	void eventAdvanceScreen ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 	void OnPanelRemoved ( );
 };
-
-UClass* UBioSFHandler_PCSplash::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Tutorial
 // 0x0017 (0x00B0 - 0x0099)
@@ -14382,21 +12414,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3405 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 	void OnPanelAdded ( );
 	void CompletionCallback ( );
 };
-
-UClass* UBioSFHandler_Tutorial::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_XBoxMessageBox
 // 0x000B (0x00A4 - 0x0099)
@@ -14410,18 +12434,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3407 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DisplayMessageBox ( int srTitle, int srMessage, unsigned char nIcon, int nDefaultButton, struct TArray<int>* srButtons );
 };
-
-UClass* UBioSFHandler_XBoxMessageBox::pClassPointer = NULL;
 
 // Class SFXGame.BioSkillGame_Handler
 // 0x0085 (0x011E - 0x0099)
@@ -14461,13 +12477,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3409 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetSwapXandO ( unsigned long shouldSwap );
 	void OnPanelAdded ( );
@@ -14491,8 +12501,6 @@ public:
 	void OnSuccessCallback ( int n_SalvageUsed );
 };
 
-UClass* UBioSkillGame_Handler::pClassPointer = NULL;
-
 // Class SFXGame.BioSkillGame_PCHandler
 // 0x0006 (0x0124 - 0x011E)
 class UBioSkillGame_PCHandler : public UBioSkillGame_Handler
@@ -14504,13 +12512,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3411 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void HandleClockUpdate ( class UObject* Params );
@@ -14519,8 +12521,6 @@ public:
 	void OnPanelAdded ( );
 	void eventUpdate ( float fDeltaT );
 };
-
-UClass* UBioSkillGame_PCHandler::pClassPointer = NULL;
 
 // Class SFXGame.MassEffectGuiManager
 // 0x00CD (0x0230 - 0x0163)
@@ -14558,13 +12558,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3413 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HidePhotoMode ( );
 	class UBioSFHandler* ShowPhotoMode ( );
@@ -14631,8 +12625,6 @@ public:
 	void Update ( float fDeltaT );
 };
 
-UClass* UMassEffectGuiManager::pClassPointer = NULL;
-
 // Class SFXGame.SFXSFHandler_PhotoMode
 // 0x004F (0x00E8 - 0x0099)
 class USFXSFHandler_PhotoMode : public UBioSFHandler
@@ -14650,13 +12642,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3415 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ToggleOptions ( );
 	void HandleOptionChanged ( unsigned char OptionId, float Value );
@@ -14670,8 +12656,6 @@ public:
 	void HandleButtonRefresh ( unsigned long bUsingGamepad );
 	void HandleInputEvent ( unsigned char Event, float fValue );
 };
-
-UClass* USFXSFHandler_PhotoMode::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraZoom
 // 0x0028 (0x0088 - 0x0060)
@@ -14693,21 +12677,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3417 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( float Distance );
 	void ModifyPostProcessSettings ( struct FPostProcessSettings* PPSettings );
 	void Tick ( float DeltaTime );
 	void Focus ( float Distance );
 };
-
-UClass* UBioCameraZoom::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode
 // 0x00C8 (0x0128 - 0x0060)
@@ -14747,13 +12723,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3419 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessViewRotation ( float DeltaTime, struct FRotator* OutViewRotation, struct FRotator* OutDeltaRot );
 	bool GetActorCameraHook ( struct FVector* OutLocation );
@@ -14778,8 +12748,6 @@ public:
 	void eventModifyPostProcessSettings ( struct FPostProcessSettings* PPSettings );
 };
 
-UClass* USFXCameraMode::pClassPointer = NULL;
-
 // Class SFXGame.SFXCameraInput
 // 0x001C (0x007C - 0x0060)
 class USFXCameraInput : public UObject
@@ -14797,17 +12765,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3421 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraInput::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraUtility
 // 0x0004 (0x012C - 0x0128)
@@ -14820,17 +12780,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3423 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCameraUtility::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraBehavior
 // 0x0000 (0x012C - 0x012C)
@@ -14842,18 +12794,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3425 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 };
-
-UClass* UBioCameraBehavior::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraBehaviorConversation
 // 0x0094 (0x01C0 - 0x012C)
@@ -14883,13 +12827,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3427 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventGetProceduralCam ( unsigned long bInvert, struct FVector* vCamLocation, struct FRotator* rCamRotation );
 	void eventModifyPostProcessSettings ( struct FPostProcessSettings* PPSettings );
@@ -14900,8 +12838,6 @@ public:
 	void ShutDown ( );
 	void Tick ( float TimeDelta );
 };
-
-UClass* UBioCameraBehaviorConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraBehaviorGalaxy
 // 0x0178 (0x02A4 - 0x012C)
@@ -14968,18 +12904,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3429 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 };
-
-UClass* UBioCameraBehaviorGalaxy::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraModifier_ScreenShake
 // 0x008B (0x0108 - 0x007D)
@@ -14993,13 +12921,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3431 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ModifyCamera ( class ACamera* Camera, float DeltaTime, struct FTPOV* OutPOV );
 	void UpdateScreenShake ( float DeltaTime, struct FScreenShakeStruct* Shake, struct FTPOV* OutPOV );
@@ -15011,8 +12933,6 @@ public:
 	void RemoveScreenShake ( struct FName ShakeName );
 	void RemoveAllScreenShakes ( );
 };
-
-UClass* USFXCameraModifier_ScreenShake::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraNativeBase
 // 0x0078 (0x0590 - 0x0518)
@@ -15036,13 +12956,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3433 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventAddScreenShake ( struct FScreenShakeStruct Shake );
 	void eventCreateIPECommands ( class UBioInGamePropertyEditor* IPE, class UBioPropertyEditorBaseNode* Parent );
@@ -15057,8 +12971,6 @@ public:
 	struct FVector WorldToCanonicalScreen ( struct FVector* vWorldLoc );
 	bool GetTrace ( class AActor** oHit, struct FVector* vLocation, struct FVector* vNormal );
 };
-
-UClass* ASFXCameraNativeBase::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraShake
 // 0x009A (0x00FA - 0x0060)
@@ -15084,17 +12996,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3435 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCameraShake::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraShakeInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -15106,18 +13010,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3437 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FRotator ComputeCameraRotationDelta ( );
 };
-
-UClass* UBioCameraShakeInterface::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnCameraShakeInterface
 // 0x0058 (0x00B8 - 0x0060)
@@ -15131,18 +13027,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3439 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPawnDestroyed ( );
 };
-
-UClass* UBioPawnCameraShakeInterface::pClassPointer = NULL;
 
 // Class SFXGame.BioCapability
 // 0x002E (0x008E - 0x0060)
@@ -15165,17 +13053,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3441 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCapability::pClassPointer = NULL;
 
 // Class SFXGame.BioCharacterImporter
 // 0x0108 (0x0168 - 0x0060)
@@ -15199,13 +13079,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3443 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool FindCharacterInfoByName ( struct FName nmCharacter, struct FName nmPackage, int* Index, struct FString* actorTypeString, int* nIsHeadGearVisible );
 	bool FindPlayerCharacterInfo ( int* Index, struct FString* actorTypeString, int* nIsHeadGearVisible );
@@ -15230,8 +13104,6 @@ public:
 	bool LoadCharacter2DAs ( struct FName nmPackage );
 };
 
-UClass* UBioCharacterImporter::pClassPointer = NULL;
-
 // Class SFXGame.BioCombatLog
 // 0x0000 (0x0060 - 0x0060)
 class UBioCombatLog : public UObject
@@ -15242,17 +13114,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3445 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCombatLog::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenade
 // 0x0033 (0x03F8 - 0x03C5)
@@ -15270,13 +13134,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3447 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FVector GetLaunchPoint ( );
 	class UBioItemGrenade* eventGetItem ( );
@@ -15291,8 +13149,6 @@ public:
 	void DetachWeaponFromMesh ( class USkeletalMeshComponent* MeshCpnt );
 	void AttachWeaponTo ( class USkeletalMeshComponent* MeshCpnt, struct FName BoneName );
 };
-
-UClass* ABioGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioCheatManager
 // 0x0181 (0x01F1 - 0x0070)
@@ -15394,13 +13250,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3449 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UseIconicShepard ( unsigned long ShouldUse );
 	void Resurrect ( struct FName PawnName );
@@ -15687,8 +13537,6 @@ public:
 	class ABioWorldInfo* getWorld ( );
 };
 
-UClass* UBioCheatManager::pClassPointer = NULL;
-
 // Class SFXGame.BioPlayerInput
 // 0x015E (0x0369 - 0x020B)
 class UBioPlayerInput : public UPlayerInput
@@ -15733,13 +13581,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3451 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetFlyCam ( unsigned long bOn );
 	void ToggleFlyCam ( );
@@ -15760,8 +13602,6 @@ public:
 	float ComputeStickResponse ( float RawStickValue, class USFXCameraInput* Input, float DeltaTime );
 	void eventUpdateMouseSensitivityFromSettings ( int Value );
 };
-
-UClass* UBioPlayerInput::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerSelection
 // 0x004A (0x00AA - 0x0060)
@@ -15791,13 +13631,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3453 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsSelectable ( class AActor* oTarget, class UBioEpicPawnBehavior* sourcePawnBehavior );
 	void DrawSelectionReticule ( class AActor* oTarget, struct FColor ReticuleColor, float fOffset );
@@ -15807,8 +13641,6 @@ public:
 	bool SetSelectionMode ( unsigned char nSelectionMode );
 	bool UpdateSelection ( float fDeltaTime );
 };
-
-UClass* UBioPlayerSelection::pClassPointer = NULL;
 
 // Class SFXGame.BioConversation
 // 0x0264 (0x02C4 - 0x0060)
@@ -15904,13 +13736,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3455 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDisableCamera ( unsigned long bDisableCamera );
 	void BioVINCE_MapName_MissingLipSync ( );
@@ -15941,8 +13767,6 @@ public:
 	class AActor* GetConversationObject ( int nObjectIndex, unsigned long bNoisyErrors );
 	void SetPositionRotator ( class AActor* pActor, struct FVector Position, struct FRotator facing );
 };
-
-UClass* UBioConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioStage
 // 0x00BC (0x0340 - 0x0284)
@@ -15980,13 +13804,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3457 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetBestCameraPosition ( class UBioConversation* Conv, unsigned long bLineOfActionCheck, int nIntimacyLevel, struct FVector* vCamLoc, struct FRotator* vCamRot, float* fFov, float* fNearPlane, struct FBioStageDOFData* tDOFData );
 	void BioVINCE_MapName_FailedStagePlacement ( );
@@ -16005,8 +13823,6 @@ public:
 	void EndConversation ( );
 };
 
-UClass* ABioStage::pClassPointer = NULL;
-
 // Class SFXGame.BioCoverCollisonCube
 // 0x0010 (0x0230 - 0x0220)
 class UBioCoverCollisonCube : public UPrimitiveComponent
@@ -16019,17 +13835,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3459 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCoverCollisonCube::pClassPointer = NULL;
 
 // Class SFXGame.BioCreatureSoundSet
 // 0x0068 (0x00C8 - 0x0060)
@@ -16044,17 +13852,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3461 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCreatureSoundSet::pClassPointer = NULL;
 
 // Class SFXGame.BioTlkFile
 // 0x003C (0x009C - 0x0060)
@@ -16072,17 +13872,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3463 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTlkFile::pClassPointer = NULL;
 
 // Class SFXGame.BioTlkFileSet
 // 0x0050 (0x00B0 - 0x0060)
@@ -16096,17 +13888,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3465 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTlkFileSet::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFXCore
 // 0x0000 (0x0060 - 0x0060)
@@ -16118,18 +13902,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3467 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsValidVFXSpec ( struct FBioDeathVFXSpec deathVFXSpec );
 };
-
-UClass* UBioDeathVFXCore::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFX
 // 0x0040 (0x00A0 - 0x0060)
@@ -16143,17 +13919,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3469 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDeathVFX::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFXControl
 // 0x0000 (0x0060 - 0x0060)
@@ -16165,13 +13933,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3471 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool AppendConditionalVFX ( class UBioDeathVFXSpecArrayWrapper* pDeathVFXSpecArrayWrapper, class UBioDeathVFXGameState* pGameState, struct FName nmConditionalVFX );
 	bool AppendDamageVFX ( class UBioDeathVFXSpecArrayWrapper* pDeathVFXSpecArrayWrapper, class UBioDeathVFXGameState* pGameState );
@@ -16180,8 +13942,6 @@ public:
 	bool IsValidAppearanceVFX ( class UBioDeathVFXGameState* pGameState );
 	void eventEvaluate ( class UBioDeathVFXSpecArrayWrapper* pDeathVFXSpecArrayWrapper, class UBioDeathVFXGameState* pGameState );
 };
-
-UClass* UBioDeathVFXControl::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFXGameState
 // 0x0045 (0x00A5 - 0x0060)
@@ -16203,17 +13963,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3473 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDeathVFXGameState::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFXSpecArrayWrapper
 // 0x0010 (0x0070 - 0x0060)
@@ -16226,17 +13978,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3475 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDeathVFXSpecArrayWrapper::pClassPointer = NULL;
 
 // Class SFXGame.BioDefine
 // 0x0000 (0x0060 - 0x0060)
@@ -16248,17 +13992,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3477 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDefine::pClassPointer = NULL;
 
 // Class SFXGame.BioEquipment
 // 0x004D (0x00B9 - 0x006C)
@@ -16275,13 +14011,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3479 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTickEquipment ( float fDeltaTime );
 	void OnHide ( unsigned long bHide );
@@ -16307,8 +14037,6 @@ public:
 	bool GetEquipmentSlot ( unsigned char Type, unsigned char* Slot );
 };
 
-UClass* UBioEquipment::pClassPointer = NULL;
-
 // Class SFXGame.BioEquipmentBase
 // 0x003D (0x00A9 - 0x006C)
 class UBioEquipmentBase : public UBioBaseComponent
@@ -16325,13 +14053,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3481 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ScaleEquipment ( int nSophisticationLevel );
 	int GetEquippedSlotID ( class UBioItem* oItem );
@@ -16343,8 +14065,6 @@ public:
 	bool OnEquipAction ( class UBioItem* oNewItem );
 };
 
-UClass* UBioEquipmentBase::pClassPointer = NULL;
-
 // Class SFXGame.BioEquipmentVehicle
 // 0x0003 (0x00AC - 0x00A9)
 class UBioEquipmentVehicle : public UBioEquipmentBase
@@ -16355,18 +14075,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3483 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool Initialize ( class AActor* oOwner, class UObject* oDelegateObj );
 };
-
-UClass* UBioEquipmentVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioForceFeedbackPlayer
 // 0x0084 (0x00E4 - 0x0060)
@@ -16380,17 +14092,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3485 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForceFeedbackPlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioFSM
 // 0x0010 (0x0070 - 0x0060)
@@ -16403,20 +14107,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3487 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioState* GetStateByIndex ( int Index );
 	void DEBUG_DumpStates ( class ABioPlayerController* BPC );
 	class UBioState* eventGetState ( struct FName RequestedState );
 };
-
-UClass* UBioFSM::pClassPointer = NULL;
 
 // Class SFXGame.BioFSMComponent
 // 0x0041 (0x00A1 - 0x0060)
@@ -16435,13 +14131,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3489 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsTransitioning ( );
 	void eventCallTransitionDelegate ( struct FName From, struct FName To );
@@ -16452,8 +14142,6 @@ public:
 	void TransitionComplete ( );
 	void OnTransitionDelegate ( struct FName FromState, struct FName ToState, unsigned long bCallCPP );
 };
-
-UClass* UBioFSMComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioState
 // 0x0024 (0x0084 - 0x0060)
@@ -16469,19 +14157,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3491 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioTransition* GetTransition ( struct FName ToState, struct FName NamedTransition );
 	bool HasTransitionTo ( struct FName ToState, struct FName NamedTransition );
 };
-
-UClass* UBioState::pClassPointer = NULL;
 
 // Class SFXGame.BioTransition
 // 0x0018 (0x0078 - 0x0060)
@@ -16496,17 +14176,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3493 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioEventNotifier
 // 0x007C (0x00DC - 0x0060)
@@ -16543,13 +14215,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3495 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RemoveTalentNotify ( class ABioPawn* oCharacter );
 	void OnTalentNoticeInput ( unsigned long bAPressed, int nContext );
@@ -16560,8 +14226,6 @@ public:
 	void HasListChanged ( );
 	void RetrieveNotices ( struct TArray<struct FBioDisplayNotice>* lstNotices );
 };
-
-UClass* UBioEventNotifier::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldInfo
 // 0x04FE (0x0C96 - 0x0798)
@@ -16721,13 +14385,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3497 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventSetPlayersControllerId ( class ULocalPlayer* Player, int ControllerId );
 	void eventStartNoBrowserWheelTimer ( );
@@ -16838,8 +14496,6 @@ public:
 	bool TriggerCinematicSkippedEvent ( );
 };
 
-UClass* ABioWorldInfo::pClassPointer = NULL;
-
 // Class SFXGame.BioPartyInfo
 // 0x000C (0x006C - 0x0060)
 class UBioPartyInfo : public UObject
@@ -16853,17 +14509,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3499 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPartyInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioSPGame
 // 0x0024 (0x04D4 - 0x04B0)
@@ -16881,13 +14529,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3501 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SpawnGameOverGUI ( );
 	void AdjustHeightOfPawnSpawnedAtNavigationPoint ( class APawn* Pawn, class ANavigationPoint* SpawnPoint );
@@ -16909,8 +14551,6 @@ public:
 	void ChallengeScalePersistentLevelPawns ( );
 };
 
-UClass* ABioSPGame::pClassPointer = NULL;
-
 // Class SFXGame.BioGameEffect
 // 0x0029 (0x0089 - 0x0060)
 class UBioGameEffect : public UObject
@@ -16927,13 +14567,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3503 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
@@ -16943,8 +14577,6 @@ public:
 	void eventUpdate ( class UObject* oTarget );
 	void eventTick ( class UObject* oTarget, float fDeltaTime );
 };
-
-UClass* UBioGameEffect::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAddForce
 // 0x004F (0x00D8 - 0x0089)
@@ -16968,13 +14600,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3505 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName GetClosestBone ( class AActor* oTarget );
 	void Decelerate ( class AActor* oActor );
@@ -16983,8 +14609,6 @@ public:
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, struct FVector vForce, struct FName nmBoneName, struct FVector vPosition, struct FVector vDestination, unsigned long bDecelerateAtDestination, struct FVector vDeceleration, float fMinVelocity, class AActor* oInstigator, unsigned long bApplyToAllBones );
 };
-
-UClass* UBioGameEffectAddForce::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAddItemProperty
 // 0x0007 (0x0090 - 0x0089)
@@ -16997,19 +14621,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3507 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAddItemProperty::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAdjustStability
 // 0x0007 (0x0090 - 0x0089)
@@ -17022,19 +14638,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3509 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* Apply ( class UObject* oTarget );
 	void Create ( class UBioGameProperty* oProperty, float fAmount );
 };
-
-UClass* UBioGameEffectAdjustStability::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttribute
 // 0x0010 (0x0099 - 0x0089)
@@ -17049,21 +14657,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3511 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName eventGetPowerName ( );
 	class UBioAttributes* GetAttributes ( class UObject* oTarget );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttribute::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeBool
 // 0x0007 (0x00A0 - 0x0099)
@@ -17077,20 +14677,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3513 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* oProperty, unsigned long bValue, struct FName nmAttributeName, unsigned char eType, unsigned long bSetToOppositeOnUnapply );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeBool::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerAttributeBool
 // 0x0008 (0x00A8 - 0x00A0)
@@ -17103,20 +14695,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3515 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName eventGetPowerName ( );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectPowerAttributeBool::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeByte
 // 0x0008 (0x00A1 - 0x0099)
@@ -17130,20 +14714,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3517 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* oProperty, unsigned char Value, struct FName nmAttributeName, unsigned char eType, unsigned long bZeroOnUnapply );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeByte::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeName
 // 0x000F (0x00A8 - 0x0099)
@@ -17157,20 +14733,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3519 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* oProperty, struct FName nmValue, struct FName nmAttributeName, unsigned char eType, unsigned long bSetToNoneOnUnapply );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeName::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeNumeric
 // 0x0009 (0x00A2 - 0x0099)
@@ -17185,19 +14753,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3521 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeNumeric::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeFloat
 // 0x0006 (0x00A8 - 0x00A2)
@@ -17210,20 +14770,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3523 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* GP, float fValue, struct FName nmAttributeName, unsigned char eAspect, unsigned char eModifier, unsigned char eType, int nIndex );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeFloat::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerAttributeFloat
 // 0x0008 (0x00B0 - 0x00A8)
@@ -17236,20 +14788,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3525 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName eventGetPowerName ( );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectPowerAttributeFloat::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerParameter
 // 0x0008 (0x00B0 - 0x00A8)
@@ -17262,20 +14806,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3527 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName eventGetPowerName ( );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectPowerParameter::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeInt
 // 0x000A (0x00AC - 0x00A2)
@@ -17289,13 +14825,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3529 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* GP, int nValue, struct FName nmAttributeName, unsigned char eAspect, unsigned char eModifier, unsigned char eType, int nIndex, unsigned long bSetToZeroOnUnapply );
 	void Unapply ( class UObject* oTarget );
@@ -17303,8 +14833,6 @@ public:
 	void AddModifier ( class UBioAttributes* attribs );
 	void SetBase ( class UBioAttributes* attribs );
 };
-
-UClass* UBioGameEffectAttributeInt::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeString
 // 0x0013 (0x00AC - 0x0099)
@@ -17317,19 +14845,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3531 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeString::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectAttributeEnum
 // 0x0000 (0x00AC - 0x00AC)
@@ -17341,18 +14861,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3533 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectAttributeEnum::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectDisableAI
 // 0x0010 (0x0099 - 0x0089)
@@ -17367,20 +14879,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3535 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, unsigned char eType, struct FName nmSubType );
 };
-
-UClass* UBioGameEffectDisableAI::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectDmgVulnerability
 // 0x0007 (0x0090 - 0x0089)
@@ -17393,20 +14897,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3537 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, float fDamageVulnerability );
 };
-
-UClass* UBioGameEffectDmgVulnerability::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectGiveGP
 // 0x000B (0x0094 - 0x0089)
@@ -17419,20 +14915,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3539 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void SetGP ( class UBioGameProperty* pGP );
 };
-
-UClass* UBioGameEffectGiveGP::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectHackAI
 // 0x0013 (0x009C - 0x0089)
@@ -17446,21 +14934,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3541 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventCreate ( class UBioGameProperty* oProperty, class UBioEpicPawnBehavior* oHacker );
 	void Unapply ( class UObject* pTarget );
 	class UObject* Apply ( class UObject* pTarget );
 	void eventInitializeHackAI ( class UBioEpicPawnBehavior* pSourceBehavior );
 };
-
-UClass* UBioGameEffectHackAI::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectHeadExplode
 // 0x0003 (0x008C - 0x0089)
@@ -17472,19 +14952,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3543 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectHeadExplode::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectHeal
 // 0x000F (0x0098 - 0x0089)
@@ -17499,19 +14971,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3545 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, float fHealthAmount, float fToxicAmount, float fResourcesRequired );
 };
-
-UClass* UBioGameEffectHeal::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectItemAddXModSlots
 // 0x000B (0x0094 - 0x0089)
@@ -17525,19 +14989,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3547 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* Target );
 	class UObject* Apply ( class UObject* Target );
 };
-
-UClass* UBioGameEffectItemAddXModSlots::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectItemPopXModSlots
 // 0x000B (0x0094 - 0x0089)
@@ -17551,19 +15007,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3549 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* Target );
 	class UObject* Apply ( class UObject* Target );
 };
-
-UClass* UBioGameEffectItemPopXModSlots::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectItemRemoveXModSlot
 // 0x000B (0x0094 - 0x0089)
@@ -17577,19 +15025,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3551 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* Target );
 	class UObject* Apply ( class UObject* Target );
 };
-
-UClass* UBioGameEffectItemRemoveXModSlot::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectModifyGravity
 // 0x000B (0x0094 - 0x0089)
@@ -17603,20 +15043,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3553 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, float fScalingValue );
 };
-
-UClass* UBioGameEffectModifyGravity::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerBuildUp
 // 0x0013 (0x009C - 0x0089)
@@ -17631,21 +15063,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3555 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( class UObject* oTarget, float fDeltaTime );
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, class UBioPower* oPower, float fTimeOut );
 };
-
-UClass* UBioGameEffectPowerBuildUp::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerGive
 // 0x000B (0x0094 - 0x0089)
@@ -17658,19 +15082,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3557 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Create ( class UBioGameProperty* GP, struct FName powerName );
 	class UObject* Apply ( class UObject* oTarget );
 };
-
-UClass* UBioGameEffectPowerGive::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectPowerText
 // 0x0007 (0x0090 - 0x0089)
@@ -17683,20 +15099,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3559 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, int srText );
 };
-
-UClass* UBioGameEffectPowerText::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectRagdoll
 // 0x0007 (0x0090 - 0x0089)
@@ -17709,20 +15117,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3561 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty );
 };
-
-UClass* UBioGameEffectRagdoll::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectRegenerateShield
 // 0x0007 (0x0090 - 0x0089)
@@ -17735,19 +15135,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3563 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, float fAmount );
 };
-
-UClass* UBioGameEffectRegenerateShield::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSetMaterialParameter
 // 0x000B (0x0094 - 0x0089)
@@ -17760,17 +15152,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3565 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGameEffectSetMaterialParameter::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSetMaterialParameterColor
 // 0x0010 (0x00A4 - 0x0094)
@@ -17786,18 +15170,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3567 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* eventApply ( class UObject* pTarget );
 };
-
-UClass* UBioGameEffectSetMaterialParameterColor::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSetMaterialParameterScalar
 // 0x0004 (0x0098 - 0x0094)
@@ -17810,18 +15186,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3569 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* eventApply ( class UObject* pTarget );
 };
-
-UClass* UBioGameEffectSetMaterialParameterScalar::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSetMaterialParameterTexture
 // 0x0008 (0x009C - 0x0094)
@@ -17834,18 +15202,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3571 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* eventApply ( class UObject* pTarget );
 };
-
-UClass* UBioGameEffectSetMaterialParameterTexture::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSetProperty
 // 0x0023 (0x00AC - 0x0089)
@@ -17862,19 +15222,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3573 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* pTarget );
 	class UObject* Apply ( class UObject* pTarget );
 };
-
-UClass* UBioGameEffectSetProperty::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSingularity
 // 0x0043 (0x00CC - 0x0089)
@@ -17897,13 +15249,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3575 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MoveActor ( class AActor* oActor );
 	void Tick ( class UObject* oTarget, float fDeltaTime );
@@ -17911,8 +15257,6 @@ public:
 	class UObject* Apply ( class UObject* oTarget );
 	void eventCreate ( class UBioGameProperty* oProperty, struct FVector vSingularityLocation, float fForce, struct FName nmBoneName, struct FVector vPosition, float fForceInterval, float fOuterBubbleRange, float fVelocityThresholdOuterBubble, float fInnerBubbleRange, float fBubbleForce );
 };
-
-UClass* UBioGameEffectSingularity::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectSuppression
 // 0x0007 (0x0090 - 0x0089)
@@ -17925,20 +15269,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3577 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Unapply ( class UObject* oTarget );
 	class UObject* Apply ( class UObject* oTarget );
 	void Create ( class UBioGameProperty* oProperty );
 };
-
-UClass* UBioGameEffectSuppression::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectTakeDamage
 // 0x002F (0x00B8 - 0x0089)
@@ -17955,19 +15291,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3579 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UObject* Apply ( class UObject* oTarget );
 	void Create ( class UBioGameProperty* oProperty, float fDamage, class AController* oInstigatorController, struct FVector vHitLocation, struct FVector vMomentum, class UBioDamageType* pDamage );
 };
-
-UClass* UBioGameEffectTakeDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioGameEffectImporter
 // 0x0048 (0x00B4 - 0x006C)
@@ -17980,18 +15308,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3581 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioGameEffect* CreateGameEffect ( class UObject* _outer, class UBio2DA* gameEffectTable, int nGameEffectID );
 };
-
-UClass* UBioGameEffectImporter::pClassPointer = NULL;
 
 // Class SFXGame.BioGameProperty
 // 0x009D (0x00FD - 0x0060)
@@ -18020,13 +15340,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3583 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool HasEffect ( class UClass* GameEffectClass );
 	void Unapply ( class UObject* pTargetObject );
@@ -18045,8 +15359,6 @@ public:
 	void AddGameEffectToProperty ( class UBioGameEffect* oEffect );
 };
 
-UClass* UBioGameProperty::pClassPointer = NULL;
-
 // Class SFXGame.BioGamePropertyConditional
 // 0x0018 (0x0078 - 0x0060)
 class UBioGamePropertyConditional : public UObject
@@ -18059,19 +15371,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3585 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Uninitialize ( );
 	void Initialize ( );
 };
-
-UClass* UBioGamePropertyConditional::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalEquipmentChange
 // 0x0001 (0x0079 - 0x0078)
@@ -18084,17 +15388,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3587 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalEquipmentChange::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalEquipmentChangeVehicle
 // 0x0000 (0x0078 - 0x0078)
@@ -18106,17 +15402,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3589 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalEquipmentChangeVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalHasNotFired
 // 0x0000 (0x0078 - 0x0078)
@@ -18128,17 +15416,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3591 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalHasNotFired::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsActorType
 // 0x0008 (0x0080 - 0x0078)
@@ -18151,18 +15431,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3593 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetActorType ( struct FName nmActorType );
 };
-
-UClass* UBioGamePropertyConditionalIsActorType::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsAlive
 // 0x0000 (0x0078 - 0x0078)
@@ -18174,17 +15446,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3595 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsAlive::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsArmor
 // 0x0001 (0x0079 - 0x0078)
@@ -18197,17 +15461,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3597 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsArmor::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsCurrentArmor
 // 0x0003 (0x007C - 0x0079)
@@ -18219,17 +15475,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3599 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsCurrentArmor::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsCurrentWeapon
 // 0x0000 (0x0078 - 0x0078)
@@ -18241,17 +15489,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3601 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsCurrentWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsItem
 // 0x0000 (0x0078 - 0x0078)
@@ -18263,17 +15503,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3603 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsItem::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsItemEquipped
 // 0x0000 (0x0078 - 0x0078)
@@ -18285,17 +15517,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3605 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsItemEquipped::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsPawn
 // 0x0000 (0x0078 - 0x0078)
@@ -18307,17 +15531,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3607 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalWeapon
 // 0x0003 (0x007B - 0x0078)
@@ -18332,20 +15548,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3609 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool TestRangedWeapon ( class UBioItemWeapon* pWeaponItem );
 	bool TestMeleeWeapon ( class UBioItemWeapon* pWeaponItem );
 	bool TestWeapon ( class UBioItemWeapon* pWeaponItem );
 };
-
-UClass* UBioGamePropertyConditionalWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalIsWeapon
 // 0x0001 (0x007C - 0x007B)
@@ -18357,17 +15565,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3611 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalIsWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalOnWeaponChange
 // 0x0001 (0x007C - 0x007B)
@@ -18379,17 +15579,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3613 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalOnWeaponChange::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalWeaponPowerUsed
 // 0x0000 (0x0078 - 0x0078)
@@ -18401,17 +15593,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3615 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalWeaponPowerUsed::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalXModInstalled
 // 0x0000 (0x0078 - 0x0078)
@@ -18423,17 +15607,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3617 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalXModInstalled::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalXModInstalledInCurrentWeapon
 // 0x0000 (0x0078 - 0x0078)
@@ -18445,17 +15621,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3619 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalXModInstalledInCurrentWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalXModInstalledInEquipment
 // 0x0001 (0x0079 - 0x0078)
@@ -18468,17 +15636,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3621 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGamePropertyConditionalXModInstalledInEquipment::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyConditionalImporter
 // 0x0000 (0x006C - 0x006C)
@@ -18490,18 +15650,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3623 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioGamePropertyConditional* LoadGamePropertyConditional ( class UBio2DA* o2DA, int nConditionalId, class UBioGameProperty* oOwner );
 };
-
-UClass* UBioGamePropertyConditionalImporter::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyContainer
 // 0x0020 (0x0080 - 0x0060)
@@ -18516,13 +15668,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3625 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventToString ( struct FString sIndent );
 	void OnGPEvent ( unsigned char eEvent, class UObject* pTarget );
@@ -18532,8 +15678,6 @@ public:
 	void OnGamePropCooldownEnd ( class UBioGameProperty* pGameProperty, unsigned char eTimingType, float fDeltaTimeRemaining );
 	void eventAddGamePropertyToCountdown ( class UBioGameProperty* oGameProp, float fCountdown );
 };
-
-UClass* UBioGamePropertyContainer::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyEffectLevelIterator
 // 0x0010 (0x0070 - 0x0060)
@@ -18546,18 +15690,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3627 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( class UBio2DA* o2DA, int nKeyColumn, int nKey );
 };
-
-UClass* UBioGamePropertyEffectLevelIterator::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyEventDispatcher
 // 0x0090 (0x00F0 - 0x0060)
@@ -18571,13 +15707,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3629 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessQueue ( );
 	void UnregisterGameProperty ( class UBioGameProperty* oGameProp );
@@ -18585,8 +15715,6 @@ public:
 	void OnEvent ( unsigned char eEvent, class UObject* pTarget );
 	void LogDebugInfo ( class UBioGamePropertyEventSet* pEvents, class UObject* pTarget );
 };
-
-UClass* UBioGamePropertyEventDispatcher::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyEventSet
 // 0x0010 (0x0070 - 0x0060)
@@ -18599,13 +15727,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3631 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioGamePropertyEventSet* eventCreate3 ( unsigned char eEvent1, unsigned char eEvent2, unsigned char eEvent3, class UObject* oSource );
 	class UBioGamePropertyEventSet* eventCreate2 ( unsigned char eEvent1, unsigned char eEvent2, class UObject* oSource );
@@ -18622,8 +15744,6 @@ public:
 	void Clear ( );
 };
 
-UClass* UBioGamePropertyEventSet::pClassPointer = NULL;
-
 // Class SFXGame.BioGamePropertyHolderTraits
 // 0x0000 (0x0060 - 0x0060)
 class UBioGamePropertyHolderTraits : public UObject
@@ -18634,19 +15754,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3633 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioGamePropertyContainer* eventGetGPContainer ( class UObject* pObject );
 	class UBioGamePropertyManager* eventGetGPManager ( class UObject* oTarget );
 };
-
-UClass* UBioGamePropertyHolderTraits::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyImporter
 // 0x005C (0x00C8 - 0x006C)
@@ -18662,18 +15774,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3635 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioGameProperty* LoadGameProperty ( struct FBioGPLoadData* oGPData );
 };
-
-UClass* UBioGamePropertyImporter::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyManager
 // 0x0078 (0x00D8 - 0x0060)
@@ -18690,13 +15794,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3637 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventToString ( struct FString sIndent );
 	bool IsGameEffectApplied ( class UClass* GameEffectClass );
@@ -18712,8 +15810,6 @@ public:
 	void ApplyGameProperty ( class UBioGameProperty* pGP, class UObject* pTarget );
 	void EvaluateGameProperty ( class UBioGameProperty* pGP, class UObject* pTarget );
 };
-
-UClass* UBioGamePropertyManager::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyScalingData
 // 0x0240 (0x02AC - 0x006C)
@@ -18733,18 +15829,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3639 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ScaleProperties ( int nLevel );
 };
-
-UClass* UBioGamePropertyScalingData::pClassPointer = NULL;
 
 // Class SFXGame.BioGamePropertyTimer
 // 0x0034 (0x0094 - 0x0060)
@@ -18760,13 +15848,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3641 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventToString ( struct FString sIndent );
 	void eventInvokeDelegate ( struct FScriptDelegate pDelegate, class UBioGameProperty* pGP, unsigned char eTimingType, float fDeltaTimeRemaining );
@@ -18782,8 +15864,6 @@ public:
 	void OnRemoveGameProperty ( class UBioGameProperty* pGP, unsigned char eTimingType, float fDeltaTimeRemaining );
 };
 
-UClass* UBioGamePropertyTimer::pClassPointer = NULL;
-
 // Class SFXGame.BioGestChainNode
 // 0x000C (0x006C - 0x0060)
 class UBioGestChainNode : public UObject
@@ -18796,17 +15876,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3643 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestChainNode::pClassPointer = NULL;
 
 // Class SFXGame.BioGestChainTree
 // 0x0010 (0x007C - 0x006C)
@@ -18819,17 +15891,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3645 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestChainTree::pClassPointer = NULL;
 
 // Class SFXGame.BioGestureLangOverride
 // 0x0060 (0x00C0 - 0x0060)
@@ -18844,17 +15908,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3647 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestureLangOverride::pClassPointer = NULL;
 
 // Class SFXGame.BioGestureRulesData
 // 0x0188 (0x01E8 - 0x0060)
@@ -18873,17 +15929,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3649 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestureRulesData::pClassPointer = NULL;
 
 // Class SFXGame.BioGestureRuntimeData
 // 0x0090 (0x00F0 - 0x0060)
@@ -18897,17 +15945,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3651 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGestureRuntimeData::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -18919,17 +15959,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3653 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGrenadeInterface::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeInterfaceAI
 // 0x000C (0x006C - 0x0060)
@@ -18942,17 +15974,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3655 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGrenadeInterfaceAI::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeInterfacePlayer
 // 0x0000 (0x0060 - 0x0060)
@@ -18964,17 +15988,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3657 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGrenadeInterfacePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioGUIBox
 // 0x0050 (0x00B0 - 0x0060)
@@ -18997,13 +16013,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3659 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Draw ( class UCanvas* oCanvas );
 	void SetFont ( class UFont* Font );
@@ -19013,8 +16023,6 @@ public:
 	void ComputeDrawParameters ( class UCanvas* oCanvas );
 	bool ShouldRender ( );
 };
-
-UClass* UBioGUIBox::pClassPointer = NULL;
 
 // Class SFXGame.BioMessageBox
 // 0x002C (0x00DC - 0x00B0)
@@ -19031,13 +16039,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3661 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PageUp ( );
 	void PageDown ( );
@@ -19050,8 +16052,6 @@ public:
 	bool ShouldRender ( );
 	void ComputeDrawParameters ( class UCanvas* oCanvas );
 };
-
-UClass* UBioMessageBox::pClassPointer = NULL;
 
 // Class SFXGame.BioHUD
 // 0x00AC (0x0668 - 0x05BC)
@@ -19101,13 +16101,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3663 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProfileCamera ( );
 	void ShowPawnAnimNodeDebug ( class UClass* aClass, struct FName nmStartingPoint );
@@ -19196,8 +16190,6 @@ public:
 	void ProfileCombat ( class UBioActorBehavior* targetActorBehavior );
 };
 
-UClass* ABioHUD::pClassPointer = NULL;
-
 // Class SFXGame.BioMoviePlayer
 // 0x0020 (0x0080 - 0x0060)
 class UBioMoviePlayer : public UObject
@@ -19211,13 +16203,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3665 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventShutdownMovie ( );
 	void Draw ( class UCanvas* Canvas );
@@ -19226,8 +16212,6 @@ public:
 	void InitializeMovie ( );
 	void OnMovieFinished ( class UTextureMovie* TextureMovie );
 };
-
-UClass* UBioMoviePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioSubtitles
 // 0x0022 (0x0082 - 0x0060)
@@ -19246,13 +16230,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3667 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateSubtitles ( float fDeltaT );
 	void ClearHistory ( );
@@ -19261,8 +16239,6 @@ public:
 	bool HasSubtitle ( );
 	void DisplaySubtitle ( struct FString sSubtitle, float fDuration );
 };
-
-UClass* UBioSubtitles::pClassPointer = NULL;
 
 // Class SFXGame.BioUIWorld
 // 0x01BC (0x021C - 0x0060)
@@ -19293,13 +16269,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3669 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HidePawn ( class ABioPawn* a_pOriginalPawn, unsigned long bHidden );
 	void AttachOmnitool ( class ABioPawn* a_pSourcePawn, unsigned long a_fnClassName );
@@ -19317,8 +16287,6 @@ public:
 	void SpawnPawn ( class ABioPawn* a_pOriginalPawn, struct FName a_fnSpawnLocation, struct FName a_fnSpawnVariable, struct FName a_fnClassAnimSet, struct FName a_fnRemoteEvent );
 	void TriggerEvent ( struct FName a_fnEventName, class AActor* a_pCaller );
 };
-
-UClass* UBioUIWorld::pClassPointer = NULL;
 
 // Class SFXGame.BioInGamePropertyEditor
 // 0x00C0 (0x0120 - 0x0060)
@@ -19353,13 +16321,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3671 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString filterString ( struct FString Input );
 	void DrawToHUD ( class ABioHUD* oHUD );
@@ -19383,8 +16345,6 @@ public:
 	bool Initialize ( );
 };
 
-UClass* UBioInGamePropertyEditor::pClassPointer = NULL;
-
 // Class SFXGame.BioPropertyEditorBaseNode
 // 0x0064 (0x00C4 - 0x0060)
 class UBioPropertyEditorBaseNode : public UObject
@@ -19406,13 +16366,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3673 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioInGamePropertyEditor* getTop ( );
 	struct FString getDisplayText ( unsigned long selectable );
@@ -19430,8 +16384,6 @@ public:
 	bool SelectionAction ( );
 };
 
-UClass* UBioPropertyEditorBaseNode::pClassPointer = NULL;
-
 // Class SFXGame.BioPropertyEditorBoneNode
 // 0x0010 (0x00D4 - 0x00C4)
 class UBioPropertyEditorBoneNode : public UBioPropertyEditorBaseNode
@@ -19445,18 +16397,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3675 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorBoneNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorLevelNode
 // 0x0010 (0x00D4 - 0x00C4)
@@ -19469,18 +16413,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3677 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorLevelNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorLoadNode
 // 0x0010 (0x00D4 - 0x00C4)
@@ -19493,20 +16429,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3679 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DecrementCurrentSelection ( );
 	void IncrementCurrentSelection ( );
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorLoadNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorPropertyNode
 // 0x0028 (0x00EC - 0x00C4)
@@ -19521,13 +16449,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3681 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DecrementCurrentSelection ( );
 	void IncrementCurrentSelection ( );
@@ -19538,8 +16460,6 @@ public:
 	bool MakeNodes ( struct FString thisOneOnly );
 	void SetObject ( class UObject* Obj );
 };
-
-UClass* UBioPropertyEditorPropertyNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorArrayNode
 // 0x0008 (0x00F4 - 0x00EC)
@@ -19552,18 +16472,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3683 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorArrayNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorEditNode
 // 0x0014 (0x0100 - 0x00EC)
@@ -19579,19 +16491,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3685 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString getDisplayText ( unsigned long selectable );
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorEditNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorEditableNode
 // 0x0029 (0x0115 - 0x00EC)
@@ -19613,13 +16517,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3687 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void AcceptNewValue ( );
 	void DoChange ( float Delta );
@@ -19629,8 +16527,6 @@ public:
 	void IncrementCurrentSelection ( );
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorEditableNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorReadOnlyNode
 // 0x0010 (0x00FC - 0x00EC)
@@ -19643,18 +16539,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3689 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorReadOnlyNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorSaveNode
 // 0x0010 (0x00D4 - 0x00C4)
@@ -19667,20 +16555,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3691 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DecrementCurrentSelection ( );
 	void IncrementCurrentSelection ( );
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorSaveNode::pClassPointer = NULL;
 
 // Class SFXGame.BioPropertyEditorVolatileNode
 // 0x0000 (0x00C4 - 0x00C4)
@@ -19692,18 +16572,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3693 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SelectionAction ( );
 };
-
-UClass* UBioPropertyEditorVolatileNode::pClassPointer = NULL;
 
 // Class SFXGame.BioConvNodeTrackDebug
 // 0x0010 (0x00B8 - 0x00A8)
@@ -19716,21 +16588,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3695 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventKeyDataDisplayName ( );
 	struct FString eventKeyDataArrayName ( );
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioConvNodeTrackDebug::pClassPointer = NULL;
 
 // Class SFXGame.BioConvNodeTrackDebugInst
 // 0x0008 (0x006C - 0x0064)
@@ -19743,17 +16607,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3697 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioConvNodeTrackDebugInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackDOF
 // 0x002C (0x00D4 - 0x00A8)
@@ -19773,13 +16629,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3699 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -19787,8 +16637,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackDOF::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackDOFInst
 // 0x0034 (0x0098 - 0x0064)
@@ -19811,17 +16659,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3701 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackDOFInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackFuncShot
 // 0x0018 (0x00C0 - 0x00A8)
@@ -19835,13 +16675,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3703 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -19849,8 +16683,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackFuncShot::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackFuncShotInst
 // 0x0000 (0x0064 - 0x0064)
@@ -19862,17 +16694,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3705 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackFuncShotInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackGesture
 // 0x0063 (0x010B - 0x00A8)
@@ -19901,13 +16725,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3707 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -19915,8 +16733,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackGesture::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackGestureInst
 // 0x0054 (0x00B8 - 0x0064)
@@ -19931,18 +16747,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3709 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class AActor* FindActorByTagForScript ( struct FName nmTagToFind, class UInterpTrackInst* pTrackInst );
 };
-
-UClass* UBioEvtSysTrackGestureInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackLookAt
 // 0x0024 (0x00CC - 0x00A8)
@@ -19957,13 +16765,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3711 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -19971,8 +16773,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackLookAt::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackLookAtInst
 // 0x0008 (0x006C - 0x0064)
@@ -19985,17 +16785,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3713 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackLookAtInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSetFacing
 // 0x0034 (0x00DC - 0x00A8)
@@ -20011,13 +16803,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3715 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -20025,8 +16811,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackSetFacing::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSetFacingInst
 // 0x0008 (0x006C - 0x0064)
@@ -20039,17 +16823,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3717 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackSetFacingInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSubtitles
 // 0x0018 (0x00C0 - 0x00A8)
@@ -20063,13 +16839,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3719 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -20077,8 +16847,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackSubtitles::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSubtitlesInst
 // 0x0004 (0x0068 - 0x0064)
@@ -20091,17 +16859,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3721 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackSubtitlesInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSwitchCamera
 // 0x0010 (0x00B8 - 0x00A8)
@@ -20114,13 +16874,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3723 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -20128,8 +16882,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackSwitchCamera::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackSwitchCameraInst
 // 0x0008 (0x006C - 0x0064)
@@ -20142,17 +16894,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3725 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackSwitchCameraInst::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackVOElements
 // 0x006C (0x0114 - 0x00A8)
@@ -20173,13 +16917,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3727 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString eventGetNewTrackSubMenuName ( );
 	struct FString eventKeyDataDisplayName ( );
@@ -20187,8 +16925,6 @@ public:
 	struct FString eventNewKeyDefaultName ( );
 	bool eventAllowKeyNaming ( );
 };
-
-UClass* UBioEvtSysTrackVOElements::pClassPointer = NULL;
 
 // Class SFXGame.BioEvtSysTrackVOElementsInst
 // 0x00C4 (0x0128 - 0x0064)
@@ -20217,17 +16953,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3729 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEvtSysTrackVOElementsInst::pClassPointer = NULL;
 
 // Class SFXGame.BioScalarParameterInstTrack
 // 0x0004 (0x0064 - 0x0060)
@@ -20240,17 +16968,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3731 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioScalarParameterInstTrack::pClassPointer = NULL;
 
 // Class SFXGame.BioScalarParameterTrack
 // 0x0014 (0x00BC - 0x00A8)
@@ -20265,17 +16985,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3733 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioScalarParameterTrack::pClassPointer = NULL;
 
 // Class SFXGame.BioVectorParameterInstTrack
 // 0x000C (0x006C - 0x0060)
@@ -20288,17 +17000,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3735 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVectorParameterInstTrack::pClassPointer = NULL;
 
 // Class SFXGame.BioVectorParameterTrack
 // 0x001C (0x00C4 - 0x00A8)
@@ -20313,17 +17017,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3737 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVectorParameterTrack::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualEffectTrack
 // 0x0018 (0x00A8 - 0x0090)
@@ -20337,17 +17033,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3739 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVisualEffectTrack::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualEffectTrackInst
 // 0x000C (0x006C - 0x0060)
@@ -20361,18 +17049,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3741 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Create ( class ABioVisualEffect* Base );
 };
-
-UClass* UBioVisualEffectTrackInst::pClassPointer = NULL;
 
 // Class SFXGame.BioInterpolator
 // 0x0000 (0x0060 - 0x0060)
@@ -20384,21 +17064,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3743 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InterpolateFloatCurve ( float Source, float Target, float normalizedDisplacement, float* Output, struct FInterpCurveFloat* Curve );
 	void InterpolateFloat ( unsigned char InterpolationMethod, float Source, float Target, float normalizedDisplacement, float* Output );
 	void InterpolateVector ( unsigned char InterpolationMethod, struct FVector Source, struct FVector Target, float normalizedDisplacement, struct FVector* Output );
 	void InterpolateRotator ( unsigned char InterpolationMethod, struct FRotator Source, struct FRotator Target, float normalizedDisplacement, struct FRotator* Output );
 };
-
-UClass* UBioInterpolator::pClassPointer = NULL;
 
 // Class SFXGame.BioInventory
 // 0x0088 (0x00F4 - 0x006C)
@@ -20433,13 +17105,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3745 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetMaxMedigel ( );
 	int GetMaxGrenades ( );
@@ -20474,8 +17140,6 @@ public:
 	struct FString eventGetStringRepresentation ( );
 };
 
-UClass* UBioInventory::pClassPointer = NULL;
-
 // Class SFXGame.BioInventoryView
 // 0x0020 (0x0080 - 0x0060)
 class UBioInventoryView : public UObject
@@ -20490,13 +17154,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3747 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetShieldRatio ( float ratio );
 	float GetShieldRatio ( );
@@ -20522,8 +17180,6 @@ public:
 	void ExtractWeaponIndices ( unsigned char eWeaponRangedType, struct TArray<int>* aEquipIndices );
 	void ClearObjectRefs ( );
 };
-
-UClass* UBioInventoryView::pClassPointer = NULL;
 
 // Class SFXGame.BioInventoryGuiInterface
 // 0x00D5 (0x0155 - 0x0080)
@@ -20560,13 +17216,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3749 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void BuildEquippableXModList ( int nXModSlotType );
 	float Appraise ( int nIndex, unsigned char eResource );
@@ -20609,8 +17259,6 @@ public:
 	void SortEquippableItems ( int nSortMode );
 };
 
-UClass* UBioInventoryGuiInterface::pClassPointer = NULL;
-
 // Class SFXGame.BioInventoryViewConsole
 // 0x0000 (0x0080 - 0x0080)
 class UBioInventoryViewConsole : public UBioInventoryView
@@ -20621,17 +17269,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3751 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioInventoryViewConsole::pClassPointer = NULL;
 
 // Class SFXGame.BioItem
 // 0x0048 (0x00B4 - 0x006C)
@@ -20654,13 +17294,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3753 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	bool ComputeCategoryDisplayInfo ( int* categoryNameRef, int* categoryDescRef, int* categoryGuiIcon );
@@ -20679,8 +17313,6 @@ public:
 	bool ValidateItem ( );
 	void eventDescribeItem ( );
 };
-
-UClass* UBioItem::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSophisticated
 // 0x0037 (0x00EB - 0x00B4)
@@ -20701,13 +17333,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3755 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioMaterialOverride* GetMaterialParameters ( );
 	void GenerateName ( struct FString* sName );
@@ -20725,8 +17351,6 @@ public:
 	int ComputeNonWeaponSophistication ( class UBioPawnBehavior* oBehavior, unsigned char eEquipmentSlot );
 };
 
-UClass* UBioItemSophisticated::pClassPointer = NULL;
-
 // Class SFXGame.BioItemEquippable
 // 0x0002 (0x00ED - 0x00EB)
 class UBioItemEquippable : public UBioItemSophisticated
@@ -20738,13 +17362,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3757 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnGPEvent ( unsigned char eEvent, class UObject* pTarget );
 	void eventDescribeItem ( );
@@ -20753,8 +17371,6 @@ public:
 	void OnEquipInternal ( class ABioPawn* oPawn );
 	void eventOnEquip ( class ABioPawn* oPawn );
 };
-
-UClass* UBioItemEquippable::pClassPointer = NULL;
 
 // Class SFXGame.BioItemXModdable
 // 0x0013 (0x0100 - 0x00ED)
@@ -20767,13 +17383,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3759 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnGPEvent ( unsigned char eEvent, class UObject* pTarget );
 	void Load ( class UBioItemXModdableSaveObject* pData );
@@ -20790,8 +17400,6 @@ public:
 	float AddPriceOfAllXMods ( );
 };
 
-UClass* UBioItemXModdable::pClassPointer = NULL;
-
 // Class SFXGame.BioItemArmor
 // 0x0001 (0x0101 - 0x0100)
 class UBioItemArmor : public UBioItemXModdable
@@ -20803,13 +17411,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3761 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnUnequipInternal ( class ABioPawn* oPawn );
 	void OnEquipInternal ( class ABioPawn* oPawn );
@@ -20817,8 +17419,6 @@ public:
 	int ComputeSophistication ( class UBioPawnBehavior* oBehavior );
 	struct FName eventGetItemTypeName ( );
 };
-
-UClass* UBioItemArmor::pClassPointer = NULL;
 
 // Class SFXGame.BioItemArmorShielded
 // 0x000B (0x010C - 0x0101)
@@ -20831,13 +17431,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3763 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( );
 	void eventDescribeItem ( );
@@ -20846,8 +17440,6 @@ public:
 	void OnEquipInternal ( class ABioPawn* oPawn );
 	void InitializeShields ( class ABioPawn* oPawn );
 };
-
-UClass* UBioItemArmorShielded::pClassPointer = NULL;
 
 // Class SFXGame.BioItemBioAmp
 // 0x0000 (0x0100 - 0x0100)
@@ -20859,19 +17451,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3765 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeItem ( );
 	int ComputeSophistication ( class UBioPawnBehavior* oBehavior );
 };
-
-UClass* UBioItemBioAmp::pClassPointer = NULL;
 
 // Class SFXGame.BioItemGrenade
 // 0x0040 (0x0140 - 0x0100)
@@ -20891,13 +17475,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3767 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GenerateName ( struct FString* sName );
 	void SetDeathVFX ( class UBioDeathVFX* oDeathVFX );
@@ -20915,8 +17493,6 @@ public:
 	struct FName eventGetItemTypeName ( );
 };
 
-UClass* UBioItemGrenade::pClassPointer = NULL;
-
 // Class SFXGame.BioItemVehicleBase
 // 0x0000 (0x0100 - 0x0100)
 class UBioItemVehicleBase : public UBioItemXModdable
@@ -20927,18 +17503,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3769 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeItem ( );
 };
-
-UClass* UBioItemVehicleBase::pClassPointer = NULL;
 
 // Class SFXGame.BioItemWeapon
 // 0x0029 (0x0129 - 0x0100)
@@ -20956,20 +17524,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3771 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeItem ( );
 	struct FName eventGetItemTypeName ( );
 	void Initialize ( );
 };
-
-UClass* UBioItemWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioItemWeaponMelee
 // 0x0004 (0x012D - 0x0129)
@@ -20982,19 +17542,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3773 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDescribeItem ( );
 	struct FName eventGetItemTypeName ( );
 };
-
-UClass* UBioItemWeaponMelee::pClassPointer = NULL;
 
 // Class SFXGame.BioItemWeaponRanged
 // 0x0010 (0x0139 - 0x0129)
@@ -21010,13 +17562,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3775 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetRoundsPerSecond ( );
 	float GetKickback ( );
@@ -21029,8 +17575,6 @@ public:
 	struct FName eventGetItemTypeName ( );
 };
 
-UClass* UBioItemWeaponRanged::pClassPointer = NULL;
-
 // Class SFXGame.BioItemXMod
 // 0x0005 (0x00F0 - 0x00EB)
 class UBioItemXMod : public UBioItemSophisticated
@@ -21042,20 +17586,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3777 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	void OnGPEvent ( unsigned char eEvent, class UObject* pTarget );
 	void eventDescribeItem ( );
 };
-
-UClass* UBioItemXMod::pClassPointer = NULL;
 
 // Class SFXGame.BioItemEnumerations
 // 0x0000 (0x0060 - 0x0060)
@@ -21067,17 +17603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3779 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemEnumerations::pClassPointer = NULL;
 
 // Class SFXGame.BioItemImporter
 // 0x0028 (0x0094 - 0x006C)
@@ -21092,19 +17620,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3781 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UBioItem* LoadGameItemByLabel ( struct FString sLabel, unsigned char sophistication, struct FName nmPackage, class UObject* InOuter, int manuID );
 	class UBioItem* LoadGameItem ( int nID, unsigned char sophistication, struct FName nmPackage, class UObject* InOuter, int manuID, class UObject* InExistingObject );
 };
-
-UClass* UBioItemImporter::pClassPointer = NULL;
 
 // Class SFXGame.BioWeaponSoundsSet
 // 0x0010 (0x0070 - 0x0060)
@@ -21117,17 +17637,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3783 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWeaponSoundsSet::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelection
 // 0x000C (0x006C - 0x0060)
@@ -21141,17 +17653,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3785 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelection::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelectionPawn
 // 0x0008 (0x0074 - 0x006C)
@@ -21164,17 +17668,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3787 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelectionPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelectionEquipment
 // 0x0001 (0x0075 - 0x0074)
@@ -21187,17 +17683,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3789 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelectionEquipment::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelectionInventory
 // 0x0000 (0x0074 - 0x0074)
@@ -21209,17 +17697,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3791 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelectionInventory::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelectionQuickslot
 // 0x0005 (0x0079 - 0x0074)
@@ -21233,17 +17713,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3793 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelectionQuickslot::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSelectionSimple
 // 0x0000 (0x006C - 0x006C)
@@ -21255,17 +17727,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3795 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemSelectionSimple::pClassPointer = NULL;
 
 // Class SFXGame.BioActorFactoryLedgeMesh
 // 0x0000 (0x00A0 - 0x00A0)
@@ -21277,17 +17741,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3797 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioActorFactoryLedgeMesh::pClassPointer = NULL;
 
 // Class SFXGame.BioLedgeMeshActor
 // 0x0000 (0x0294 - 0x0294)
@@ -21299,17 +17755,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3799 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioLedgeMeshActor::pClassPointer = NULL;
 
 // Class SFXGame.BioLevelUpSystem
 // 0x0074 (0x00E0 - 0x006C)
@@ -21327,13 +17775,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3801 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool AutoLevelUp ( class UBioTalentContainer* talents, int templateID );
 	bool ImmediateAutoLevelUp ( class UBioPawnBehavior* Target );
@@ -21342,8 +17784,6 @@ public:
 	bool LevelUpPawn ( class ABioPawn* Pawn, int newLevel );
 	bool AttemptLevelUp ( class ABioPlayerSquad* PlayerSquad );
 };
-
-UClass* UBioLevelUpSystem::pClassPointer = NULL;
 
 // Class SFXGame.BioLookAt
 // 0x0034 (0x0094 - 0x0060)
@@ -21362,17 +17802,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3803 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioLookAt::pClassPointer = NULL;
 
 // Class SFXGame.BioLookAtDefinition
 // 0x0022 (0x0082 - 0x0060)
@@ -21392,17 +17824,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3805 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioLookAtDefinition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetLookAtTarget
 // 0x0020 (0x0118 - 0x00F8)
@@ -21421,17 +17845,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3807 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetLookAtTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetLookAtTargetWithBoneDefs
 // 0x0010 (0x0108 - 0x00F8)
@@ -21445,17 +17861,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3809 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetLookAtTargetWithBoneDefs::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ToggleGlobalLookAt
 // 0x0004 (0x00FC - 0x00F8)
@@ -21470,17 +17878,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3811 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ToggleGlobalLookAt::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionAnisoSpec
 // 0x0060 (0x00C0 - 0x0060)
@@ -21495,17 +17895,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3813 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionAnisoSpec::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionBlinnSpec
 // 0x0060 (0x00C0 - 0x0060)
@@ -21520,17 +17912,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3815 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionBlinnSpec::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionDirt
 // 0x0038 (0x0098 - 0x0060)
@@ -21546,17 +17930,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3817 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionDirt::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionFresnel
 // 0x0028 (0x0088 - 0x0060)
@@ -21571,17 +17947,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3819 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionFresnel::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionHalfAngle
 // 0x0000 (0x0060 - 0x0060)
@@ -21593,17 +17961,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3821 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionHalfAngle::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionKeyedFlipbook
 // 0x0050 (0x00B0 - 0x0060)
@@ -21620,17 +17980,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3823 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionKeyedFlipbook::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionPhongSpec
 // 0x0060 (0x00C0 - 0x0060)
@@ -21645,17 +17997,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3825 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionPhongSpec::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionSineSubtend
 // 0x0040 (0x00A0 - 0x0060)
@@ -21669,17 +18013,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3827 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionSineSubtend::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialExpressionSpecPower
 // 0x0020 (0x0080 - 0x0060)
@@ -21692,17 +18028,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3829 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMaterialExpressionSpecPower::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialOverride
 // 0x0030 (0x0090 - 0x0060)
@@ -21717,18 +18045,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3831 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 };
-
-UClass* UBioMaterialOverride::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFace
 // 0x0070 (0x00D0 - 0x0060)
@@ -21750,13 +18070,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3833 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	void SetPosition ( int Buffer, int vert, struct FVector V );
@@ -21766,8 +18080,6 @@ public:
 	void ScriptUpdateMorph ( );
 	void RefreshBuffers ( struct TArray<int> BufferIndices );
 };
-
-UClass* UBioMorphFace::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderBase
 // 0x001C (0x007C - 0x0060)
@@ -21782,17 +18094,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3835 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderBase::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderColour
 // 0x0020 (0x009C - 0x007C)
@@ -21806,17 +18110,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3837 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderColour::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderHair
 // 0x0000 (0x007C - 0x007C)
@@ -21828,17 +18124,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3839 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderHair::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderMorph
 // 0x002C (0x00A8 - 0x007C)
@@ -21855,17 +18143,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3841 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderMorph::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderScalar
 // 0x0020 (0x009C - 0x007C)
@@ -21879,17 +18159,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3843 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderScalar::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderSetMorph
 // 0x0020 (0x009C - 0x007C)
@@ -21903,17 +18175,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3845 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderSetMorph::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFESliderTexture
 // 0x0020 (0x009C - 0x007C)
@@ -21927,17 +18191,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3847 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphFaceFESliderTexture::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphUtility
 // 0x0000 (0x0060 - 0x0060)
@@ -21949,17 +18205,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3849 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioMorphUtility::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceFrontEnd
 // 0x0244 (0x02A4 - 0x0060)
@@ -22009,13 +18257,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3851 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LogSliders ( );
 	void SelectPreviousBaseHead ( );
@@ -22044,8 +18286,6 @@ public:
 	void Initialize ( class ABioPawn* pThePlayer, unsigned long bPlayerIsMale, unsigned long bReset );
 };
 
-UClass* UBioMorphFaceFrontEnd::pClassPointer = NULL;
-
 // Class SFXGame.BioEmissionAreaList
 // 0x0000 (0x0060 - 0x0060)
 class UBioEmissionAreaList : public UObject
@@ -22056,17 +18296,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3853 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEmissionAreaList::pClassPointer = NULL;
 
 // Class SFXGame.BioEmissionAreaListBoneList
 // 0x0010 (0x0070 - 0x0060)
@@ -22079,17 +18311,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3855 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEmissionAreaListBoneList::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleCollisionDecal
 // 0x0037 (0x0170 - 0x0139)
@@ -22106,17 +18330,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3857 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleCollisionDecal::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleEmitterSpeedBase
 // 0x0003 (0x0068 - 0x0065)
@@ -22128,17 +18344,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3859 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleEmitterSpeedBase::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleMultiplyByEmitterSpeed
 // 0x0011 (0x0079 - 0x0068)
@@ -22155,17 +18363,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3861 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleMultiplyByEmitterSpeed::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleLocationAttachedMesh
 // 0x0031 (0x00A5 - 0x0074)
@@ -22185,17 +18385,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3863 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleLocationAttachedMesh::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleLocationPrimitiveNearestSurface
 // 0x001A (0x00E2 - 0x00C8)
@@ -22215,17 +18407,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3865 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleLocationPrimitiveNearestSurface::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleSoundBase
 // 0x0003 (0x0068 - 0x0065)
@@ -22237,17 +18421,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3867 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleSoundBase::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleSound
 // 0x0010 (0x0078 - 0x0068)
@@ -22262,17 +18438,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3869 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleSound::pClassPointer = NULL;
 
 // Class SFXGame.BioParticleModuleVelocityWorldSpace
 // 0x0000 (0x00BC - 0x00BC)
@@ -22284,17 +18452,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3871 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioParticleModuleVelocityWorldSpace::pClassPointer = NULL;
 
 // Class SFXGame.BioPawn
 // 0x040A (0x0A57 - 0x064D)
@@ -22532,13 +18692,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3873 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUpdatePrimaryAndSecondaryWeapons ( );
 	void eventDrawPrimaryWeapon ( );
@@ -22764,8 +18918,6 @@ public:
 	void ClearCoverState ( );
 };
 
-UClass* ABioPawn::pClassPointer = NULL;
-
 // Class SFXGame.BioPawnInfoComponent
 // 0x0004 (0x0224 - 0x0220)
 class UBioPawnInfoComponent : public UPrimitiveComponent
@@ -22777,17 +18929,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3875 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPawnInfoComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnItemInterface
 // 0x0028 (0x0094 - 0x006C)
@@ -22802,13 +18946,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3877 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool PrevQuickSlot ( );
 	bool NextQuickSlot ( );
@@ -22829,8 +18967,6 @@ public:
 	bool QuickSlotIter ( );
 };
 
-UClass* UBioPawnItemInterface::pClassPointer = NULL;
-
 // Class SFXGame.BioScout
 // 0x0000 (0x06C4 - 0x06C4)
 class ABioScout : public AScout
@@ -22841,17 +18977,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3879 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioScout::pClassPointer = NULL;
 
 // Class SFXGame.BioLookAtTarget
 // 0x0018 (0x029C - 0x0284)
@@ -22869,17 +18997,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3881 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioLookAtTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioPhysicsActor
 // 0x0008 (0x03B0 - 0x03A8)
@@ -22893,19 +19013,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3883 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTakeDamage ( float Damage, class AController* InstigatedBy, struct FVector HitLocation, struct FVector Momentum, class UClass* DamageType, struct FTraceHitInfo HitInfo, class AActor* DamageCauser, class UDamageType* pDamage );
 	void ChangeMaterialParameters ( );
 };
-
-UClass* ABioPhysicsActor::pClassPointer = NULL;
 
 // Class SFXGame.BioSVehicleSimTank
 // 0x0088 (0x01B4 - 0x012C)
@@ -22927,17 +19039,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3885 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSVehicleSimTank::pClassPointer = NULL;
 
 // Class SFXGame.BioCodexMap
 // 0x0090 (0x00F0 - 0x0060)
@@ -22951,17 +19055,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3887 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioCodexMap::pClassPointer = NULL;
 
 // Class SFXGame.BioDiscoveredCodexMap
 // 0x0048 (0x00A8 - 0x0060)
@@ -22974,18 +19070,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3889 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Clear ( );
 };
-
-UClass* UBioDiscoveredCodexMap::pClassPointer = NULL;
 
 // Class SFXGame.BioGlobalVariableTable
 // 0x0038 (0x0098 - 0x0060)
@@ -23001,13 +19089,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3891 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventClearAllVariables ( );
 	void SetFloatByName ( struct FName nmLabel, float fValue );
@@ -23024,8 +19106,6 @@ public:
 	bool GetBool ( int nIndex );
 };
 
-UClass* UBioGlobalVariableTable::pClassPointer = NULL;
-
 // Class SFXGame.BioOutcomeMap
 // 0x0048 (0x00A8 - 0x0060)
 class UBioOutcomeMap : public UObject
@@ -23037,17 +19117,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3893 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioOutcomeMap::pClassPointer = NULL;
 
 // Class SFXGame.BioQuestMap
 // 0x0120 (0x0180 - 0x0060)
@@ -23063,17 +19135,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3895 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioQuestMap::pClassPointer = NULL;
 
 // Class SFXGame.BioQuestProgressionMap
 // 0x004C (0x00AC - 0x0060)
@@ -23087,18 +19151,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3897 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Clear ( );
 };
-
-UClass* UBioQuestProgressionMap::pClassPointer = NULL;
 
 // Class SFXGame.BioStateEventMap
 // 0x0048 (0x00A8 - 0x0060)
@@ -23111,17 +19167,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3899 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioStateEventMap::pClassPointer = NULL;
 
 // Class SFXGame.BioProbeCombat
 // 0x0034 (0x0094 - 0x0060)
@@ -23138,13 +19186,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3901 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Reset ( );
 	void Stop ( unsigned char CombatResult );
@@ -23152,8 +19194,6 @@ public:
 	bool IsRecording ( );
 	void Initialize ( struct FName SquadName, struct FName SquadTag );
 };
-
-UClass* UBioProbeCombat::pClassPointer = NULL;
 
 // Class SFXGame.BioCurveDrivenParameter
 // 0x0040 (0x00A0 - 0x0060)
@@ -23170,18 +19210,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3903 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetValue ( float fTime, float fScale );
 };
-
-UClass* UBioCurveDrivenParameter::pClassPointer = NULL;
 
 // Class SFXGame.BioDecalComponent
 // 0x013E (0x04B0 - 0x0372)
@@ -23205,17 +19237,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3905 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDecalComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioDecalLifetimeAgeFadeInOut
 // 0x0000 (0x0080 - 0x0080)
@@ -23227,17 +19251,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3907 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDecalLifetimeAgeFadeInOut::pClassPointer = NULL;
 
 // Class SFXGame.BioDecalLifetimeDataAgeFadeInOut
 // 0x0014 (0x008C - 0x0078)
@@ -23253,17 +19269,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3909 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioDecalLifetimeDataAgeFadeInOut::pClassPointer = NULL;
 
 // Class SFXGame.BioEffectsMaterialsPriorityMap
 // 0x0018 (0x0078 - 0x0060)
@@ -23277,17 +19285,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3911 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioEffectsMaterialsPriorityMap::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeVFXAppearance
 // 0x0000 (0x0060 - 0x0060)
@@ -23299,17 +19299,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3913 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioGrenadeVFXAppearance::pClassPointer = NULL;
 
 // Class SFXGame.BioMetaVFX
 // 0x0020 (0x0080 - 0x0060)
@@ -23323,19 +19315,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3915 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyEffect ( class UBioMetaVFX* MetaEffect, class UObject* Target, float fLifeTime );
 	void ApplyEffectByName ( struct FString sEffect, class UObject* Target, float fLifeTime );
 };
-
-UClass* UBioMetaVFX::pClassPointer = NULL;
 
 // Class SFXGame.BioPowerVFXAppearance
 // 0x008C (0x00EC - 0x0060)
@@ -23360,17 +19344,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3917 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPowerVFXAppearance::pClassPointer = NULL;
 
 // Class SFXGame.BioVFXAppearanceVehicleThruster
 // 0x0008 (0x0068 - 0x0060)
@@ -23383,17 +19359,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3919 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVFXAppearanceVehicleThruster::pClassPointer = NULL;
 
 // Class SFXGame.BioVFXTemplate
 // 0x00EF (0x014F - 0x0060)
@@ -23450,18 +19418,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3921 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeTemplate ( );
 };
-
-UClass* UBioVFXTemplate::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualEffect
 // 0x023C (0x05AC - 0x0370)
@@ -23510,13 +19470,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3923 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SetSound ( int nIndexInSoundArray );
 	class ABioVisualEffect* CreateVFXOnPosition ( class UBioVFXTemplate* a_pTemplate, struct FVector vPosition, struct FRotator rOrientation, float fLifeTime, unsigned long bUseVFXPool );
@@ -23536,8 +19490,6 @@ public:
 	void LoopDuration ( unsigned long bLoop );
 };
 
-UClass* ABioVisualEffect::pClassPointer = NULL;
-
 // Class SFXGame.BioVisualEffectObserver
 // 0x0000 (0x0060 - 0x0060)
 class UBioVisualEffectObserver : public UObject
@@ -23548,17 +19500,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3925 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVisualEffectObserver::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualEffectObserverActor
 // 0x000C (0x006C - 0x0060)
@@ -23572,17 +19516,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3927 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVisualEffectObserverActor::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualEffectPool
 // 0x003C (0x009C - 0x0060)
@@ -23605,21 +19541,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3929 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PrimePoolEffects ( int a_nNumEffects );
 	class ABioVisualEffect* GetEffect ( );
 	void SetPoolSize ( int a_nMaxSize, int a_nMinSize );
 	void Initialize ( class UBioVFXTemplate* a_oTemplate, int nMaxNumEffects, int nMinNumEffects );
 };
-
-UClass* UBioVisualEffectPool::pClassPointer = NULL;
 
 // Class SFXGame.BioVisualImpactSet
 // 0x0000 (0x0060 - 0x0060)
@@ -23631,17 +19559,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3931 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVisualImpactSet::pClassPointer = NULL;
 
 // Class SFXGame.BioVISSimple
 // 0x004C (0x00AC - 0x0060)
@@ -23658,19 +19578,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3933 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PreloadEffects ( );
 	class ABioVisualEffect* ApplyVisualImpact ( struct FVector vImpactLocation, struct FRotator rImpactRotation, struct FRotator rDirectionOfImpact, struct FTraceHitInfo oHitInfo, class AActor* oBase, unsigned long bApplyMaterialEffect, unsigned long bApplyVisualEffect );
 };
-
-UClass* UBioVISSimple::pClassPointer = NULL;
 
 // Class SFXGame.BioVISFootstep
 // 0x0010 (0x00BC - 0x00AC)
@@ -23683,21 +19595,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3935 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class ABioVisualEffect* ApplyFootstepVisualImpact ( struct FVector vFootstepLocation, struct FRotator rFootstepRotation, struct FTraceHitInfo oHit, float fSpeedRatio, class AActor* oActor );
 	float GetCombatValue ( class UPhysicalMaterial* oPhysMat );
 	float GetDirtValue ( class UPhysicalMaterial* oPhysMat );
 	float GetGrimeValue ( class UPhysicalMaterial* oPhysMat );
 };
-
-UClass* UBioVISFootstep::pClassPointer = NULL;
 
 // Class SFXGame.BioVISGrenade
 // 0x000C (0x00B8 - 0x00AC)
@@ -23711,19 +19615,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3937 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class ABioVisualEffect* ApplyGrenadeVisualImpact ( struct FVector vPosition, struct FVector vHitNormal, struct FVector vDirection );
 	void PreloadEffects ( );
 };
-
-UClass* UBioVISGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioVISWeapon
 // 0x0004 (0x00B0 - 0x00AC)
@@ -23737,17 +19633,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3939 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVISWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioVISXModSet
 // 0x0010 (0x0070 - 0x0060)
@@ -23760,18 +19648,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3941 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ApplyVisualImpact ( struct FVector vHitLocation, struct FRotator rHitRotation, struct FRotator rDirectionOfImpact, class UBioVISWeapon* oWeaponVIS, struct FTraceHitInfo oHit, class AActor* oBase );
 };
-
-UClass* UBioVISXModSet::pClassPointer = NULL;
 
 // Class SFXGame.BioWeaponVFXAppearance
 // 0x008C (0x00EC - 0x0060)
@@ -23802,17 +19682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3943 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWeaponVFXAppearance::pClassPointer = NULL;
 
 // Class SFXGame.BioProjectile
 // 0x002C (0x0314 - 0x02E8)
@@ -23827,21 +19699,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3945 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventProcessPhysicsTouch ( class AActor* oOther, struct FVector vHitLocation, struct FVector vHitNormal );
 	void ProcessTouch ( class AActor* oOther, struct FVector vHitLocation, struct FVector vHitNormal );
 	void Explode ( struct FVector vHitLocation, struct FVector vHitNormal );
 	bool IsValidTarget ( class AActor* oActor );
 };
-
-UClass* ABioProjectile::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeProjectile
 // 0x0034 (0x0348 - 0x0314)
@@ -23860,13 +19724,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3947 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDetonate ( );
 	void SetVelocity ( struct FVector vVelocity );
@@ -23882,8 +19740,6 @@ public:
 	void InitializeUpgradableStats ( );
 };
 
-UClass* ABioGrenadeProjectile::pClassPointer = NULL;
-
 // Class SFXGame.BioGrenadeProjectileBallistic
 // 0x0004 (0x034C - 0x0348)
 class ABioGrenadeProjectileBallistic : public ABioGrenadeProjectile
@@ -23895,21 +19751,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3949 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShouldExplode ( float DeltaTime );
 	void SetVelocity ( struct FVector vVelocity );
 	void SetTargetPoint ( struct FVector vTarget );
 	void SetTargetActor ( class AActor* oTarget );
 };
-
-UClass* ABioGrenadeProjectileBallistic::pClassPointer = NULL;
 
 // Class SFXGame.BioGrenadeProjectileFrisbee
 // 0x0040 (0x0388 - 0x0348)
@@ -23929,13 +19777,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3951 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DoTouch ( class AActor* oHitActor, struct FVector vHitLocation, struct FVector vHitNormal );
 	void Unstick ( struct FVector HitLocation, struct FVector HitNormal );
@@ -23949,8 +19791,6 @@ public:
 	void Explode ( struct FVector HitLocation, struct FVector HitNormal );
 	void eventTick ( float DeltaTime );
 };
-
-UClass* ABioGrenadeProjectileFrisbee::pClassPointer = NULL;
 
 // Class SFXGame.BioLinePowerProjectile
 // 0x008C (0x03A0 - 0x0314)
@@ -23981,13 +19821,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3953 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HitWall ( struct FVector HitNormal, class AActor* Wall, class UPrimitiveComponent* WallComp );
 	void ProcessTouch ( class AActor* oOther, struct FVector vHitLocation, struct FVector vHitNormal );
@@ -24000,8 +19834,6 @@ public:
 	void DoTouch ( class AActor* pOther, struct FVector vHitLocation, struct FVector vHitNormal );
 	bool InitializeData ( class AActor* oCaster, float fStability, float fTravelSpeed, float fRadius, float fRange, struct FVector vTargetLocation, class UBioPowerScript* oPowerScript, class UBioPower* oPower, struct FVector vCasterVelocity );
 };
-
-UClass* ABioLinePowerProjectile::pClassPointer = NULL;
 
 // Class SFXGame.BioActorBehaviorSaveObject
 // 0x000C (0x0084 - 0x0078)
@@ -24017,19 +19849,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3955 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioActorBehaviorSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableBehaviorSaveObject
 // 0x002E (0x00B2 - 0x0084)
@@ -24055,19 +19879,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3957 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioArtPlaceableBehaviorSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioEpicPawnBehaviorSaveObject
 // 0x0028 (0x00AC - 0x0084)
@@ -24086,19 +19902,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3959 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioEpicPawnBehaviorSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnBehaviorSaveObject
 // 0x00C5 (0x0171 - 0x00AC)
@@ -24149,19 +19957,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3961 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioPawnBehaviorSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleBehaviorSaveObject
 // 0x0010 (0x00BC - 0x00AC)
@@ -24174,19 +19974,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3963 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioVehicleBehaviorSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableSaveObject
 // 0x0000 (0x00AC - 0x00AC)
@@ -24198,19 +19990,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3965 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool LoadPositionAndOrientation ( class AActor* O );
 	bool SavePositionAndOrientation ( class AActor* O );
 };
-
-UClass* UBioArtPlaceableSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseSquadSaveObject
 // 0x0008 (0x0080 - 0x0078)
@@ -24223,19 +20007,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3967 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioBaseSquadSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSquadSaveObject
 // 0x0010 (0x0090 - 0x0080)
@@ -24251,17 +20027,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3969 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSquadSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioInterfaceAppearanceSaveObject
 // 0x0010 (0x0088 - 0x0078)
@@ -24275,19 +20043,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3971 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioInterfaceAppearanceSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioInventorySaveObject
 // 0x0030 (0x00A8 - 0x0078)
@@ -24305,19 +20065,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3973 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioInventorySaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioItemSaveObject
 // 0x000D (0x0085 - 0x0078)
@@ -24333,18 +20085,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3975 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioItemSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioItemXModSaveObject
 // 0x0007 (0x008C - 0x0085)
@@ -24357,17 +20101,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3977 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemXModSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioItemXModdableSaveObject
 // 0x0013 (0x0098 - 0x0085)
@@ -24380,19 +20116,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3979 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioItemXModdableSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioLevelSaveObject
 // 0x0030 (0x00A8 - 0x0078)
@@ -24407,13 +20135,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3981 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SaveDestroyedObjects ( class UObject* O );
 	void LoadLootBagArray ( class UObject* O );
@@ -24422,8 +20144,6 @@ public:
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioLevelSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioMaterialOverrideSaveObject
 // 0x0030 (0x00A8 - 0x0078)
@@ -24438,19 +20158,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3983 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioMaterialOverrideSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioPawnSaveObject
 // 0x0010 (0x00BC - 0x00AC)
@@ -24466,19 +20178,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3985 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* pObject );
 	void SaveObject ( class UObject* pObject );
 };
-
-UClass* UBioPawnSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerVehicleSaveObject
 // 0x0014 (0x008C - 0x0078)
@@ -24493,19 +20197,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3987 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioPlayerVehicleSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSaveGame
 // 0x0234 (0x0294 - 0x0060)
@@ -24576,13 +20272,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3989 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventLoadBuybackItems ( class ABioWorldInfo* WorldInfo );
 	void eventSaveBuybackItems ( class ABioWorldInfo* WorldInfo );
@@ -24637,8 +20327,6 @@ public:
 	void SaveGameFromCallback ( int i_nDeviceID );
 };
 
-UClass* UBioSaveGame::pClassPointer = NULL;
-
 // Class SFXGame.BioShopSaveObject
 // 0x0018 (0x0090 - 0x0078)
 class UBioShopSaveObject : public UBioBaseSaveObject
@@ -24652,19 +20340,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3992 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioShopSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleSaveObject
 // 0x0000 (0x00AC - 0x00AC)
@@ -24676,21 +20356,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3994 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 	bool LoadPositionAndOrientation ( class AActor* O );
 	bool SavePositionAndOrientation ( class AActor* O );
 };
-
-UClass* UBioVehicleSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldInfoSaveObject
 // 0x0099 (0x0111 - 0x0078)
@@ -24720,19 +20392,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3996 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioWorldInfoSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldSaveObject
 // 0x0018 (0x0090 - 0x0078)
@@ -24746,17 +20410,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 3998 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWorldSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.SFXEngine
 // 0x01D5 (0x0235 - 0x0060)
@@ -24816,13 +20472,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4000 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsInCinematicMode ( );
 	void eventClearInitialTelemetryHandler ( );
@@ -24888,8 +20538,6 @@ public:
 	struct FPlayerInfoEx CurrentPlayerInfo ( );
 };
 
-UClass* USFXEngine::pClassPointer = NULL;
-
 // Class SFXGame.SFXSaveGame
 // 0x04CC (0x052C - 0x0060)
 class USFXSaveGame : public UObject
@@ -24933,13 +20581,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4002 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetToDefaults ( );
 	void eventEstablishGlobalPlotVariablesForReplayCharacter ( );
@@ -25003,8 +20645,6 @@ public:
 	class ABioVehicleBase* FindClosestDrivableVehicle ( class ABioPawn* Pawn );
 };
 
-UClass* USFXSaveGame::pClassPointer = NULL;
-
 // Class SFXGame.BioSeqAct_AOECauseDamage
 // 0x0028 (0x0120 - 0x00F8)
 class UBioSeqAct_AOECauseDamage : public USequenceAction
@@ -25021,19 +20661,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4004 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_AOECauseDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AbilityEnable
 // 0x001C (0x0114 - 0x00F8)
@@ -25048,18 +20680,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4006 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AbilityEnable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ActivateGalaxyMap
 // 0x0018 (0x0110 - 0x00F8)
@@ -25073,17 +20697,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4008 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ActivateGalaxyMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ApplyMetaVFX
 // 0x001C (0x0114 - 0x00F8)
@@ -25098,18 +20714,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4010 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ApplyMetaVFX::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AreChunksInstalled
 // 0x0010 (0x0108 - 0x00F8)
@@ -25122,17 +20730,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4012 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_AreChunksInstalled::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AssignFindByTag
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25144,17 +20744,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4014 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_AssignFindByTag::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AttachEnvironmentEffect
 // 0x0030 (0x0128 - 0x00F8)
@@ -25173,18 +20765,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4016 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_AttachEnvironmentEffect::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_BioActorFactory
 // 0x000B (0x017C - 0x0171)
@@ -25197,17 +20781,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4018 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_BioActorFactory::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_BoundsChecker
 // 0x001C (0x0114 - 0x00F8)
@@ -25230,17 +20806,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4020 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_BoundsChecker::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CauseActionCompleteMovement
 // 0x0019 (0x0111 - 0x00F8)
@@ -25256,17 +20824,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4022 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_CauseActionCompleteMovement::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ChangeStrategy
 // 0x0015 (0x010D - 0x00F8)
@@ -25282,18 +20842,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4024 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ChangeStrategy::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ChangeUseCase
 // 0x0024 (0x011C - 0x00F8)
@@ -25311,18 +20863,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4026 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ChangeUseCase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CopyPlayerHeadToTarget
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25334,18 +20878,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4028 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventApplyFemaleSkinToneOverride ( );
 };
-
-UClass* UBioSeqAct_CopyPlayerHeadToTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetElementText
 // 0x0011 (0x0109 - 0x00F8)
@@ -25359,17 +20895,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4030 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_DUISetElementText::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUITimer
 // 0x0010 (0x011C - 0x010C)
@@ -25386,17 +20914,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4032 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_DUITimer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DebugMessage
 // 0x0028 (0x0120 - 0x00F8)
@@ -25413,17 +20933,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4034 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_DebugMessage::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DecodeCombatResult
 // 0x0004 (0x00FC - 0x00F8)
@@ -25436,19 +20948,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4036 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DecodeCombatResult::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DecodeMovmentResult
 // 0x0004 (0x00FC - 0x00F8)
@@ -25461,19 +20965,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4038 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DecodeMovmentResult::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Delay
 // 0x0000 (0x0120 - 0x0120)
@@ -25485,18 +20981,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4040 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_Delay::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DisableSoundSets
 // 0x0004 (0x00FC - 0x00F8)
@@ -25510,17 +20998,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4042 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_DisableSoundSets::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_EnableCombat
 // 0x0004 (0x00FC - 0x00F8)
@@ -25533,19 +21013,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4044 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_EnableCombat::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_EndCurrentConvNode
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25557,17 +21029,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4046 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_EndCurrentConvNode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_EnterVehicle
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25579,18 +21043,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4048 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_EnterVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ExitVehicle
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25602,18 +21058,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4050 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ExitVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_FollowSquadLeader
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25625,19 +21073,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4052 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_FollowSquadLeader::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ForceActorMipsResident
 // 0x0004 (0x0138 - 0x0134)
@@ -25650,17 +21090,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4054 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ForceActorMipsResident::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ForceLightEnvUpdate
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25672,17 +21104,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4056 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ForceLightEnvUpdate::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GenerateAllActionsComplete
 // 0x0008 (0x0100 - 0x00F8)
@@ -25695,17 +21119,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4058 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GenerateAllActionsComplete::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetAchievementStatus
 // 0x0004 (0x00FC - 0x00F8)
@@ -25718,17 +21134,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4060 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetAchievementStatus::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetFromObjectList
 // 0x0004 (0x00FC - 0x00F8)
@@ -25741,17 +21149,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4062 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetFromObjectList::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetNearestObject
 // 0x0004 (0x00FC - 0x00F8)
@@ -25764,17 +21164,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4064 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetNearestObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetPawnsInRadius
 // 0x001C (0x0114 - 0x00F8)
@@ -25790,17 +21182,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4066 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetPawnsInRadius::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetSquadInfo
 // 0x0020 (0x0118 - 0x00F8)
@@ -25818,19 +21202,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4068 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetSquadInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetUseCase
 // 0x002C (0x0124 - 0x00F8)
@@ -25849,18 +21225,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4070 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_GetUseCase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_HideAllWeapons
 // 0x0004 (0x00FC - 0x00F8)
@@ -25873,17 +21241,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4072 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_HideAllWeapons::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_HighlightGalaxyMapObject
 // 0x0004 (0x00FC - 0x00F8)
@@ -25896,17 +21256,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4074 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_HighlightGalaxyMapObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_InitFSMode
 // 0x0000 (0x00F8 - 0x00F8)
@@ -25918,17 +21270,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4076 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_InitFSMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_InitLoadingMovie
 // 0x0010 (0x0108 - 0x00F8)
@@ -25941,17 +21285,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4078 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_InitLoadingMovie::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_InsertPostProcess
 // 0x0008 (0x0100 - 0x00F8)
@@ -25964,19 +21300,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void AddPostProcessEffect ( );
 };
-
-UClass* UBioSeqAct_InsertPostProcess::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_InteractProperty
 // 0x0060 (0x0158 - 0x00F8)
@@ -25995,18 +21323,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4082 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_InteractProperty::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetProperty
 // 0x0000 (0x0158 - 0x0158)
@@ -26018,17 +21338,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4084 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetProperty::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetPropertyPawn
 // 0x0000 (0x0158 - 0x0158)
@@ -26040,17 +21352,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4086 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetPropertyPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetPropertyVehicle
 // 0x0000 (0x0158 - 0x0158)
@@ -26062,17 +21366,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4088 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetPropertyVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyProperty
 // 0x0000 (0x0158 - 0x0158)
@@ -26084,17 +21380,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4090 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ModifyProperty::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyArtPlaceable
 // 0x0000 (0x0158 - 0x0158)
@@ -26106,18 +21394,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4092 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ModifyPropertyArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyBaseSquad
 // 0x0000 (0x0158 - 0x0158)
@@ -26129,17 +21409,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ModifyPropertyBaseSquad::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyNavigation
 // 0x0000 (0x0158 - 0x0158)
@@ -26151,17 +21423,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4096 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ModifyPropertyNavigation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyPawn
 // 0x0000 (0x0158 - 0x0158)
@@ -26173,18 +21437,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4098 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ModifyPropertyPawn::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyVehicle
 // 0x0000 (0x0158 - 0x0158)
@@ -26196,18 +21452,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4100 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ModifyPropertyVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_IsAbilityEnabled
 // 0x0010 (0x0108 - 0x00F8)
@@ -26221,18 +21469,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4102 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_IsAbilityEnabled::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_LeaveActionStation
 // 0x0009 (0x0101 - 0x00F8)
@@ -26246,18 +21486,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4104 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_LeaveActionStation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_LockTarget
 // 0x0010 (0x0108 - 0x00F8)
@@ -26271,17 +21503,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4106 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_LockTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ModifyPropertyHeightfog
 // 0x000C (0x0104 - 0x00F8)
@@ -26295,18 +21519,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4108 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ModifyPropertyHeightfog::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Movie
 // 0x000C (0x0104 - 0x00F8)
@@ -26320,18 +21536,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4110 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Movie::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MusicVolumeDisable
 // 0x0008 (0x0100 - 0x00F8)
@@ -26344,18 +21552,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4112 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_MusicVolumeDisable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MusicVolumeEnable
 // 0x0008 (0x0100 - 0x00F8)
@@ -26368,18 +21568,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4114 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_MusicVolumeEnable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_NonCombatArea
 // 0x0004 (0x00FC - 0x00F8)
@@ -26392,19 +21584,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4116 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_NonCombatArea::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_OpenShop
 // 0x0010 (0x0108 - 0x00F8)
@@ -26419,17 +21603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4118 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_OpenShop::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_OverrideStagePlacement
 // 0x0048 (0x0140 - 0x00F8)
@@ -26450,19 +21626,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4120 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void SetActor ( class AActor* aInput, unsigned char Node );
 };
-
-UClass* UBioSeqAct_OverrideStagePlacement::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PMBase
 // 0x002E (0x0126 - 0x00F8)
@@ -26481,17 +21649,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4122 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PMBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PMCheckConditional
 // 0x000B (0x0131 - 0x0126)
@@ -26506,17 +21666,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4124 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PMCheckConditional::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PMCheckState
 // 0x0007 (0x012D - 0x0126)
@@ -26530,17 +21682,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4126 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PMCheckState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PMExecuteConsequence
 // 0x0007 (0x012D - 0x0126)
@@ -26554,17 +21698,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4128 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PMExecuteConsequence::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PMExecuteTransition
 // 0x0007 (0x012D - 0x0126)
@@ -26578,17 +21714,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4130 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PMExecuteTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PauseGalaxyMap
 // 0x0000 (0x00F8 - 0x00F8)
@@ -26600,17 +21728,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4132 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PauseGalaxyMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PlayFaceFXAnim
 // 0x0032 (0x012A - 0x00F8)
@@ -26628,18 +21748,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4134 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_PlayFaceFXAnim::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PlayLoadingMovie
 // 0x0000 (0x00F8 - 0x00F8)
@@ -26651,17 +21763,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4136 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PlayLoadingMovie::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PlaySoundSet
 // 0x0005 (0x00FD - 0x00F8)
@@ -26675,17 +21779,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4138 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PlaySoundSet::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PositionFSActors
 // 0x0004 (0x00FC - 0x00F8)
@@ -26698,17 +21794,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4140 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PositionFSActors::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PositionHopper
 // 0x0010 (0x0108 - 0x00F8)
@@ -26722,17 +21810,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4142 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_PositionHopper::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_PreloadCinematicAudio
 // 0x0000 (0x00F8 - 0x00F8)
@@ -26744,19 +21824,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4144 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDelta );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_PreloadCinematicAudio::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_RemovePostProcess
 // 0x0008 (0x0100 - 0x00F8)
@@ -26769,19 +21841,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4146 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void RemovePostProcessEffect ( );
 };
-
-UClass* UBioSeqAct_RemovePostProcess::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ResetAnimationState
 // 0x0000 (0x00F8 - 0x00F8)
@@ -26793,18 +21857,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4148 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidUISequenceObject ( class UUIScreenObject* TargetObject );
 };
-
-UClass* UBioSeqAct_ResetAnimationState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ScalarMathUnit
 // 0x001D (0x0115 - 0x00F8)
@@ -26826,18 +21882,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4150 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ScalarMathUnit::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SelectWeapon
 // 0x0009 (0x0101 - 0x00F8)
@@ -26851,17 +21899,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4152 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SelectWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetAnimNodeBlend
 // 0x001C (0x0114 - 0x00F8)
@@ -26878,17 +21918,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4154 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetAnimNodeBlend::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetCameraToBone
 // 0x0008 (0x0100 - 0x00F8)
@@ -26902,17 +21934,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4156 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetCameraToBone::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetEnvironmentEffectIntensity
 // 0x0008 (0x0100 - 0x00F8)
@@ -26926,18 +21950,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4158 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SetEnvironmentEffectIntensity::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetGestureMode
 // 0x0011 (0x0109 - 0x00F8)
@@ -26951,17 +21967,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4160 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetGestureMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetLightEnvQuality
 // 0x0001 (0x00F9 - 0x00F8)
@@ -26974,17 +21982,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4162 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetLightEnvQuality::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetNodeLength
 // 0x0008 (0x0100 - 0x00F8)
@@ -26998,17 +21998,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4164 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetNodeLength::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetSkelControl
 // 0x0020 (0x0118 - 0x00F8)
@@ -27026,17 +22018,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4166 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetSkelControl::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetStreamingState
 // 0x000C (0x0104 - 0x00F8)
@@ -27050,18 +22034,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4168 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetStreamingState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetSuperMode
 // 0x0011 (0x0109 - 0x00F8)
@@ -27075,18 +22051,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4170 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SetSuperMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetSuperModeWithWeapon
 // 0x000C (0x0115 - 0x0109)
@@ -27101,17 +22069,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4172 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SetSuperModeWithWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetWeapon
 // 0x000D (0x0105 - 0x00F8)
@@ -27126,18 +22086,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4174 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SetWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShouldShowSplashSequence
 // 0x0000 (0x00F8 - 0x00F8)
@@ -27149,17 +22101,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4176 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ShouldShowSplashSequence::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowMainMenu
 // 0x0030 (0x0128 - 0x00F8)
@@ -27174,18 +22118,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4178 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowMainMenu::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowMessageBox
 // 0x0034 (0x012C - 0x00F8)
@@ -27203,18 +22139,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4180 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ShowMessageBox::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowSpecialization
 // 0x0018 (0x0110 - 0x00F8)
@@ -27228,18 +22156,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4182 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowSpecialization::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowSplash
 // 0x0004 (0x00FC - 0x00F8)
@@ -27252,19 +22172,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4184 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void eventFakeActivate ( );
 };
-
-UClass* UBioSeqAct_ShowSplash::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SkillGame
 // 0x0031 (0x013D - 0x010C)
@@ -27291,21 +22203,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4186 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventGrantCustomGameXp ( class ABioWorldInfo* oBWorldInfo );
 	void OnCancel ( );
 	void OnFailure ( int i_salvage );
 	void OnSuccess ( int i_salvage );
 };
-
-UClass* UBioSeqAct_SkillGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SoundGroupPitch
 // 0x0010 (0x0108 - 0x00F8)
@@ -27320,18 +22224,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4188 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SoundGroupPitch::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SoundGroupVolume
 // 0x0010 (0x0108 - 0x00F8)
@@ -27346,18 +22242,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4190 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SoundGroupVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SpawnHenchman
 // 0x001C (0x0114 - 0x00F8)
@@ -27374,18 +22262,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4192 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SpawnHenchman::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SpawnTacticalArrow
 // 0x0018 (0x0110 - 0x00F8)
@@ -27400,17 +22280,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4194 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SpawnTacticalArrow::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_StopLoadingMovie
 // 0x0000 (0x00F8 - 0x00F8)
@@ -27422,17 +22294,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4196 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_StopLoadingMovie::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_TeleportToObject
 // 0x0014 (0x010C - 0x00F8)
@@ -27450,18 +22314,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4198 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_TeleportToObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Term_AllActionsComplete
 // 0x0010 (0x0108 - 0x00F8)
@@ -27475,17 +22331,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4200 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_Term_AllActionsComplete::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Term_NoLongerSeePlayer
 // 0x0018 (0x0110 - 0x00F8)
@@ -27500,18 +22348,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4202 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_Term_NoLongerSeePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Term_SeePlayer
 // 0x0018 (0x0110 - 0x00F8)
@@ -27526,18 +22366,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4204 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_Term_SeePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ToggleLightEnv
 // 0x0000 (0x00F8 - 0x00F8)
@@ -27549,17 +22381,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4206 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ToggleLightEnv::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ToggleSidebarVisibility
 // 0x0000 (0x00F8 - 0x00F8)
@@ -27571,17 +22395,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4208 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ToggleSidebarVisibility::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UnLockTarget
 // 0x0008 (0x0100 - 0x00F8)
@@ -27594,17 +22410,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4210 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_UnLockTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UpdateEndGameStats
 // 0x0004 (0x00FC - 0x00F8)
@@ -27617,17 +22425,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4212 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_UpdateEndGameStats::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UpgradeVehicle
 // 0x0000 (0x00F8 - 0x00F8)
@@ -27639,17 +22439,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4214 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_UpgradeVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UseArtPlaceable
 // 0x0010 (0x0108 - 0x00F8)
@@ -27663,17 +22455,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4216 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_UseArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqCond_CheckChunkStatus
 // 0x0001 (0x00DD - 0x00DC)
@@ -27686,18 +22470,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4218 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqCond_CheckChunkStatus::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqCond_InCombat
 // 0x0000 (0x00DC - 0x00DC)
@@ -27709,17 +22485,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4220 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqCond_InCombat::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqCond_IsDriving
 // 0x0000 (0x00DC - 0x00DC)
@@ -27731,18 +22499,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4222 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqCond_IsDriving::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData
 // 0x0021 (0x0081 - 0x0060)
@@ -27760,13 +22520,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4224 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnDisabled ( class ABioAiController* oController, unsigned long bStarted );
 	bool eventCanDisable ( class ABioAiController* oController, unsigned char eEnableType, struct FName nmSubType );
@@ -27780,8 +22534,6 @@ public:
 	void DoCallBack ( int nReason );
 };
 
-UClass* UBioSeqData::pClassPointer = NULL;
-
 // Class SFXGame.BioSeqData_ActionBase
 // 0x0003 (0x0084 - 0x0081)
 class UBioSeqData_ActionBase : public UBioSeqData
@@ -27792,17 +22544,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4226 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_ActionBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_QueueDelay
 // 0x0008 (0x008C - 0x0084)
@@ -27816,17 +22560,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4228 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_QueueDelay::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_SelectWeapon
 // 0x0005 (0x0089 - 0x0084)
@@ -27840,17 +22576,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4230 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_SelectWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_StartFiring
 // 0x0020 (0x00A4 - 0x0084)
@@ -27871,17 +22599,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4232 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_StartFiring::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_ThrowGrenade
 // 0x001C (0x00A0 - 0x0084)
@@ -27898,17 +22618,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4234 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_ThrowGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_UseArtPlaceable_Action
 // 0x000C (0x0090 - 0x0084)
@@ -27922,17 +22634,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4236 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_UseArtPlaceable_Action::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_UsePower
 // 0x002C (0x00B0 - 0x0084)
@@ -27953,17 +22657,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4238 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_UsePower::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_BehaviorBase
 // 0x0003 (0x0084 - 0x0081)
@@ -27975,17 +22671,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4240 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_BehaviorBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_TempLookAt_Action
 // 0x0020 (0x00A4 - 0x0084)
@@ -28000,17 +22688,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4242 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_TempLookAt_Action::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_UseArtPlaceable
 // 0x000C (0x0090 - 0x0084)
@@ -28024,17 +22704,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4244 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_UseArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_CombatMode
 // 0x0003 (0x0084 - 0x0081)
@@ -28046,17 +22718,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4246 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_CombatMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_DEBUGInfo
 // 0x00A7 (0x0128 - 0x0081)
@@ -28081,17 +22745,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4248 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_DEBUGInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_Delay
 // 0x0007 (0x0088 - 0x0081)
@@ -28104,17 +22760,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4250 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_Delay::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MoveAndAttack
 // 0x002B (0x00AC - 0x0081)
@@ -28134,17 +22782,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4252 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_MoveAndAttack::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MoveOutOfPawnsWay
 // 0x0003 (0x0084 - 0x0081)
@@ -28156,17 +22796,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_MoveOutOfPawnsWay::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_PartyLookForAndUseCover
 // 0x003B (0x00BC - 0x0081)
@@ -28182,17 +22814,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4256 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_PartyLookForAndUseCover::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_StateBase
 // 0x0003 (0x0084 - 0x0081)
@@ -28204,17 +22828,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_StateBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_DoWorldInteraction
 // 0x0019 (0x009D - 0x0084)
@@ -28229,17 +22845,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4260 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_DoWorldInteraction::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MobTarget
 // 0x000C (0x0090 - 0x0084)
@@ -28253,17 +22861,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4262 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_MobTarget::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MoveToObject
 // 0x0010 (0x0094 - 0x0084)
@@ -28280,17 +22880,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4264 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_MoveToObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MoveToPoint
 // 0x0014 (0x0098 - 0x0084)
@@ -28308,18 +22900,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4266 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ResetMoveTarget ( struct FVector vNewLocation, float fMoveTolerance );
 };
-
-UClass* UBioSeqData_MoveToPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_MoveToPointList
 // 0x0018 (0x009C - 0x0084)
@@ -28335,17 +22919,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4268 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_MoveToPointList::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_PlayAnimation
 // 0x0028 (0x00AC - 0x0084)
@@ -28362,17 +22938,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4270 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_PlayAnimation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_RandomWalk
 // 0x0014 (0x0098 - 0x0084)
@@ -28387,17 +22955,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_RandomWalk::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_StartConversation
 // 0x0010 (0x0094 - 0x0084)
@@ -28411,17 +22971,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_StartConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_UseCover
 // 0x0018 (0x009C - 0x0084)
@@ -28437,13 +22989,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4276 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool GetCrouchByCoverType ( int SlotIdx );
 	void Empty ( );
@@ -28451,8 +22997,6 @@ public:
 	bool Claim ( class AController* NewClaim, int SlotIdx );
 	void UpdateHideLocation ( class ABioPawn* pPawn, int SlotIdx );
 };
-
-UClass* UBioSeqData_UseCover::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqData_WalkWaypoints
 // 0x001D (0x00A1 - 0x0084)
@@ -28474,17 +23018,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4278 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqData_WalkWaypoints::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_AbilityDisabled
 // 0x0002 (0x0128 - 0x0126)
@@ -28496,17 +23032,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4280 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_AbilityDisabled::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_AbilityEnabled
 // 0x0002 (0x0128 - 0x0126)
@@ -28518,17 +23046,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4282 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_AbilityEnabled::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_AllActionsComplete
 // 0x0002 (0x0128 - 0x0126)
@@ -28540,17 +23060,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4284 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_AllActionsComplete::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_AreaMap
 // 0x0012 (0x0138 - 0x0126)
@@ -28563,17 +23075,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4286 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_AreaMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ArtPlaceableSkillGameFailed
 // 0x0002 (0x0128 - 0x0126)
@@ -28585,17 +23089,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4288 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ArtPlaceableSkillGameFailed::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ArtPlaceableSkillGameSuccess
 // 0x0002 (0x0128 - 0x0126)
@@ -28607,17 +23103,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4290 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ArtPlaceableSkillGameSuccess::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_BackgroundStreamingDone
 // 0x0002 (0x0128 - 0x0126)
@@ -28629,18 +23117,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4292 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_BackgroundStreamingDone::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_CinematicSkipped
 // 0x0012 (0x0138 - 0x0126)
@@ -28653,17 +23133,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4294 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_CinematicSkipped::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ConvNode
 // 0x000E (0x0134 - 0x0126)
@@ -28678,17 +23150,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4296 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ConvNode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_Conversation
 // 0x0013 (0x0139 - 0x0126)
@@ -28703,17 +23167,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4298 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_Conversation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_EnterFollowFormation
 // 0x0002 (0x0128 - 0x0126)
@@ -28725,17 +23181,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4300 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_EnterFollowFormation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_EnterRestFormation
 // 0x0002 (0x0128 - 0x0126)
@@ -28747,17 +23195,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4302 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_EnterRestFormation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ForegroundStreamingDone
 // 0x0002 (0x0128 - 0x0126)
@@ -28769,18 +23209,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4304 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_ForegroundStreamingDone::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_GalaxyMap
 // 0x0012 (0x0138 - 0x0126)
@@ -28793,17 +23225,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4306 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_GalaxyMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_LeaderChanged
 // 0x0002 (0x0128 - 0x0126)
@@ -28815,17 +23239,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4308 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_LeaderChanged::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_MemberAdded
 // 0x0002 (0x0128 - 0x0126)
@@ -28837,18 +23253,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4310 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_MemberAdded::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_MemberRemoved
 // 0x0002 (0x0128 - 0x0126)
@@ -28860,18 +23268,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4312 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_MemberRemoved::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_NoLongerSeePlayer
 // 0x0002 (0x0128 - 0x0126)
@@ -28883,18 +23283,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_NoLongerSeePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnAttacked
 // 0x0002 (0x0128 - 0x0126)
@@ -28906,17 +23298,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4316 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnAttacked::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnCastAt
 // 0x0002 (0x0128 - 0x0126)
@@ -28928,17 +23312,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4318 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnCastAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnLookingAt
 // 0x0003 (0x0129 - 0x0126)
@@ -28951,17 +23327,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4320 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnLookingAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnNotLookingAt
 // 0x0003 (0x0129 - 0x0126)
@@ -28974,17 +23342,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4322 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnNotLookingAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnPlaceableStartMoving
 // 0x0002 (0x0128 - 0x0126)
@@ -28996,18 +23356,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4324 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_OnPlaceableStartMoving::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnPlaceableStopMoving
 // 0x0002 (0x0128 - 0x0126)
@@ -29019,18 +23371,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4326 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_OnPlaceableStopMoving::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnPlayerActivate
 // 0x0002 (0x0128 - 0x0126)
@@ -29042,18 +23386,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_OnPlayerActivate::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_SeePlayer
 // 0x0002 (0x0128 - 0x0126)
@@ -29065,18 +23401,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4330 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_SeePlayer::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_VehicleEnter
 // 0x0002 (0x0128 - 0x0126)
@@ -29088,18 +23416,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4332 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_VehicleEnter::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_VehicleExit
 // 0x0002 (0x0128 - 0x0126)
@@ -29111,18 +23431,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4334 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_VehicleExit::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_VehicleLeaveWorld
 // 0x0002 (0x0128 - 0x0126)
@@ -29134,18 +23446,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4336 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqEvt_VehicleLeaveWorld::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqVar_ObjectFindByTag
 // 0x0014 (0x00C8 - 0x00B4)
@@ -29159,17 +23463,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4338 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_ObjectFindByTag::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqVar_ObjectListFindByTag
 // 0x0010 (0x00D4 - 0x00C4)
@@ -29182,17 +23478,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_ObjectListFindByTag::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqVar_StoryManagerFloat
 // 0x002F (0x00C3 - 0x0094)
@@ -29212,17 +23500,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_StoryManagerFloat::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqVar_StoryManagerInt
 // 0x002F (0x00C3 - 0x0094)
@@ -29242,17 +23522,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4344 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqVar_StoryManagerInt::pClassPointer = NULL;
 
 // Class SFXGame.BioSequenceLatentAction
 // 0x0004 (0x0110 - 0x010C)
@@ -29265,18 +23537,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventUpdateOp ( float DeltaTime );
 };
-
-UClass* UBioSequenceLatentAction::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ActionStation
 // 0x00EC (0x01FC - 0x0110)
@@ -29318,18 +23582,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4348 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ActionStation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ChangeAPState
 // 0x001C (0x012C - 0x0110)
@@ -29346,17 +23602,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4350 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ChangeAPState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CloneWeaponAppearance
 // 0x002D (0x013D - 0x0110)
@@ -29376,17 +23624,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4352 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_CloneWeaponAppearance::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_FaceOnlyVO
 // 0x00CE (0x01DE - 0x0110)
@@ -29426,18 +23666,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4354 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_FaceOnlyVO::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_FireWeaponAt
 // 0x002D (0x013D - 0x0110)
@@ -29460,18 +23692,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4356 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_FireWeaponAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MovieBink
 // 0x0010 (0x0120 - 0x0110)
@@ -29484,17 +23708,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4358 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_MovieBink::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_RandomWalk
 // 0x0008 (0x0118 - 0x0110)
@@ -29508,18 +23724,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4360 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_RandomWalk::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowCredits
 // 0x0018 (0x0128 - 0x0110)
@@ -29533,19 +23741,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4362 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowCredits::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowIntroText
 // 0x001C (0x012C - 0x0110)
@@ -29560,19 +23760,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4364 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowIntroText::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowPartySelectionGUI
 // 0x0018 (0x0128 - 0x0110)
@@ -29586,19 +23778,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4366 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowPartySelectionGUI::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SquadStartHoldingPosition
 // 0x0024 (0x0134 - 0x0110)
@@ -29615,18 +23799,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4368 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_SquadStartHoldingPosition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_StageSwitchCamera
 // 0x001A (0x012A - 0x0110)
@@ -29646,18 +23822,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4370 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int BioGetCameraNumber ( );
 };
-
-UClass* UBioSeqAct_StageSwitchCamera::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_StartConversation
 // 0x0018 (0x0128 - 0x0110)
@@ -29681,18 +23849,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4372 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_StartConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_TurnTowards
 // 0x0020 (0x0130 - 0x0110)
@@ -29710,17 +23870,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_TurnTowards::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UsePowerOn
 // 0x0035 (0x0145 - 0x0110)
@@ -29742,18 +23894,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4376 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_UsePowerOn::pClassPointer = NULL;
 
 // Class SFXGame.BioSequenceLatentStateAction
 // 0x0000 (0x0110 - 0x0110)
@@ -29765,17 +23909,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSequenceLatentStateAction::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MoveToObject
 // 0x0020 (0x0130 - 0x0110)
@@ -29797,18 +23933,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4380 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_MoveToObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ThrowGrenadeAt
 // 0x002C (0x013C - 0x0110)
@@ -29827,18 +23955,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4382 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_ThrowGrenadeAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UseCover
 // 0x0030 (0x0140 - 0x0110)
@@ -29858,18 +23978,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4384 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 };
-
-UClass* UBioSeqAct_UseCover::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_WalkWaypointSet
 // 0x0019 (0x0129 - 0x0110)
@@ -29890,19 +24002,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4386 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_WalkWaypointSet::pClassPointer = NULL;
 
 // Class SFXGame.BioShield
 // 0x0022 (0x008E - 0x006C)
@@ -29921,13 +24025,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4388 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Regenerate ( float fAmount, class AActor* oShieldOwner );
 	bool IsOnline ( );
@@ -29943,8 +24041,6 @@ public:
 	void OnStateTransition ( unsigned char eFromState, unsigned char eToState );
 };
 
-UClass* UBioShield::pClassPointer = NULL;
-
 // Class SFXGame.BioShieldView
 // 0x0080 (0x00EC - 0x006C)
 class UBioShieldView : public UBioBaseComponent
@@ -29957,18 +24053,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4390 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnEvent ( unsigned char eEvent, class AActor* oShieldOwner, class UBioShield* oShield, struct FVector vHitLocation, struct FRotator rHitNormal );
 };
-
-UClass* UBioShieldView::pClassPointer = NULL;
 
 // Class SFXGame.BioShop
 // 0x00F9 (0x037D - 0x0284)
@@ -29993,13 +24081,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4392 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UClass* GetSaveObjectClass ( );
 	int ComputeSupplyOfResource ( unsigned char resourceType, unsigned char slotType );
@@ -30014,8 +24096,6 @@ public:
 	bool ReadyShopForOpening ( int PlayerLevel, float priceAdjustment );
 	float GetPriceAdjustmentFactor ( );
 };
-
-UClass* ABioShop::pClassPointer = NULL;
 
 // Class SFXGame.BioSkillGame
 // 0x0062 (0x00CE - 0x006C)
@@ -30045,13 +24125,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4394 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventInitializeSkillGameStringReferences ( int i_GameMessageSuccess, int i_GameMessageFailure, int i_GameMessageDuringGame, int i_preGameButtonAText, int i_preGameButtonBText, int i_preGameButtonXText );
 	void CallbackShowAdditonalTutorial ( );
@@ -30061,8 +24135,6 @@ public:
 	class APawn* GetBestSkillMember ( unsigned char eSkillGameType, class ABioBaseSquad* oInputSquad, int* nBestSkillLevel );
 	bool GetSalvageLimits ( int nSkillRank, int eDifficulty, int* fSalvageMin, int* fSalvageMax );
 };
-
-UClass* UBioSkillGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSoundNode_Base
 // 0x0000 (0x0094 - 0x0094)
@@ -30074,17 +24146,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4396 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNode_Base::pClassPointer = NULL;
 
 // Class SFXGame.BioSoundNodeAPActivity
 // 0x0014 (0x00A8 - 0x0094)
@@ -30098,17 +24162,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4398 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNodeAPActivity::pClassPointer = NULL;
 
 // Class SFXGame.BioSoundNodeAPState
 // 0x0018 (0x00AC - 0x0094)
@@ -30123,17 +24179,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4400 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNodeAPState::pClassPointer = NULL;
 
 // Class SFXGame.BioSoundNodeAPTransition
 // 0x0010 (0x00A4 - 0x0094)
@@ -30146,17 +24194,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4402 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNodeAPTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioSoundNodeFootsteps
 // 0x0014 (0x00A8 - 0x0094)
@@ -30170,17 +24210,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4404 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSoundNodeFootsteps::pClassPointer = NULL;
 
 // Class SFXGame.BioFaction
 // 0x001D (0x007D - 0x0060)
@@ -30196,18 +24228,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4406 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetRelationTo ( unsigned char nType );
 };
-
-UClass* UBioFaction::pClassPointer = NULL;
 
 // Class SFXGame.BioFaction_Hacked
 // 0x0003 (0x0080 - 0x007D)
@@ -30219,17 +24243,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4408 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Hacked::pClassPointer = NULL;
 
 // Class SFXGame.BioFaction_Player
 // 0x0003 (0x0080 - 0x007D)
@@ -30241,17 +24257,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4410 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Player::pClassPointer = NULL;
 
 // Class SFXGame.BioFaction_Vehicle
 // 0x0003 (0x0080 - 0x007D)
@@ -30263,17 +24271,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4412 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Vehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSquadAPI
 // 0x0000 (0x0284 - 0x0284)
@@ -30285,20 +24285,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4414 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DisplaySquadDebug ( );
 	void ProcessPoint ( unsigned char HowPointWasReached, struct FVector Location_, struct FRotator Orientation, struct FName ActionOn );
 	void Initalize ( );
 };
-
-UClass* ABioSquadAPI::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseSquad
 // 0x020C (0x0490 - 0x0284)
@@ -30376,13 +24368,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4416 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsInactive ( );
 	int GetMaxHazardLevel ( );
@@ -30631,8 +24617,6 @@ public:
 	void eventOnSetSquadFollowFormation ( unsigned char eFormation );
 };
 
-UClass* ABioBaseSquad::pClassPointer = NULL;
-
 // Class SFXGame.BioFormations
 // 0x0018 (0x0078 - 0x0060)
 class UBioFormations : public UObject
@@ -30646,20 +24630,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4418 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetEscapeDistance ( int Idx );
 	struct FRotator GetFormationFacing ( int Idx, unsigned long aInvertFormation );
 	struct FVector GetFormationOffset ( int Idx, unsigned long aInvertFormation );
 };
-
-UClass* UBioFormations::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerSquad
 // 0x016E (0x05FE - 0x0490)
@@ -30709,13 +24685,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4420 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float GetPercentHealthOnResurrection ( );
 	float GetCombatCooldownTime ( );
@@ -30786,8 +24756,6 @@ public:
 	void BioVINCE_MapName_PartyDeath ( );
 };
 
-UClass* ABioPlayerSquad::pClassPointer = NULL;
-
 // Class SFXGame.BioSquadAI
 // 0x0018 (0x04A8 - 0x0490)
 class ABioSquadAI : public ABioBaseSquad
@@ -30803,13 +24771,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4422 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnSquadSeen ( class ABioBaseSquad* oSquad );
 	void eventOnDeath ( class APawn* oMember, class AController* oKiller );
@@ -30819,8 +24781,6 @@ public:
 	void ProbeCombatStop ( unsigned char CombatResult );
 	void ProbeCombatStart ( );
 };
-
-UClass* ABioSquadAI::pClassPointer = NULL;
 
 // Class SFXGame.BioSquadHoldMarker
 // 0x0024 (0x03A8 - 0x0384)
@@ -30835,19 +24795,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4424 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void BioBeginPlay ( );
 	void SetBaseByTag ( );
 };
-
-UClass* ABioSquadHoldMarker::pClassPointer = NULL;
 
 // Class SFXGame.BioSquadLinesComponent
 // 0x0018 (0x0238 - 0x0220)
@@ -30865,17 +24817,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4426 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSquadLinesComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioStickyGrenadeInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -30887,13 +24831,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4428 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool TracePrecise ( class AActor* pOwner, class AProjectile* Projectile, struct FVector* HitLocation, struct FVector* HitNormal );
 	struct FVector ComputePosition ( class ABioGrenadeProjectileFrisbee* Projectile );
@@ -30903,8 +24841,6 @@ public:
 	bool Attach ( class ABioGrenadeProjectileFrisbee* Projectile, struct FVector HitLocation, struct FVector HitNormal );
 	void SetRotationByUpVector ( class AActor* pActor, struct FVector* vUp );
 };
-
-UClass* UBioStickyGrenadeInterface::pClassPointer = NULL;
 
 // Class SFXGame.BioTalent
 // 0x001C (0x0088 - 0x006C)
@@ -30920,13 +24856,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4430 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void AddGameProperty ( class UBioGameProperty* GameProperty );
 	void ScaleToRank ( int Rank );
@@ -30936,8 +24866,6 @@ public:
 	int GetID ( );
 	void Initialize ( int Id, int StartingRank );
 };
-
-UClass* UBioTalent::pClassPointer = NULL;
 
 // Class SFXGame.BioTalentContainer
 // 0x0048 (0x00B4 - 0x006C)
@@ -30960,13 +24888,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetNumberOfTalentPointsSpent ( );
 	void ReloadTalentContainer ( class UBioPawnBehavior* targetBehavior, struct TArray<struct FBioSimpleTalentSave>* simpleTalents, struct TArray<struct FBioComplexTalentSave>* complexTalents );
@@ -30999,8 +24921,6 @@ public:
 	void SetTarget ( class ABioPawn* Target );
 };
 
-UClass* UBioTalentContainer::pClassPointer = NULL;
-
 // Class SFXGame.BioTalentImporter
 // 0x0034 (0x00A0 - 0x006C)
 class UBioTalentImporter : public UBioBaseComponent
@@ -31013,13 +24933,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4434 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool LoadTalent2DAs ( struct FName nmPackage );
 	bool GetTalentRankGuiData ( int TalentID, int MaxRank, struct TArray<int>* iconArray, struct TArray<int>* nameArray, struct TArray<int>* descArray, struct TArray<int>* unlockBlurbArray );
@@ -31028,8 +24942,6 @@ public:
 	bool LoadBonusTalentRowsAndIDs ( int bonusIdentifier, struct TArray<int>* Rows, struct TArray<int>* talentIDs );
 	class UBioTalent* LoadTalent ( class UBioActorBehavior* Behavior, int TalentID, int Rank );
 };
-
-UClass* UBioTalentImporter::pClassPointer = NULL;
 
 // Class SFXGame.SFXTelemetry
 // 0x00E4 (0x0144 - 0x0060)
@@ -31059,13 +24971,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SendGameData ( unsigned char GameDataType );
 	void IncSessionTeamDeaths ( int Amount );
@@ -31107,8 +25013,6 @@ public:
 	class USFXTelemetryGameSession* GetInstanceGameSession ( );
 };
 
-UClass* USFXTelemetry::pClassPointer = NULL;
-
 // Class SFXGame.SFXTelemetryGameSession
 // 0x009C (0x00FC - 0x0060)
 class USFXTelemetryGameSession : public UObject
@@ -31142,17 +25046,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4438 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXTelemetryGameSession::pClassPointer = NULL;
 
 // Class SFXGame.BioMountFallVolume
 // 0x0004 (0x02C8 - 0x02C4)
@@ -31167,19 +25063,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4440 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ABioMountFallVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioTrigger
 // 0x0004 (0x0298 - 0x0294)
@@ -31193,20 +25081,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventBioBeginPlay ( );
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ABioTrigger::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleBase
 // 0x0038 (0x0848 - 0x0810)
@@ -31228,13 +25108,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4444 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleVehicleChatterEvent ( unsigned char eSoundSet );
 	void OnTeleport ( class USeqAct_Teleport* Action );
@@ -31263,8 +25137,6 @@ public:
 	bool BioCanEnterVehicle ( );
 	class UBioVISSimple* GetVisualImpactSet ( );
 };
-
-UClass* ABioVehicleBase::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleWheeled
 // 0x0084 (0x08CC - 0x0848)
@@ -31301,13 +25173,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4446 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ModifyWheelControllers ( unsigned long bNewIgnoreWhenNotRendered );
 	void AddForce ( struct FVector Force );
@@ -31324,8 +25190,6 @@ public:
 	void PostBeginPlay ( );
 };
 
-UClass* ABioVehicleWheeled::pClassPointer = NULL;
-
 // Class SFXGame.BioVehicleTrackSet
 // 0x0018 (0x0078 - 0x0060)
 class UBioVehicleTrackSet : public UObject
@@ -31338,18 +25202,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4448 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UParticleSystem* FindParticleSystem ( class UPhysicalMaterial* a_Material );
 };
-
-UClass* UBioVehicleTrackSet::pClassPointer = NULL;
 
 // Class SFXGame.BioVFXInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -31361,18 +25217,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool CreateDeathEffects ( class UBioDeathVFXGameState* pGameState );
 };
-
-UClass* UBioVFXInterface::pClassPointer = NULL;
 
 // Class SFXGame.UnVince
 // 0x0048 (0x00A8 - 0x0060)
@@ -31385,13 +25233,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4452 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LeaderChanged ( class ABioPawn* OldLeader, class ABioPawn* NewLeader );
 	void PartyProfiling ( class ABioPawn* oPawn, unsigned long bJoining );
@@ -31409,8 +25251,6 @@ public:
 	void CloseLog ( );
 	void OpenLog ( );
 };
-
-UClass* UUnVince::pClassPointer = NULL;
 
 // Class SFXGame.BioMapNote
 // 0x0057 (0x02DB - 0x0284)
@@ -31443,17 +25283,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4454 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioMapNote::pClassPointer = NULL;
 
 // Class SFXGame.BioPathPoint
 // 0x0004 (0x0388 - 0x0384)
@@ -31467,19 +25299,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4456 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool DoReachedWaypointEvent ( class ABioPawn* oPawn );
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioPathPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_AirPoint
 // 0x0000 (0x0388 - 0x0388)
@@ -31491,17 +25315,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4458 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_AirPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_Hopper
 // 0x0018 (0x03A0 - 0x0388)
@@ -31516,17 +25332,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4460 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_Hopper::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_HopperCeiling
 // 0x0000 (0x03A0 - 0x03A0)
@@ -31538,17 +25346,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4462 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_HopperCeiling::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_HopperFloor
 // 0x0000 (0x03A0 - 0x03A0)
@@ -31560,17 +25360,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4464 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_HopperFloor::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_HopperWall
 // 0x0000 (0x03A0 - 0x03A0)
@@ -31582,17 +25374,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4466 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_HopperWall::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_APGate
 // 0x0028 (0x03B0 - 0x0388)
@@ -31607,18 +25391,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4468 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class AActor* eventSpecialHandling ( class APawn* Other );
 };
-
-UClass* ABioWp_APGate::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_ActionStation
 // 0x0020 (0x03A8 - 0x0388)
@@ -31634,18 +25410,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4470 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioWp_ActionStation::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_DoorMarker
 // 0x0034 (0x03BC - 0x0388)
@@ -31665,13 +25433,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4472 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventSuggestMovePreparation ( class APawn* Other );
 	bool ProceedWithMove ( class APawn* Other );
@@ -31679,8 +25441,6 @@ public:
 	bool IsDoorClosed ( );
 	bool IsDoorOpen ( );
 };
-
-UClass* ABioWp_DoorMarker::pClassPointer = NULL;
 
 // Class SFXGame.BioWaypointLinesComponent
 // 0x0000 (0x0220 - 0x0220)
@@ -31692,17 +25452,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4474 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWaypointLinesComponent::pClassPointer = NULL;
 
 // Class SFXGame.BioWaypointSet
 // 0x0014 (0x0298 - 0x0284)
@@ -31716,19 +25468,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4476 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class ANavigationPoint* GetWaypoint ( int nIdx );
 	int FindNearestPoint ( struct FVector vLoc );
 };
-
-UClass* ABioWaypointSet::pClassPointer = NULL;
 
 // Class SFXGame.BioActivityTiming
 // 0x000C (0x006C - 0x0060)
@@ -31742,17 +25486,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4478 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioActivityTiming::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldInteractionType
 // 0x0058 (0x00B8 - 0x0060)
@@ -31774,17 +25510,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWorldInteractionType::pClassPointer = NULL;
 
 // Class SFXGame.BioDeathVFXControlBasic
 // 0x0005 (0x0065 - 0x0060)
@@ -31798,20 +25526,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 40206 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShouldDamageVFXPlay ( class UBioDeathVFXGameState* pGameState );
 	bool ShouldAppearanceVFXPlay ( class UBioDeathVFXGameState* pGameState );
 	void eventEvaluate ( class UBioDeathVFXSpecArrayWrapper* pDeathVFXSpecArrayWrapper, class UBioDeathVFXGameState* pGameState );
 };
-
-UClass* UBioDeathVFXControlBasic::pClassPointer = NULL;
 
 // Class SFXGame.BioInert
 // 0x0000 (0x0408 - 0x0408)
@@ -31823,17 +25543,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 40870 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioInert::pClassPointer = NULL;
 
 // Class SFXGame.BioUseable
 // 0x0000 (0x0408 - 0x0408)
@@ -31845,17 +25557,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 40872 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioUseable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_TakeDamage
 // 0x0032 (0x0158 - 0x0126)
@@ -31873,20 +25577,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 42797 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void HandleDamage ( class AActor* InOriginator, class AActor* InInstigator, class UClass* inDamageType, float inAmount, float inMitigatedAmount );
 	bool IsValidDamageType ( class UClass* inDamageType );
 };
-
-UClass* UBioSeqEvt_TakeDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioFaction_BaseSquad
 // 0x0003 (0x0080 - 0x007D)
@@ -31898,17 +25594,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 43262 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_BaseSquad::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_Kismet
 // 0x0000 (0x0388 - 0x0388)
@@ -31920,18 +25608,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 44040 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioWp_Kismet::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerControllerSaveObject
 // 0x00E4 (0x015C - 0x0078)
@@ -31948,19 +25628,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 44315 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioPlayerControllerSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioStickyGrenadeInterfaceMesh
 // 0x0008 (0x0068 - 0x0060)
@@ -31973,20 +25645,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 45175 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FVector ComputePosition ( class ABioGrenadeProjectileFrisbee* Projectile );
 	void Detach ( class UBioActorBehavior* oOwnerBehavior, class ABioGrenadeProjectileFrisbee* Projectile );
 	bool Attach ( class ABioGrenadeProjectileFrisbee* Projectile, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* UBioStickyGrenadeInterfaceMesh::pClassPointer = NULL;
 
 // Class SFXGame.BioVFXInterfacePawn
 // 0x0000 (0x0060 - 0x0060)
@@ -31998,17 +25662,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 45193 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVFXInterfacePawn::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameConfig
 // 0x0008 (0x0068 - 0x0060)
@@ -32024,17 +25680,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 45387 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXGameConfig::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_KnockoutThorian
 // 0x0002 (0x0128 - 0x0126)
@@ -32046,17 +25694,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 45397 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_KnockoutThorian::pClassPointer = NULL;
 
 // Class SFXGame.BioChatterSystem
 // 0x0030 (0x0090 - 0x0060)
@@ -32071,19 +25711,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 45803 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnChatterLinePlayed ( unsigned char SoundSet );
 	bool CanPlayLine ( unsigned char SoundSet );
 };
-
-UClass* UBioChatterSystem::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_Pawn_WaypointReached
 // 0x000A (0x0130 - 0x0126)
@@ -32096,17 +25728,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 46226 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_Pawn_WaypointReached::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_ReturnToSpawn
 // 0x0004 (0x0650 - 0x064C)
@@ -32119,20 +25743,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47348 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTick ( float DeltaTime );
 	void eventOnLeftPlaypen ( class ANavigationPoint* oNavPoint );
 	void Initialize ( );
 };
-
-UClass* ABioAI_ReturnToSpawn::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_HumanoidMinion
 // 0x000C (0x0658 - 0x064C)
@@ -32145,13 +25761,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47385 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnHacked ( );
 	void eventHearNoise ( float Loudness, class AActor* NoiseMaker, struct FVector vNoiseLocation, struct FName NoiseType );
@@ -32159,8 +25769,6 @@ public:
 	bool eventIsCoverPositionValid ( struct FVector vLocation, struct FRotator rRotation, int* nRank );
 	bool ShouldUseCover ( );
 };
-
-UClass* ABioAI_HumanoidMinion::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Charge
 // 0x0000 (0x064C - 0x064C)
@@ -32172,18 +25780,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47403 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool EvaluateMovement ( class APawn* oTarget, unsigned long bLOS );
 };
-
-UClass* ABioAI_Charge::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Assault
 // 0x0004 (0x065C - 0x0658)
@@ -32196,21 +25796,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47406 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnDamaged ( class AController* oInstigator, float fDamage );
 	bool InRangeOfTarget ( );
 	bool EvaluateMovement ( class APawn* oTarget, unsigned long bLOS );
 	void eventGetFollowTargets ( class APawn** oFollow, struct FVector* vMoveTo );
 };
-
-UClass* ABioAI_Assault::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_AssaultDrone
 // 0x0000 (0x0650 - 0x0650)
@@ -32222,17 +25814,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47429 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_AssaultDrone::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Commander
 // 0x0000 (0x064C - 0x064C)
@@ -32244,17 +25828,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47439 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_Commander::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Destroyer
 // 0x0000 (0x064C - 0x064C)
@@ -32266,17 +25842,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_Destroyer::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Gunship
 // 0x0000 (0x0650 - 0x0650)
@@ -32288,17 +25856,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47445 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_Gunship::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Inactive
 // 0x0003 (0x061C - 0x0619)
@@ -32310,13 +25870,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47664 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnProximityAlarm ( class AActor* oTarget, int nRelationship );
 	void eventOnSquadSeen ( class AActor* oSquad );
@@ -32331,8 +25885,6 @@ public:
 	void eventOnDeath ( class AController* oKiller );
 };
 
-UClass* ABioAI_Inactive::pClassPointer = NULL;
-
 // Class SFXGame.BioAI_Juggernaut
 // 0x0000 (0x064C - 0x064C)
 class ABioAI_Juggernaut : public ABioAI_Core
@@ -32343,17 +25895,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47700 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_Juggernaut::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Krogan
 // 0x0000 (0x0658 - 0x0658)
@@ -32365,13 +25909,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47703 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnLastManStanding ( );
 	void eventOnProximityAlarm ( class AActor* oTarget, int nRelationship );
@@ -32379,8 +25917,6 @@ public:
 	void Initialize ( );
 	void Charge ( class APawn* oTarget );
 };
-
-UClass* ABioAI_Krogan::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Melee
 // 0x0000 (0x064C - 0x064C)
@@ -32392,17 +25928,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47717 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAI_Melee::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Mercenary
 // 0x0004 (0x0660 - 0x065C)
@@ -32415,19 +25943,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47720 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool EvaluateMovement ( class APawn* oTarget, unsigned long bLOS );
 	void Initialize ( );
 };
-
-UClass* ABioAI_Mercenary::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Rachnii
 // 0x0000 (0x064C - 0x064C)
@@ -32439,21 +25959,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47730 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnLastManStanding ( );
 	void eventOnDamaged ( class AController* oInstigator, float fDamage );
 	void Initialize ( );
 	void Charge ( class APawn* oTarget );
 };
-
-UClass* ABioAI_Rachnii::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_RepairDrone
 // 0x0000 (0x0650 - 0x0650)
@@ -32465,18 +25977,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47740 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool EvaluateTargets ( );
 };
-
-UClass* ABioAI_RepairDrone::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_SarenFlyerJUG
 // 0x0000 (0x0708 - 0x0708)
@@ -32488,18 +25992,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 47927 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( );
 };
-
-UClass* ABioAI_SarenFlyerJUG::pClassPointer = NULL;
 
 // Class SFXGame.BioAI_Sniper
 // 0x0000 (0x0658 - 0x0658)
@@ -32511,18 +26007,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48069 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool EvaluateAttackCapabilities ( class APawn* oTarget );
 };
-
-UClass* ABioAI_Sniper::pClassPointer = NULL;
 
 // Class SFXGame.BioAIDesignController
 // 0x0003 (0x061C - 0x0619)
@@ -32534,17 +26022,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48080 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioAIDesignController::pClassPointer = NULL;
 
 // Class SFXGame.BioAnimNodeBlendByBiotic
 // 0x0000 (0x011C - 0x011C)
@@ -32556,17 +26036,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48174 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAnimNodeBlendByBiotic::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemSimple
 // 0x0000 (0x00AC - 0x00AC)
@@ -32578,17 +26050,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48541 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemSimple::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemBioAmp
 // 0x0000 (0x00AC - 0x00AC)
@@ -32600,17 +26064,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemBioAmp::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemOmniTool
 // 0x0000 (0x00C0 - 0x00C0)
@@ -32622,17 +26078,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48582 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemOmniTool::pClassPointer = NULL;
 
 // Class SFXGame.BioAppearanceItemXMod
 // 0x0000 (0x00AC - 0x00AC)
@@ -32644,17 +26092,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48594 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAppearanceItemXMod::pClassPointer = NULL;
 
 // Class SFXGame.BioAreaTransition
 // 0x0010 (0x02D4 - 0x02C4)
@@ -32668,18 +26108,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 48661 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ABioAreaTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ArtPlaceableUsed
 // 0x0002 (0x0128 - 0x0126)
@@ -32691,17 +26123,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49355 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ArtPlaceableUsed::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ArtPlaceablePlotFail
 // 0x0002 (0x0128 - 0x0126)
@@ -32713,17 +26137,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49360 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ArtPlaceablePlotFail::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ArtPlaceableTransition
 // 0x0002 (0x0128 - 0x0126)
@@ -32735,17 +26151,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49366 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ArtPlaceableTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableContainerType
 // 0x0001 (0x0144 - 0x0143)
@@ -32757,17 +26165,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49726 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableContainerType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableDoorType
 // 0x0001 (0x0144 - 0x0143)
@@ -32779,17 +26179,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49778 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableDoorType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableShieldType
 // 0x0001 (0x0144 - 0x0143)
@@ -32801,17 +26193,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49819 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableShieldType::pClassPointer = NULL;
 
 // Class SFXGame.BioArtPlaceableUseableType
 // 0x0001 (0x0144 - 0x0143)
@@ -32823,17 +26207,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49821 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioArtPlaceableUseableType::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesItemVehicleBase
 // 0x0001 (0x0105 - 0x0104)
@@ -32846,17 +26222,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 49917 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesItemVehicleBase::pClassPointer = NULL;
 
 // Class SFXGame.BioAttributesWeapon
 // 0x0000 (0x0070 - 0x0070)
@@ -32868,17 +26236,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50044 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioAttributesWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioAudioRoomTrigger
 // 0x0028 (0x02EC - 0x02C4)
@@ -32893,20 +26253,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50046 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 	void PostBeginPlay ( );
 };
-
-UClass* ABioAudioRoomTrigger::pClassPointer = NULL;
 
 // Class SFXGame.BioAudioVolumeTimer
 // 0x0008 (0x028C - 0x0284)
@@ -32919,19 +26271,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50075 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Timer ( );
 	void PostBeginPlay ( );
 };
-
-UClass* ABioAudioVolumeTimer::pClassPointer = NULL;
 
 // Class SFXGame.BioBaseActivity
 // 0x002C (0x008C - 0x0060)
@@ -32947,17 +26291,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50094 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioBaseActivity::pClassPointer = NULL;
 
 // Class SFXGame.SFXPlayerCamera
 // 0x007C (0x060C - 0x0590)
@@ -32986,13 +26322,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50175 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessViewRotation ( float DeltaTime, struct FRotator* OutViewRotation, struct FRotator* OutDeltaRot );
 	void SetBaseRotation ( struct FRotator NewRotation );
@@ -33010,8 +26340,6 @@ public:
 	void PostBeginPlay ( );
 };
 
-UClass* ASFXPlayerCamera::pClassPointer = NULL;
-
 // Class SFXGame.BioProceduralCameraBasic
 // 0x0000 (0x0060 - 0x0060)
 class UBioProceduralCameraBasic : public UObject
@@ -33022,18 +26350,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void FixedCamera ( struct FActorInfo stActorInfo, unsigned long bInvert, struct FCameraInfo* stCameraInfo );
 };
-
-UClass* UBioProceduralCameraBasic::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraBehaviorFlourish
 // 0x0028 (0x0154 - 0x012C)
@@ -33053,20 +26373,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50315 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	struct FVector GetCameraLocation ( );
 	void Initialize ( );
 };
-
-UClass* UBioCameraBehaviorFlourish::pClassPointer = NULL;
 
 // Class SFXGame.BioCameraBehaviorFree
 // 0x0004 (0x0130 - 0x012C)
@@ -33079,19 +26391,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	void Initialize ( );
 };
-
-UClass* UBioCameraBehaviorFree::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_AssaultRifleBase
 // 0x0002 (0x025C - 0x025A)
@@ -33103,17 +26407,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50947 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_AssaultRifleBase::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_AvengerAssaultRifle
 // 0x0000 (0x025C - 0x025C)
@@ -33125,17 +26421,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50946 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_AvengerAssaultRifle::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_SniperRifleBase
 // 0x0002 (0x025C - 0x025A)
@@ -33147,17 +26435,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50949 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_SniperRifleBase::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Reaper
 // 0x0000 (0x025C - 0x025C)
@@ -33169,17 +26449,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50948 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Reaper::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_ShotgunBase
 // 0x0002 (0x025C - 0x025A)
@@ -33191,17 +26463,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50951 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_ShotgunBase::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Scimitar
 // 0x0000 (0x025C - 0x025C)
@@ -33213,17 +26477,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50950 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Scimitar::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_PistolBase
 // 0x0002 (0x025C - 0x025A)
@@ -33235,17 +26491,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50953 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_PistolBase::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Edge
 // 0x0000 (0x025C - 0x025C)
@@ -33257,17 +26505,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50952 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Edge::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Banshee
 // 0x0000 (0x025C - 0x025C)
@@ -33279,17 +26519,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50954 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Banshee::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Hammer
 // 0x0000 (0x025C - 0x025C)
@@ -33301,17 +26533,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50955 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Hammer::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Hurricane
 // 0x0000 (0x025C - 0x025C)
@@ -33323,17 +26547,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50956 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Hurricane::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_StrikerPistol
 // 0x0000 (0x025C - 0x025C)
@@ -33345,17 +26561,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50957 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_StrikerPistol::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Lancer
 // 0x0000 (0x025C - 0x025C)
@@ -33367,17 +26575,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50958 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Lancer::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_AvengerSniperRifle
 // 0x0000 (0x025C - 0x025C)
@@ -33389,17 +26589,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50959 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_AvengerSniperRifle::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Storm
 // 0x0000 (0x025C - 0x025C)
@@ -33411,17 +26603,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50960 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Storm::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Kessler
 // 0x0000 (0x025C - 0x025C)
@@ -33433,17 +26617,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50961 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Kessler::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Terminator
 // 0x0000 (0x025C - 0x025C)
@@ -33455,17 +26631,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50962 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Terminator::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Thunder
 // 0x0000 (0x025C - 0x025C)
@@ -33477,17 +26645,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50963 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Thunder::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Equalizer
 // 0x0000 (0x025C - 0x025C)
@@ -33499,17 +26659,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50964 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Equalizer::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Tornado
 // 0x0000 (0x025C - 0x025C)
@@ -33521,17 +26673,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50965 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Tornado::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Stiletto
 // 0x0000 (0x025C - 0x025C)
@@ -33543,17 +26687,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50966 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Stiletto::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Raptor
 // 0x0000 (0x025C - 0x025C)
@@ -33565,17 +26701,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50967 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Raptor::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_StrikerSniperRifle
 // 0x0000 (0x025C - 0x025C)
@@ -33587,17 +26715,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50968 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_StrikerSniperRifle::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Firestorm
 // 0x0000 (0x025C - 0x025C)
@@ -33609,17 +26729,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50969 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Firestorm::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Stinger
 // 0x0000 (0x025C - 0x025C)
@@ -33631,17 +26743,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50970 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Stinger::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Tsunami
 // 0x0000 (0x025C - 0x025C)
@@ -33653,17 +26757,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50971 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Tsunami::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Naginata
 // 0x0000 (0x025C - 0x025C)
@@ -33675,17 +26771,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50972 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Naginata::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Katana
 // 0x0000 (0x025C - 0x025C)
@@ -33697,17 +26785,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50973 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Katana::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Raikou
 // 0x0000 (0x025C - 0x025C)
@@ -33719,17 +26799,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50974 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Raikou::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Breaker
 // 0x0000 (0x025C - 0x025C)
@@ -33741,17 +26813,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50975 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Breaker::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Harpoon
 // 0x0000 (0x025C - 0x025C)
@@ -33763,17 +26827,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50976 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Harpoon::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Armageddon
 // 0x0000 (0x025C - 0x025C)
@@ -33785,17 +26841,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50977 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Armageddon::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Razer
 // 0x0000 (0x025C - 0x025C)
@@ -33807,17 +26855,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50978 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Razer::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Crossfire
 // 0x0000 (0x025C - 0x025C)
@@ -33829,17 +26869,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50979 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Crossfire::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Punisher
 // 0x0000 (0x025C - 0x025C)
@@ -33851,17 +26883,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50980 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Punisher::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Avalanche
 // 0x0000 (0x025C - 0x025C)
@@ -33873,17 +26897,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50981 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Avalanche::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Brawler
 // 0x0000 (0x025C - 0x025C)
@@ -33895,17 +26911,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50982 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Brawler::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_SpectreAssaultRifle
 // 0x0000 (0x025C - 0x025C)
@@ -33917,17 +26925,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50983 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_SpectreAssaultRifle::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_SpectreSniperRifle
 // 0x0000 (0x025C - 0x025C)
@@ -33939,17 +26939,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50984 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_SpectreSniperRifle::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_SpectreShotgun
 // 0x0000 (0x025C - 0x025C)
@@ -33961,17 +26953,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50985 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_SpectreShotgun::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_SpectrePistol
 // 0x0000 (0x025C - 0x025C)
@@ -33983,17 +26967,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50986 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_SpectrePistol::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Kovalyov
 // 0x0000 (0x025C - 0x025C)
@@ -34005,17 +26981,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50987 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Kovalyov::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Volkov
 // 0x0000 (0x025C - 0x025C)
@@ -34027,17 +26995,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50988 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Volkov::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Sokolov
 // 0x0000 (0x025C - 0x025C)
@@ -34049,17 +27009,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50989 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Sokolov::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Karpov
 // 0x0000 (0x025C - 0x025C)
@@ -34071,17 +27023,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50990 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Karpov::pClassPointer = NULL;
 
 // Class SFXGame.SFXWeaponStats_Geth
 // 0x0000 (0x025C - 0x025C)
@@ -34093,17 +27037,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 50991 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXWeaponStats_Geth::pClassPointer = NULL;
 
 // Class SFXGame.BioDEBUG_PawnFiringController
 // 0x0028 (0x02AC - 0x0284)
@@ -34120,19 +27056,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 51669 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShootTarget ( class ABioPawn* SHTR );
 	int HowManyShooting ( );
 };
-
-UClass* ABioDEBUG_PawnFiringController::pClassPointer = NULL;
 
 // Class SFXGame.BioOp
 // 0x0000 (0x0060 - 0x0060)
@@ -34144,19 +27072,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 51748 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void EvaluateInt ( unsigned char eOp, int nB, unsigned long bInvertOp, int nU, int* nA );
 	void EvaluateFloat ( unsigned char eOp, unsigned long bInvertOp, float fU, float* fA, float* fB );
 };
-
-UClass* UBioOp::pClassPointer = NULL;
 
 // Class SFXGame.SFXModule_AimAssist
 // 0x0078 (0x00E4 - 0x006C)
@@ -34184,13 +27104,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 52275 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugDraw_ZoomSnap ( class ABioHUD* H );
 	void ZoomSnap ( );
@@ -34208,8 +27122,6 @@ public:
 	void CacheCurrentAimAssistTarget ( );
 };
 
-UClass* USFXModule_AimAssist::pClassPointer = NULL;
-
 // Class SFXGame.BioComplexFloatAttribute
 // 0x0000 (0x0060 - 0x0060)
 class UBioComplexFloatAttribute : public UObject
@@ -34220,17 +27132,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 52399 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioComplexFloatAttribute::pClassPointer = NULL;
 
 // Class SFXGame.BioComplexIntAttribute
 // 0x0000 (0x0060 - 0x0060)
@@ -34242,17 +27146,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 52401 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioComplexIntAttribute::pClassPointer = NULL;
 
 // Class SFXGame.BioConditionals
 // 0x0000 (0x0060 - 0x0060)
@@ -34264,17 +27160,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 52403 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioConditionals::pClassPointer = NULL;
 
 // Class SFXGame.BioConsequenceFunctions
 // 0x0000 (0x0060 - 0x0060)
@@ -34286,13 +27174,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 52405 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GrantBonusTalents ( class ABioWorldInfo* WorldInfo, int bonusIdentifier );
 	void GrantCredits ( class ABioWorldInfo* WorldInfo, int Count );
@@ -34301,8 +27183,6 @@ public:
 	void GrantGrenades ( class ABioWorldInfo* WorldInfo, int Count );
 	void GrantScaledXP ( class ABioWorldInfo* WorldInfo, int Curve );
 };
-
-UClass* UBioConsequenceFunctions::pClassPointer = NULL;
 
 // Class SFXGame.BioForm_SingleLine
 // 0x0000 (0x0078 - 0x0078)
@@ -34314,17 +27194,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 53340 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForm_SingleLine::pClassPointer = NULL;
 
 // Class SFXGame.BioForm_Square
 // 0x0000 (0x0078 - 0x0078)
@@ -34336,17 +27208,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 53342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForm_Square::pClassPointer = NULL;
 
 // Class SFXGame.BioForm_Triangle
 // 0x0000 (0x0078 - 0x0078)
@@ -34358,17 +27222,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 53344 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForm_Triangle::pClassPointer = NULL;
 
 // Class SFXGame.BioForm_TriangleRest
 // 0x0000 (0x0078 - 0x0078)
@@ -34380,17 +27236,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 53346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForm_TriangleRest::pClassPointer = NULL;
 
 // Class SFXGame.BioGameInfo
 // 0x0018 (0x04C8 - 0x04B0)
@@ -34404,20 +27252,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 53802 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void RestartPlayer ( class AController* NewPlayer );
 	void eventPostLogin ( class APlayerController* NewPlayer );
 	void BioBeginPlay ( );
 };
-
-UClass* ABioGameInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioInterface_Appearance_Car
 // 0x0000 (0x007C - 0x007C)
@@ -34429,17 +27269,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 54745 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioInterface_Appearance_Car::pClassPointer = NULL;
 
 // Class SFXGame.BioItemOmniTool
 // 0x0000 (0x0100 - 0x0100)
@@ -34451,17 +27283,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 55097 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioItemOmniTool::pClassPointer = NULL;
 
 // Class SFXGame.BioWeaponMelee
 // 0x0000 (0x0420 - 0x0420)
@@ -34473,17 +27297,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 55135 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWeaponMelee::pClassPointer = NULL;
 
 // Class SFXGame.BioMorphFaceSaveObject
 // 0x0088 (0x0100 - 0x0078)
@@ -34505,19 +27321,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 55463 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void LoadObject ( class UObject* O );
 	void SaveObject ( class UObject* O );
 };
-
-UClass* UBioMorphFaceSaveObject::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_WaypointSet_WaypointReached
 // 0x0002 (0x0128 - 0x0126)
@@ -34529,17 +27337,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 55891 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_WaypointSet_WaypointReached::pClassPointer = NULL;
 
 // Class SFXGame.BioPathPointFactory
 // 0x0000 (0x008C - 0x008C)
@@ -34551,17 +27351,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 55894 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPathPointFactory::pClassPointer = NULL;
 
 // Class SFXGame.SFXSeqAct_ToggleElevatorMode
 // 0x0000 (0x00F8 - 0x00F8)
@@ -34573,17 +27365,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 56300 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXSeqAct_ToggleElevatorMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SkipElevatorSequence
 // 0x0000 (0x00F8 - 0x00F8)
@@ -34595,17 +27379,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 56303 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_SkipElevatorSequence::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Photo
 // 0x0038 (0x0160 - 0x0128)
@@ -34625,13 +27401,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 56684 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float DeltaTime );
 	void UpdateRollAndFOV ( float DeltaTime );
@@ -34641,8 +27411,6 @@ public:
 	void InitFromMode ( float NewFOV );
 	void ModifyPostProcess ( struct FPostProcessSettings* PPSettings );
 };
-
-UClass* USFXCameraMode_Photo::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_PhotoOrbit
 // 0x0000 (0x0160 - 0x0160)
@@ -34654,18 +27422,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 56683 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateOffset ( struct FVector Location );
 };
-
-UClass* USFXCameraMode_PhotoOrbit::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeDefault
 // 0x0013 (0x00E0 - 0x00CD)
@@ -34680,13 +27440,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 56859 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void TrySkipElevator ( );
 	void EnterCommandMenu ( );
@@ -34723,8 +27477,6 @@ public:
 	void Initialize ( );
 };
 
-UClass* USFXGameModeDefault::pClassPointer = NULL;
-
 // Class SFXGame.BioPhysMatGrenade
 // 0x0000 (0x00F8 - 0x00F8)
 class UBioPhysMatGrenade : public UPhysicalMaterial
@@ -34735,17 +27487,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 57031 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioPhysMatGrenade::pClassPointer = NULL;
 
 // Class SFXGame.BioPlayerReplicationInfo
 // 0x0002 (0x0360 - 0x035E)
@@ -34757,17 +27501,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 57178 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioPlayerReplicationInfo::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnCombatBegin
 // 0x0002 (0x0128 - 0x0126)
@@ -34779,17 +27515,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 57353 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnCombatBegin::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_OnCombatEnd
 // 0x0002 (0x0128 - 0x0126)
@@ -34801,17 +27529,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 57358 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_OnCombatEnd::pClassPointer = NULL;
 
 // Class SFXGame.BioRandomActivity
 // 0x0018 (0x00A4 - 0x008C)
@@ -34826,17 +27546,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 57686 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioRandomActivity::pClassPointer = NULL;
 
 // Class SFXGame.SFXPawn_Player
 // 0x0011 (0x0A68 - 0x0A57)
@@ -34850,13 +27562,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 58480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SwitchToBackupWeapon ( );
 	void DrawPrimaryWeapon ( );
@@ -34865,8 +27571,6 @@ public:
 	void OnWeaponFired ( class ABioWeaponRanged* InWeapon );
 	void PlayerAcquiredCover ( );
 };
-
-UClass* ASFXPawn_Player::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_PartySelection
 // 0x002F (0x00C8 - 0x0099)
@@ -34885,13 +27589,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 58585 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetHenchmenStats ( int nIndex, int* nStat1, int* nStat2, int* nStat3 );
 	void GetStatsFromClass ( int nClassID, int* nStat1, int* nStat2, int* nStat3 );
@@ -34901,8 +27599,6 @@ public:
 	void DoInitialization ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_PartySelection::pClassPointer = NULL;
 
 // Class SFXGame.BioSaveTriggerVolume
 // 0x0010 (0x02D4 - 0x02C4)
@@ -34917,19 +27613,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59039 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ABioSaveTriggerVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AddSquadToPerception
 // 0x0010 (0x0108 - 0x00F8)
@@ -34943,18 +27631,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59121 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AddSquadToPerception::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AddToParty
 // 0x0004 (0x00FC - 0x00F8)
@@ -34968,19 +27648,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59129 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AddToParty::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AdjustStability
 // 0x0004 (0x00FC - 0x00F8)
@@ -34993,18 +27665,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59145 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AdjustStability::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AreaTransition
 // 0x0010 (0x0108 - 0x00F8)
@@ -35018,18 +27682,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59180 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_AreaTransition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AttachCrustEffect
 // 0x0014 (0x010C - 0x00F8)
@@ -35044,19 +27700,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59187 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AttachCrustEffect::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AttachVFX
 // 0x0030 (0x0128 - 0x00F8)
@@ -35073,19 +27721,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59205 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AttachVFX::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AttachVisualEffect
 // 0x002C (0x0124 - 0x00F8)
@@ -35101,19 +27741,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59219 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AttachVisualEffect::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AutoSave
 // 0x0004 (0x0114 - 0x0110)
@@ -35127,19 +27759,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59231 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_AutoSave::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_AwardAchievement
 // 0x0001 (0x00F9 - 0x00F8)
@@ -35152,19 +27776,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59241 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_AwardAchievement::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_BioToggleCinematicMode
 // 0x0014 (0x0110 - 0x00FC)
@@ -35179,18 +27795,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59254 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_BioToggleCinematicMode::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_BlackScreen
 // 0x0001 (0x0111 - 0x0110)
@@ -35203,19 +27811,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59272 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_BlackScreen::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CancelTutorial
 // 0x000C (0x0104 - 0x00F8)
@@ -35229,18 +27829,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59299 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_CancelTutorial::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CauseDamage
 // 0x001C (0x0114 - 0x00F8)
@@ -35257,18 +27849,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59309 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_CauseDamage::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ChangeAI
 // 0x0014 (0x010C - 0x00F8)
@@ -35283,18 +27867,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_ChangeAI::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CheckIfInVolume
 // 0x0010 (0x0108 - 0x00F8)
@@ -35308,19 +27884,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59354 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_CheckIfInVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ClearAllActions
 // 0x0000 (0x00F8 - 0x00F8)
@@ -35332,18 +27900,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59362 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_ClearAllActions::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ClearNewCharacterEffects
 // 0x0000 (0x00F8 - 0x00F8)
@@ -35355,18 +27915,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59371 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_ClearNewCharacterEffects::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ClearSavedMap
 // 0x0020 (0x0118 - 0x00F8)
@@ -35380,18 +27932,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ClearSavedMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ClearSomeActions_Queue
 // 0x0000 (0x00F8 - 0x00F8)
@@ -35403,18 +27947,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59384 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_ClearSomeActions_Queue::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ClearSomeActions_State
 // 0x0000 (0x00F8 - 0x00F8)
@@ -35426,18 +27962,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59392 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_ClearSomeActions_State::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Cover_AddCoverFrom
 // 0x0014 (0x010C - 0x00F8)
@@ -35452,18 +27980,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59419 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Cover_AddCoverFrom::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Cover_GetCoveringRank
 // 0x0014 (0x010C - 0x00F8)
@@ -35478,18 +27998,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59425 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Cover_GetCoveringRank::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Cover_RemoveCoverFrom
 // 0x0010 (0x0108 - 0x00F8)
@@ -35503,18 +28015,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59431 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Cover_RemoveCoverFrom::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Cover_SetCoveringRank
 // 0x0014 (0x010C - 0x00F8)
@@ -35529,18 +28033,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Cover_SetCoveringRank::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_Crouch
 // 0x000C (0x0104 - 0x00F8)
@@ -35554,18 +28050,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59442 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_Crouch::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_CustomizeStageCameras
 // 0x001C (0x0114 - 0x00F8)
@@ -35584,18 +28072,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59449 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_CustomizeStageCameras::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DoActionInRadius
 // 0x0030 (0x0128 - 0x00F8)
@@ -35613,18 +28093,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59480 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DoActionInRadius::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DoActionInVolume
 // 0x002C (0x0124 - 0x00F8)
@@ -35641,18 +28113,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59491 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DoActionInVolume::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUIClear
 // 0x0004 (0x00FC - 0x00F8)
@@ -35665,18 +28129,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59501 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUIClear::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUIIsActive
 // 0x0004 (0x00FC - 0x00F8)
@@ -35689,18 +28145,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59507 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUIIsActive::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetBarFillDirection
 // 0x0004 (0x00FC - 0x00F8)
@@ -35714,18 +28162,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59513 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetBarFillDirection::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetBarFillPercent
 // 0x0008 (0x0100 - 0x00F8)
@@ -35739,18 +28179,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59518 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetBarFillPercent::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetBarMarkers
 // 0x000C (0x0104 - 0x00F8)
@@ -35765,18 +28197,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59523 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetBarMarkers::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetCounterValue
 // 0x0008 (0x0100 - 0x00F8)
@@ -35790,18 +28214,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59529 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetCounterValue::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_PlayerInput
 // 0x0006 (0x012C - 0x0126)
@@ -35814,17 +28230,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59632 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_PlayerInput::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetElementColor
 // 0x0005 (0x00FD - 0x00F8)
@@ -35838,18 +28246,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59654 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetElementColor::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetElementPulsing
 // 0x000D (0x0105 - 0x00F8)
@@ -35865,18 +28265,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59663 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetElementPulsing::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetElementVisible
 // 0x0009 (0x0101 - 0x00F8)
@@ -35891,18 +28283,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59672 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetElementVisible::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetLaserCircle
 // 0x0004 (0x00FC - 0x00F8)
@@ -35915,18 +28299,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59678 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetLaserCircle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetLaserLayout
 // 0x0004 (0x00FC - 0x00F8)
@@ -35939,18 +28315,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59682 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetLaserLayout::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetMiraHanoiLayout
 // 0x0004 (0x00FC - 0x00F8)
@@ -35963,18 +28331,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59686 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetMiraHanoiLayout::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetQuasarLayout
 // 0x0004 (0x00FC - 0x00F8)
@@ -35987,18 +28347,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59690 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetQuasarLayout::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetTextStringRef
 // 0x0005 (0x00FD - 0x00F8)
@@ -36012,18 +28364,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59694 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetTextStringRef::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_DUISetToxinCureLayout
 // 0x0004 (0x00FC - 0x00F8)
@@ -36036,18 +28380,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59699 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_DUISetToxinCureLayout::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_EndGame
 // 0x0004 (0x00FC - 0x00F8)
@@ -36060,18 +28396,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59715 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_EndGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_FactionRelationShip
 // 0x0010 (0x0108 - 0x00F8)
@@ -36085,20 +28413,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59756 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 	class ABioBaseSquad* GetSquadFrom ( class UObject* oInObj );
 };
-
-UClass* UBioSeqAct_FactionRelationShip::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_FindCover
 // 0x003C (0x0134 - 0x00F8)
@@ -36118,18 +28438,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59769 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_FindCover::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ForceResourceLoad
 // 0x0010 (0x0108 - 0x00F8)
@@ -36142,18 +28454,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59808 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ForceResourceLoad::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetConnectedObjects
 // 0x0028 (0x0120 - 0x00F8)
@@ -36168,18 +28472,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59815 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetConnectedObjects::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetEquippedWeapon
 // 0x000C (0x0104 - 0x00F8)
@@ -36193,18 +28489,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59822 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetEquippedWeapon::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetPropertyArtPlaceable
 // 0x0000 (0x0158 - 0x0158)
@@ -36216,17 +28504,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59860 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetPropertyArtPlaceable::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetSquad
 // 0x0010 (0x0108 - 0x00F8)
@@ -36240,18 +28520,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59862 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetSquad::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetTalentRank
 // 0x0010 (0x0108 - 0x00F8)
@@ -36266,18 +28538,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59887 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetTalentRank::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GetTutorialViewed
 // 0x0008 (0x0100 - 0x00F8)
@@ -36290,18 +28554,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59897 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GetTutorialViewed::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GrantBonusTalent
 // 0x0004 (0x00FC - 0x00F8)
@@ -36314,18 +28570,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59912 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_GrantBonusTalent::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GrantGenericXP
 // 0x0004 (0x00FC - 0x00F8)
@@ -36338,18 +28586,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59920 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_GrantGenericXP::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_GrantScaledXP
 // 0x0001 (0x00F9 - 0x00F8)
@@ -36362,18 +28602,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59925 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_GrantScaledXP::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_HUDDisplayState
 // 0x0000 (0x00F8 - 0x00F8)
@@ -36385,19 +28617,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59934 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_HUDDisplayState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_IncreaseTalentMaxRank
 // 0x000C (0x0104 - 0x00F8)
@@ -36412,19 +28636,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59941 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_IncreaseTalentMaxRank::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_InterruptAmbientConversation
 // 0x0008 (0x0100 - 0x00F8)
@@ -36437,18 +28653,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59957 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_InterruptAmbientConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_IsActiveConversation
 // 0x0008 (0x0100 - 0x00F8)
@@ -36461,18 +28669,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59966 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_IsActiveConversation::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_IsVehicle
 // 0x0008 (0x0100 - 0x00F8)
@@ -36485,18 +28685,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59971 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_IsVehicle::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_LootHenchman
 // 0x0008 (0x0100 - 0x00F8)
@@ -36509,18 +28701,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59981 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_LootHenchman::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MiniGame
 // 0x0004 (0x00FC - 0x00F8)
@@ -36533,18 +28717,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 59999 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_MiniGame::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_MovieXMV
 // 0x0010 (0x0108 - 0x00F8)
@@ -36557,18 +28733,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60032 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_MovieXMV::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_NearClipPlane
 // 0x0004 (0x00FC - 0x00F8)
@@ -36581,18 +28749,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60043 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_NearClipPlane::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_RestoreAI
 // 0x0008 (0x0100 - 0x00F8)
@@ -36605,18 +28765,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60136 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_RestoreAI::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ResumeWalking
 // 0x0008 (0x0100 - 0x00F8)
@@ -36629,18 +28781,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60141 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ResumeWalking::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ResurrectHenchman
 // 0x0000 (0x00F8 - 0x00F8)
@@ -36652,18 +28796,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60145 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ResurrectHenchman::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SarenUsePower
 // 0x0024 (0x011C - 0x00F8)
@@ -36679,18 +28815,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60155 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SarenUsePower::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SaveCharacter
 // 0x0000 (0x0114 - 0x0114)
@@ -36702,18 +28830,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60164 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SaveCharacter::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetActionState
 // 0x0009 (0x0101 - 0x00F8)
@@ -36727,18 +28847,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60184 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetActionState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetActive
 // 0x0004 (0x00FC - 0x00F8)
@@ -36751,18 +28863,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60193 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetActive::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetBase
 // 0x0000 (0x00F8 - 0x00F8)
@@ -36774,18 +28878,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60205 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetBase::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetBusyState
 // 0x0004 (0x00FC - 0x00F8)
@@ -36798,18 +28894,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60215 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetBusyState::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetCanWalkOffLedges
 // 0x000C (0x0104 - 0x00F8)
@@ -36823,18 +28911,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60224 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetCanWalkOffLedges::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetClassification
 // 0x0001 (0x00F9 - 0x00F8)
@@ -36847,18 +28927,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60229 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetClassification::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetExploreCameraRotation
 // 0x000C (0x0104 - 0x00F8)
@@ -36872,20 +28944,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60241 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 	bool eventIsCameraExploreMode ( class USFXCameraMode* pCameraMode );
 };
-
-UClass* UBioSeqAct_SetExploreCameraRotation::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Explore
 // 0x0000 (0x0128 - 0x0128)
@@ -36897,18 +28961,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60245 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Initialize ( );
 };
-
-UClass* USFXCameraMode_Explore::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetInputTrap
 // 0x0014 (0x010C - 0x00F8)
@@ -36922,18 +28978,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60258 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetInputTrap::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetMaterialParameter
 // 0x0008 (0x0100 - 0x00F8)
@@ -36946,19 +28994,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60274 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 	void Set ( class ABioPawn* pPawn, struct FName nmMaterialParameter );
 };
-
-UClass* UBioSeqAct_SetMaterialParameter::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetMaterialParameterColor
 // 0x0004 (0x0104 - 0x0100)
@@ -36971,18 +29011,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60283 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Set ( class ABioPawn* pPawn, struct FName nmMaterialParameter );
 };
-
-UClass* UBioSeqAct_SetMaterialParameterColor::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetMaterialParameterScalar
 // 0x0004 (0x0104 - 0x0100)
@@ -36995,18 +29027,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60289 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Set ( class ABioPawn* pPawn, struct FName nmMaterialParameter );
 };
-
-UClass* UBioSeqAct_SetMaterialParameterScalar::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetOverrideTipText
 // 0x0004 (0x00FC - 0x00F8)
@@ -37019,18 +29043,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60297 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetOverrideTipText::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetPlayerControlling
 // 0x0018 (0x0110 - 0x00F8)
@@ -37045,18 +29061,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60305 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetPlayerControlling::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetRadarDisplay
 // 0x000C (0x0104 - 0x00F8)
@@ -37070,18 +29078,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60314 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetRadarDisplay::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetSquadFaction
 // 0x0010 (0x0108 - 0x00F8)
@@ -37095,18 +29095,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60325 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetSquadFaction::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetStability
 // 0x000C (0x0104 - 0x00F8)
@@ -37120,18 +29112,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60333 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetStability::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SetTutorialViewed
 // 0x0008 (0x0100 - 0x00F8)
@@ -37144,18 +29128,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SetTutorialViewed::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShieldGetAttributes
 // 0x0000 (0x00F8 - 0x00F8)
@@ -37167,18 +29143,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60385 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShieldGetAttributes::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_IntroText
 // 0x0007 (0x00A0 - 0x0099)
@@ -37191,18 +29159,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60400 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_IntroText::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowInventory
 // 0x0008 (0x0118 - 0x0110)
@@ -37215,19 +29175,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60410 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowInventory::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowLatentTutorial
 // 0x000C (0x011C - 0x0110)
@@ -37241,19 +29193,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60419 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowLatentTutorial::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowMessage
 // 0x001D (0x012D - 0x0110)
@@ -37276,21 +29220,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60487 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MessageBoxUpdate ( float fDeltaT, class UBioSFHandler_MessageBox* oMsgBox );
 	void MessageInputPressed ( unsigned long bAPressed, int nContext, unsigned long bYPressed );
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowMessage::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ShowTutorial
 // 0x0010 (0x0108 - 0x00F8)
@@ -37307,19 +29243,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60544 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UpdateOp ( float fDeltaT );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ShowTutorial::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SquadStopHoldingPosition
 // 0x0000 (0x00F8 - 0x00F8)
@@ -37331,19 +29259,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60610 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_SquadStopHoldingPosition::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_SwitchWeighted
 // 0x0050 (0x0148 - 0x00F8)
@@ -37366,18 +29286,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60632 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_SwitchWeighted::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_TempLookAt
 // 0x0028 (0x0120 - 0x00F8)
@@ -37393,18 +29305,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60660 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_TempLookAt::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ToggleCombat
 // 0x0004 (0x00FC - 0x00F8)
@@ -37417,18 +29321,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60689 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ToggleCombat::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_ToggleSave
 // 0x0008 (0x0100 - 0x00F8)
@@ -37442,18 +29338,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60699 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* UBioSeqAct_ToggleSave::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqAct_UpdateTacticianAchievement
 // 0x0008 (0x0100 - 0x00F8)
@@ -37467,18 +29355,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60715 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventActivated ( );
 };
-
-UClass* UBioSeqAct_UpdateTacticianAchievement::pClassPointer = NULL;
 
 // Class SFXGame.BioSeqEvt_ElevatorSequenceSkipped
 // 0x0002 (0x0128 - 0x0126)
@@ -37490,17 +29370,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 60933 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqEvt_ElevatorSequenceSkipped::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Achievement
 // 0x001F (0x00B8 - 0x0099)
@@ -37516,13 +29388,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61008 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void Update ( float fDeltaT );
@@ -37532,8 +29398,6 @@ public:
 	void SetGlobalVars ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_Achievement::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_BlackScreen
 // 0x0008 (0x00A1 - 0x0099)
@@ -37547,21 +29411,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61069 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnPanelAdded ( );
 	void Hide ( unsigned long bWithFade );
 	void Show ( unsigned long bWithFade );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_BlackScreen::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Inventory
 // 0x00BD (0x0156 - 0x0099)
@@ -37613,13 +29469,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61113 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetSquadMemberNames ( int* srCurMember, int* srPrevMember, int* srNextMember );
 	void OnPanelRemoved ( );
@@ -37652,8 +29502,6 @@ public:
 	void CheckForGarbageCollect ( float Weight );
 };
 
-UClass* UBioSFHandler_Inventory::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_XMods
 // 0x0104 (0x019D - 0x0099)
 class UBioSFHandler_XMods : public UBioSFHandler
@@ -37685,13 +29533,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61120 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UnistallXModForCurrentSlot ( );
 	void eventOnPanelRemoved ( );
@@ -37718,8 +29560,6 @@ public:
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
 
-UClass* UBioSFHandler_XMods::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_CharacterRecord
 // 0x0053 (0x00EC - 0x0099)
 class UBioSFHandler_CharacterRecord : public UBioSFHandler
@@ -37741,13 +29581,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61205 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetSquadMemberNames ( int* srCurMember, int* srPrevMember, int* srNextMember );
 	void RestoreHeadGear ( );
@@ -37775,8 +29609,6 @@ public:
 	void HandleInputEvent ( unsigned char Event, float fValue );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* Parameters );
 };
-
-UClass* UBioSFHandler_CharacterRecord::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Conversation
 // 0x00AD (0x0146 - 0x0099)
@@ -37813,13 +29645,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 61343 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ChangeConversationMenu ( class UBioConversation* oConversation, int nReplyIndex );
 	int GetInvestigateReplyCount ( class UBioConversation* oConversation );
@@ -37841,8 +29667,6 @@ public:
 	int GetNumReplies ( class UBioConversation* oConversation );
 };
 
-UClass* UBioSFHandler_Conversation::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_InventoryIGGOverride
 // 0x0003 (0x009C - 0x0099)
 class UBioSFHandler_InventoryIGGOverride : public UBioSFHandler
@@ -37853,18 +29677,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 62075 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_InventoryIGGOverride::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_Specialization
 // 0x002F (0x00C8 - 0x0099)
@@ -37882,13 +29698,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 62374 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void OnPanelAdded ( );
@@ -37899,8 +29709,6 @@ public:
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* Parameters );
 	bool PreInitialization ( class ABioPawn* PlayerPawn );
 };
-
-UClass* UBioSFHandler_Specialization::pClassPointer = NULL;
 
 // Class SFXGame.BioTimerList
 // 0x0020 (0x0080 - 0x0060)
@@ -37914,21 +29722,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 62427 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float fDeltaT );
 	bool KillTimer ( struct FString i_sTimerName );
 	void AddTimer ( struct FScriptDelegate TimerDelegate, class UObject* Params, float fTime, struct FString i_sTimerName );
 	void BioTimerDelegate ( class UObject* Params );
 };
-
-UClass* UBioTimerList::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_PCCharacterRecord
 // 0x0008 (0x00F4 - 0x00EC)
@@ -37941,13 +29741,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 62495 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void ClosePanel ( );
@@ -37963,8 +29757,6 @@ public:
 	void SetIGGHandler ( class UBioSFHandler* pHandler );
 };
 
-UClass* UBioSFHandler_PCCharacterRecord::pClassPointer = NULL;
-
 // Class SFXGame.BioSFHandler_PCInventory
 // 0x0006 (0x015C - 0x0156)
 class UBioSFHandler_PCInventory : public UBioSFHandler_Inventory
@@ -37976,13 +29768,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 62994 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void InitializeModsSection ( );
 	void UpdateInvSlotIcons ( unsigned long bDeferUpdateFilterIcons );
@@ -37995,8 +29781,6 @@ public:
 	void OnPanelAdded ( );
 	void eventUpdate ( float fDeltaT );
 };
-
-UClass* UBioSFHandler_PCInventory::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Interpolate
 // 0x0061 (0x0189 - 0x0128)
@@ -38022,13 +29806,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63117 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DrawHUD ( class UBioCheatManager* M );
 	struct FRotator GetCurrentShake ( );
@@ -38040,8 +29818,6 @@ public:
 	bool CheckLoop ( class USFXCameraMode* Mode, int RecurseLevel );
 	float Interpolate ( float T );
 };
-
-UClass* USFXCameraMode_Interpolate::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModePhoto
 // 0x01B7 (0x0284 - 0x00CD)
@@ -38082,13 +29858,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63174 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void TakePhoto ( );
 	void DisableCamera ( );
@@ -38127,8 +29897,6 @@ public:
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
 
-UClass* USFXGameModePhoto::pClassPointer = NULL;
-
 // Class SFXGame.SFXGameModeVehicle
 // 0x002B (0x00F8 - 0x00CD)
 class USFXGameModeVehicle : public USFXGameModeBase
@@ -38145,13 +29913,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63209 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowMenuGui ( );
 	void LeaveWorld ( );
@@ -38168,8 +29930,6 @@ public:
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
 
-UClass* USFXGameModeVehicle::pClassPointer = NULL;
-
 // Class SFXGame.SFXGameModePowerWheel
 // 0x0007 (0x00D4 - 0x00CD)
 class USFXGameModePowerWheel : public USFXGameModeBase
@@ -38181,13 +29941,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63210 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowMenuGui ( );
 	void ExitPowerWheel ( );
@@ -38195,8 +29949,6 @@ public:
 	void Deactivated ( );
 	void Activated ( );
 };
-
-UClass* USFXGameModePowerWheel::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeWeaponWheel
 // 0x0007 (0x00D4 - 0x00CD)
@@ -38209,13 +29961,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63211 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowMenuGui ( );
 	void ExitWeaponWheel ( );
@@ -38223,8 +29969,6 @@ public:
 	void Deactivated ( );
 	void Activated ( );
 };
-
-UClass* USFXGameModeWeaponWheel::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeCommand
 // 0x0007 (0x00D4 - 0x00CD)
@@ -38237,13 +29981,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63212 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowMenuGui ( );
 	void ExitCommandMenu ( );
@@ -38252,8 +29990,6 @@ public:
 	void Deactivated ( );
 	void Activated ( );
 };
-
-UClass* USFXGameModeCommand::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeConversation
 // 0x0013 (0x00E0 - 0x00CD)
@@ -38267,13 +30003,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63213 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SkipConversation ( );
 	void SelectResponse ( );
@@ -38282,8 +30012,6 @@ public:
 	void Deactivated ( );
 	void Activated ( );
 };
-
-UClass* USFXGameModeConversation::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeCinematic
 // 0x002B (0x00F8 - 0x00CD)
@@ -38302,20 +30030,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63214 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SkipCinematic ( );
 	void CinematicFF ( unsigned long bOn );
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
-
-UClass* USFXGameModeCinematic::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeGUI
 // 0x0023 (0x00F0 - 0x00CD)
@@ -38330,13 +30050,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63215 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void TryEnterPhotoMode ( );
 	void DeactivateSpecifier ( struct FName ModeSpecifier );
@@ -38344,8 +30058,6 @@ public:
 	void Deactivated ( );
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
-
-UClass* USFXGameModeGUI::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeMovie
 // 0x0017 (0x00E4 - 0x00CD)
@@ -38360,21 +30072,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63216 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SkipMovie ( );
 	void Deactivated ( );
 	void ActivateSpecifier ( struct FName ModeSpecifier );
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
-
-UClass* USFXGameModeMovie::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeGalaxy
 // 0x0013 (0x00E0 - 0x00CD)
@@ -38388,21 +30092,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63217 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USFXCameraMode* HACK_GetCameraMode ( );
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 	void Deactivated ( );
 	void Activated ( );
 };
-
-UClass* USFXGameModeGalaxy::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeMinigame
 // 0x0003 (0x00D0 - 0x00CD)
@@ -38414,19 +30110,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63218 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MinigameButton ( int Index );
 	void ExitMinigame ( );
 };
-
-UClass* USFXGameModeMinigame::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameModeFlyCam
 // 0x000B (0x00D8 - 0x00CD)
@@ -38439,18 +30127,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63219 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USFXCameraMode* GetCameraMode ( class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
-
-UClass* USFXGameModeFlyCam::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_PCPartySelection
 // 0x0000 (0x00C8 - 0x00C8)
@@ -38462,20 +30142,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63679 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventHandleButtonRefresh ( unsigned long usingGamepad );
 	void Update ( float fDeltaT );
 	void OnPanelAdded ( );
 };
-
-UClass* UBioSFHandler_PCPartySelection::pClassPointer = NULL;
 
 // Class SFXGame.BioSFHandler_SelectCharacter
 // 0x0003 (0x009C - 0x0099)
@@ -38487,20 +30159,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 63827 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void UpdateCharacterData ( );
 	bool DoCharactersExist ( );
 	void HandleEvent ( unsigned char nCommand, struct TArray<struct FString>* lstArguments );
 };
-
-UClass* UBioSFHandler_SelectCharacter::pClassPointer = NULL;
 
 // Class SFXGame.BioSkillMap
 // 0x0014 (0x0074 - 0x0060)
@@ -38514,19 +30178,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64597 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsSkillInMap ( struct FName Skill );
 	struct FName GetSkill ( int Num );
 };
-
-UClass* UBioSkillMap::pClassPointer = NULL;
 
 // Class SFXGame.BioSkillMap_Door
 // 0x0000 (0x0074 - 0x0074)
@@ -38538,17 +30194,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64609 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSkillMap_Door::pClassPointer = NULL;
 
 // Class SFXGame.BioSkillMap_Test
 // 0x0000 (0x0074 - 0x0074)
@@ -38560,17 +30208,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64611 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSkillMap_Test::pClassPointer = NULL;
 
 // Class SFXGame.BioStartLocation
 // 0x0000 (0x0284 - 0x0284)
@@ -38582,17 +30222,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64805 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioStartLocation::pClassPointer = NULL;
 
 // Class SFXGame.BioStartPoint
 // 0x0000 (0x0384 - 0x0384)
@@ -38604,17 +30236,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64808 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioStartPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioTempNavPoint
 // 0x0000 (0x0384 - 0x0384)
@@ -38626,17 +30250,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64991 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioTempNavPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioTimedActivity
 // 0x0010 (0x009C - 0x008C)
@@ -38649,17 +30265,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 64994 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTimedActivity::pClassPointer = NULL;
 
 // Class SFXGame.BioTriggerActorFactory
 // 0x0000 (0x008C - 0x008C)
@@ -38671,17 +30279,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65064 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioTriggerActorFactory::pClassPointer = NULL;
 
 // Class SFXGame.BioTriggerVolume
 // 0x0004 (0x02C8 - 0x02C4)
@@ -38695,20 +30295,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65104 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventBioBeginPlay ( );
 	void eventUnTouch ( class AActor* Other );
 	void eventTouch ( class AActor* Other, class UPrimitiveComponent* OtherComp, struct FVector HitLocation, struct FVector HitNormal );
 };
-
-UClass* ABioTriggerVolume::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraShakeBase
 // 0x0078 (0x00D8 - 0x0060)
@@ -38721,17 +30313,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65612 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraShakeBase::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraShake_MakoJumpJets
 // 0x0000 (0x00D8 - 0x00D8)
@@ -38743,17 +30327,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65615 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraShake_MakoJumpJets::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraShake_MakoBoost
 // 0x0000 (0x00D8 - 0x00D8)
@@ -38765,17 +30341,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65617 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraShake_MakoBoost::pClassPointer = NULL;
 
 // Class SFXGame.BioVehicleWheeledType
 // 0x0000 (0x00EC - 0x00EC)
@@ -38787,17 +30355,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65708 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioVehicleWheeledType::pClassPointer = NULL;
 
 // Class SFXGame.BioWaypointSetFactory
 // 0x0000 (0x008C - 0x008C)
@@ -38809,17 +30369,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 65795 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioWaypointSetFactory::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldInfoTick
 // 0x0000 (0x0284 - 0x0284)
@@ -38831,18 +30383,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66261 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float fDeltaT );
 };
-
-UClass* ABioWorldInfoTick::pClassPointer = NULL;
 
 // Class SFXGame.BioWorldInteraction
 // 0x0030 (0x02B4 - 0x0284)
@@ -38857,17 +30401,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66265 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWorldInteraction::pClassPointer = NULL;
 
 // Class SFXGame.BioWP_AirAssault
 // 0x0000 (0x0388 - 0x0388)
@@ -38879,17 +30415,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66313 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWP_AirAssault::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_AirDefense
 // 0x0000 (0x0388 - 0x0388)
@@ -38901,17 +30429,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66316 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_AirDefense::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_AssaultPoint
 // 0x0000 (0x0388 - 0x0388)
@@ -38923,17 +30443,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66328 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_AssaultPoint::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_ChangeRoute
 // 0x0015 (0x039D - 0x0388)
@@ -38950,18 +30462,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66331 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioWp_ChangeRoute::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_Cover
 // 0x0008 (0x0390 - 0x0388)
@@ -38974,17 +30478,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66342 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_Cover::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_DefensePoint
 // 0x0000 (0x0388 - 0x0388)
@@ -38996,17 +30492,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66346 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_DefensePoint::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_Delay
 // 0x0004 (0x038C - 0x0388)
@@ -39019,18 +30507,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66349 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioWp_Delay::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_GuardPost
 // 0x0000 (0x0388 - 0x0388)
@@ -39042,17 +30522,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66378 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_GuardPost::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_PlayAnim
 // 0x0024 (0x03AC - 0x0388)
@@ -39068,18 +30540,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66393 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool OnCreatureReachedWayPoint ( class APawn* PathFindingCreature );
 };
-
-UClass* ABioWp_PlayAnim::pClassPointer = NULL;
 
 // Class SFXGame.BioWp_SniperPoint
 // 0x0000 (0x0388 - 0x0388)
@@ -39091,17 +30555,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66405 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* ABioWp_SniperPoint::pClassPointer = NULL;
 
 // Class SFXGame.SFXAnimNotify_DisableProcEyeBlink
 // 0x0000 (0x0060 - 0x0060)
@@ -39113,18 +30569,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66429 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Notify ( class AActor* Owner, class UAnimNodeSequence* Sequence );
 };
-
-UClass* USFXAnimNotify_DisableProcEyeBlink::pClassPointer = NULL;
 
 // Class SFXGame.SFXAnimNotify_EnableProcEyeBlink
 // 0x0000 (0x0060 - 0x0060)
@@ -39136,17 +30584,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66437 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXAnimNotify_EnableProcEyeBlink::pClassPointer = NULL;
 
 // Class SFXGame.SFXAnimNotify_ScreenShake
 // 0x0078 (0x00D8 - 0x0060)
@@ -39159,18 +30599,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66440 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Notify ( class AActor* Owner, class UAnimNodeSequence* Sequence );
 };
-
-UClass* USFXAnimNotify_ScreenShake::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Cinematic
 // 0x0000 (0x0128 - 0x0128)
@@ -39182,17 +30614,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66447 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_Cinematic::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Combat
 // 0x0008 (0x0130 - 0x0128)
@@ -39205,19 +30629,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66450 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MakeInactive ( );
 	void MakeActive ( );
 };
-
-UClass* USFXCameraMode_Combat::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_CombatStorm
 // 0x0008 (0x0138 - 0x0130)
@@ -39231,21 +30647,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66459 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessViewRotation ( float DeltaTime, struct FRotator* OutViewRotation, struct FRotator* OutDeltaRot );
 	void Tick ( float DeltaTime );
 	void SetTarget ( );
 	void Initialize ( );
 };
-
-UClass* USFXCameraMode_CombatStorm::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_EnterCover
 // 0x0000 (0x0130 - 0x0130)
@@ -39257,17 +30665,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66478 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_EnterCover::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_ExploreStorm
 // 0x0008 (0x0130 - 0x0128)
@@ -39281,21 +30681,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66486 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ProcessViewRotation ( float DeltaTime, struct FRotator* OutViewRotation, struct FRotator* OutDeltaRot );
 	void Tick ( float DeltaTime );
 	void SetTarget ( );
 	void Initialize ( );
 };
-
-UClass* USFXCameraMode_ExploreStorm::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_HipAimCover
 // 0x0000 (0x0130 - 0x0130)
@@ -39307,17 +30699,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_HipAimCover::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_PhotoFree
 // 0x0000 (0x0160 - 0x0160)
@@ -39329,19 +30713,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66598 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float DeltaTime );
 	void Initialize ( );
 };
-
-UClass* USFXCameraMode_PhotoFree::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_TightAim
 // 0x0008 (0x0138 - 0x0130)
@@ -39355,19 +30731,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66615 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	void ModifyPostProcessSettings ( struct FPostProcessSettings* PPSettings );
 };
-
-UClass* USFXCameraMode_TightAim::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_SniperAim
 // 0x0000 (0x0138 - 0x0138)
@@ -39379,17 +30747,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66636 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_SniperAim::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_Vehicle
 // 0x0010 (0x0138 - 0x0128)
@@ -39404,21 +30764,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66641 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void MakeInactive ( );
 	void MakeActive ( );
 	void Tick ( float DeltaTime );
 	void Initialize ( );
 };
-
-UClass* USFXCameraMode_Vehicle::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_VehicleTightAim
 // 0x0000 (0x0128 - 0x0128)
@@ -39430,17 +30782,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66660 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_VehicleTightAim::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraMode_VehicleTightAimEx
 // 0x0000 (0x0128 - 0x0128)
@@ -39452,17 +30796,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66664 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXCameraMode_VehicleTightAimEx::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraTransition_ZoomSnap
 // 0x0027 (0x01B0 - 0x0189)
@@ -39477,20 +30813,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66730 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	void MakeInactive ( );
 	void InitializeTransition ( class USFXCameraMode* FromMode, class USFXCameraMode* ToMode, float Time, unsigned long PreserveTarget );
 };
-
-UClass* USFXCameraTransition_ZoomSnap::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraSetup
 // 0x0150 (0x01B0 - 0x0060)
@@ -39552,13 +30880,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66749 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USFXCameraMode* GetCoverCameraMode ( class ABioPlayerController* PC, class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 	bool PowerTriggeredLean ( class ABioPawn* ChkPawn );
@@ -39566,8 +30888,6 @@ public:
 	void GetExploreCameraMode ( class ABioPlayerController* PC, class USFXCameraMode* OldCameraMode, class USFXCameraMode** NewCameraMode, float* TransitionTime );
 	class USFXCameraMode* GetCameraMode ( class ABioPlayerController* PC, class USFXCameraMode* OldCameraMode, int* PreserveTarget, float* TransitionTime, class USFXCameraMode_Interpolate** Transition );
 };
-
-UClass* USFXCameraSetup::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraTransition_FaceTarget
 // 0x0027 (0x01B0 - 0x0189)
@@ -39582,19 +30902,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66866 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	void InitializeTransition ( class USFXCameraMode* FromMode, class USFXCameraMode* ToMode, float Time, unsigned long PreserveTarget );
 };
-
-UClass* USFXCameraTransition_FaceTarget::pClassPointer = NULL;
 
 // Class SFXGame.SFXCameraTransition_GalaxyMap
 // 0x0003 (0x018C - 0x0189)
@@ -39606,19 +30918,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 66880 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Tick ( float TimeDelta );
 	void InitializeTransition ( class USFXCameraMode* FromMode, class USFXCameraMode* ToMode, float Time, unsigned long PreserveTarget );
 };
-
-UClass* USFXCameraTransition_GalaxyMap::pClassPointer = NULL;
 
 // Class SFXGame.SFXGameViewportClient
 // 0x0000 (0x01D4 - 0x01D4)
@@ -39630,17 +30934,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 67491 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXGameViewportClient::pClassPointer = NULL;
 
 // Class SFXGame.SFXSeqAct_FindTerrainHeight
 // 0x0040 (0x0138 - 0x00F8)
@@ -39659,19 +30955,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 67777 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int eventGetObjClassVersion ( );
 	void Activated ( );
 };
-
-UClass* USFXSeqAct_FindTerrainHeight::pClassPointer = NULL;
 
 // Class SFXGame.SFXSeqAct_IsSquadInactive
 // 0x0008 (0x0100 - 0x00F8)
@@ -39684,18 +30972,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 67795 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* USFXSeqAct_IsSquadInactive::pClassPointer = NULL;
 
 // Class SFXGame.SFXSeqAct_TextureBlockConfig
 // 0x0004 (0x00FC - 0x00F8)
@@ -39708,18 +30988,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 67799 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Activated ( );
 };
-
-UClass* USFXSeqAct_TextureBlockConfig::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

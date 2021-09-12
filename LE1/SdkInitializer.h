@@ -1,4 +1,5 @@
 #include <Windows.h>
+#include <tlhelp32.h>
 #include <cstdio>
 
 #pragma once
@@ -7,12 +8,18 @@ template<typename T> struct TArray;
 struct FNameEntry;
 class UObject;
 
+
+#define LEx_MODULE_NAME		L"MassEffect1.exe"
+#define LEx_NAME_POOLS		0x16A2090       // RVA of the name pools
+#define LEx_OBJOBJECTS		0x1770670       // RVA of the UObject::ObjObjects
+
+
 class SDKInitializer
 {
 private:
 	BYTE* ModuleBase;
 
-	BYTE* GetModuleBaseAddress(wchar_t* moduleName)
+	inline BYTE* GetModuleBaseAddress(wchar_t* moduleName)
 	{
 		auto pid = GetCurrentProcessId();
 
@@ -43,21 +50,21 @@ private:
 
 	SDKInitializer()
 	{
-		ModuleBase = GetModuleBaseAddress(L"MassEffect1.exe");
+		ModuleBase = GetModuleBaseAddress(LEx_MODULE_NAME);
 	}
 
 public:
 
-	FNameEntry** GetBioNamePools() const noexcept
+	inline FNameEntry** GetBioNamePools() const noexcept
 	{
-		return &*(FNameEntry**)(ModuleBase + 0x16A2090);
+		return &*(FNameEntry**)(ModuleBase + LEx_NAME_POOLS);
 	}
-	struct TArray<class UObject*>* GetObjects() const noexcept
+	inline struct TArray<class UObject*>* GetObjects() const noexcept
 	{
-		return &*(struct TArray<class UObject*>*)(ModuleBase + 0x1770670);
+		return &*(struct TArray<class UObject*>*)(ModuleBase + LEx_OBJOBJECTS);
 	}
 
-	static SDKInitializer* Instance()
+	inline static SDKInitializer* Instance()
 	{
 		static SDKInitializer* initializer = nullptr;
 		if (!initializer)

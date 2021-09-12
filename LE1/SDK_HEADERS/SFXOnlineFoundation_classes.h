@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXOnlineFoundation_classes.h
 # ========================================================================================= #
@@ -237,13 +237,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4483 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Update ( class USFXOnlineEvent* oEvent );
 	bool IsComplete ( );
@@ -269,8 +263,6 @@ public:
 	unsigned char GetEventType ( );
 };
 
-UClass* USFXOnlineEvent::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineEvent_Integer
 // 0x0005 (0x0088 - 0x0083)
 class USFXOnlineEvent_Integer : public USFXOnlineEvent
@@ -282,19 +274,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4485 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetInteger ( int nInteger );
 	int GetInteger ( );
 };
-
-UClass* USFXOnlineEvent_Integer::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineEvent_PlatformKeyboardUI
 // 0x004E (0x00D1 - 0x0083)
@@ -314,17 +298,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4487 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXOnlineEvent_PlatformKeyboardUI::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineEvent_String
 // 0x0011 (0x0094 - 0x0083)
@@ -337,19 +313,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4489 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetStringData ( struct FString sStringData );
 	struct FString GetStringData ( );
 };
-
-UClass* USFXOnlineEvent_String::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineEvent_Notification
 // 0x0014 (0x00A8 - 0x0094)
@@ -363,21 +331,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4491 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void SetPriority ( int nPriority );
 	int GetPriority ( );
 	void SetImageName ( struct FString sImageName );
 	struct FString GetImageName ( );
 };
-
-UClass* USFXOnlineEvent_Notification::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineEventList
 // 0x0010 (0x0070 - 0x0060)
@@ -390,13 +350,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4493 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class USFXOnlineEvent* GetNextTimedOutEvent ( );
 	bool RemoveEvent ( class USFXOnlineEvent* oEvent );
@@ -406,8 +360,6 @@ public:
 	class USFXOnlineEvent* GetEvent ( class USFXOnlineEvent* oEvent );
 	bool AddEvent ( class USFXOnlineEvent* oEvent );
 };
-
-UClass* USFXOnlineEventList::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.ISFXOnlineComponent
 // 0x0000 (0x0060 - 0x0060)
@@ -419,20 +371,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4495 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName GetAPIName ( );
 	void OnRelease ( );
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
-
-UClass* UISFXOnlineComponent::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.ISFXOnlineComponentAPI
 // 0x0000 (0x0060 - 0x0060)
@@ -444,18 +388,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4497 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool Idle ( );
 };
-
-UClass* UISFXOnlineComponentAPI::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.ISFXOnlineComponentAchievement
 // 0x0000 (0x0060 - 0x0060)
@@ -467,21 +403,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4499 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* UISFXOnlineComponentAchievement::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.ISFXOnlineComponentLogin
 // 0x0000 (0x0060 - 0x0060)
@@ -493,13 +421,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4501 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetConnectMode ( );
 	unsigned char GetUIState ( );
@@ -547,8 +469,6 @@ public:
 	unsigned char GetLoginStatus ( );
 };
 
-UClass* UISFXOnlineComponentLogin::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.ISFXOnlineComponentNotification
 // 0x0000 (0x0060 - 0x0060)
 class UISFXOnlineComponentNotification : public UISFXOnlineComponent
@@ -559,13 +479,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4503 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FSFXOnlineTargetOfferInfo GetTargetOfferInfo ( unsigned char nSource );
 	unsigned char HasUserPurchasedAnOffer ( struct FSFXOnline_OfferID aOfferId );
@@ -581,8 +495,6 @@ public:
 	void RequestData ( );
 };
 
-UClass* UISFXOnlineComponentNotification::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.ISFXOnlineComponentPlatform
 // 0x0000 (0x0060 - 0x0060)
 class UISFXOnlineComponentPlatform : public UISFXOnlineComponent
@@ -593,13 +505,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4505 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetRebootUserData ( );
 	bool WasRebootedFromOSCodeRedemptionUI ( );
@@ -625,8 +531,6 @@ public:
 	unsigned char GetLoginStatus ( unsigned char byLocalUserNum );
 };
 
-UClass* UISFXOnlineComponentPlatform::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.ISFXOnlineComponentTelemetry
 // 0x0000 (0x0060 - 0x0060)
 class UISFXOnlineComponentTelemetry : public UISFXOnlineComponent
@@ -637,13 +541,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4507 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void Flush ( unsigned char Channel );
 	void RegisterConnectionDelegates ( );
@@ -651,8 +549,6 @@ public:
 	void OnAuthenticate ( );
 	bool CanCollect ( );
 };
-
-UClass* UISFXOnlineComponentTelemetry::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.ISFXOnlineComponentUserInterface
 // 0x0000 (0x0060 - 0x0060)
@@ -664,13 +560,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4509 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventShowStore ( struct TArray<struct FSFXOfferDescriptor> aOffers );
 	void eventHasCerberusDLC ( unsigned long bVal );
@@ -694,8 +584,6 @@ public:
 	void ShowIntroPage ( );
 };
 
-UClass* UISFXOnlineComponentUserInterface::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineDefine
 // 0x0000 (0x0060 - 0x0060)
 class USFXOnlineDefine : public UObject
@@ -706,17 +594,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4511 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* USFXOnlineDefine::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponent
 // 0x0034 (0x0094 - 0x0060)
@@ -733,13 +613,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4513 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsXbox360 ( );
 	bool eventIsPS3 ( );
@@ -767,8 +641,6 @@ public:
 	void SubscribeToEvents ( );
 };
 
-UClass* USFXOnlineComponent::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentOrigin
 // 0x0030 (0x00C4 - 0x0094)
 class USFXOnlineComponentOrigin : public USFXOnlineComponent
@@ -785,13 +657,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4515 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnTick ( );
 	bool RefreshServerAchievements_ASync ( struct FSFXCachedAchievements* cached );
@@ -803,8 +669,6 @@ public:
 	void OnRelease ( );
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
-
-UClass* USFXOnlineComponentOrigin::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer
 // 0x0438 (0x04CC - 0x0094)
@@ -854,13 +718,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4517 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearUnlockAchievementCompleteDelegate ( unsigned char LocalUserNum, struct FScriptDelegate UnlockAchievementCompleteDelegate );
 	void AddUnlockAchievementCompleteDelegate ( unsigned char LocalUserNum, struct FScriptDelegate UnlockAchievementCompleteDelegate );
@@ -979,8 +837,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentUnrealPlayer::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx
 // 0x00B8 (0x014C - 0x0094)
 class USFXOnlineComponentUnrealPlayerEx : public USFXOnlineComponent
@@ -995,13 +851,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4519 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowCustomPlayersUI ( unsigned char LocalUserNum, struct FString Title, struct FString Description, struct TArray<struct FUniqueNetId>* Players );
 	bool ShowPlayersUI ( unsigned char LocalUserNum );
@@ -1029,8 +879,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentUnrealPlayerEx::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentUnrealSystem
 // 0x00D9 (0x016D - 0x0094)
 class USFXOnlineComponentUnrealSystem : public USFXOnlineComponent
@@ -1056,13 +904,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4521 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	unsigned char GetTitleFileState ( struct FString Filename );
 	bool GetTitleFileContents ( struct FString Filename, struct TArray<unsigned char>* FileContents );
@@ -1096,8 +938,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentUnrealSystem::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentCoordinator
 // 0x0260 (0x02C0 - 0x0060)
 class USFXOnlineComponentCoordinator : public UObject
@@ -1112,13 +952,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4523 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FName GetAPIName ( );
 	void OnRelease ( );
@@ -1142,8 +976,6 @@ public:
 	void OnTick ( class USFXOnlineEvent* oEvent );
 	void OnEvent ( class USFXOnlineEvent* oEvent );
 };
-
-UClass* USFXOnlineComponentCoordinator::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineSubsystem
 // 0x01D8 (0x0334 - 0x015C)
@@ -1170,13 +1002,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4525 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventExit ( );
 	bool ShowConsoleRoutedKeyboardUI ( unsigned char eLocalUserNum, struct FString sTitleText, struct FString sDescriptionText, unsigned long bIsPassword, unsigned long bShouldValidate, struct FString sDefaultText, int nMaxResultLength );
@@ -1220,8 +1046,6 @@ public:
 	struct TArray<struct FSFXOnlineAchievement> GetAchievementList ( );
 };
 
-UClass* USFXOnlineSubsystem::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentAchievementPC
 // 0x0054 (0x00E8 - 0x0094)
 class USFXOnlineComponentAchievementPC : public USFXOnlineComponent
@@ -1235,13 +1059,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4527 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
@@ -1251,8 +1069,6 @@ public:
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* USFXOnlineComponentAchievementPC::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentPlatformPC
 // 0x0008 (0x009C - 0x0094)
@@ -1265,13 +1081,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4529 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetRebootUserData ( );
 	bool WasRebootedFromOSCodeRedemptionUI ( );
@@ -1300,8 +1110,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentPlatformPC::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentAchievementXenon
 // 0x0008 (0x009C - 0x0094)
 class USFXOnlineComponentAchievementXenon : public USFXOnlineComponent
@@ -1313,13 +1121,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4531 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
@@ -1329,8 +1131,6 @@ public:
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* USFXOnlineComponentAchievementXenon::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentPlatformXenon
 // 0x0084 (0x0118 - 0x0094)
@@ -1352,13 +1152,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4533 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetRebootUserData ( );
 	bool WasRebootedFromOSCodeRedemptionUI ( );
@@ -1389,8 +1183,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentPlatformXenon::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentAchievementPS3
 // 0x0008 (0x009C - 0x0094)
 class USFXOnlineComponentAchievementPS3 : public USFXOnlineComponent
@@ -1402,13 +1194,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4535 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
@@ -1418,8 +1204,6 @@ public:
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* USFXOnlineComponentAchievementPS3::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentPlatformPS3
 // 0x0034 (0x00C8 - 0x0094)
@@ -1436,13 +1220,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4537 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ShowLoginUIEx ( struct FScriptDelegate funcSignInComplete );
 	void OnSignInComplete ( unsigned long bSignedIn );
@@ -1475,8 +1253,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentPlatformPS3::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentAchievementDingo
 // 0x0050 (0x00E4 - 0x0094)
 class USFXOnlineComponentAchievementDingo : public USFXOnlineComponent
@@ -1489,13 +1265,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4539 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
@@ -1505,8 +1275,6 @@ public:
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* USFXOnlineComponentAchievementDingo::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentPlatformDingo
 // 0x0008 (0x009C - 0x0094)
@@ -1519,13 +1287,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4541 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnTick ( class USFXOnlineEvent* oEvent );
 	void OnKeyboardUIClosed ( unsigned long Success, struct FString InputBuffer );
@@ -1556,8 +1318,6 @@ public:
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
 
-UClass* USFXOnlineComponentPlatformDingo::pClassPointer = NULL;
-
 // Class SFXOnlineFoundation.SFXOnlineComponentAchievementOrbis
 // 0x0098 (0x012C - 0x0094)
 class USFXOnlineComponentAchievementOrbis : public USFXOnlineComponent
@@ -1571,13 +1331,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4543 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetTitleAchievementID ( int Index, int* SetIndex );
 	int GetPlatformAchievementID ( int Index, int* SetIndex );
@@ -1587,8 +1341,6 @@ public:
 	bool IsGranted ( unsigned char LocalUserNum, int AchievementId );
 	void Grant ( unsigned char LocalUserNum, int AchievementId );
 };
-
-UClass* USFXOnlineComponentAchievementOrbis::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis
 // 0x0008 (0x009C - 0x0094)
@@ -1601,13 +1353,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4545 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnKeyboardUIClosed ( unsigned long Success, struct FString InputBuffer );
 	int GetRebootUserData ( );
@@ -1636,8 +1382,6 @@ public:
 	void OnRelease ( );
 	void OnInitialize ( class USFXOnlineSubsystem* oOnlineSubsystem );
 };
-
-UClass* USFXOnlineComponentPlatformOrbis::pClassPointer = NULL;
 
 // Class SFXOnlineFoundation.SFXOnlineComponentTelemetrySystem
 // 0x00A4 (0x0138 - 0x0094)
@@ -1666,13 +1410,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 4547 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnTick ( class USFXOnlineEvent* oEvent );
 	void Flush ( unsigned char Channel );
@@ -1684,8 +1422,6 @@ public:
 	void OnAuthenticate ( );
 	bool CanCollect ( );
 };
-
-UClass* USFXOnlineComponentTelemetrySystem::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

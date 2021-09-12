@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXQA_f_structs.h
 # ========================================================================================= #
@@ -29,9 +29,21 @@
 # ========================================================================================= #
 */
 
+// Function SFXQA.BioSeqAct_IsAutomated.Activated
+// [0x00020002] 
+struct UBioSeqAct_IsAutomated_execActivated_Parms
+{
+};
+
 // Function SFXQA.BioSeqAct_IsSplinePilot.Activated
 // [0x00020002] 
 struct UBioSeqAct_IsSplinePilot_execActivated_Parms
+{
+};
+
+// Function SFXQA.BioSeqAct_ReadSplinePilotConsoleCommand.Activated
+// [0x00020002] 
+struct UBioSeqAct_ReadSplinePilotConsoleCommand_execActivated_Parms
 {
 };
 

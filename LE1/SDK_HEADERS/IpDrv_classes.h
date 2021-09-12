@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: IpDrv_classes.h
 # ========================================================================================= #
@@ -235,17 +235,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2815 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UClientBeaconAddressResolver::pClassPointer = NULL;
 
 // Class IpDrv.HTTPDownload
 // 0x012C (0x0BD0 - 0x0AA4)
@@ -262,17 +254,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2817 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UHTTPDownload::pClassPointer = NULL;
 
 // Class IpDrv.InternetLink
 // 0x0024 (0x02A8 - 0x0284)
@@ -293,13 +277,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2825 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventResolveFailed ( );
 	void eventResolved ( struct FIpAddr Addr );
@@ -311,8 +289,6 @@ public:
 	bool ParseURL ( struct FString URL, struct FString* Addr, int* PortNum, struct FString* LevelName, struct FString* EntryName );
 	bool IsDataPending ( );
 };
-
-UClass* AInternetLink::pClassPointer = NULL;
 
 // Class IpDrv.TcpLink
 // 0x003D (0x02E5 - 0x02A8)
@@ -329,13 +305,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2827 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventReceivedBinary ( int Count, unsigned char* B );
 	void eventReceivedLine ( struct FString Line );
@@ -354,8 +324,6 @@ public:
 	int BindPort ( int PortNum, unsigned long bUseNextAvailable );
 };
 
-UClass* ATcpLink::pClassPointer = NULL;
-
 // Class IpDrv.MCPBase
 // 0x0008 (0x0068 - 0x0060)
 class UMCPBase : public UObject
@@ -367,17 +335,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2829 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UMCPBase::pClassPointer = NULL;
 
 // Class IpDrv.OnlineEventsInterfaceMcp
 // 0x0034 (0x009C - 0x0068)
@@ -393,20 +353,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2831 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UploadHardwareData ( struct FUniqueNetId UniqueId, struct FString PlayerNick );
 	bool UploadGameplayEventsData ( class UOnlineGameplayEvents* Events );
 	bool UploadProfileData ( struct FUniqueNetId UniqueId, struct FString PlayerNick, class UOnlineProfileSettings* ProfileSettings );
 };
-
-UClass* UOnlineEventsInterfaceMcp::pClassPointer = NULL;
 
 // Class IpDrv.OnlineNewsInterfaceMcp
 // 0x0034 (0x009C - 0x0068)
@@ -422,13 +374,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2833 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	struct FString GetNews ( unsigned char LocalUserNum, unsigned char NewsType );
 	void ClearReadNewsCompletedDelegate ( struct FScriptDelegate ReadGameNewsDelegate );
@@ -436,8 +382,6 @@ public:
 	void OnReadNewsCompleted ( unsigned long bWasSuccessful, unsigned char NewsType );
 	bool ReadNews ( unsigned char LocalUserNum, unsigned char NewsType );
 };
-
-UClass* UOnlineNewsInterfaceMcp::pClassPointer = NULL;
 
 // Class IpDrv.OnlineTitleFileDownloadMcp
 // 0x0050 (0x00B8 - 0x0068)
@@ -456,13 +400,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2835 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool ClearDownloadedFiles ( );
 	unsigned char GetTitleFileState ( struct FString Filename );
@@ -472,8 +410,6 @@ public:
 	bool ReadTitleFile ( struct FString FileToRead );
 	void OnReadTitleFileComplete ( unsigned long bWasSuccessful, struct FString Filename );
 };
-
-UClass* UOnlineTitleFileDownloadMcp::pClassPointer = NULL;
 
 // Class IpDrv.MeshBeacon
 // 0x0044 (0x00A4 - 0x0060)
@@ -501,18 +437,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2837 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDestroyBeacon ( );
 };
-
-UClass* UMeshBeacon::pClassPointer = NULL;
 
 // Class IpDrv.MeshBeaconClient
 // 0x00CA (0x016E - 0x00A4)
@@ -540,13 +468,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2839 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugRender ( class UCanvas* Canvas );
 	void DumpInfo ( );
@@ -560,8 +482,6 @@ public:
 	bool RequestConnection ( unsigned long bRegisterSecureAddress, struct FOnlineGameSearchResult* DesiredHost, struct FClientConnectionRequest* ClientRequest );
 	void eventDestroyBeacon ( );
 };
-
-UClass* UMeshBeaconClient::pClassPointer = NULL;
 
 // Class IpDrv.MeshBeaconHost
 // 0x0080 (0x0124 - 0x00A4)
@@ -583,13 +503,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2841 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DebugRender ( class UCanvas* Canvas, struct FUniqueNetId CurOptimalHostId );
 	void DumpConnections ( );
@@ -613,8 +527,6 @@ public:
 	bool InitHostBeacon ( struct FUniqueNetId InOwningPlayerId );
 };
 
-UClass* UMeshBeaconHost::pClassPointer = NULL;
-
 // Class IpDrv.OnlineSubsystemCommonImpl
 // 0x001C (0x0178 - 0x015C)
 class UOnlineSubsystemCommonImpl : public UOnlineSubsystem
@@ -630,21 +542,13 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2843 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void GetRegisteredPlayers ( struct FName SessionName, struct TArray<struct FUniqueNetId>* OutRegisteredPlayers );
 	bool IsPlayerInSession ( struct FName SessionName, struct FUniqueNetId PlayerID );
 	struct FUniqueNetId eventGetPlayerUniqueNetIdFromIndex ( int UserIndex );
 	struct FString eventGetPlayerNicknameFromIndex ( int UserIndex );
 };
-
-UClass* UOnlineSubsystemCommonImpl::pClassPointer = NULL;
 
 // Class IpDrv.OnlineGameInterfaceImpl
 // 0x0186 (0x01E6 - 0x0060)
@@ -689,13 +593,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2845 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool BindPlatformSpecificSessionToSearch ( unsigned char SearchingPlayerNum, class UOnlineGameSearch* SearchSettings, unsigned char* PlatformSpecificInfo );
 	bool ReadPlatformSpecificSessionInfoBySessionName ( struct FName SessionName, unsigned char* PlatformSpecificInfo );
@@ -757,8 +655,6 @@ public:
 	void OnFindOnlineGamesComplete ( unsigned long bWasSuccessful );
 };
 
-UClass* UOnlineGameInterfaceImpl::pClassPointer = NULL;
-
 // Class IpDrv.PartyBeacon
 // 0x0038 (0x0098 - 0x0060)
 class UPartyBeacon : public UObject
@@ -779,19 +675,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2847 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void OnDestroyComplete ( );
 	void eventDestroyBeacon ( );
 };
-
-UClass* UPartyBeacon::pClassPointer = NULL;
 
 // Class IpDrv.PartyBeaconClient
 // 0x00A6 (0x013E - 0x0098)
@@ -817,13 +705,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2849 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventDestroyBeacon ( );
 	bool CancelReservation ( struct FUniqueNetId CancellingPartyLeader );
@@ -835,8 +717,6 @@ public:
 	void OnReservationCountUpdated ( int ReservationRemaining );
 	void OnReservationRequestComplete ( unsigned char ReservationResult );
 };
-
-UClass* UPartyBeaconClient::pClassPointer = NULL;
 
 // Class IpDrv.PartyBeaconHost
 // 0x0074 (0x010C - 0x0098)
@@ -861,13 +741,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2851 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void DumpReservations ( );
 	int GetMaxAvailableTeamSize ( );
@@ -891,8 +765,6 @@ public:
 	bool InitHostBeacon ( int InNumTeams, int InNumPlayersPerTeam, int InNumReservations, struct FName InSessionName );
 };
 
-UClass* UPartyBeaconHost::pClassPointer = NULL;
-
 // Class IpDrv.TcpNetDriver
 // 0x0024 (0x01F0 - 0x01CC)
 class UTcpNetDriver : public UNetDriver
@@ -906,17 +778,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2853 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTcpNetDriver::pClassPointer = NULL;
 
 // Class IpDrv.TcpipConnection
 // 0x0028 (0x6094 - 0x606C)
@@ -929,17 +793,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2857 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UTcpipConnection::pClassPointer = NULL;
 
 // Class IpDrv.WebRequest
 // 0x00E5 (0x0145 - 0x0060)
@@ -960,13 +816,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2859 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	int GetHexDigit ( struct FString D );
 	void DecodeFormData ( struct FString Data );
@@ -983,8 +833,6 @@ public:
 	struct FString EncodeBase64 ( struct FString Decoded );
 	struct FString DecodeBase64 ( struct FString Encoded );
 };
-
-UClass* UWebRequest::pClassPointer = NULL;
 
 // Class IpDrv.WebResponse
 // 0x0084 (0x00E4 - 0x0060)
@@ -1003,13 +851,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2861 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SentResponse ( );
 	bool SentText ( );
@@ -1034,8 +876,6 @@ public:
 	bool FileExists ( struct FString Filename );
 };
 
-UClass* UWebResponse::pClassPointer = NULL;
-
 // Class IpDrv.WebApplication
 // 0x0020 (0x0080 - 0x0060)
 class UWebApplication : public UObject
@@ -1049,13 +889,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36485 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void PostQuery ( class UWebRequest* Request, class UWebResponse* Response );
 	void Query ( class UWebRequest* Request, class UWebResponse* Response );
@@ -1064,8 +898,6 @@ public:
 	void Cleanup ( );
 	void Init ( );
 };
-
-UClass* UWebApplication::pClassPointer = NULL;
 
 // Class IpDrv.WebServer
 // 0x01CF (0x04B4 - 0x02E5)
@@ -1089,13 +921,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36501 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	class UWebApplication* GetApplication ( struct FString URI, struct FString* SubURI );
 	void eventLostChild ( class AActor* C );
@@ -1103,8 +929,6 @@ public:
 	void eventDestroyed ( );
 	void PostBeginPlay ( );
 };
-
-UClass* AWebServer::pClassPointer = NULL;
 
 // Class IpDrv.HelloWeb
 // 0x0000 (0x0080 - 0x0080)
@@ -1116,19 +940,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36504 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventQuery ( class UWebRequest* Request, class UWebResponse* Response );
 	void Init ( );
 };
-
-UClass* UHelloWeb::pClassPointer = NULL;
 
 // Class IpDrv.ImageServer
 // 0x0000 (0x0080 - 0x0080)
@@ -1140,18 +956,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36523 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventQuery ( class UWebRequest* Request, class UWebResponse* Response );
 };
-
-UClass* UImageServer::pClassPointer = NULL;
 
 // Class IpDrv.IniLocPatcherMcp
 // 0x0010 (0x00A0 - 0x0090)
@@ -1165,13 +973,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 36533 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ClearCachedFiles ( );
 	void ClearReadFileDelegate ( struct FScriptDelegate ReadTitleFileCompleteDelegate );
@@ -1180,8 +982,6 @@ public:
 	void DownloadFiles ( );
 	void Init ( );
 };
-
-UClass* UIniLocPatcherMcp::pClassPointer = NULL;
 
 // Class IpDrv.WebConnection
 // 0x0047 (0x032C - 0x02E5)
@@ -1203,13 +1003,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 37327 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool IsHanging ( );
 	void Cleanup ( );
@@ -1225,8 +1019,6 @@ public:
 	void eventClosed ( );
 	void eventAccepted ( );
 };
-
-UClass* AWebConnection::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

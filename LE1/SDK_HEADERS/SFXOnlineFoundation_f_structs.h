@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXOnlineFoundation_f_structs.h
 # ========================================================================================= #
@@ -40,35 +40,35 @@ struct USFXOnlineEvent_execUpdate_Parms
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineEvent_execIsComplete_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEvent.IsPending
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineEvent_execIsPending_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEvent.CompleteAndSucceeded
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineEvent_execCompleteAndSucceeded_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEvent.HasTimedOut
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineEvent_execHasTimedOut_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEvent.IsTimeoutEnabled
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineEvent_execIsTimeoutEnabled_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEvent.DisableTimeout
@@ -249,7 +249,7 @@ struct USFXOnlineEventList_execGetNextTimedOutEvent_Parms
 struct USFXOnlineEventList_execRemoveEvent_Parms
 {
 	class USFXOnlineEvent*                             oEvent;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineEventList.FindEventByType
@@ -290,7 +290,7 @@ struct USFXOnlineEventList_execGetEvent_Parms
 struct USFXOnlineEventList_execAddEvent_Parms
 {
 	class USFXOnlineEvent*                             oEvent;                                           		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponent.GetAPIName
@@ -317,7 +317,7 @@ struct UISFXOnlineComponent_execOnInitialize_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentAPI_execIdle_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentAchievement.GetTitleAchievementID
@@ -344,7 +344,7 @@ struct UISFXOnlineComponentAchievement_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentAchievement.Grant
@@ -448,14 +448,14 @@ struct UISFXOnlineComponentLogin_execCheckEntitlement_Parms
 {
 	struct FString                                     sGroup;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sTag;                                             		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.IsCerberusMember
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execIsCerberusMember_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.DisablePersona
@@ -483,7 +483,7 @@ struct UISFXOnlineComponentLogin_execSelectPersona_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execAcceptTOS_Parms
 {
-	unsigned long                                      bAccepted : 1;                                    		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bAccepted;                                        		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.Disconnect
@@ -505,15 +505,15 @@ struct UISFXOnlineComponentLogin_execSubmitCreateNucleusAccountEx_Parms
 {
 	struct FString                                     sEmail;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sPassword;                                        		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bEAProducts : 1;                                  		// 0x0020 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bThirdParty : 1;                                  		// 0x0024 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bBioWareProducts : 1;                             		// 0x0028 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bEAProducts;                                      		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bThirdParty;                                      		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bBioWareProducts;                                 		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     i_sCountryCode;                                   		// 0x002C (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                BirthDay;                                         		// 0x003C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                BirthMonth;                                       		// 0x0040 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                BirthYear;                                        		// 0x0044 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     i_sLanguageCode;                                  		// 0x0048 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bSubmit : 1;                                      		// 0x0058 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bSubmit;                                          		// 0x0058 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.SubmitEmailPasswordMismatch
@@ -536,7 +536,7 @@ struct UISFXOnlineComponentLogin_execSubmitMessageBox_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execSubmitRedeemCode_Parms
 {
-	unsigned long                                      bContinue : 1;                                    		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bContinue;                                        		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     i_sCode;                                          		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 };
 
@@ -565,17 +565,17 @@ struct UISFXOnlineComponentLogin_execSubmitCreateNucleusAccount_Parms
 {
 	struct FString                                     sEmail;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sPassword;                                        		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bEAProducts : 1;                                  		// 0x0020 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bThirdParty : 1;                                  		// 0x0024 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bBioWareProducts : 1;                             		// 0x0028 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bSubmit : 1;                                      		// 0x002C (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bEAProducts;                                      		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bThirdParty;                                      		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bBioWareProducts;                                 		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bSubmit;                                          		// 0x002C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.SubmitParentEmail
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execSubmitParentEmail_Parms
 {
-	unsigned long                                      bContinue : 1;                                    		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bContinue;                                        		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     ParentEmail;                                      		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 };
 
@@ -592,8 +592,8 @@ struct UISFXOnlineComponentLogin_execSubmitNucleusLogin_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execSubmitIntroPage_Parms
 {
-	unsigned long                                      bContinue : 1;                                    		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bSimulated : 1;                                   		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bContinue;                                        		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bSimulated;                                       		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.Connect
@@ -633,35 +633,35 @@ struct UISFXOnlineComponentLogin_execGetPersonaName_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execHasInternetConnection_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.IsConnectedTo3rdPartyOnlineService
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execIsConnectedTo3rdPartyOnlineService_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.HasAccountFor3rdPartyOnlineService
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execHasAccountFor3rdPartyOnlineService_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.IsSignedIn
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execIsSignedIn_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.IsConnected
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentLogin_execIsConnected_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentLogin.SwitchActiveUserIndex
@@ -706,7 +706,7 @@ struct UISFXOnlineComponentNotification_execHasUserPurchasedAnOffer_Parms
 struct UISFXOnlineComponentNotification_execDownloadOffers_Parms
 {
 	struct TArray<struct FSFXOnline_OfferID>           aOfferIds;                                        		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentNotification.GetOfferKeyIfEntitled
@@ -756,7 +756,7 @@ struct UISFXOnlineComponentNotification_execGetDaysSinceCerberusRegistration_Par
 struct UISFXOnlineComponentNotification_execIsCalendarUnlockEarned_Parms
 {
 	int                                                nDay;                                             		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentNotification.RequestServerInfo
@@ -782,7 +782,7 @@ struct UISFXOnlineComponentPlatform_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentPlatform_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowCodeRedemptionUI
@@ -790,14 +790,14 @@ struct UISFXOnlineComponentPlatform_execWasRebootedFromOSCodeRedemptionUI_Parms
 struct UISFXOnlineComponentPlatform_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct UISFXOnlineComponentPlatform_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.GetOnlineXuid
@@ -806,7 +806,7 @@ struct UISFXOnlineComponentPlatform_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oUserXuid;                                        		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.GetOfflineXuid
@@ -815,7 +815,7 @@ struct UISFXOnlineComponentPlatform_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oUserXuid;                                        		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.AddRecentPlayer
@@ -824,7 +824,7 @@ struct UISFXOnlineComponentPlatform_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowKeyboardUI
@@ -835,11 +835,11 @@ struct UISFXOnlineComponentPlatform_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowAchievementsUI
@@ -847,7 +847,7 @@ struct UISFXOnlineComponentPlatform_execShowKeyboardUI_Parms
 struct UISFXOnlineComponentPlatform_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowFeedbackUI
@@ -856,7 +856,7 @@ struct UISFXOnlineComponentPlatform_execShowFeedbackUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowGamerCardUI
@@ -865,7 +865,7 @@ struct UISFXOnlineComponentPlatform_execShowGamerCardUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowFriendsInviteUI
@@ -874,7 +874,7 @@ struct UISFXOnlineComponentPlatform_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.ShowFriendsUI
@@ -882,7 +882,7 @@ struct UISFXOnlineComponentPlatform_execShowFriendsInviteUI_Parms
 struct UISFXOnlineComponentPlatform_execShowFriendsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.CanShowPresenceInformation
@@ -947,8 +947,8 @@ struct UISFXOnlineComponentPlatform_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct UISFXOnlineComponentPlatform_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentPlatform.GetLoginStatus
@@ -990,7 +990,7 @@ struct UISFXOnlineComponentTelemetry_execOnAuthenticate_Parms
 // [0x00120000] 
 struct UISFXOnlineComponentTelemetry_execCanCollect_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentUserInterface.ShowStore
@@ -1004,7 +1004,7 @@ struct UISFXOnlineComponentUserInterface_eventShowStore_Parms
 // [0x00020800] ( FUNC_Event )
 struct UISFXOnlineComponentUserInterface_eventHasCerberusDLC_Parms
 {
-	unsigned long                                      bVal : 1;                                         		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bVal;                                             		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentUserInterface.OnDisplayNotification
@@ -1070,9 +1070,9 @@ struct UISFXOnlineComponentUserInterface_execShowCreateNucleusAccountEx_Parms
 {
 	struct FString                                     sEmail;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sPassword;                                        		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bEAProducts : 1;                                  		// 0x0020 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bThirdParty : 1;                                  		// 0x0024 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bBioWareProducts : 1;                             		// 0x0028 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bEAProducts;                                      		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bThirdParty;                                      		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bBioWareProducts;                                 		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     i_sCountryCode;                                   		// 0x002C (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	int                                                BirthDay;                                         		// 0x003C (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                BirthMonth;                                       		// 0x0040 (0x0004) [0x0000000000000080]              ( CPF_Parm )
@@ -1112,11 +1112,11 @@ struct UISFXOnlineComponentUserInterface_execShowCreateNucleusAccount_Parms
 {
 	struct FString                                     sEmail;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sPassword;                                        		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bEAProducts : 1;                                  		// 0x0020 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bThirdParty : 1;                                  		// 0x0024 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bRegisterProduct : 1;                             		// 0x0028 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bBioWareProducts : 1;                             		// 0x002C (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
-	unsigned long                                      bUnderage : 1;                                    		// 0x0030 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bEAProducts;                                      		// 0x0020 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bThirdParty;                                      		// 0x0024 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bRegisterProduct;                                 		// 0x0028 (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bBioWareProducts;                                 		// 0x002C (0x0004) [0x0000000000000080]              ( CPF_Parm )
+	unsigned long                                      bUnderage;                                        		// 0x0030 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentUserInterface.ShowParentEmail
@@ -1138,7 +1138,7 @@ struct UISFXOnlineComponentUserInterface_execShowAccountDemographics_Parms
 struct UISFXOnlineComponentUserInterface_execShowTermsOfService_Parms
 {
 	struct FString                                     i_sTermsOfService;                                		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bTOSChanged : 1;                                  		// 0x0010 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bTOSChanged;                                      		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.ISFXOnlineComponentUserInterface.ShowNucleusLogin
@@ -1160,21 +1160,21 @@ struct UISFXOnlineComponentUserInterface_execShowIntroPage_Parms
 // [0x00020802] ( FUNC_Event )
 struct USFXOnlineComponent_eventIsXbox360_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponent.IsPS3
 // [0x00020802] ( FUNC_Event )
 struct USFXOnlineComponent_eventIsPS3_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponent.IsConsole
 // [0x00020802] ( FUNC_Event )
 struct USFXOnlineComponent_eventIsConsole_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponent.IsEventPending
@@ -1183,7 +1183,7 @@ struct USFXOnlineComponent_execIsEventPending_Parms
 {
 	unsigned char                                      eEventType;                                       		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nEventId;                                         		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponent.GetEvent
@@ -1352,7 +1352,7 @@ struct USFXOnlineComponentOrigin_execOnTick_Parms
 struct USFXOnlineComponentOrigin_execRefreshServerAchievements_ASync_Parms
 {
 	struct FSFXCachedAchievements                      cached;                                           		// 0x0000 (0x0024) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentOrigin.SetRichPresence
@@ -1361,28 +1361,28 @@ struct USFXOnlineComponentOrigin_execSetRichPresence_Parms
 {
 	struct FString                                     presence;                                         		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     gamePresence;                                     		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentOrigin.RequestProfile
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentOrigin_execRequestProfile_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentOrigin.StartService
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentOrigin_execStartService_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentOrigin.EnsureSignedIn
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentOrigin_execEnsureSignedIn_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentOrigin.GetAPIName
@@ -1426,7 +1426,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddUnlockAchievementCompleteDelegate_
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnUnlockAchievementComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.UnlockAchievement
@@ -1435,7 +1435,7 @@ struct USFXOnlineComponentUnrealPlayer_execUnlockAchievement_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetAchievements
@@ -1479,9 +1479,9 @@ struct USFXOnlineComponentUnrealPlayer_execReadAchievements_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                TitleId;                                          		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldReadText : 1;                              		// 0x0008 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldReadImages : 1;                            		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShouldReadText;                                  		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldReadImages;                                		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.DeleteMessage
@@ -1490,7 +1490,7 @@ struct USFXOnlineComponentUnrealPlayer_execDeleteMessage_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                MessageIndex;                                     		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearFriendMessageReceivedDelegate
@@ -1545,7 +1545,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddJoinFriendGameCompleteDelegate_Par
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnJoinFriendGameComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.JoinFriendGame
@@ -1554,7 +1554,7 @@ struct USFXOnlineComponentUnrealPlayer_execJoinFriendGame_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                Friend;                                           		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearReceivedGameInviteDelegate
@@ -1588,7 +1588,7 @@ struct USFXOnlineComponentUnrealPlayer_execSendGameInviteToFriends_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FUniqueNetId>                 Friends;                                          		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     Text;                                             		// 0x0014 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.SendGameInviteToFriend
@@ -1598,7 +1598,7 @@ struct USFXOnlineComponentUnrealPlayer_execSendGameInviteToFriend_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                Friend;                                           		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Text;                                             		// 0x000C (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.SendMessageToFriend
@@ -1608,7 +1608,7 @@ struct USFXOnlineComponentUnrealPlayer_execSendMessageToFriend_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                Friend;                                           		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Message;                                          		// 0x000C (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearFriendInviteReceivedDelegate
@@ -1643,7 +1643,7 @@ struct USFXOnlineComponentUnrealPlayer_execRemoveFriend_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                FormerFriend;                                     		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.DenyFriendInvite
@@ -1652,7 +1652,7 @@ struct USFXOnlineComponentUnrealPlayer_execDenyFriendInvite_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                RequestingPlayer;                                 		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.AcceptFriendInvite
@@ -1661,7 +1661,7 @@ struct USFXOnlineComponentUnrealPlayer_execAcceptFriendInvite_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                RequestingPlayer;                                 		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearAddFriendByNameCompleteDelegate
@@ -1684,7 +1684,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddAddFriendByNameCompleteDelegate_Pa
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnAddFriendByNameComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.AddFriendByName
@@ -1694,7 +1694,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddFriendByName_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     FriendName;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     Message;                                          		// 0x0014 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0024 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0024 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.AddFriend
@@ -1704,7 +1704,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddFriend_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                NewFriend;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Message;                                          		// 0x000C (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x001C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x001C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetKeyboardInputResults
@@ -1733,7 +1733,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddKeyboardInputDoneDelegate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnKeyboardInputComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ShowKeyboardUI
@@ -1743,11 +1743,11 @@ struct USFXOnlineComponentUnrealPlayer_execShowKeyboardUI_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     TitleText;                                        		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     DescriptionText;                                  		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bIsPassword : 1;                                  		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIsPassword;                                      		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     DefaultText;                                      		// 0x002C (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                MaxResultLength;                                  		// 0x003C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0040 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0040 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.SetOnlineStatus
@@ -1791,7 +1791,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddReadFriendsCompleteDelegate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnReadFriendsComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ReadFriendsList
@@ -1801,7 +1801,7 @@ struct USFXOnlineComponentUnrealPlayer_execReadFriendsList_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                Count;                                            		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	int                                                StartingAt;                                       		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearWritePlayerStorageCompleteDelegate
@@ -1826,7 +1826,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddWritePlayerStorageCompleteDelegate
 struct USFXOnlineComponentUnrealPlayer_execOnWritePlayerStorageComplete_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.WritePlayerStorage
@@ -1835,7 +1835,7 @@ struct USFXOnlineComponentUnrealPlayer_execWritePlayerStorage_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class UOnlinePlayerStorage*                        PlayerStorage;                                    		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetPlayerStorage
@@ -1868,7 +1868,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddReadPlayerStorageForNetIdCompleteD
 struct USFXOnlineComponentUnrealPlayer_execOnReadPlayerStorageForNetIdComplete_Parms
 {
 	struct FUniqueNetId                                NetId;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0008 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0008 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ReadPlayerStorageForNetId
@@ -1877,7 +1877,7 @@ struct USFXOnlineComponentUnrealPlayer_execReadPlayerStorageForNetId_Parms
 {
 	struct FUniqueNetId                                NetId;                                            		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	class UOnlinePlayerStorage*                        PlayerStorage;                                    		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearReadPlayerStorageCompleteDelegate
@@ -1902,7 +1902,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddReadPlayerStorageCompleteDelegate_
 struct USFXOnlineComponentUnrealPlayer_execOnReadPlayerStorageComplete_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ReadPlayerStorage
@@ -1911,7 +1911,7 @@ struct USFXOnlineComponentUnrealPlayer_execReadPlayerStorage_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class UOnlinePlayerStorage*                        PlayerStorage;                                    		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearWriteProfileSettingsCompleteDelegate
@@ -1936,7 +1936,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddWriteProfileSettingsCompleteDelega
 struct USFXOnlineComponentUnrealPlayer_execOnWriteProfileSettingsComplete_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.WriteProfileSettings
@@ -1945,8 +1945,8 @@ struct USFXOnlineComponentUnrealPlayer_execWriteProfileSettings_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class UOnlineProfileSettings*                      ProfileSettings;                                  		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bIsTrilogyProfile : 1;                            		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bIsTrilogyProfile;                                		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetProfileSettings
@@ -1979,7 +1979,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddReadProfileSettingsCompleteDelegat
 struct USFXOnlineComponentUnrealPlayer_execOnReadProfileSettingsComplete_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ReadProfileSettings
@@ -1988,8 +1988,8 @@ struct USFXOnlineComponentUnrealPlayer_execReadProfileSettings_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	class UOnlineProfileSettings*                      ProfileSettings;                                  		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bIsTrilogyProfile : 1;                            		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bIsTrilogyProfile;                                		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearFriendsChangeDelegate
@@ -2082,7 +2082,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddLoginChangeDelegate_Parms
 struct USFXOnlineComponentUnrealPlayer_execShowFriendsUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.IsMuted
@@ -2091,7 +2091,7 @@ struct USFXOnlineComponentUnrealPlayer_execIsMuted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.AreAnyFriends
@@ -2100,7 +2100,7 @@ struct USFXOnlineComponentUnrealPlayer_execAreAnyFriends_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct TArray<struct FFriendsQuery>                Query;                                            		// 0x0004 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.IsFriend
@@ -2109,7 +2109,7 @@ struct USFXOnlineComponentUnrealPlayer_execIsFriend_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.CanShowPresenceInformation
@@ -2165,7 +2165,7 @@ struct USFXOnlineComponentUnrealPlayer_execCanPlayOnline_Parms
 struct USFXOnlineComponentUnrealPlayer_execIsLocalLogin_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.IsGuestLogin
@@ -2173,7 +2173,7 @@ struct USFXOnlineComponentUnrealPlayer_execIsLocalLogin_Parms
 struct USFXOnlineComponentUnrealPlayer_execIsGuestLogin_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetPlayerNickname
@@ -2190,7 +2190,7 @@ struct USFXOnlineComponentUnrealPlayer_execGetUniquePlayerId_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.GetLoginStatus
@@ -2224,7 +2224,7 @@ struct USFXOnlineComponentUnrealPlayer_execAddLogoutCompletedDelegate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayer_execOnLogoutCompleted_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.Logout
@@ -2232,7 +2232,7 @@ struct USFXOnlineComponentUnrealPlayer_execOnLogoutCompleted_Parms
 struct USFXOnlineComponentUnrealPlayer_execLogout_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ClearLoginFailedDelegate
@@ -2264,7 +2264,7 @@ struct USFXOnlineComponentUnrealPlayer_execOnLoginFailed_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentUnrealPlayer_execAutoLogin_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.Login
@@ -2274,16 +2274,16 @@ struct USFXOnlineComponentUnrealPlayer_execLogin_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     LoginName;                                        		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     Password;                                         		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bWantsLocalOnly : 1;                              		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0028 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bWantsLocalOnly;                                  		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0028 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.ShowLoginUI
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentUnrealPlayer_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.OnFriendsChange
@@ -2321,7 +2321,7 @@ struct USFXOnlineComponentUnrealPlayer_execOnProfileDataChanged_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentUnrealPlayer_execCreateProfileName_Parms
 {
-	unsigned long                                      bIsTrilogyProfile : 1;                            		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIsTrilogyProfile;                                		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     ReturnValue;                                      		// 0x0004 (0x0010) [0x0000000000400580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink )
 };
 
@@ -2329,8 +2329,8 @@ struct USFXOnlineComponentUnrealPlayer_execCreateProfileName_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentUnrealPlayer_execDoesProfileExist_Parms
 {
-	unsigned long                                      bIsTrilogyProfile : 1;                            		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bIsTrilogyProfile;                                		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayer.OnTick
@@ -2368,7 +2368,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowCustomPlayersUI_Parms
 	struct TArray<struct FUniqueNetId>                 Players;                                          		// 0x0004 (0x0010) [0x0000000000400182]              ( CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
 	struct FString                                     Title;                                            		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     Description;                                      		// 0x0024 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0034 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0034 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowPlayersUI
@@ -2376,7 +2376,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowCustomPlayersUI_Parms
 struct USFXOnlineComponentUnrealPlayerEx_execShowPlayersUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowFriendsInviteUI
@@ -2385,7 +2385,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ClearProfileDataChangedDelegate
@@ -2416,7 +2416,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execUnlockGamerPicture_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                PictureId;                                        		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.IsDeviceValid
@@ -2425,7 +2425,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execIsDeviceValid_Parms
 {
 	int                                                DeviceID;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	int                                                SizeNeeded;                                       		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.GetDeviceSelectionResults
@@ -2459,7 +2459,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execAddDeviceSelectionDoneDelegate_Parm
 // [0x00120000] 
 struct USFXOnlineComponentUnrealPlayerEx_execOnDeviceSelectionComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowDeviceSelectionUI
@@ -2468,9 +2468,9 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowDeviceSelectionUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                SizeNeeded;                                       		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bForceShowUI : 1;                                 		// 0x0008 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bManageStorage : 1;                               		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bForceShowUI;                                     		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bManageStorage;                                   		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowMembershipMarketplaceUI
@@ -2478,7 +2478,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowDeviceSelectionUI_Parms
 struct USFXOnlineComponentUnrealPlayerEx_execShowMembershipMarketplaceUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowContentMarketplaceUI
@@ -2488,7 +2488,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowContentMarketplaceUI_Parms
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                CategoryMask;                                     		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	int                                                OfferId;                                          		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowInviteUI
@@ -2497,7 +2497,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowInviteUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     InviteText;                                       		// 0x0004 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowAchievementsUI
@@ -2505,7 +2505,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowInviteUI_Parms
 struct USFXOnlineComponentUnrealPlayerEx_execShowAchievementsUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowMessagesUI
@@ -2513,7 +2513,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowAchievementsUI_Parms
 struct USFXOnlineComponentUnrealPlayerEx_execShowMessagesUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowGamerCardUI
@@ -2522,7 +2522,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowGamerCardUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.ShowFeedbackUI
@@ -2531,7 +2531,7 @@ struct USFXOnlineComponentUnrealPlayerEx_execShowFeedbackUI_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                PlayerID;                                         		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealPlayerEx.OnTick
@@ -2576,7 +2576,7 @@ struct USFXOnlineComponentUnrealSystem_execGetTitleFileContents_Parms
 {
 	struct FString                                     Filename;                                         		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct TArray<unsigned char>                       FileContents;                                     		// 0x0010 (0x0010) [0x0000000000400180]              ( CPF_Parm | CPF_OutParm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.ClearReadTitleFileCompleteDelegate
@@ -2599,14 +2599,14 @@ struct USFXOnlineComponentUnrealSystem_execAddReadTitleFileCompleteDelegate_Parm
 struct USFXOnlineComponentUnrealSystem_execReadTitleFile_Parms
 {
 	struct FString                                     FileToRead;                                       		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.OnReadTitleFileComplete
 // [0x00120000] 
 struct USFXOnlineComponentUnrealSystem_execOnReadTitleFileComplete_Parms
 {
-	unsigned long                                      bWasSuccessful : 1;                               		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bWasSuccessful;                                   		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     Filename;                                         		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 };
 
@@ -2666,7 +2666,7 @@ struct USFXOnlineComponentUnrealSystem_execOnConnectionStatusChange_Parms
 struct USFXOnlineComponentUnrealSystem_execIsControllerConnected_Parms
 {
 	int                                                ControllerId;                                     		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.ClearControllerChangeDelegate
@@ -2690,7 +2690,7 @@ struct USFXOnlineComponentUnrealSystem_execAddControllerChangeDelegate_Parms
 struct USFXOnlineComponentUnrealSystem_execOnControllerChange_Parms
 {
 	int                                                ControllerId;                                     		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bIsConnected : 1;                                 		// 0x0004 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bIsConnected;                                     		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.SetNetworkNotificationPosition
@@ -2711,7 +2711,7 @@ struct USFXOnlineComponentUnrealSystem_execGetNetworkNotificationPosition_Parms
 // [0x00020401] ( FUNC_Final | FUNC_Native )
 struct USFXOnlineComponentUnrealSystem_execProcessExternalUINotification_Parms
 {
-	unsigned long                                      bOpening : 1;                                     		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bOpening;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.ClearExternalUIChangeDelegate
@@ -2734,7 +2734,7 @@ struct USFXOnlineComponentUnrealSystem_execAddExternalUIChangeDelegate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentUnrealSystem_execOnExternalUIChange_Parms
 {
-	unsigned long                                      bIsOpening : 1;                                   		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bIsOpening;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.ClearLinkStatusChangeDelegate
@@ -2757,14 +2757,14 @@ struct USFXOnlineComponentUnrealSystem_execAddLinkStatusChangeDelegate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentUnrealSystem_execOnLinkStatusChange_Parms
 {
-	unsigned long                                      bIsConnected : 1;                                 		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bIsConnected;                                     		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.HasLinkConnection
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentUnrealSystem_execHasLinkConnection_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentUnrealSystem.GetAPIName
@@ -2854,7 +2854,7 @@ struct USFXOnlineComponentCoordinator_execIsEventPending_Parms
 {
 	unsigned char                                      eEventType;                                       		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nEventId;                                         		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentCoordinator.GetEvent
@@ -2966,11 +2966,11 @@ struct USFXOnlineSubsystem_execShowConsoleRoutedKeyboardUI_Parms
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bIsPassword : 1;                                  		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIsPassword;                                      		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x002C (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x003C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0040 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0040 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.ShowKeyboardUI
@@ -2980,11 +2980,11 @@ struct USFXOnlineSubsystem_execShowKeyboardUI_Parms
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      bIsPassword : 1;                                  		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bIsPassword;                                      		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x002C (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x003C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0040 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0040 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.FormatTime
@@ -2992,8 +2992,8 @@ struct USFXOnlineSubsystem_execShowKeyboardUI_Parms
 struct USFXOnlineSubsystem_execFormatTime_Parms
 {
 	float                                              fInSeconds;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bShowHours : 1;                                   		// 0x0004 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShowMins : 1;                                    		// 0x0008 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShowHours;                                       		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShowMins;                                        		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     ReturnValue;                                      		// 0x000C (0x0010) [0x0000000000400580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink )
 };
 
@@ -3003,14 +3003,14 @@ struct USFXOnlineSubsystem_execCheckEntitlement_Parms
 {
 	struct FString                                     sGroup;                                           		// 0x0000 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sTag;                                             		// 0x0010 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0020 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0020 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.IsCerberusMember
 // [0x00020002] 
 struct USFXOnlineSubsystem_execIsCerberusMember_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.GetUniqueIdFromConnection
@@ -3067,7 +3067,7 @@ struct USFXOnlineSubsystem_eventShutDown_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineSubsystem_execNativeInit_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.GetGameListenPort
@@ -3246,7 +3246,7 @@ struct USFXOnlineSubsystem_execInitGameProtocolVersion_Parms
 // [0x00020802] ( FUNC_Event )
 struct USFXOnlineSubsystem_eventInit_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineSubsystem.GetAchievementList
@@ -3300,7 +3300,7 @@ struct USFXOnlineComponentAchievementPC_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentAchievementPC.Grant
@@ -3322,7 +3322,7 @@ struct USFXOnlineComponentPlatformPC_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPC_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowCodeRedemptionUI
@@ -3330,14 +3330,14 @@ struct USFXOnlineComponentPlatformPC_execWasRebootedFromOSCodeRedemptionUI_Parms
 struct USFXOnlineComponentPlatformPC_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPC_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.GetOnlineXuid
@@ -3346,7 +3346,7 @@ struct USFXOnlineComponentPlatformPC_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.GetOfflineXuid
@@ -3355,7 +3355,7 @@ struct USFXOnlineComponentPlatformPC_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowKeyboardUI
@@ -3366,11 +3366,11 @@ struct USFXOnlineComponentPlatformPC_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowFriendsInviteUI
@@ -3379,7 +3379,7 @@ struct USFXOnlineComponentPlatformPC_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowFriendsUI
@@ -3387,7 +3387,7 @@ struct USFXOnlineComponentPlatformPC_execShowFriendsInviteUI_Parms
 struct USFXOnlineComponentPlatformPC_execShowFriendsUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowAchievementsUI
@@ -3395,7 +3395,7 @@ struct USFXOnlineComponentPlatformPC_execShowFriendsUI_Parms
 struct USFXOnlineComponentPlatformPC_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowFeedbackUI
@@ -3404,7 +3404,7 @@ struct USFXOnlineComponentPlatformPC_execShowFeedbackUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.ShowGamerCardUI
@@ -3413,7 +3413,7 @@ struct USFXOnlineComponentPlatformPC_execShowGamerCardUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.CanShowPresenceInformation
@@ -3478,8 +3478,8 @@ struct USFXOnlineComponentPlatformPC_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPC_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.GetLoginStatus
@@ -3496,7 +3496,7 @@ struct USFXOnlineComponentPlatformPC_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPC.GetAPIName
@@ -3563,7 +3563,7 @@ struct USFXOnlineComponentAchievementXenon_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentAchievementXenon.Grant
@@ -3585,7 +3585,7 @@ struct USFXOnlineComponentPlatformXenon_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformXenon_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowCodeRedemptionUI
@@ -3593,14 +3593,14 @@ struct USFXOnlineComponentPlatformXenon_execWasRebootedFromOSCodeRedemptionUI_Pa
 struct USFXOnlineComponentPlatformXenon_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformXenon_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.GetOnlineXuid
@@ -3609,7 +3609,7 @@ struct USFXOnlineComponentPlatformXenon_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.GetOfflineXuid
@@ -3618,7 +3618,7 @@ struct USFXOnlineComponentPlatformXenon_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowKeyboardUI
@@ -3629,11 +3629,11 @@ struct USFXOnlineComponentPlatformXenon_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowFriendsInviteUI
@@ -3642,7 +3642,7 @@ struct USFXOnlineComponentPlatformXenon_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowFriendsUI
@@ -3650,7 +3650,7 @@ struct USFXOnlineComponentPlatformXenon_execShowFriendsInviteUI_Parms
 struct USFXOnlineComponentPlatformXenon_execShowFriendsUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowAchievementsUI
@@ -3658,7 +3658,7 @@ struct USFXOnlineComponentPlatformXenon_execShowFriendsUI_Parms
 struct USFXOnlineComponentPlatformXenon_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowFeedbackUI
@@ -3667,7 +3667,7 @@ struct USFXOnlineComponentPlatformXenon_execShowFeedbackUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.ShowGamerCardUI
@@ -3676,7 +3676,7 @@ struct USFXOnlineComponentPlatformXenon_execShowGamerCardUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.CanShowPresenceInformation
@@ -3741,8 +3741,8 @@ struct USFXOnlineComponentPlatformXenon_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformXenon_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.GetLoginStatus
@@ -3772,7 +3772,7 @@ struct USFXOnlineComponentPlatformXenon_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformXenon.GetAPIName
@@ -3839,7 +3839,7 @@ struct USFXOnlineComponentAchievementPS3_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentAchievementPS3.Grant
@@ -3855,14 +3855,14 @@ struct USFXOnlineComponentAchievementPS3_execGrant_Parms
 struct USFXOnlineComponentPlatformPS3_execShowLoginUIEx_Parms
 {
 	struct FScriptDelegate                             funcSignInComplete;                               		// 0x0000 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0010 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0010 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.OnSignInComplete
 // [0x00120000] 
 struct USFXOnlineComponentPlatformPS3_execOnSignInComplete_Parms
 {
-	unsigned long                                      bSignedIn : 1;                                    		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      bSignedIn;                                        		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.GetRebootUserData
@@ -3876,7 +3876,7 @@ struct USFXOnlineComponentPlatformPS3_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPS3_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowCodeRedemptionUI
@@ -3884,14 +3884,14 @@ struct USFXOnlineComponentPlatformPS3_execWasRebootedFromOSCodeRedemptionUI_Parm
 struct USFXOnlineComponentPlatformPS3_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPS3_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.GetOnlineXuid
@@ -3900,7 +3900,7 @@ struct USFXOnlineComponentPlatformPS3_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.GetOfflineXuid
@@ -3909,7 +3909,7 @@ struct USFXOnlineComponentPlatformPS3_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowKeyboardUI
@@ -3920,11 +3920,11 @@ struct USFXOnlineComponentPlatformPS3_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowFriendsInviteUI
@@ -3933,7 +3933,7 @@ struct USFXOnlineComponentPlatformPS3_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowFriendsUI
@@ -3941,7 +3941,7 @@ struct USFXOnlineComponentPlatformPS3_execShowFriendsInviteUI_Parms
 struct USFXOnlineComponentPlatformPS3_execShowFriendsUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowAchievementsUI
@@ -3949,7 +3949,7 @@ struct USFXOnlineComponentPlatformPS3_execShowFriendsUI_Parms
 struct USFXOnlineComponentPlatformPS3_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowFeedbackUI
@@ -3958,7 +3958,7 @@ struct USFXOnlineComponentPlatformPS3_execShowFeedbackUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.ShowGamerCardUI
@@ -3967,7 +3967,7 @@ struct USFXOnlineComponentPlatformPS3_execShowGamerCardUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.CanShowPresenceInformation
@@ -4032,8 +4032,8 @@ struct USFXOnlineComponentPlatformPS3_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformPS3_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.GetLoginStatus
@@ -4050,7 +4050,7 @@ struct USFXOnlineComponentPlatformPS3_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformPS3.OnKeyboardUI
@@ -4131,7 +4131,7 @@ struct USFXOnlineComponentAchievementDingo_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentAchievementDingo.Grant
@@ -4153,7 +4153,7 @@ struct USFXOnlineComponentPlatformDingo_execOnTick_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformDingo_execOnKeyboardUIClosed_Parms
 {
-	unsigned long                                      Success : 1;                                      		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      Success;                                          		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     InputBuffer;                                      		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 };
 
@@ -4168,7 +4168,7 @@ struct USFXOnlineComponentPlatformDingo_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformDingo_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowCodeRedemptionUI
@@ -4176,14 +4176,14 @@ struct USFXOnlineComponentPlatformDingo_execWasRebootedFromOSCodeRedemptionUI_Pa
 struct USFXOnlineComponentPlatformDingo_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformDingo_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.GetOnlineXuid
@@ -4192,7 +4192,7 @@ struct USFXOnlineComponentPlatformDingo_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.GetOfflineXuid
@@ -4201,7 +4201,7 @@ struct USFXOnlineComponentPlatformDingo_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowKeyboardUI
@@ -4212,11 +4212,11 @@ struct USFXOnlineComponentPlatformDingo_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowFriendsInviteUI
@@ -4225,7 +4225,7 @@ struct USFXOnlineComponentPlatformDingo_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowFriendsUI
@@ -4233,7 +4233,7 @@ struct USFXOnlineComponentPlatformDingo_execShowFriendsInviteUI_Parms
 struct USFXOnlineComponentPlatformDingo_execShowFriendsUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowAchievementsUI
@@ -4241,7 +4241,7 @@ struct USFXOnlineComponentPlatformDingo_execShowFriendsUI_Parms
 struct USFXOnlineComponentPlatformDingo_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowFeedbackUI
@@ -4250,7 +4250,7 @@ struct USFXOnlineComponentPlatformDingo_execShowFeedbackUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.ShowGamerCardUI
@@ -4259,7 +4259,7 @@ struct USFXOnlineComponentPlatformDingo_execShowGamerCardUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.CanShowPresenceInformation
@@ -4324,8 +4324,8 @@ struct USFXOnlineComponentPlatformDingo_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformDingo_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.GetLoginStatus
@@ -4342,7 +4342,7 @@ struct USFXOnlineComponentPlatformDingo_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformDingo.GetAPIName
@@ -4409,7 +4409,7 @@ struct USFXOnlineComponentAchievementOrbis_execIsGranted_Parms
 {
 	unsigned char                                      LocalUserNum;                                     		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	int                                                AchievementId;                                    		// 0x0004 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentAchievementOrbis.Grant
@@ -4424,7 +4424,7 @@ struct USFXOnlineComponentAchievementOrbis_execGrant_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformOrbis_execOnKeyboardUIClosed_Parms
 {
-	unsigned long                                      Success : 1;                                      		// 0x0000 (0x0004) [0x0000000000000080] [0x00000001] ( CPF_Parm )
+	unsigned long                                      Success;                                          		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     InputBuffer;                                      		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 };
 
@@ -4439,7 +4439,7 @@ struct USFXOnlineComponentPlatformOrbis_execGetRebootUserData_Parms
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformOrbis_execWasRebootedFromOSCodeRedemptionUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowCodeRedemptionUI
@@ -4447,14 +4447,14 @@ struct USFXOnlineComponentPlatformOrbis_execWasRebootedFromOSCodeRedemptionUI_Pa
 struct USFXOnlineComponentPlatformOrbis_execShowCodeRedemptionUI_Parms
 {
 	int                                                UserData;                                         		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowStoreUI
 // [0x00020400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformOrbis_execShowStoreUI_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.GetOnlineXuid
@@ -4463,7 +4463,7 @@ struct USFXOnlineComponentPlatformOrbis_execGetOnlineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.GetOfflineXuid
@@ -4472,7 +4472,7 @@ struct USFXOnlineComponentPlatformOrbis_execGetOfflineXuid_Parms
 {
 	int                                                nUserIndex;                                       		// 0x0000 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000180]              ( CPF_Parm | CPF_OutParm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowKeyboardUI
@@ -4483,11 +4483,11 @@ struct USFXOnlineComponentPlatformOrbis_execShowKeyboardUI_Parms
 	struct FString                                     sTitleText;                                       		// 0x0004 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	struct FString                                     sDescriptionText;                                 		// 0x0014 (0x0010) [0x0000000000400080]              ( CPF_Parm | CPF_NeedCtorLink )
 	unsigned char                                      nKeyboardType;                                    		// 0x0024 (0x0001) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bShouldValidate : 1;                              		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bRouteThroughConsole : 1;                         		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bShouldValidate;                                  		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bRouteThroughConsole;                             		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FString                                     sDefaultText;                                     		// 0x0030 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
 	int                                                nMaxResultLength;                                 		// 0x0040 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0044 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0044 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowFriendsInviteUI
@@ -4496,7 +4496,7 @@ struct USFXOnlineComponentPlatformOrbis_execShowFriendsInviteUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerXuid;                                      		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowFriendsUI
@@ -4504,7 +4504,7 @@ struct USFXOnlineComponentPlatformOrbis_execShowFriendsInviteUI_Parms
 struct USFXOnlineComponentPlatformOrbis_execShowFriendsUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowAchievementsUI
@@ -4512,7 +4512,7 @@ struct USFXOnlineComponentPlatformOrbis_execShowFriendsUI_Parms
 struct USFXOnlineComponentPlatformOrbis_execShowAchievementsUI_Parms
 {
 	unsigned char                                      byLocalUserNum;                                   		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowFeedbackUI
@@ -4521,7 +4521,7 @@ struct USFXOnlineComponentPlatformOrbis_execShowFeedbackUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.ShowGamerCardUI
@@ -4530,7 +4530,7 @@ struct USFXOnlineComponentPlatformOrbis_execShowGamerCardUI_Parms
 {
 	unsigned char                                      eLocalUserNum;                                    		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0004 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x000C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x000C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.CanShowPresenceInformation
@@ -4595,8 +4595,8 @@ struct USFXOnlineComponentPlatformOrbis_execSetRichPresence_Parms
 // [0x00024400] ( FUNC_Native )
 struct USFXOnlineComponentPlatformOrbis_execShowLoginUI_Parms
 {
-	unsigned long                                      bShowOnlineOnly : 1;                              		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bShowOnlineOnly;                                  		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.GetLoginStatus
@@ -4613,7 +4613,7 @@ struct USFXOnlineComponentPlatformOrbis_execAddRecentPlayer_Parms
 {
 	struct FUniqueNetId                                oPlayerId;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	struct FString                                     sDescription;                                     		// 0x0008 (0x0010) [0x0000000000400090]              ( CPF_OptionalParm | CPF_Parm | CPF_NeedCtorLink )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0018 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0018 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXOnlineFoundation.SFXOnlineComponentPlatformOrbis.GetAPIName
@@ -4697,7 +4697,7 @@ struct USFXOnlineComponentTelemetrySystem_execOnAuthenticate_Parms
 // [0x00120000] 
 struct USFXOnlineComponentTelemetrySystem_execCanCollect_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 

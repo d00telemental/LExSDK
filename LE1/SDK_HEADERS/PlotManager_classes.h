@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: PlotManager_classes.h
 # ========================================================================================= #
@@ -53,13 +53,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 77059 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool F1749 ( class ABioWorldInfo* bioWorld, int Argument );
 	bool F1748 ( class ABioWorldInfo* bioWorld, int Argument );
@@ -1128,8 +1122,6 @@ public:
 	bool F144 ( class ABioWorldInfo* bioWorld, int Argument );
 	bool F143 ( class ABioWorldInfo* bioWorld, int Argument );
 };
-
-UClass* UBioAutoConditionals::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: GFxUI_classes.h
 # ========================================================================================= #
@@ -108,17 +108,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2864 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGFxEngine::pClassPointer = NULL;
 
 // Class GFxUI.GFxFSCmdHandler
 // 0x0000 (0x0060 - 0x0060)
@@ -130,18 +122,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2866 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventFSCommand ( class UGFxMovie* Movie, struct FString Cmd, struct FString arg );
 };
-
-UClass* UGFxFSCmdHandler::pClassPointer = NULL;
 
 // Class GFxUI.GFxGameViewportClient
 // 0x0010 (0x01D4 - 0x01C4)
@@ -155,18 +139,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2868 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventInit ( struct FString* OutError );
 };
-
-UClass* UGFxGameViewportClient::pClassPointer = NULL;
 
 // Class GFxUI.GFxInteraction
 // 0x0008 (0x00A8 - 0x00A0)
@@ -179,20 +155,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2870 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void NotifyGameSessionEnded ( );
 	class UGFxMovie* GetFocusMovie ( );
 	bool SetFocusMovie ( struct FString MovieName, unsigned long captureInput );
 };
-
-UClass* UGFxInteraction::pClassPointer = NULL;
 
 // Class GFxUI.GFxMovie
 // 0x0147 (0x01A7 - 0x0060)
@@ -232,13 +200,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2872 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool UnregisterGFxValue ( class UGFxValue* i_val );
 	bool RegisterGFxValue ( class UGFxValue* i_val );
@@ -301,8 +263,6 @@ public:
 	bool eventStart ( unsigned long StartPaused );
 };
 
-UClass* UGFxMovie::pClassPointer = NULL;
-
 // Class GFxUI.GFxMovieInfo
 // 0x0048 (0x00A8 - 0x0060)
 class UGFxMovieInfo : public UObject
@@ -319,17 +279,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2874 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGFxMovieInfo::pClassPointer = NULL;
 
 // Class GFxUI.GFxValue
 // 0x0030 (0x0090 - 0x0060)
@@ -342,13 +294,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2876 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void ActionScriptSetFunctionOn ( class UGFxValue* Target, struct FString member );
 	void ActionScriptSetFunction ( struct FString member );
@@ -417,8 +363,6 @@ public:
 	struct FASValue Invoke ( struct FString member, struct TArray<struct FASValue> Args );
 };
 
-UClass* UGFxValue::pClassPointer = NULL;
-
 // Class GFxUI.GFxAction_CloseMovie
 // 0x000C (0x0104 - 0x00F8)
 class UGFxAction_CloseMovie : public USequenceAction
@@ -431,18 +375,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2878 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidLevelSequenceObject ( );
 };
-
-UClass* UGFxAction_CloseMovie::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_GetVariable
 // 0x0018 (0x0110 - 0x00F8)
@@ -456,18 +392,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2880 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidLevelSequenceObject ( );
 };
-
-UClass* UGFxAction_GetVariable::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_Invoke
 // 0x0028 (0x0120 - 0x00F8)
@@ -482,18 +410,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2882 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidLevelSequenceObject ( );
 };
-
-UClass* UGFxAction_Invoke::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_OpenMovie
 // 0x000C (0x0104 - 0x00F8)
@@ -509,18 +429,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2884 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidLevelSequenceObject ( );
 };
-
-UClass* UGFxAction_OpenMovie::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_SetCaptureKeys
 // 0x0018 (0x0110 - 0x00F8)
@@ -534,17 +446,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2886 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGFxAction_SetCaptureKeys::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_SetFocus
 // 0x000C (0x0104 - 0x00F8)
@@ -558,17 +462,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2888 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGFxAction_SetFocus::pClassPointer = NULL;
 
 // Class GFxUI.GFxAction_SetVariable
 // 0x0018 (0x0110 - 0x00F8)
@@ -582,18 +478,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2890 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventIsValidLevelSequenceObject ( );
 };
-
-UClass* UGFxAction_SetVariable::pClassPointer = NULL;
 
 // Class GFxUI.GFxEvent_FsCommand
 // 0x001A (0x0140 - 0x0126)
@@ -607,17 +495,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2892 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UGFxEvent_FsCommand::pClassPointer = NULL;
 
 // Class GFxUI.GFxFSCmdHandler_Kismet
 // 0x0048 (0x00A8 - 0x0060)
@@ -630,18 +510,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2894 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool eventFSCommand ( class UGFxMovie* Movie, struct FString Cmd, struct FString arg );
 };
-
-UClass* UGFxFSCmdHandler_Kismet::pClassPointer = NULL;
 
 // Class GFxUI.GFxDataStoreSubscriber
 // 0x0010 (0x0070 - 0x0060)
@@ -655,13 +527,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 2896 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	bool SaveSubscriberValue ( int BindingIndex, struct TArray<class UUIDataStore*>* out_BoundDataStores );
 	void ClearBoundDataStores ( );
@@ -672,8 +538,6 @@ public:
 	void SetDataStoreBinding ( struct FString MarkupText, int BindingIndex );
 	void PublishValues ( );
 };
-
-UClass* UGFxDataStoreSubscriber::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

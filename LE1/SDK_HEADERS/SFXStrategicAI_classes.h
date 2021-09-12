@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXStrategicAI_classes.h
 # ========================================================================================= #
@@ -101,18 +101,10 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 73967 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnDamaged ( class AController* oInstigator, float fDamage );
 };
-
-UClass* ABioAI_SarenHopper::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioBaseSquadDesign
 // 0x0055 (0x04FD - 0x04A8)
@@ -139,13 +131,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 73973 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnProximityAlarm ( class APawn* oMember, class AActor* oTarget, int nRelationship );
 	void eventOnSquadSeen ( class ABioBaseSquad* oSquad );
@@ -203,8 +189,6 @@ public:
 	bool ReEvaluateStrategy ( );
 };
 
-UClass* ABioBaseSquadDesign::pClassPointer = NULL;
-
 // Class SFXStrategicAI.BioFaction_Commoner
 // 0x0003 (0x0080 - 0x007D)
 class UBioFaction_Commoner : public UBioFaction
@@ -215,17 +199,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74030 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Commoner::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioFaction_Ambient
 // 0x0003 (0x0080 - 0x007D)
@@ -237,17 +213,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74031 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Ambient::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioFaction_Defender1
 // 0x0003 (0x0080 - 0x007D)
@@ -259,17 +227,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74032 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Defender1::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioFaction_Defender2
 // 0x0003 (0x0080 - 0x007D)
@@ -281,17 +241,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74033 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Defender2::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioFaction_Hostile1
 // 0x0003 (0x0080 - 0x007D)
@@ -303,17 +255,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74034 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Hostile1::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioFaction_Hostile2
 // 0x0003 (0x0080 - 0x007D)
@@ -325,17 +269,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74035 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_Hostile2::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioBaseSquadDesignCombat
 // 0x0014 (0x0511 - 0x04FD)
@@ -351,13 +287,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74324 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnActionComplete_Combat ( class APawn* oMember, struct FName nmAction, struct FName nmTechnique, int nReason, class AActor* oLastTarget );
 	void eventOnActionComplete_Movement ( class APawn* oMember, struct FName nmAction, int nReason, class AActor* oTarget, struct FVector vLocation );
@@ -375,8 +305,6 @@ public:
 	void eventSeenSquad ( class ABioBaseSquad* oSquad );
 };
 
-UClass* ABioBaseSquadDesignCombat::pClassPointer = NULL;
-
 // Class SFXStrategicAI.BioFaction_CommonerPhysics
 // 0x0000 (0x0080 - 0x0080)
 class UBioFaction_CommonerPhysics : public UBioFaction_Commoner
@@ -387,17 +315,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74423 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioFaction_CommonerPhysics::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioForm_ScoutSwarm
 // 0x0000 (0x0078 - 0x0078)
@@ -409,17 +329,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74432 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioForm_ScoutSwarm::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSeqAct_GetPropertyDesignSquad
 // 0x0000 (0x0158 - 0x0158)
@@ -431,17 +343,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74434 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_GetPropertyDesignSquad::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSeqAct_ModifyPropertyDesignSquad
 // 0x0000 (0x0158 - 0x0158)
@@ -453,17 +357,9 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74436 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 };
-
-UClass* UBioSeqAct_ModifyPropertyDesignSquad::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadAmbient
 // 0x001F (0x051C - 0x04FD)
@@ -481,20 +377,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74438 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodFlee ( );
 	float CalculateLikelihoodIdle ( );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadAmbient::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadBeacon
 // 0x0003 (0x0514 - 0x0511)
@@ -506,20 +394,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74583 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodCasting ( );
 	void SquadMemberBeginCasting ( class ABioAiController* oMember );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadBeacon::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadCombat
 // 0x0053 (0x0564 - 0x0511)
@@ -548,13 +428,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 74621 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodDefend ( );
 	float CalculateLikelihoodSkirmish ( );
@@ -563,8 +437,6 @@ public:
 	float CalculateLikelihoodIdle ( );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadCombat::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadCommoner
 // 0x0003 (0x0500 - 0x04FD)
@@ -576,19 +448,11 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75139 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodIdle ( );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadCommoner::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadPlayerDesignBase
 // 0x000A (0x0608 - 0x05FE)
@@ -602,13 +466,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75162 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventOnSquadSeen ( class ABioBaseSquad* oSquad );
 	bool AreHostilesNearby ( );
@@ -616,8 +474,6 @@ public:
 	void ClearPerceptionFlag ( );
 	void SetPerceptionFlag ( );
 };
-
-UClass* ABioSquadPlayerDesignBase::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadPlayer
 // 0x0004 (0x060C - 0x0608)
@@ -630,13 +486,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75185 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	void eventTick ( float DeltaTime );
 	void eventonPlayerEnterCover ( );
@@ -665,8 +515,6 @@ public:
 	void DoBestAction ( class ABioAiController* oMember );
 };
 
-UClass* ABioSquadPlayer::pClassPointer = NULL;
-
 // Class SFXStrategicAI.BioSquadProxMine
 // 0x0003 (0x0514 - 0x0511)
 class ABioSquadProxMine : public ABioBaseSquadDesignCombat
@@ -677,20 +525,12 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75311 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodArmed ( );
 	void SquadMemberBeginCasting ( class ABioAiController* oMember );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadProxMine::pClassPointer = NULL;
 
 // Class SFXStrategicAI.BioSquadSitAndShoot
 // 0x0003 (0x0514 - 0x0511)
@@ -702,13 +542,7 @@ private:
 	static UClass* pClassPointer;
 
 public:
-	static UClass* StaticClass()
-	{
-		if ( ! pClassPointer )
-			pClassPointer = (UClass*) UObject::GObjObjects()->Data[ 75350 ];
-
-		return pClassPointer;
-	};
+	static UClass* StaticClass();
 
 	float CalculateLikelihoodAttacking ( );
 	void SquadMemberAttackAnyTarget ( class ABioAiController* oMember, class APawn* oIgnore );
@@ -716,8 +550,6 @@ public:
 	float CalculateLikelihoodIdle ( );
 	float CalculateLikelihood ( struct FName sStrategyName );
 };
-
-UClass* ABioSquadSitAndShoot::pClassPointer = NULL;
 
 
 #ifdef _MSC_VER

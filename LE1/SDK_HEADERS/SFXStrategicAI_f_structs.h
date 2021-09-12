@@ -1,7 +1,7 @@
 /*
 #############################################################################################
 # Mass Effect 1 (Legendary Edition) (2.0.0.48602) SDK
-# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.51
+# Generated with TheFeckless UE3 SDK Generator v1.4_Beta-Rev.53-MELE
 # ========================================================================================= #
 # File: SFXStrategicAI_f_structs.h
 # ========================================================================================= #
@@ -206,7 +206,7 @@ struct ABioBaseSquadDesign_execSquadWalkWaypoints_Parms
 struct ABioBaseSquadDesign_execSquadMemberWalkWaypoints_Parms
 {
 	class ABioAiController*                            oMember;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// int                                             nRouteIndex;                                      		// 0x000C (0x0004) [0x0000000000000000]              
 	// float                                           fBestRouteDistSq;                                 		// 0x0010 (0x0004) [0x0000000000000000]              
 	// float                                           fCurrRouteDistSq;                                 		// 0x0014 (0x0004) [0x0000000000000000]              
@@ -224,20 +224,20 @@ struct ABioBaseSquadDesign_execGetNavPointInPlaypen_Parms
 	struct FVector                                     vLateralOffset;                                   		// 0x000C (0x000C) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fSearchRadius;                                    		// 0x0018 (0x0004) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fVerticalOffset;                                  		// 0x001C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bCanFly : 1;                                      		// 0x0020 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bCanHop : 1;                                      		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bSniper : 1;                                      		// 0x0028 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bAggressive : 1;                                  		// 0x002C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bDefensive : 1;                                   		// 0x0030 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bCanFly;                                          		// 0x0020 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bCanHop;                                          		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bSniper;                                          		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bAggressive;                                      		// 0x002C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bDefensive;                                       		// 0x0030 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class AActor*                                      oLOSTarget;                                       		// 0x0034 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class ABioPawn*                                    oIgnoreIfLockedBy;                                		// 0x003C (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class ANavigationPoint*                            ReturnValue;                                      		// 0x0044 (0x0008) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct TArray<class ANavigationPoint*>          aoIgnorePathNodes;                                		// 0x004C (0x0010) [0x0000000000400000]              ( CPF_NeedCtorLink )
 	// class ANavigationPoint*                         oMovePoint;                                       		// 0x005C (0x0008) [0x0000000000000000]              
 	// struct FVector                                  vVerticalOffset;                                  		// 0x0064 (0x000C) [0x0000000000000000]              
-	// unsigned long                                   bFlipLateral : 1;                                 		// 0x0070 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bFlipLateral;                                     		// 0x0070 (0x0004) [0x0000000000000000]              
 	// int                                             nRand;                                            		// 0x0074 (0x0004) [0x0000000000000000]              
-	// unsigned long                                   bRequireLoS : 1;                                  		// 0x0078 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bRequireLoS;                                      		// 0x0078 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXStrategicAI.BioBaseSquadDesign.GetFlockingOffset
@@ -324,9 +324,9 @@ struct ABioBaseSquadDesign_execPushMoveWithLocking_Parms
 	class ABioAiController*                            oMember;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	class AActor*                                      oTarget;                                          		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	float                                              fTolerance;                                       		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bWalking : 1;                                     		// 0x0014 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bWalking;                                         		// 0x0014 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMovementDelay;                                   		// 0x0018 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bCrouch : 1;                                      		// 0x001C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bCrouch;                                          		// 0x001C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	// class ANavigationPoint*                         oDestPathNode;                                    		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class ABioPawn*                                 oMemberPawn;                                      		// 0x0028 (0x0008) [0x0000000000000000]              
 };
@@ -340,16 +340,16 @@ struct ABioBaseSquadDesign_execSquadMemberTakeCover_Parms
 	float                                              fNavRange;                                        		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class APawn*                                       oTarget;                                          		// 0x0010 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class APawn*                                       oAvoid;                                           		// 0x0018 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bNewCover : 1;                                    		// 0x0020 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bCrouchIfNoCover : 1;                             		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bNewCover;                                        		// 0x0020 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bCrouchIfNoCover;                                 		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMovementDelay;                                   		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	struct FVector                                     vCoverLocation;                                   		// 0x002C (0x000C) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bUseDefNodeIfNoCover : 1;                         		// 0x0038 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x003C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bUseDefNodeIfNoCover;                             		// 0x0038 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x003C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ANavigationPoint*                         oMovePoint;                                       		// 0x0040 (0x0008) [0x0000000000000000]              
 	// struct FVector                                  vLateralOffset;                                   		// 0x0048 (0x000C) [0x0000000000000000]              
 	// class APawn*                                    oMemberPawn;                                      		// 0x0054 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bMovingToCover : 1;                               		// 0x005C (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bMovingToCover;                                   		// 0x005C (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXStrategicAI.BioBaseSquadDesign.IsAtDefenseNode
@@ -357,7 +357,7 @@ struct ABioBaseSquadDesign_execSquadMemberTakeCover_Parms
 struct ABioBaseSquadDesign_execIsAtDefenseNode_Parms
 {
 	class APawn*                                       oTestPawn;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class ANavigationPoint*                         oAnchor;                                          		// 0x000C (0x0008) [0x0000000000000000]              
 };
 
@@ -369,10 +369,10 @@ struct ABioBaseSquadDesign_execSquadTakeCover_Parms
 	float                                              fNavRange;                                        		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class APawn*                                       oTarget;                                          		// 0x0008 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class APawn*                                       oAvoid;                                           		// 0x0010 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bNewCover : 1;                                    		// 0x0018 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bCrouchIfNoCover : 1;                             		// 0x001C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bNewCover;                                        		// 0x0018 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bCrouchIfNoCover;                                 		// 0x001C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fDelayOrdersLoop;                                 		// 0x0020 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bUseDefNodeIfNoCover : 1;                         		// 0x0024 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bUseDefNodeIfNoCover;                             		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	// class ABioAiController*                         oMember;                                          		// 0x0028 (0x0008) [0x0000000000000000]              
 	// int                                             nCurrMember;                                      		// 0x0030 (0x0004) [0x0000000000000000]              
 };
@@ -387,7 +387,7 @@ struct ABioBaseSquadDesign_execPushCoverWithLocking_Parms
 	class APawn*                                       oAvoid;                                           		// 0x001C (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fCoverRadius;                                     		// 0x0024 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMovementDelay;                                   		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x002C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x002C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct TArray<class APawn*>                     aoCoverList;                                      		// 0x0030 (0x0010) [0x0000000000400000]              ( CPF_NeedCtorLink )
 	// struct TArray<int>                              aoCoverValue;                                     		// 0x0040 (0x0010) [0x0000000000400000]              ( CPF_NeedCtorLink )
 	// struct FCoverRecord                             oCover;                                           		// 0x0050 (0x0014) [0x0000000000000000]              
@@ -404,8 +404,8 @@ struct ABioBaseSquadDesign_execGetCoverList_Parms
 	class APawn*                                       oTarget;                                          		// 0x0028 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class APawn*                                       oAvoid;                                           		// 0x0030 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	// class APawn*                                    oEnemy;                                           		// 0x0038 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bFoundTarget : 1;                                 		// 0x0040 (0x0004) [0x0000000000000000] [0x00000001] 
-	// unsigned long                                   bFoundAvoid : 1;                                  		// 0x0044 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bFoundTarget;                                     		// 0x0040 (0x0004) [0x0000000000000000]              
+	// unsigned long                                   bFoundAvoid;                                      		// 0x0044 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXStrategicAI.BioBaseSquadDesign.UnlockAllPathnodes
@@ -448,7 +448,7 @@ struct ABioBaseSquadDesign_execIsPathnodeLocked_Parms
 	class ANavigationPoint*                            oTestNode;                                        		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	int                                                nIndex;                                           		// 0x0008 (0x0004) [0x0000000000000190]              ( CPF_OptionalParm | CPF_Parm | CPF_OutParm )
 	class ABioPawn*                                    oIgnoreMember;                                    		// 0x000C (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// int                                             nLoopIndex;                                       		// 0x0018 (0x0004) [0x0000000000000000]              
 };
 
@@ -504,10 +504,10 @@ struct ABioBaseSquadDesign_execSetFactionByType_Parms
 // [0x00024002] 
 struct ABioBaseSquadDesign_execClearAllSquadActions_Parms
 {
-	unsigned long                                      bClearQueue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bClearState : 1;                                  		// 0x0004 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bUnlockTarget : 1;                                		// 0x0008 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      bLeaveCombat : 1;                                 		// 0x000C (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bClearQueue;                                      		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bClearState;                                      		// 0x0004 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bUnlockTarget;                                    		// 0x0008 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bLeaveCombat;                                     		// 0x000C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	// class ABioAiController*                         oCurrSquadMember;                                 		// 0x0010 (0x0008) [0x0000000000000000]              
 	// int                                             nRouteIndex;                                      		// 0x0018 (0x0004) [0x0000000000000000]              
 };
@@ -534,7 +534,7 @@ struct ABioBaseSquadDesign_execCalculateLikelihood_Parms
 struct ABioBaseSquadDesign_execIsValidStrategy_Parms
 {
 	struct FName                                       sStrategyName;                                    		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// int                                             nStrategyIndex;                                   		// 0x000C (0x0004) [0x0000000000000000]              
 };
 
@@ -576,7 +576,7 @@ struct ABioBaseSquadDesign_execDoFallBackStrategy_Parms
 // [0x00020002] 
 struct ABioBaseSquadDesign_execReEvaluateStrategy_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXStrategicAI.BioBaseSquadDesignCombat.OnActionComplete_Combat
@@ -613,15 +613,15 @@ struct ABioBaseSquadDesignCombat_execUseAttackCapability_Parms
 	float                                              fStabilityOffset;                                 		// 0x001C (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class AActor*                                      oMoveDest;                                        		// 0x0020 (0x0008) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	float                                              fMovementDelay;                                   		// 0x0028 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x002C (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x002C (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// float                                           fDistanceFromRange;                               		// 0x0030 (0x0004) [0x0000000000000000]              
-	// unsigned long                                   bSuccess : 1;                                     		// 0x0034 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bSuccess;                                         		// 0x0034 (0x0004) [0x0000000000000000]              
 	// float                                           fStart;                                           		// 0x0038 (0x0004) [0x0000000000000000]              
 	// float                                           fEnd;                                             		// 0x003C (0x0004) [0x0000000000000000]              
 	// float                                           fTimeOut;                                         		// 0x0040 (0x0004) [0x0000000000000000]              
 	// class ANavigationPoint*                         oDestPathNode;                                    		// 0x0044 (0x0008) [0x0000000000000000]              
 	// class ABioPawn*                                 oMemberPawn;                                      		// 0x004C (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bUseMobMovment : 1;                               		// 0x0054 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bUseMobMovment;                                   		// 0x0054 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXStrategicAI.BioBaseSquadDesignCombat.FindDangerousEnemy
@@ -635,7 +635,7 @@ struct ABioBaseSquadDesignCombat_execFindDangerousEnemy_Parms
 	// class APawn*                                    oEnemy;                                           		// 0x0020 (0x0008) [0x0000000000000000]              
 	// class APawn*                                    oBestEnemy;                                       		// 0x0028 (0x0008) [0x0000000000000000]              
 	// unsigned char                                   eEnemyType;                                       		// 0x0030 (0x0001) [0x0000000000000000]              
-	// unsigned long                                   bIsBestEnemyVehicle : 1;                          		// 0x0034 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bIsBestEnemyVehicle;                              		// 0x0034 (0x0004) [0x0000000000000000]              
 	// float                                           fCurrDistanceToEnemySQ;                           		// 0x0038 (0x0004) [0x0000000000000000]              
 	// float                                           fBestDistanceToEnemySQ;                           		// 0x003C (0x0004) [0x0000000000000000]              
 };
@@ -657,7 +657,7 @@ struct ABioBaseSquadDesignCombat_execGetClosestPerceivedTarget_Parms
 // [0x00424002] 
 struct ABioBaseSquadDesignCombat_execGetDistanceToNearestHostile_Parms
 {
-	unsigned long                                      bSquareDist : 1;                                  		// 0x0000 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      bSquareDist;                                      		// 0x0000 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
 	class ABioAiController*                            oNearestMember;                                   		// 0x0004 (0x0008) [0x0000000000000190]              ( CPF_OptionalParm | CPF_Parm | CPF_OutParm )
 	class APawn*                                       oNearestTarget;                                   		// 0x000C (0x0008) [0x0000000000000190]              ( CPF_OptionalParm | CPF_Parm | CPF_OutParm )
 	float                                              ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
@@ -873,7 +873,7 @@ struct ABioSquadPlayerDesignBase_eventOnSquadSeen_Parms
 // [0x00020002] 
 struct ABioSquadPlayerDesignBase_execAreHostilesNearby_Parms
 {
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0000 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0000 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// class APawn*                                    oMemberPawn;                                      		// 0x0004 (0x0008) [0x0000000000000000]              
 	// class APawn*                                    oEnemy;                                           		// 0x000C (0x0008) [0x0000000000000000]              
 	// int                                             nIndex;                                           		// 0x0014 (0x0004) [0x0000000000000000]              
@@ -929,7 +929,7 @@ struct ABioSquadPlayer_eventonMemberArrivedAtTarget_Parms
 struct ABioSquadPlayer_execLookForCover_Parms
 {
 	class APawn*                                       oMember;                                          		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0008 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0008 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 	// struct FCoverRecord                             oUseCover;                                        		// 0x000C (0x0014) [0x0000000000000000]              
 	// class ABioAiController*                         oMemberAI;                                        		// 0x0020 (0x0008) [0x0000000000000000]              
 	// int                                             nMemberIndex;                                     		// 0x0028 (0x0004) [0x0000000000000000]              
@@ -968,7 +968,7 @@ struct ABioSquadPlayer_eventOnPlayerSwitchStance_Parms
 {
 	unsigned char                                      FromState;                                        		// 0x0000 (0x0001) [0x0000000000000080]              ( CPF_Parm )
 	unsigned char                                      ToState;                                          		// 0x0001 (0x0001) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0004 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      ReturnValue;                                      		// 0x0004 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXStrategicAI.BioSquadPlayer.OnSetAttackTarget
@@ -1125,8 +1125,8 @@ struct ABioSquadPlayer_execIsAttackTargetValid_Parms
 {
 	class ABioPawn*                                    oMemberPawn;                                      		// 0x0000 (0x0008) [0x0000000000000080]              ( CPF_Parm )
 	class ABioPawn*                                    oAttackTarget;                                    		// 0x0008 (0x0008) [0x0000000000000080]              ( CPF_Parm )
-	unsigned long                                      bTestShooting : 1;                                		// 0x0010 (0x0004) [0x0000000000000090] [0x00000001] ( CPF_OptionalParm | CPF_Parm )
-	unsigned long                                      ReturnValue : 1;                                  		// 0x0014 (0x0004) [0x0000000000000580] [0x00000001] ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
+	unsigned long                                      bTestShooting;                                    		// 0x0010 (0x0004) [0x0000000000000090]              ( CPF_OptionalParm | CPF_Parm )
+	unsigned long                                      ReturnValue;                                      		// 0x0014 (0x0004) [0x0000000000000580]              ( CPF_Parm | CPF_OutParm | CPF_ReturnParm )
 };
 
 // Function SFXStrategicAI.BioSquadPlayer.DoBestAction
@@ -1139,8 +1139,8 @@ struct ABioSquadPlayer_execDoBestAction_Parms
 	// unsigned char                                   eAttackType;                                      		// 0x0018 (0x0001) [0x0000000000000000]              
 	// class UBioCapability*                           oCap;                                             		// 0x001C (0x0008) [0x0000000000000000]              
 	// class ABioPawn*                                 oHealTarget;                                      		// 0x0024 (0x0008) [0x0000000000000000]              
-	// unsigned long                                   bHostilesNearby : 1;                              		// 0x002C (0x0004) [0x0000000000000000] [0x00000001] 
-	// unsigned long                                   bDefend : 1;                                      		// 0x0030 (0x0004) [0x0000000000000000] [0x00000001] 
+	// unsigned long                                   bHostilesNearby;                                  		// 0x002C (0x0004) [0x0000000000000000]              
+	// unsigned long                                   bDefend;                                          		// 0x0030 (0x0004) [0x0000000000000000]              
 };
 
 // Function SFXStrategicAI.BioSquadProxMine.CalculateLikelihoodArmed
